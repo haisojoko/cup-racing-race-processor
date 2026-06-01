@@ -1,0 +1,16 @@
+[project]
+name = "cup-racing-race-processor"
+version = "0.1.0"
+description = "Processes Assetto Corsa server result JSONs into structured race detail data for the Cup Racing league."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+race-processor = "race_processor.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
