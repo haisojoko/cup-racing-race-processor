@@ -276,6 +276,89 @@ def test_compute_position_changes_net():
     assert changes["A"]["lost"] == 1
     assert changes["A"]["net"] == 0
 
+def test_position_changes_count_start_move():
+    # B starts P2 on the grid, leads every lap → gained the launch.
+    positions = {"A": [2, 2], "B": [1, 1]}
+    grid = ["A", "B"]
+    changes = _compute_position_changes(positions, grid)
+    assert changes["B"]["gained"] == 1
+    assert changes["B"]["net"] == 1
+    assert changes["A"]["lost"] == 1
+    assert changes["A"]["net"] == -1
+
+def test_position_changes_grid_densified_over_lap_drivers():
+    # Grid has a DNS driver (X) ahead who never appears in positions.
+    # A starting "behind" X should not be credited a phantom gain.
+    positions = {"A": [1], "B": [2]}
+    grid = ["X", "A", "B"]
+    changes = _compute_position_changes(positions, grid)
+    assert changes["A"]["net"] == 0
+    assert changes["B"]["net"] == 0
+
+
+# ---- Cuts, tyres, sectors ----
+
+def test_cuts_and_tyres_captured():
+    race = copy.deepcopy(RACE_RESULT)
+    for lap in race["Laps"]:
+        if lap["DriverName"] == "Josie":
+            lap["Cuts"] = 1
+            lap["Tyre"] = "SM"
+    result = process_race(race, grid=["Josie", "Toby", "Lee"])
+    assert result["cuts"]["Josie"] == [1, 1, 1, 1]
+    assert result["tyres"]["Josie"] == ["SM", "SM", "SM", "SM"]
+
+def test_lap_tables_are_index_aligned():
+    result = process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])
+    for driver, laps in result["laps"].items():
+        assert len(result["sectors"][driver]) == len(laps)
+        assert len(result["cuts"][driver]) == len(laps)
+        assert len(result["tyres"][driver]) == len(laps)
+
+def test_invalid_sectors_nulled_but_positions_preserved():
+    race = copy.deepcopy(RACE_RESULT)
+    race["Laps"][0]["Sectors"] = [31000, 0, 33000]  # middle sector un-timed
+    result = process_race(race, grid=["Josie", "Toby", "Lee"])
+    assert result["sectors"]["Josie"][0] == [31000, None, 33000]
+
+
+# ---- Contact driver identity ----
+
+def test_contacts_use_registry_labels_for_duplicate_names():
+    race = {
+        "Type": "RACE",
+        "Laps": [
+            {"DriverName": "Alex", "DriverGuid": "guid-a", "CarId": 1, "CarModel": "car_a", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+            {"DriverName": "Alex", "DriverGuid": "guid-b", "CarId": 2, "CarModel": "car_b", "LapTime": 101000, "Sectors": [33000, 34000, 34000], "Timestamp": 101000},
+            {"DriverName": "Alex", "DriverGuid": "guid-a", "CarId": 1, "CarModel": "car_a", "LapTime": 99000, "Sectors": [33000, 33000, 33000], "Timestamp": 199000},
+            {"DriverName": "Alex", "DriverGuid": "guid-b", "CarId": 2, "CarModel": "car_b", "LapTime": 99500, "Sectors": [33000, 33000, 33500], "Timestamp": 200500},
+        ],
+        "Result": [
+            {"DriverName": "Alex", "DriverGuid": "guid-a", "CarId": 1, "CarModel": "car_a", "BestLap": 99000, "TotalTime": 199000, "BallastKG": 0, "Restrictor": 0},
+            {"DriverName": "Alex", "DriverGuid": "guid-b", "CarId": 2, "CarModel": "car_b", "BestLap": 99500, "TotalTime": 200500, "BallastKG": 0, "Restrictor": 0},
+        ],
+        "Events": [
+            {"Type": "COLLISION_WITH_CAR",
+             "Driver": {"Name": "Alex", "Guid": "guid-a"}, "OtherDriver": {"Name": "Alex", "Guid": "guid-b"},
+             "CarId": 1, "OtherCarId": 2, "ImpactSpeed": 20.0, "Timestamp": 150000},
+        ],
+    }
+    result = process_race(race)
+    contact = result["contacts"][0]
+    assert contact["driver1"] == "Alex"
+    assert contact["driver2"] == "Alex (car 2)"
+    # Both labels are real keys in the rest of the output.
+    assert contact["driver1"] in result["laps"]
+    assert contact["driver2"] in result["laps"]
+
+def test_contacts_still_resolve_unique_names_without_guid():
+    # Standard fixture: events carry no guid/CarId — must still attribute.
+    result = process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])
+    contact = result["contacts"][0]
+    assert contact["driver1"] == "Josie"
+    assert contact["driver2"] == "Toby"
+    assert contact["driver1"] in result["laps"]
+
 
 # ---- Pace cleaning ----
 

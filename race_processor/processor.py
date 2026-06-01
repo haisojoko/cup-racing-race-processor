@@ -225,19 +225,25 @@ def build_grid_from_first_lap(race_data: dict) -> list[str]:
     """
     laps = race_data.get("Laps", [])
     registry = _build_driver_registry([], laps)
+    return _first_lap_grid(laps, registry)
+
+
+def _first_lap_grid(laps: list, registry: DriverRegistry) -> list[str]:
+    """Order drivers by the timestamp of their first valid lap."""
     first_laps: list[tuple[int, str]] = []
     seen: set[str] = set()
 
     for lap in laps:
-        name = registry.existing_label_for_entry(lap)
-        if not name or name in seen:
+        if not _valid_lap_time(lap.get("LapTime", 0)):
             continue
-        seen.add(name)
-        ts = lap.get("Timestamp", 0)
-        first_laps.append((ts, name))
+        label = registry.existing_label_for_entry(lap)
+        if not label or label in seen:
+            continue
+        seen.add(label)
+        first_laps.append((lap.get("Timestamp", 0), label))
 
     first_laps.sort(key=lambda x: x[0])
-    return [name for _, name in first_laps]
+    return [label for _, label in first_laps]
 
 
 # ---------------------------------------------------------------------------
@@ -284,17 +290,19 @@ def process_race(race_data: dict, grid: list[str] | None = None) -> dict[str, An
     events_raw = race_data.get("Events", [])
     results_raw = race_data.get("Result", [])
 
-    if grid is None:
-        grid = build_grid_from_first_lap(race_data)
-
     registry = _build_driver_registry(results_raw, laps_raw)
+
+    if grid is None:
+        grid = _first_lap_grid(laps_raw, registry)
+
     drivers = _collect_drivers(results_raw, laps_raw, grid, registry)
-    laps_by_driver = _build_laps_by_driver(laps_raw, drivers, registry)
-    sectors_by_driver = _build_sectors_by_driver(laps_raw, drivers, registry)
+    laps_by_driver, sectors_by_driver, cuts_by_driver, tyres_by_driver = _build_lap_tables(
+        laps_raw, drivers, registry
+    )
     positions = _compute_positions(laps_by_driver, drivers)
     position_details = _compute_position_details(laps_by_driver, drivers)
-    pos_changes = _compute_position_changes(positions)
-    contacts = _map_contacts_to_laps(events_raw, laps_raw, drivers)
+    pos_changes = _compute_position_changes(positions, grid)
+    contacts = _map_contacts_to_laps(events_raw, laps_raw, registry)
     pace = _compute_pace(laps_by_driver)
     result = _build_result(results_raw, laps_raw, registry)
     driver_meta = _build_driver_metadata(drivers, registry)
@@ -304,6 +312,8 @@ def process_race(race_data: dict, grid: list[str] | None = None) -> dict[str, An
         "drivers": driver_meta,
         "laps": laps_by_driver,
         "sectors": sectors_by_driver,
+        "cuts": cuts_by_driver,
+        "tyres": tyres_by_driver,
         "positions": positions,
         "positionDetails": position_details,
         "positionChanges": pos_changes,
@@ -372,28 +382,55 @@ def _build_driver_metadata(
     }
 
 
-def _build_laps_by_driver(
+def _build_lap_tables(
     laps: list, drivers: list[str], registry: DriverRegistry
-) -> dict[str, list[int]]:
-    result: dict[str, list[int]] = {d: [] for d in drivers}
+) -> tuple[
+    dict[str, list[int]],
+    dict[str, list[list[int | None]]],
+    dict[str, list[int]],
+    dict[str, list[str]],
+]:
+    """Build lap times, sectors, cuts, and tyre compounds in one pass.
+
+    All four tables are built from the same valid-lap filter and iteration
+    order so that index N in every table refers to the same lap.
+    Invalid sector values are nulled out but their position is preserved.
+    """
+    laps_by: dict[str, list[int]] = {d: [] for d in drivers}
+    sectors_by: dict[str, list[list[int | None]]] = {d: [] for d in drivers}
+    cuts_by: dict[str, list[int]] = {d: [] for d in drivers}
+    tyres_by: dict[str, list[str]] = {d: [] for d in drivers}
+
     for lap in laps:
-        name = registry.existing_label_for_entry(lap)
+        label = registry.existing_label_for_entry(lap)
         time_ms = lap.get("LapTime", 0)
-        if name in result and _valid_lap_time(time_ms):
-            result[name].append(time_ms)
-    return {d: times for d, times in result.items() if times}
+        if label not in laps_by or not _valid_lap_time(time_ms):
+            continue
+        laps_by[label].append(time_ms)
+        raw_sectors = lap.get("Sectors") or []
+        sectors_by[label].append([s if _valid_lap_time(s) else None for s in raw_sectors])
+        cuts_by[label].append(_safe_int(lap.get("Cuts")))
+        tyres_by[label].append(str(lap.get("Tyre", "") or "").strip())
+
+    active = [d for d, times in laps_by.items() if times]
+    return (
+        {d: laps_by[d] for d in active},
+        {d: sectors_by[d] for d in active},
+        {d: cuts_by[d] for d in active},
+        {d: tyres_by[d] for d in active},
+    )
 
 
-def _build_sectors_by_driver(
-    laps: list, drivers: list[str], registry: DriverRegistry
-) -> dict[str, list[list[int]]]:
-    result: dict[str, list[list[int]]] = {d: [] for d in drivers}
-    for lap in laps:
-        name = registry.existing_label_for_entry(lap)
-        sectors = lap.get("Sectors", [])
-        if name in result and sectors and any(_valid_lap_time(s) for s in sectors):
-            result[name].append(sectors)
-    return {d: secs for d, secs in result.items() if secs}
+def _safe_int(value: Any) -> int:
+    if isinstance(value, bool):
+        return int(value)
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value)
+    if isinstance(value, str) and value.strip().lstrip("-").isdigit():
+        return int(value.strip())
+    return 0
 
 
 def _compute_positions(
@@ -482,13 +519,26 @@ def _position_snapshots(
 
 def _compute_position_changes(
     positions: dict[str, list[int]],
+    grid: list[str] | None = None,
 ) -> dict[str, dict[str, int]]:
+    """Tally places gained/lost across the race.
+
+    When a starting grid is supplied, the launch (grid → lap 1) counts as a
+    position change. The grid is densified over only the drivers who have
+    lap data, so a place is not credited just because a DNS driver vanished.
+    """
+    grid_pos: dict[str, int] = {}
+    if grid:
+        dense = [d for d in grid if d in positions]
+        grid_pos = {driver: i + 1 for i, driver in enumerate(dense)}
+
     changes: dict[str, dict[str, int]] = {}
     for driver, pos_list in positions.items():
+        seq = [grid_pos[driver], *pos_list] if driver in grid_pos else pos_list
         gained = 0
         lost = 0
-        for i in range(1, len(pos_list)):
-            diff = pos_list[i - 1] - pos_list[i]
+        for i in range(1, len(seq)):
+            diff = seq[i - 1] - seq[i]
             if diff > 0:
                 gained += diff
             elif diff < 0:
@@ -502,10 +552,15 @@ def _compute_position_changes(
 # ---------------------------------------------------------------------------
 
 def _map_contacts_to_laps(
-    events: list, laps: list, drivers: list[str]
+    events: list, laps: list, registry: DriverRegistry
 ) -> list[dict[str, Any]]:
-    """Map collision events to lap numbers using timestamps."""
-    lap_boundaries = _build_lap_boundaries(laps)
+    """Map collision events to lap numbers using timestamps.
+
+    Driver attribution and lap boundaries both flow through the registry so
+    that contacts use the same driver labels (e.g. "Alex (car 2)") as the
+    rest of the output, even when two drivers share a display name.
+    """
+    lap_boundaries = _build_lap_boundaries(laps, registry)
 
     contacts: list[dict[str, Any]] = []
     for event in events:
@@ -513,8 +568,8 @@ def _map_contacts_to_laps(
         if event_type != "COLLISION_WITH_CAR":
             continue
 
-        driver1 = _extract_event_driver(event, "Driver")
-        driver2 = _extract_event_driver(event, "OtherDriver")
+        driver1 = _resolve_event_label(registry, _event_party_entry(event, "driver"))
+        driver2 = _resolve_event_label(registry, _event_party_entry(event, "other"))
         impact = event.get("ImpactSpeed", 0.0)
 
         if not driver1 or not driver2:
@@ -533,25 +588,61 @@ def _map_contacts_to_laps(
     return contacts
 
 
-def _extract_event_driver(event: dict, key: str) -> str:
-    val = event.get(key, {})
-    if isinstance(val, dict):
-        raw = val.get("Name", "").strip()
-    elif isinstance(val, str):
-        raw = val.strip()
+def _event_party_entry(event: dict, which: str) -> dict:
+    """Build a registry-compatible entry for one side of a collision event."""
+    if which == "driver":
+        party = event.get("Driver", {})
+        car_id = event.get("CarId")
     else:
+        party = event.get("OtherDriver", {})
+        car_id = event.get("OtherCarId")
+
+    if isinstance(party, dict):
+        name = party.get("Name", "")
+        guid = party.get("Guid", "")
+    elif isinstance(party, str):
+        name = party
+        guid = ""
+    else:
+        name = ""
+        guid = ""
+
+    return {"DriverName": name, "DriverGuid": guid, "CarId": car_id}
+
+
+def _resolve_event_label(registry: DriverRegistry, party_entry: dict) -> str:
+    """Resolve a collision party to a registry label, falling back to name."""
+    name = extract_driver_name(party_entry)
+    if not name:
         return ""
-    return resolve_driver_name(raw)
+
+    label = registry.existing_label_for_entry(party_entry)
+    if label:
+        return label
+
+    candidates = registry.labels_for_grid_value(name)
+    if len(candidates) == 1:
+        return candidates[0]
+
+    car_id = extract_car_id(party_entry)
+    if car_id is not None:
+        for candidate in candidates:
+            if registry.meta_by_label.get(candidate, {}).get("carId") == car_id:
+                return candidate
+
+    return name
 
 
-def _build_lap_boundaries(laps: list) -> dict[str, list[tuple[int, int]]]:
+def _build_lap_boundaries(
+    laps: list, registry: DriverRegistry
+) -> dict[str, list[tuple[int, int]]]:
     """Build per-driver list of (lap_start_ts, lap_end_ts) from lap records."""
     by_driver: dict[str, list[dict]] = {}
     for lap in laps:
-        name = extract_driver_name(lap)
-        if not name:
+        label = registry.existing_label_for_entry(lap)
+        if not label:
             continue
-        by_driver.setdefault(name, []).append(lap)
+        by_driver.setdefault(label, []).append(lap)
 
     boundaries: dict[str, list[tuple[int, int]]] = {}
     for driver, driver_laps in by_driver.items():

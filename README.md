@@ -124,14 +124,36 @@ process/S20_Imola/
 └── 260601_203000_R.json        ← race 4
 ```
 
-Files are matched to sessions in filename order (which is chronological, since AC names them by timestamp).
+Files are matched to sessions by their session type (qualifying vs race),
+read from inside each file — not by filename. Qualifying files fill the
+qualifying slots and race files fill the race slots, each in time order, so
+practice sessions and odd filenames won't throw off the alignment.
 
 ---
 
 ## Handling restarts
 
 If a race was restarted, delete the abandoned result file from the venue
-folder before processing. Only keep the completed session files.
+folder before processing. If you leave an extra race file in the folder, the
+tool will stop and tell you the counts don't match (e.g. "expected 4 race
+file(s) but found 5") rather than guessing — so you can't silently process
+the wrong file. Practice sessions are detected and ignored automatically.
+
+---
+
+## What gets captured
+
+For every race the output records, per driver:
+
+- **Lap times** and **sector times** (sector slots kept aligned; un-timed sectors are blank)
+- **Track cuts** and **tyre compound** per lap
+- **Lap-by-lap position**, including drivers who DNF or get lapped
+- **Positions gained / lost**, counting the start off the grid
+- **Pace** (average, median, best lap — excluding lap 1 and unrepresentative laps)
+- **Contacts** between cars, with lap number, who was involved, and impact speed
+
+Drivers are tracked by their Steam ID and car, so two people sharing a display
+name stay separate throughout (shown as e.g. `Alex` and `Alex (car 2)`).
 
 ---
 
