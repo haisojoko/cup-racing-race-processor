@@ -125,31 +125,39 @@ def cmd_process(folder: Path, output: Path, dry_run: bool) -> None:
         sys.exit(1)
 
     fmt = FORMATS[fmt_key]
-    result_files = _discover_result_files(folder)
     sessions = fmt["sessions"]
-
-    if len(result_files) < len(sessions):
-        print(f"Warning: found {len(result_files)} result files but format expects {len(sessions)} sessions.", file=sys.stderr)
-        print(f"Files found: {', '.join(f.name for f in result_files)}", file=sys.stderr)
-        if len(result_files) == 0:
-            sys.exit(1)
-
-    file_map = _assign_files_to_sessions(result_files, sessions)
 
     print(f"Season {season} | {venue} (venue {venue_order})")
     print(f"Format: {fmt['description']}")
-    print(f"Files:  {len(result_files)} found\n")
+
+    file_map, data_map, dropped, errors = _prepare_sessions(folder, sessions)
+
+    for f in dropped:
+        print(f"  Skipping non-scored session: {f.name}")
+
+    if errors:
+        print()
+        for err in errors:
+            print(f"Error: {err}", file=sys.stderr)
+        print(
+            "\nFix the venue folder so it contains exactly the files this format "
+            "expects (delete abandoned restart files, remove practice sessions), "
+            "then re-run.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    print()
 
     qual_outputs: dict[str, dict] = {}
     race_outputs: dict[str, dict] = {}
 
     for session in sessions:
         file = file_map.get(session["id"])
-        if not file:
+        data = data_map.get(session["id"])
+        if not file or data is None:
             print(f"  [{session['id']}] SKIPPED — no file assigned")
             continue
-
-        data = load_server_result(file)
 
         if session["type"] == "qualifying":
             print(f"  [{session['id']}] Qualifying: {file.name}")
@@ -208,13 +216,69 @@ def _discover_result_files(folder: Path) -> list[Path]:
     return files
 
 
-def _assign_files_to_sessions(files: list[Path], sessions: list[dict]) -> dict[str, Path]:
-    """Map files to sessions in order. Files are sorted chronologically."""
-    mapping: dict[str, Path] = {}
-    for i, session in enumerate(sessions):
-        if i < len(files):
-            mapping[session["id"]] = files[i]
-    return mapping
+def _classify_session(data: dict) -> str:
+    """Classify a result file by its internal Type field.
+
+    Authoritative and version-independent — unlike trusting filename order,
+    which silently misassigns when an abandoned restart file is left in place.
+    """
+    type_value = str(data.get("Type", "")).strip().upper()
+    if type_value.startswith("QUAL"):
+        return "qualifying"
+    if type_value.startswith("RACE"):
+        return "race"
+    if type_value.startswith("PRAC"):
+        return "practice"
+    return "unknown"
+
+
+def _prepare_sessions(
+    folder: Path, sessions: list[dict]
+) -> tuple[dict[str, Path], dict[str, dict], list[Path], list[str]]:
+    """Classify every result file and map it to the correct session slot.
+
+    Returns (file_map, data_map, dropped_files, errors). Files are matched to
+    sessions by their internal Type, in chronological order within each type,
+    so qualifying files always land in qualifying slots and races in race
+    slots regardless of how many files (or stray restarts) are present.
+    """
+    files = _discover_result_files(folder)
+    buckets: dict[str, list[tuple[Path, dict]]] = {
+        "qualifying": [], "race": [], "practice": [], "unknown": [],
+    }
+    for f in files:
+        try:
+            data = load_server_result(f)
+        except (ValueError, OSError):
+            buckets["unknown"].append((f, {}))
+            continue
+        buckets[_classify_session(data)].append((f, data))
+
+    expected = {
+        "qualifying": [s for s in sessions if s["type"] == "qualifying"],
+        "race": [s for s in sessions if s["type"] == "race"],
+    }
+
+    errors: list[str] = []
+    for kind in ("qualifying", "race"):
+        found = len(buckets[kind])
+        want = len(expected[kind])
+        if found != want:
+            names = ", ".join(f.name for f, _ in buckets[kind]) or "none"
+            errors.append(
+                f"expected {want} {kind} file(s) but found {found} ({names})"
+            )
+
+    file_map: dict[str, Path] = {}
+    data_map: dict[str, dict] = {}
+    if not errors:
+        for kind in ("qualifying", "race"):
+            for session, (f, data) in zip(expected[kind], buckets[kind]):
+                file_map[session["id"]] = f
+                data_map[session["id"]] = data
+
+    dropped = [f for f, _ in buckets["practice"]] + [f for f, _ in buckets["unknown"]]
+    return file_map, data_map, dropped, errors
 
 
 def _resolve_grid(
