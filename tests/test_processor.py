@@ -5,6 +5,7 @@ import copy
 from race_processor.processor import (
     configure_aliases,
     configure_name_map,
+    configure_shared_guids,
     extract_driver_name,
     resolve_driver_name,
     build_grid_from_qualifying,
@@ -605,4 +606,40 @@ def test_guid_map_merges_two_display_names_into_one_identity():
     result = process_race(race, grid=["NamSayin"])
     assert list(result["laps"]) == ["NamSayin"]
     assert len(result["laps"]["NamSayin"]) == 2
+    configure_name_map({})
+
+
+# ---- Shared / guest GUIDs (split back out by display name) ----
+
+def test_shared_guid_ignores_name_map_and_uses_display_name():
+    # A shared account's GUID->name mapping must be ignored so the real display
+    # name shows through.
+    configure_name_map({"shared-g": "Sunny"})
+    configure_shared_guids({"shared-g"})
+    assert extract_driver_name({"DriverName": "Clive", "DriverGuid": "shared-g"}) == "Clive"
+    assert extract_driver_name({"DriverName": "Lea", "DriverGuid": "shared-g"}) == "Lea"
+    configure_shared_guids(set())
+    configure_name_map({})
+
+def test_shared_guid_splits_one_account_into_separate_drivers():
+    # Two people used the same guest machine (one GUID) under two names → two
+    # distinct drivers, not one merged identity.
+    race = {
+        "Type": "RACE", "TrackName": "imola", "TrackConfig": "",
+        "Cars": [], "Events": [],
+        "Laps": [
+            {"DriverName": "Clive", "DriverGuid": "shared-g", "CarId": 1, "CarModel": "car", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+            {"DriverName": "Lea", "DriverGuid": "shared-g", "CarId": 1, "CarModel": "car", "LapTime": 99000, "Sectors": [33000, 33000, 33000], "Timestamp": 199000},
+        ],
+        "Result": [
+            {"DriverName": "Lea", "DriverGuid": "shared-g", "CarId": 1, "CarModel": "car", "BestLap": 99000, "TotalTime": 99000, "BallastKG": 0, "Restrictor": 0},
+            {"DriverName": "Clive", "DriverGuid": "shared-g", "CarId": 1, "CarModel": "car", "BestLap": 100000, "TotalTime": 100000, "BallastKG": 0, "Restrictor": 0},
+        ],
+    }
+    configure_name_map({"shared-g": "Sunny"})
+    configure_shared_guids({"shared-g"})
+    result = process_race(race, grid=["Lea", "Clive"])
+    assert sorted(result["laps"]) == ["Clive", "Lea"]
+    assert "Sunny" not in result["laps"]
+    configure_shared_guids(set())
     configure_name_map({})

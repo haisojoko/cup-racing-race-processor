@@ -111,6 +111,7 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
     cfg = _load_config(config_path)
     processor.configure_name_map(cfg.driver_names)
     processor.configure_aliases(cfg.driver_aliases)
+    processor.configure_shared_guids(cfg.shared_guids)
     fingerprint = cfg.fingerprint()
 
     if not dry_run:

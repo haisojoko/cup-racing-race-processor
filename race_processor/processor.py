@@ -21,6 +21,10 @@ from typing import Any
 # GUID mapping wins when both could apply.
 _GUID_NAME_MAP: dict[str, str] = {}
 _ALIAS_LOOKUP: dict[str, str] = {}
+# GUIDs shared by several people (a guest machine that cycled display names).
+# For these the "one GUID = one person" rule is wrong, so identity falls back to
+# the display name and the GUID->name map is ignored. From config.json sharedGuids.
+_SHARED_GUIDS: set[str] = set()
 INVALID_LAP_TIME = 999_000_000
 
 
@@ -34,6 +38,12 @@ def configure_name_map(mapping: dict[str, str]) -> None:
     """Install the GUID -> canonical name table (config.json driverNames)."""
     global _GUID_NAME_MAP
     _GUID_NAME_MAP = {str(k).strip(): v for k, v in (mapping or {}).items() if str(k).strip()}
+
+
+def configure_shared_guids(guids) -> None:
+    """Install the set of shared/guest GUIDs (config.json sharedGuids)."""
+    global _SHARED_GUIDS
+    _SHARED_GUIDS = {str(g).strip() for g in (guids or ()) if str(g).strip()}
 
 
 def resolve_driver_name(raw_name: str) -> str:
@@ -57,7 +67,7 @@ def extract_driver_name(entry: dict) -> str:
     differs across sessions.
     """
     guid = extract_driver_guid(entry)
-    if guid and guid in _GUID_NAME_MAP:
+    if guid and guid in _GUID_NAME_MAP and guid not in _SHARED_GUIDS:
         return _GUID_NAME_MAP[guid]
     if isinstance(entry.get("Driver"), dict):
         raw = entry["Driver"].get("Name", "").strip()
@@ -123,8 +133,12 @@ class DriverIdentity:
         # one driver stays one identity even if they occupy two car slots in a
         # session (join, leave, rejoin in a different car). The car id is only a
         # tiebreaker when no GUID is present.
-        if self.guid:
+        if self.guid and self.guid not in _SHARED_GUIDS:
             return f"guid:{self.guid}"
+        # A shared/guest GUID is not one person: split it by display name so each
+        # name that used the account becomes its own driver.
+        if self.guid:
+            return f"shared:{self.guid}|name:{self.name.casefold()}"
         if self.car_id is not None:
             return f"name:{self.name.casefold()}|car:{self.car_id}"
         if self.car_model:
