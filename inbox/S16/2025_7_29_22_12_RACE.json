@@ -1,0 +1,919 @@
+{
+	"TrackName": "csp/2144/../rt_daytona",
+	"TrackConfig": "sportscar",
+	"Type": "RACE",
+	"DurationSecs": 0,
+	"RaceLaps": 4,
+	"Cars": [
+		{
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"Model": "ac_legends_gt_911rsr_74",
+			"Skin": "23_Armor_All",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 1,
+			"Driver": {
+				"Name": "Oby",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198401386081",
+				"GuidsList": [
+					"76561198401386081"
+				]
+			},
+			"Model": "ac_legends_gt_911rsr_74",
+			"Skin": "33_Gitanes",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 2,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198193231731",
+				"GuidsList": [
+					"76561198193231731"
+				]
+			},
+			"Model": "ac_legends_gt_911rsr_74",
+			"Skin": "09_ecuador",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 3,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"Model": "ac_legends_gt_ferrari_365gtb",
+			"Skin": "02",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 4,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197970345239",
+				"GuidsList": [
+					"76561197970345239"
+				]
+			},
+			"Model": "ac_legends_gt_pantera_gr4",
+			"Skin": "Castrol_49_black",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 5,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198112590354",
+				"GuidsList": [
+					"76561198112590354"
+				]
+			},
+			"Model": "ac_legends_gt_pantera_gr4",
+			"Skin": "77_white",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 6,
+			"Driver": {
+				"Name": "TILTY",
+				"Team": "",
+				"Nation": "IRL",
+				"Guid": "76561197984244290",
+				"GuidsList": [
+					"76561197984244290"
+				]
+			},
+			"Model": "ac_legends_gt_pantera_gr4",
+			"Skin": "155_orange",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 7,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197966374236",
+				"GuidsList": [
+					"76561197966374236"
+				]
+			},
+			"Model": "ac_legends_gt_porsche_906",
+			"Skin": "000_1967_Fuji_08_4k",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 8,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "NER",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"Model": "ac_legends_gt_shelby_daytona",
+			"Skin": "01",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 9,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198208077979",
+				"GuidsList": [
+					"76561198208077979"
+				]
+			},
+			"Model": "ac_legends_gt_shelby_daytona",
+			"Skin": "29_Le_Mans_Classic",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 10,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198049951756",
+				"GuidsList": [
+					"76561198049951756"
+				]
+			},
+			"Model": "ac_legends_gt_nissan_gtr",
+			"Skin": "8New",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 11,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197967093333",
+				"GuidsList": [
+					"76561197967093333"
+				]
+			},
+			"Model": "ac_legends_gt_nissan_gtr",
+			"Skin": "39New",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 12,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"Model": "ac_legends_gt_bmw_csl",
+			"Skin": "bmw24",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 13,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198389079329",
+				"GuidsList": [
+					"76561198389079329"
+				]
+			},
+			"Model": "ac_legends_gt_porsche_906",
+			"Skin": "002_15bosch4k",
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Result": [
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"BestLap": 116620,
+			"TotalTime": 480592,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 8,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"BestLap": 118244,
+			"TotalTime": 486805,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oby",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"BestLap": 117657,
+			"TotalTime": 487755,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 12,
+			"CarModel": "ac_legends_gt_bmw_csl",
+			"BestLap": 119995,
+			"TotalTime": 497265,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 3,
+			"CarModel": "ac_legends_gt_ferrari_365gtb",
+			"BestLap": 119957,
+			"TotalTime": 500442,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 6,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"BestLap": 121072,
+			"TotalTime": 504533,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198112590354",
+			"CarId": 5,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197966374236",
+			"CarId": 7,
+			"CarModel": "ac_legends_gt_porsche_906",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197970345239",
+			"CarId": 4,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198208077979",
+			"CarId": 9,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198049951756",
+			"CarId": 10,
+			"CarModel": "ac_legends_gt_nissan_gtr",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197967093333",
+			"CarId": 11,
+			"CarModel": "ac_legends_gt_nissan_gtr",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198193231731",
+			"CarId": 2,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198389079329",
+			"CarId": 13,
+			"CarModel": "ac_legends_gt_porsche_906",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Laps": [
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7618592,
+			"LapTime": 129642,
+			"Sectors": [
+				55009,
+				41989,
+				32644
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 8,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"Timestamp": 7620003,
+			"LapTime": 131054,
+			"Sectors": [
+				56229,
+				41917,
+				32908
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oby",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7621370,
+			"LapTime": 132383,
+			"Sectors": [
+				56239,
+				43493,
+				32651
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 3,
+			"CarModel": "ac_legends_gt_ferrari_365gtb",
+			"Timestamp": 7623901,
+			"LapTime": 134914,
+			"Sectors": [
+				57771,
+				42763,
+				34380
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 12,
+			"CarModel": "ac_legends_gt_bmw_csl",
+			"Timestamp": 7624507,
+			"LapTime": 135543,
+			"Sectors": [
+				58309,
+				42183,
+				35051
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 6,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"Timestamp": 7626133,
+			"LapTime": 137169,
+			"Sectors": [
+				59107,
+				43105,
+				34957
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7735811,
+			"LapTime": 117224,
+			"Sectors": [
+				42938,
+				41814,
+				32472
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 8,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"Timestamp": 7738729,
+			"LapTime": 118730,
+			"Sectors": [
+				44165,
+				41841,
+				32724
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oby",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7740551,
+			"LapTime": 119189,
+			"Sectors": [
+				44211,
+				42363,
+				32615
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 3,
+			"CarModel": "ac_legends_gt_ferrari_365gtb",
+			"Timestamp": 7743857,
+			"LapTime": 119957,
+			"Sectors": [
+				44209,
+				42763,
+				32985
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 12,
+			"CarModel": "ac_legends_gt_bmw_csl",
+			"Timestamp": 7744986,
+			"LapTime": 120482,
+			"Sectors": [
+				45044,
+				42570,
+				32868
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 6,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"Timestamp": 7747206,
+			"LapTime": 121072,
+			"Sectors": [
+				44649,
+				44131,
+				32292
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7852928,
+			"LapTime": 117119,
+			"Sectors": [
+				42892,
+				42039,
+				32188
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 8,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"Timestamp": 7857516,
+			"LapTime": 118793,
+			"Sectors": [
+				43815,
+				42237,
+				32741
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oby",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7859095,
+			"LapTime": 118542,
+			"Sectors": [
+				43797,
+				42201,
+				32544
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 12,
+			"CarModel": "ac_legends_gt_bmw_csl",
+			"Timestamp": 7864983,
+			"LapTime": 119995,
+			"Sectors": [
+				43936,
+				42763,
+				33296
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 3,
+			"CarModel": "ac_legends_gt_ferrari_365gtb",
+			"Timestamp": 7867592,
+			"LapTime": 123735,
+			"Sectors": [
+				44386,
+				42219,
+				37130
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 6,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"Timestamp": 7868499,
+			"LapTime": 121294,
+			"Sectors": [
+				44438,
+				44438,
+				32418
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7969547,
+			"LapTime": 116620,
+			"Sectors": [
+				42491,
+				42026,
+				32103
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 8,
+			"CarModel": "ac_legends_gt_shelby_daytona",
+			"Timestamp": 7975761,
+			"LapTime": 118244,
+			"Sectors": [
+				43526,
+				41985,
+				32733
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oby",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "ac_legends_gt_911rsr_74",
+			"Timestamp": 7976747,
+			"LapTime": 117657,
+			"Sectors": [
+				43078,
+				42210,
+				32369
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 12,
+			"CarModel": "ac_legends_gt_bmw_csl",
+			"Timestamp": 7986227,
+			"LapTime": 121253,
+			"Sectors": [
+				45914,
+				42530,
+				32809
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 3,
+			"CarModel": "ac_legends_gt_ferrari_365gtb",
+			"Timestamp": 7989430,
+			"LapTime": 121837,
+			"Sectors": [
+				45265,
+				42957,
+				33615
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 6,
+			"CarModel": "ac_legends_gt_pantera_gr4",
+			"Timestamp": 7993497,
+			"LapTime": 124997,
+			"Sectors": [
+				44969,
+				47372,
+				32656
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "V70",
+			"Restrictor": 0
+		}
+	],
+	"Events": [
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 12,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"OtherCarId": 3,
+			"OtherDriver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"ImpactSpeed": 4.3854704,
+			"WorldPosition": {
+				"X": 122.92539,
+				"Y": -6.0756526,
+				"Z": 358.2796
+			},
+			"RelPosition": {
+				"X": -0.8755811,
+				"Y": 0.21866004,
+				"Z": -2.3035297
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 3,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"OtherCarId": 12,
+			"OtherDriver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"ImpactSpeed": 8.561537,
+			"WorldPosition": {
+				"X": 122.76869,
+				"Y": -6.0542126,
+				"Z": 358.2781
+			},
+			"RelPosition": {
+				"X": 0.90003145,
+				"Y": 0.13174057,
+				"Z": 1.4867468
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 6,
+			"Driver": {
+				"Name": "TILTY",
+				"Team": "",
+				"Nation": "IRL",
+				"Guid": "76561197984244290",
+				"GuidsList": [
+					"76561197984244290"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 56.923054,
+			"WorldPosition": {
+				"X": -561.7623,
+				"Y": -5.089999,
+				"Z": -260.3677
+			},
+			"RelPosition": {
+				"X": -0.91263676,
+				"Y": 0.32856926,
+				"Z": -1.8152124
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 3,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 45.804752,
+			"WorldPosition": {
+				"X": -49.807476,
+				"Y": -2.552765,
+				"Z": -437.21173
+			},
+			"RelPosition": {
+				"X": -0.7173377,
+				"Y": -0.10192822,
+				"Z": 1.8494112
+			}
+		}
+	]
+}

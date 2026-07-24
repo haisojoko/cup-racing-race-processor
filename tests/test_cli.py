@@ -1,170 +1,219 @@
-"""Tests for the CLI entry point."""
+"""End-to-end CLI tests over a temporary inbox."""
 
-import copy
 import json
-import tempfile
 from pathlib import Path
 
-import pytest
+from race_processor.cli import _ensure_season_folders, _season_dirs, _season_sort_key, main
 
-from race_processor.cli import main
 from .fixtures import QUALIFYING_RESULT, RACE_RESULT
 
 
-def _setup_venue(tmpdir: str, fmt: str = "qual-standard-reverse") -> tuple[Path, Path]:
-    """Create a venue folder with config and 6 session files."""
-    venue = Path(tmpdir) / "S20_Imola"
-    venue.mkdir()
-
-    config = {"season": "S20", "venue": "Imola 2025", "venueOrder": 1, "format": fmt}
-    (venue / "venue.json").write_text(json.dumps(config))
-
-    for i, (name, data) in enumerate([
-        ("260601_180000_Q.json", QUALIFYING_RESULT),
-        ("260601_183000_R.json", RACE_RESULT),
-        ("260601_190000_R.json", RACE_RESULT),
-        ("260601_193000_Q.json", QUALIFYING_RESULT),
-        ("260601_200000_R.json", RACE_RESULT),
-        ("260601_203000_R.json", RACE_RESULT),
-    ]):
-        (venue / name).write_text(json.dumps(data))
-
-    return venue, Path(tmpdir) / "output.json"
+def _write(path: Path, data: dict) -> None:
+    path.write_text(json.dumps(data), encoding="utf-8")
 
 
-def test_process_venue():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue, out = _setup_venue(tmpdir)
-        main(["process", str(venue), "-o", str(out)])
-
-        data = json.loads(out.read_text())
-        venue_data = data["seasons"]["S20"]["venues"]["Imola 2025"]
-        races = venue_data["races"]
-        assert "1" in races
-        assert "2" in races
-        assert "3" in races
-        assert "4" in races
-        assert "qual1" in venue_data["qualifying"]
-        assert "qual2" in venue_data["qualifying"]
-
-
-def test_process_dry_run():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue, out = _setup_venue(tmpdir)
-        main(["process", str(venue), "-o", str(out), "--dry-run"])
-        assert not out.exists()
+def _make_repo(tmp_path: Path, publish_dest: Path | None = None) -> Path:
+    """Build a config.json + inbox tree; return the config path."""
+    cfg = {
+        "inboxDir": "inbox",
+        "datasetDir": "dataset",
+        "publishDestinations": [str(publish_dest)] if publish_dest else [],
+        "driverAliases": {},
+        "trackDisplayNames": {"imola|": "Imola"},
+        "eventGapHours": 4,
+        "restartWindowMinutes": 30,
+    }
+    (tmp_path / "config.json").write_text(json.dumps(cfg), encoding="utf-8")
+    return tmp_path / "config.json"
 
 
-def test_batch():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue1, _ = _setup_venue(tmpdir)
-        venue2 = Path(tmpdir) / "S20_Spa"
-        venue2.mkdir()
-        config = {"season": "S20", "venue": "Spa", "venueOrder": 2, "format": "qual-standard-reverse"}
-        (venue2 / "venue.json").write_text(json.dumps(config))
-        for name, data in [
-            ("260608_180000_Q.json", QUALIFYING_RESULT),
-            ("260608_183000_R.json", RACE_RESULT),
-            ("260608_190000_R.json", RACE_RESULT),
-            ("260608_193000_Q.json", QUALIFYING_RESULT),
-            ("260608_200000_R.json", RACE_RESULT),
-            ("260608_203000_R.json", RACE_RESULT),
-        ]:
-            (venue2 / name).write_text(json.dumps(data))
-
-        out = Path(tmpdir) / "output.json"
-        main(["batch", str(tmpdir), "-o", str(out)])
-
-        data = json.loads(out.read_text())
-        assert "Imola 2025" in data["seasons"]["S20"]["venues"]
-        assert "Spa" in data["seasons"]["S20"]["venues"]
+def _seed_event(inbox_season: Path) -> None:
+    inbox_season.mkdir(parents=True, exist_ok=True)
+    _write(inbox_season / "2026_1_10_20_0_QUALIFY.json", QUALIFYING_RESULT)
+    _write(inbox_season / "2026_1_10_20_20_RACE.json", RACE_RESULT)
 
 
-def test_init():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        folder = Path(tmpdir) / "S20_Monza"
-        main(["init", str(folder), "--season", "S20", "--venue", "Monza", "--venue-order", "3"])
+def test_ingest_end_to_end(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    # a byte-identical duplicate race and a corrupt file
+    _write(tmp_path / "inbox" / "S20" / "2026_1_10_20_21_RACE.json", RACE_RESULT)
+    (tmp_path / "inbox" / "S20" / "broken.json").write_text("{not json", encoding="utf-8")
 
-        config = json.loads((folder / "venue.json").read_text())
-        assert config["season"] == "S20"
-        assert config["venue"] == "Monza"
-        assert config["venueOrder"] == 3
-        assert config["format"] == "qual-standard-reverse"
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
 
+    season = json.loads((tmp_path / "dataset" / "seasons" / "S20.json").read_text(encoding="utf-8"))
+    assert season["season"] == "S20"
+    assert len(season["events"]) == 1
+    event = season["events"][0]
+    assert event["venue"] == "Imola"
+    assert event["venueOrder"] == 1
+    # duplicate race dropped, so exactly one race remains
+    assert len(event["races"]) == 1
+    assert any(d["reason"] == "byte-identical" for d in event["provenance"]["droppedFiles"])
+    # corrupt file surfaced, not silently dropped
+    assert any(u["reason"] == "unreadable" for u in season["unprocessed"])
 
-def test_init_with_format():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        folder = Path(tmpdir) / "S20_Monza"
-        main(["init", str(folder), "--season", "S20", "--venue", "Monza", "--venue-order", "3", "--format", "qual-standard-standard"])
-
-        config = json.loads((folder / "venue.json").read_text())
-        assert config["format"] == "qual-standard-standard"
-
-
-def test_reverse_grid_applied():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue, out = _setup_venue(tmpdir, fmt="qual-standard-reverse")
-        main(["process", str(venue), "-o", str(out)])
-
-        data = json.loads(out.read_text())
-        races = data["seasons"]["S20"]["venues"]["Imola 2025"]["races"]
-        race1_winner = races["1"]["result"][0]["driver"]
-        race2_grid_last = races["2"]["grid"][-1]
-        assert race2_grid_last == race1_winner
+    index = json.loads((tmp_path / "dataset" / "index.json").read_text(encoding="utf-8"))
+    assert "S20" in index["seasons"]
+    assert index["seasons"]["S20"]["events"][0]["races"] == 1
 
 
-def test_undeleted_restart_file_errors_instead_of_misassigning():
-    """An abandoned restart file (extra RACE) must error, not silently shift slots."""
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue, out = _setup_venue(tmpdir)
-        # Add an abandoned race-2 restart that sorts before the real race files.
-        (venue / "260601_185959_R.json").write_text(json.dumps(RACE_RESULT))
+def test_ingest_idempotent(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
 
-        with pytest.raises(SystemExit) as exc:
-            main(["process", str(venue), "-o", str(out)])
-        assert exc.value.code == 1
-        assert not out.exists()
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+    season_file = tmp_path / "dataset" / "seasons" / "S20.json"
+    first = season_file.read_text(encoding="utf-8")
 
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+    second = season_file.read_text(encoding="utf-8")
 
-def test_practice_files_are_dropped():
-    """Practice sessions should be ignored, not counted against race/qual slots."""
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue, out = _setup_venue(tmpdir)
-        practice = copy.deepcopy(RACE_RESULT)
-        practice["Type"] = "PRACTICE"
-        (venue / "260601_170000_P.json").write_text(json.dumps(practice))
-
-        main(["process", str(venue), "-o", str(out)])
-
-        data = json.loads(out.read_text())
-        races = data["seasons"]["S20"]["venues"]["Imola 2025"]["races"]
-        assert set(races) == {"1", "2", "3", "4"}
+    assert first == second  # unchanged content means no rewrite (lastUpdated preserved)
 
 
-def test_files_matched_by_type_not_filename_order():
-    """A qualifying file that sorts late must still fill a qualifying slot."""
-    with tempfile.TemporaryDirectory() as tmpdir:
-        venue = Path(tmpdir) / "S20_Imola"
-        venue.mkdir()
-        (venue / "venue.json").write_text(json.dumps(
-            {"season": "S20", "venue": "Imola 2025", "venueOrder": 1, "format": "qual-standard-reverse"}
-        ))
-        # Deliberately scramble: race files sort before qualifying files.
-        files = [
-            ("a_race1_R.json", RACE_RESULT),
-            ("b_race2_R.json", RACE_RESULT),
-            ("c_race3_R.json", RACE_RESULT),
-            ("d_race4_R.json", RACE_RESULT),
-            ("e_qual1_Q.json", QUALIFYING_RESULT),
-            ("f_qual2_Q.json", QUALIFYING_RESULT),
-        ]
-        for name, data in files:
-            (venue / name).write_text(json.dumps(data))
+def test_dry_run_writes_nothing(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
 
-        out = Path(tmpdir) / "output.json"
-        main(["process", str(venue), "-o", str(out)])
+    main(["--config", str(cfg_path), "ingest", "--dry-run"])
 
-        data = json.loads(out.read_text())
-        venue_data = data["seasons"]["S20"]["venues"]["Imola 2025"]
-        assert set(venue_data["races"]) == {"1", "2", "3", "4"}
-        assert set(venue_data["qualifying"]) == {"qual1", "qual2"}
+    assert not (tmp_path / "dataset").exists()
+
+
+def test_publish_mirrors_dataset(tmp_path):
+    dest = tmp_path / "consumer" / "cup-dataset"
+    cfg_path = _make_repo(tmp_path, publish_dest=dest)
+    _seed_event(tmp_path / "inbox" / "S20")
+
+    main(["--config", str(cfg_path), "ingest"])
+
+    assert (dest / "index.json").exists()
+    assert (dest / "seasons" / "S20.json").exists()
+
+
+def test_config_fingerprint_triggers_reprocess(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+
+    # Change an alias → fingerprint changes → event reprocesses with new label.
+    cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+    cfg["driverAliases"] = {"Josie": "JosieRenamed"}
+    cfg_path.write_text(json.dumps(cfg), encoding="utf-8")
+
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+    season = json.loads((tmp_path / "dataset" / "seasons" / "S20.json").read_text(encoding="utf-8"))
+    race = season["events"][0]["races"]["1"]
+    assert "JosieRenamed" in race["drivers"]
+
+
+def test_rebuild_drops_stale_events(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+
+    for f in (tmp_path / "inbox" / "S20").glob("*.json"):
+        f.unlink()
+    main(["--config", str(cfg_path), "rebuild", "--no-publish"])
+
+    season = json.loads((tmp_path / "dataset" / "seasons" / "S20.json").read_text(encoding="utf-8"))
+    assert season["events"] == []
+
+
+def test_split_season_folders_ingested(tmp_path):
+    # S18a and S18b are independent seasons; both must produce their own file.
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S18a")
+    _seed_event(tmp_path / "inbox" / "S18b")
+
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+
+    assert (tmp_path / "dataset" / "seasons" / "S18a.json").exists()
+    assert (tmp_path / "dataset" / "seasons" / "S18b.json").exists()
+
+    index = json.loads((tmp_path / "dataset" / "index.json").read_text(encoding="utf-8"))
+    assert "S18a" in index["seasons"] and "S18b" in index["seasons"]
+    # S18 base is NOT auto-created when split folders exist.
+    assert not (tmp_path / "inbox" / "S18").exists()
+
+
+def test_ensure_season_folders_respects_splits(tmp_path):
+    inbox = tmp_path / "inbox"
+    # Pre-create split folders for 18 and 24 (the real + future cases).
+    (inbox / "S18a").mkdir(parents=True)
+    (inbox / "S24b").mkdir(parents=True)
+
+    _ensure_season_folders(inbox)
+
+    assert (inbox / "S1").exists()         # normal base seasons created
+    assert (inbox / "S23").exists()
+    assert not (inbox / "S18").exists()    # split present → base skipped
+    assert not (inbox / "S24").exists()
+    assert (inbox / "S18a").exists() and (inbox / "S24b").exists()
+
+
+def test_season_sort_orders_splits_between_neighbours():
+    names = ["S19", "S2", "S18b", "S18a", "S18", "S10", "S9"]
+    ordered = sorted(names, key=_season_sort_key)
+    assert ordered == ["S2", "S9", "S10", "S18", "S18a", "S18b", "S19"]
+
+
+def test_driver_names_map_applied_in_ingest(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    # Give the fixture drivers GUIDs so the GUID map can target them.
+    for name in ["2026_1_10_20_0_QUALIFY.json", "2026_1_10_20_20_RACE.json"]:
+        p = tmp_path / "inbox" / "S20" / name
+        data = json.loads(p.read_text(encoding="utf-8"))
+        for coll in ("Laps", "Result"):
+            for e in data.get(coll, []):
+                if e.get("DriverName") == "Josie":
+                    e["DriverGuid"] = "guid-josie"
+        p.write_text(json.dumps(data), encoding="utf-8")
+
+    cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+    cfg["driverNames"] = {"guid-josie": "Josephine"}
+    cfg_path.write_text(json.dumps(cfg), encoding="utf-8")
+
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+    season = json.loads((tmp_path / "dataset" / "seasons" / "S20.json").read_text(encoding="utf-8"))
+    race = season["events"][0]["races"]["1"]
+    assert "Josephine" in race["drivers"]
+    assert "Josie" not in race["drivers"]
+
+
+def test_roster_writes_template(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    for name in ["2026_1_10_20_0_QUALIFY.json", "2026_1_10_20_20_RACE.json"]:
+        p = tmp_path / "inbox" / "S20" / name
+        data = json.loads(p.read_text(encoding="utf-8"))
+        for coll in ("Laps", "Result"):
+            for e in data.get(coll, []):
+                e["DriverGuid"] = "guid-" + e["DriverName"].lower()
+        p.write_text(json.dumps(data), encoding="utf-8")
+
+    out = tmp_path / "roster.json"
+    main(["--config", str(cfg_path), "roster", "-o", str(out)])
+
+    roster = json.loads(out.read_text(encoding="utf-8"))
+    guids = {r["guid"] for r in roster["drivers"]}
+    assert "guid-josie" in guids
+    josie = next(r for r in roster["drivers"] if r["guid"] == "guid-josie")
+    assert josie["suggested"] == "Josie"
+    assert "S20" in josie["seasons"]
+
+
+def test_ingest_preserves_events_when_files_removed(tmp_path):
+    cfg_path = _make_repo(tmp_path)
+    _seed_event(tmp_path / "inbox" / "S20")
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+
+    for f in (tmp_path / "inbox" / "S20").glob("*.json"):
+        f.unlink()
+    main(["--config", str(cfg_path), "ingest", "--no-publish"])
+
+    season = json.loads((tmp_path / "dataset" / "seasons" / "S20.json").read_text(encoding="utf-8"))
+    assert len(season["events"]) == 1  # ingest never deletes

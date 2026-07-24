@@ -1,0 +1,862 @@
+{
+	"TrackName": "csp/2144/../sepang_v2",
+	"TrackConfig": "gp",
+	"Type": "RACE",
+	"DurationSecs": 0,
+	"RaceLaps": 6,
+	"Cars": [
+		{
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "07_Honda_test",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 1,
+			"Driver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "22_Aguri",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 2,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197966374236",
+				"GuidsList": [
+					"76561197966374236"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "14_Redbull",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 3,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197984244290",
+				"GuidsList": [
+					"76561197984244290"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "15_Redbull",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 4,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198193231731",
+				"GuidsList": [
+					"76561198193231731"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "31_VRC_Motorsport",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 5,
+			"Driver": {
+				"Name": "voth",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561197967093333",
+				"GuidsList": [
+					"76561197967093333"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "94_VRC_Motorsport",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 6,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198208077979",
+				"GuidsList": [
+					"76561198208077979"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_mc22",
+			"Skin": "03_Renault",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 7,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "NER",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "21_Prestazioni_da_Corsa",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 8,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "28_Prestazioni_da_Corsa",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 9,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197960427864",
+				"GuidsList": [
+					"76561197960427864"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "09_BMW",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 10,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": [
+					""
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "11_Toyota",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 11,
+			"Driver": {
+				"Name": "Sonny Boy",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198038077208",
+				"GuidsList": [
+					"76561198038077208"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "16_Williams",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 12,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198056979683",
+				"GuidsList": [
+					"76561198056979683"
+				]
+			},
+			"Model": "vrc_formula_alpha_2007_f07",
+			"Skin": "20_Spyker",
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Result": [
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 93220,
+			"TotalTime": 566825,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 93261,
+			"TotalTime": 572464,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 95005,
+			"TotalTime": 585503,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 94290,
+			"TotalTime": 595661,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 100578,
+			"TotalTime": 641521,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198208077979",
+			"CarId": 6,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198193231731",
+			"CarId": 4,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197966374236",
+			"CarId": 2,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198968530276",
+			"CarId": 8,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197960427864",
+			"CarId": 9,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "",
+			"CarId": 10,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197984244290",
+			"CarId": 3,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198056979683",
+			"CarId": 12,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Laps": [
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2417111,
+			"LapTime": 99922,
+			"Sectors": [
+				29808,
+				32696,
+				37418
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2421582,
+			"LapTime": 104387,
+			"Sectors": [
+				29845,
+				33516,
+				41026
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2423241,
+			"LapTime": 106048,
+			"Sectors": [
+				31056,
+				36179,
+				38813
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2426506,
+			"LapTime": 109316,
+			"Sectors": [
+				31826,
+				35870,
+				41620
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2428989,
+			"LapTime": 111787,
+			"Sectors": [
+				30305,
+				43007,
+				38475
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2510527,
+			"LapTime": 93417,
+			"Sectors": [
+				24422,
+				31995,
+				37000
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2515761,
+			"LapTime": 94179,
+			"Sectors": [
+				24770,
+				31775,
+				37634
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2519918,
+			"LapTime": 96670,
+			"Sectors": [
+				24958,
+				33534,
+				38178
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2527447,
+			"LapTime": 98456,
+			"Sectors": [
+				25062,
+				34483,
+				38911
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2529537,
+			"LapTime": 103026,
+			"Sectors": [
+				26107,
+				35370,
+				41549
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2604034,
+			"LapTime": 93509,
+			"Sectors": [
+				24466,
+				31617,
+				37426
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2609173,
+			"LapTime": 93419,
+			"Sectors": [
+				24624,
+				31544,
+				37251
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2616706,
+			"LapTime": 96787,
+			"Sectors": [
+				24954,
+				33641,
+				38192
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2622169,
+			"LapTime": 94728,
+			"Sectors": [
+				25135,
+				31999,
+				37594
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2638264,
+			"LapTime": 108728,
+			"Sectors": [
+				25663,
+				35528,
+				47537
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2697252,
+			"LapTime": 93220,
+			"Sectors": [
+				24343,
+				31761,
+				37116
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2702432,
+			"LapTime": 93261,
+			"Sectors": [
+				24357,
+				31279,
+				37625
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2712009,
+			"LapTime": 95311,
+			"Sectors": [
+				24742,
+				32629,
+				37940
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2723089,
+			"LapTime": 100921,
+			"Sectors": [
+				24975,
+				31967,
+				43979
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2738847,
+			"LapTime": 100578,
+			"Sectors": [
+				25670,
+				34592,
+				40316
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2790728,
+			"LapTime": 93471,
+			"Sectors": [
+				24423,
+				31815,
+				37233
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2796020,
+			"LapTime": 93586,
+			"Sectors": [
+				24335,
+				31847,
+				37404
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2807022,
+			"LapTime": 95005,
+			"Sectors": [
+				24620,
+				32635,
+				37750
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2817381,
+			"LapTime": 94290,
+			"Sectors": [
+				24855,
+				31679,
+				37756
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2849620,
+			"LapTime": 110771,
+			"Sectors": [
+				25406,
+				40343,
+				45022
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 7,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2884016,
+			"LapTime": 93293,
+			"Sectors": [
+				24462,
+				31706,
+				37125
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2889654,
+			"LapTime": 93633,
+			"Sectors": [
+				24728,
+				31563,
+				37342
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 11,
+			"CarModel": "vrc_formula_alpha_2007_f07",
+			"Timestamp": 2902700,
+			"LapTime": 95685,
+			"Sectors": [
+				24540,
+				32845,
+				38300
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 1,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2912863,
+			"LapTime": 94931,
+			"Sectors": [
+				24920,
+				31928,
+				38083
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "voth",
+			"DriverGuid": "76561197967093333",
+			"CarId": 5,
+			"CarModel": "vrc_formula_alpha_2007_mc22",
+			"Timestamp": 2958716,
+			"LapTime": 109091,
+			"Sectors": [
+				32947,
+				35487,
+				40657
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "S",
+			"Restrictor": 0
+		}
+	],
+	"Events": null
+}

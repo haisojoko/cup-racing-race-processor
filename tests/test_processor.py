@@ -1,20 +1,20 @@
 """Tests for the race processor core logic."""
 
 import copy
-import json
-import tempfile
-from pathlib import Path
 
-import race_processor.processor as proc_module
 from race_processor.processor import (
+    configure_aliases,
+    configure_name_map,
     extract_driver_name,
     resolve_driver_name,
     build_grid_from_qualifying,
     build_grid_from_first_lap,
+    build_registry,
+    process_practice,
     process_qualifying,
     process_race,
-    merge_into_output,
     _clean_laps,
+    _compute_overtakes,
     _compute_positions,
     _compute_position_details,
     _compute_position_changes,
@@ -112,6 +112,7 @@ def test_process_race_contacts():
     assert contacts[0]["driver1"] == "Josie"
     assert contacts[0]["driver2"] == "Toby"
     assert contacts[0]["impactSpeed"] == 14.2
+    assert contacts[0]["worldPosition"] == {"x": 100.5, "z": -340.0}
 
 def test_process_race_contact_without_timestamp_is_unknown_lap():
     race = copy.deepcopy(RACE_RESULT)
@@ -375,113 +376,233 @@ def test_clean_laps_single_lap():
     assert _clean_laps([97000]) == []
 
 
-# ---- Output merge ----
+# ---- Grid metadata & overtakes ----
 
-def test_merge_creates_new_file():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_path = Path(tmpdir) / "output.json"
-        races = {"1": process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])}
-        merge_into_output(out_path, "S20", "Imola", 1, None, races)
+def test_process_race_grid_meta_provided_grid_is_high():
+    result = process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])
+    assert result["gridConfidence"] == "high"
+    assert result["positionChanges"] is not None
 
-        assert out_path.exists()
-        data = json.loads(out_path.read_text())
-        assert data["version"] == 1
-        assert "S20" in data["seasons"]
-        assert "Imola" in data["seasons"]["S20"]["venues"]
-        assert "1" in data["seasons"]["S20"]["venues"]["Imola"]["races"]
+def test_process_race_inferred_grid_nulls_position_changes():
+    # No grid supplied → inferred from first lap → low confidence → null.
+    result = process_race(RACE_RESULT, grid=None)
+    assert result["gridConfidence"] == "low"
+    assert result["gridSource"] == "first-lap-inferred"
+    assert result["positionChanges"] is None
 
-def test_merge_preserves_existing():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_path = Path(tmpdir) / "output.json"
-        races1 = {"1": process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])}
-        merge_into_output(out_path, "S19", "Spa", 1, None, races1)
+def test_process_race_grid_meta_respected():
+    meta = {"gridSource": "reversed-previous", "gridConfidence": "medium", "gridScore": 0.42}
+    result = process_race(RACE_RESULT, grid=["Lee", "Toby", "Josie"], grid_meta=meta)
+    assert result["gridSource"] == "reversed-previous"
+    assert result["gridConfidence"] == "medium"
+    assert result["gridScore"] == 0.42
+    assert result["positionChanges"] is not None
 
-        races2 = {"1": process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])}
-        merge_into_output(out_path, "S20", "Imola", 1, None, races2)
+def test_overtakes_detected():
+    # B starts behind A, passes on lap 2, holds.
+    laps = {"A": [100, 120, 100], "B": [110, 90, 100]}
+    overtakes = _compute_overtakes(laps, ["A", "B"])
+    passes = [o for o in overtakes if o["driver"] == "B" and o["passed"] == "A"]
+    assert passes
+    assert passes[0]["lap"] == 2
 
-        data = json.loads(out_path.read_text())
-        assert "S19" in data["seasons"]
-        assert "S20" in data["seasons"]
+def test_overtakes_full_race_present_as_list():
+    result = process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])
+    assert isinstance(result["overtakes"], list)
 
-def test_merge_with_qualifying():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_path = Path(tmpdir) / "output.json"
-        qual = process_qualifying(QUALIFYING_RESULT)
-        races = {"1": process_race(RACE_RESULT, grid=qual["grid"])}
-        merge_into_output(out_path, "S20", "Imola", 1, qual, races)
 
-        data = json.loads(out_path.read_text())
-        venue = data["seasons"]["S20"]["venues"]["Imola"]
-        assert "qualifying" in venue
-        assert venue["qualifying"]["qual1"]["grid"] == ["Josie", "Toby", "Lee"]
+# ---- Identity: one GUID across two car slots ----
 
-def test_merge_with_multiple_qualifying_sessions():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_path = Path(tmpdir) / "output.json"
-        qual1 = process_qualifying(QUALIFYING_RESULT)
-        qual2 = process_qualifying({
-            **QUALIFYING_RESULT,
-            "Result": [
-                {"DriverName": "Toby", "CarModel": "tatuus_fa01", "BestLap": 96000, "TotalTime": 195300, "BallastKG": 0, "Restrictor": 0},
-                {"DriverName": "Josie", "CarModel": "tatuus_fa01", "BestLap": 97000, "TotalTime": 194300, "BallastKG": 0, "Restrictor": 0},
-            ],
-        })
-        races = {"1": process_race(RACE_RESULT, grid=qual1["grid"])}
-        merge_into_output(out_path, "S20", "Imola", 1, {"qual1": qual1, "qual2": qual2}, races)
+def test_same_guid_two_car_slots_merges():
+    # A driver booked car 1 but raced car 15 (join/leave/rejoin) → one identity,
+    # canonical car is the one they actually drove.
+    race = {
+        "Type": "RACE", "TrackName": "imola", "TrackConfig": "",
+        "Cars": [
+            {"CarId": 1, "Driver": {"Name": "Josie", "Guid": "g1", "GuidsList": ["g1"]}, "Model": "car", "Skin": "red"},
+            {"CarId": 15, "Driver": {"Name": "Josie", "Guid": "g1", "GuidsList": ["g1"]}, "Model": "car", "Skin": "red"},
+        ],
+        "Laps": [
+            {"DriverName": "Josie", "DriverGuid": "g1", "CarId": 15, "CarModel": "car", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+            {"DriverName": "Josie", "DriverGuid": "g1", "CarId": 15, "CarModel": "car", "LapTime": 99000, "Sectors": [33000, 33000, 33000], "Timestamp": 199000},
+        ],
+        "Result": [
+            {"DriverName": "Josie", "DriverGuid": "g1", "CarId": 15, "CarModel": "car", "BestLap": 99000, "TotalTime": 199000, "BallastKG": 0, "Restrictor": 0},
+            {"DriverName": "Josie", "DriverGuid": "g1", "CarId": 1, "CarModel": "car", "BestLap": 999999999, "TotalTime": 0, "BallastKG": 0, "Restrictor": 0},
+        ],
+        "Events": [],
+    }
+    result = process_race(race, grid=["Josie"])
+    assert list(result["laps"]) == ["Josie"]           # one identity, no "Josie (car 1)"
+    assert len(result["laps"]["Josie"]) == 2
+    rows = [r for r in result["result"] if r["driver"] == "Josie"]
+    assert len(rows) == 1                                # one finishing row, not two
+    assert rows[0]["carId"] == 15                        # the car actually driven
+    assert rows[0]["totalTimeMs"] == 199000             # the real finish, not the 0-time slot
 
-        data = json.loads(out_path.read_text())
-        qualifying = data["seasons"]["S20"]["venues"]["Imola"]["qualifying"]
-        assert qualifying["qual1"]["grid"] == ["Josie", "Toby", "Lee"]
-        assert qualifying["qual2"]["grid"] == ["Toby", "Josie"]
 
-def test_merge_idempotent():
-    with tempfile.TemporaryDirectory() as tmpdir:
-        out_path = Path(tmpdir) / "output.json"
-        races = {"1": process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])}
-        merge_into_output(out_path, "S20", "Imola", 1, None, races)
-        merge_into_output(out_path, "S20", "Imola", 1, None, races)
+def test_two_different_people_same_name_still_separate():
+    # Different GUIDs → still two identities (the case the suffix is FOR).
+    race = {
+        "Type": "RACE", "TrackName": "imola", "TrackConfig": "",
+        "Cars": [], "Events": [],
+        "Laps": [
+            {"DriverName": "Alex", "DriverGuid": "g-a", "CarId": 1, "CarModel": "car", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+            {"DriverName": "Alex", "DriverGuid": "g-b", "CarId": 2, "CarModel": "car", "LapTime": 101000, "Sectors": [33000, 34000, 34000], "Timestamp": 101000},
+        ],
+        "Result": [
+            {"DriverName": "Alex", "DriverGuid": "g-a", "CarId": 1, "CarModel": "car", "BestLap": 100000, "TotalTime": 100000, "BallastKG": 0, "Restrictor": 0},
+            {"DriverName": "Alex", "DriverGuid": "g-b", "CarId": 2, "CarModel": "car", "BestLap": 101000, "TotalTime": 101000, "BallastKG": 0, "Restrictor": 0},
+        ],
+    }
+    result = process_race(race)
+    assert sorted(result["laps"]) == ["Alex", "Alex (car 2)"]
 
-        data = json.loads(out_path.read_text())
-        assert len(data["seasons"]["S20"]["venues"]) == 1
+
+# ---- Cars[] seeding ----
+
+def test_registry_seeded_from_cars_skips_empty_names():
+    race = {
+        "Type": "RACE",
+        "Cars": [
+            {"CarId": 0, "Driver": {"Name": "", "Guid": "g0", "GuidsList": ["g0"]}, "Model": "car_a", "Skin": "red"},
+            {"CarId": 1, "Driver": {"Name": "Real", "Guid": "g1", "GuidsList": ["g1"]}, "Model": "car_a", "Skin": "blue"},
+        ],
+        "Laps": [
+            {"DriverName": "Real", "DriverGuid": "g1", "CarId": 1, "CarModel": "car_a", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+        ],
+        "Result": [
+            {"DriverName": "Real", "DriverGuid": "g1", "CarId": 1, "CarModel": "car_a", "BestLap": 100000, "TotalTime": 100000, "BallastKG": 0, "Restrictor": 0},
+        ],
+        "Events": [],
+    }
+    result = process_race(race, grid=["Real"])
+    assert "Real" in result["drivers"]
+    # empty-name booking slot (car 0) never becomes a driver
+    assert all(m.get("driver") != "" for m in result["drivers"].values())
+    # skin came from the authoritative Cars[] entry
+    assert result["drivers"]["Real"].get("skin") == "blue"
+
+def test_multi_guid_car_recorded_as_note():
+    race = {
+        "Type": "RACE",
+        "Cars": [
+            {"CarId": 1, "Driver": {"Name": "Shared", "Guid": "g1", "GuidsList": ["g1", "g2"]}, "Model": "car_a"},
+        ],
+        "Laps": [
+            {"DriverName": "Shared", "DriverGuid": "g1", "CarId": 1, "CarModel": "car_a", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+        ],
+        "Result": [
+            {"DriverName": "Shared", "DriverGuid": "g1", "CarId": 1, "CarModel": "car_a", "BestLap": 100000, "TotalTime": 100000, "BallastKG": 0, "Restrictor": 0},
+        ],
+        "Events": [],
+    }
+    notes: list[str] = []
+    process_race(race, grid=["Shared"], notes=notes)
+    assert any("multiple GUIDs" in n for n in notes)
+
+
+# ---- Null / malformed fields ----
+
+def test_process_race_tolerates_null_fields():
+    # Real result files sometimes carry explicit nulls instead of [] / arrays.
+    race = {
+        "Type": "RACE", "TrackName": "imola", "TrackConfig": "",
+        "Cars": None, "Laps": None, "Result": None, "Events": None,
+    }
+    result = process_race(race)  # must not raise
+    assert result["laps"] == {}
+    assert result["contacts"] == []
+    assert result["result"] == []
+
+def test_process_race_null_events_only():
+    race = copy.deepcopy(RACE_RESULT)
+    race["Events"] = None
+    result = process_race(race, grid=["Josie", "Toby", "Lee"])
+    assert result["contacts"] == []
+    assert len(result["laps"]["Josie"]) == 4
+
+
+# ---- Practice ----
+
+def test_process_practice_summary():
+    practice = {
+        "Type": "PRACTICE",
+        "Cars": [],
+        "Laps": [
+            {"DriverName": "Josie", "CarModel": "car_a", "LapTime": 98000, "Sectors": [], "Timestamp": 98000},
+            {"DriverName": "Josie", "CarModel": "car_a", "LapTime": 97000, "Sectors": [], "Timestamp": 195000},
+            {"DriverName": "Toby", "CarModel": "car_a", "LapTime": 99000, "Sectors": [], "Timestamp": 99000},
+        ],
+        "Result": [],
+        "Events": [],
+    }
+    out = process_practice(practice)
+    assert set(out["participants"]) == {"Josie", "Toby"}
+    assert out["bestLaps"]["Josie"] == 97000
+    assert out["lapCounts"]["Josie"] == 2
 
 
 # ---- Driver aliases ----
 
-def _set_aliases(aliases: dict[str, str]):
-    """Helper to temporarily set aliases for testing."""
-    proc_module.DRIVER_ALIASES.clear()
-    proc_module.DRIVER_ALIASES.update(aliases)
-    proc_module._ALIAS_LOOKUP = None
-
-def _clear_aliases():
-    proc_module.DRIVER_ALIASES.clear()
-    proc_module._ALIAS_LOOKUP = None
-
-
 def test_resolve_alias_basic():
-    _set_aliases({"xX_SpeedDemon_Xx": "James"})
+    configure_aliases({"xX_SpeedDemon_Xx": "James"})
     assert resolve_driver_name("xX_SpeedDemon_Xx") == "James"
-    _clear_aliases()
+    configure_aliases({})
 
 def test_resolve_alias_case_insensitive():
-    _set_aliases({"speedking": "Toby"})
+    configure_aliases({"speedking": "Toby"})
     assert resolve_driver_name("SpeedKing") == "Toby"
     assert resolve_driver_name("SPEEDKING") == "Toby"
-    _clear_aliases()
+    configure_aliases({})
 
 def test_resolve_no_alias_passthrough():
-    _clear_aliases()
+    configure_aliases({})
     assert resolve_driver_name("Josie") == "Josie"
 
 def test_alias_applies_in_extract():
-    _set_aliases({"racerboy99": "Lee"})
+    configure_aliases({"racerboy99": "Lee"})
     entry = {"DriverName": "racerboy99"}
     assert extract_driver_name(entry) == "Lee"
-    _clear_aliases()
+    configure_aliases({})
 
 def test_alias_applies_in_full_race():
-    _set_aliases({"Josie": "JosieRenamed"})
+    configure_aliases({"Josie": "JosieRenamed"})
     result = process_race(RACE_RESULT, grid=None)
     assert "JosieRenamed" in result["laps"]
     assert "Josie" not in result["laps"]
-    _clear_aliases()
+    configure_aliases({})
+
+
+# ---- GUID -> canonical name mapping ----
+
+def test_guid_name_map_takes_precedence():
+    configure_name_map({"guid-x": "Canonical"})
+    assert extract_driver_name({"DriverName": "whatever", "DriverGuid": "guid-x"}) == "Canonical"
+    configure_name_map({})
+
+def test_guid_name_map_survives_display_name_change():
+    # Same GUID, two different Steam names → one canonical league name.
+    configure_name_map({"g1": "NamSayin"})
+    a = extract_driver_name({"DriverName": "NamSayin", "DriverGuid": "g1"})
+    b = extract_driver_name({"DriverName": "Hyun Ho Lee", "DriverGuid": "g1"})
+    assert a == b == "NamSayin"
+    configure_name_map({})
+
+def test_guid_map_merges_two_display_names_into_one_identity():
+    race = {
+        "Type": "RACE", "TrackName": "imola", "TrackConfig": "",
+        "Cars": [], "Events": [],
+        "Laps": [
+            {"DriverName": "NamSayin", "DriverGuid": "g1", "CarId": 1, "CarModel": "car", "LapTime": 100000, "Sectors": [33000, 33000, 34000], "Timestamp": 100000},
+            {"DriverName": "Hyun Ho Lee", "DriverGuid": "g1", "CarId": 1, "CarModel": "car", "LapTime": 99000, "Sectors": [33000, 33000, 33000], "Timestamp": 199000},
+        ],
+        "Result": [
+            {"DriverName": "Hyun Ho Lee", "DriverGuid": "g1", "CarId": 1, "CarModel": "car", "BestLap": 99000, "TotalTime": 199000, "BallastKG": 0, "Restrictor": 0},
+        ],
+    }
+    configure_name_map({"g1": "NamSayin"})
+    result = process_race(race, grid=["NamSayin"])
+    assert list(result["laps"]) == ["NamSayin"]
+    assert len(result["laps"]["NamSayin"]) == 2
+    configure_name_map({})

@@ -13,40 +13,52 @@ from pathlib import Path
 from typing import Any
 
 
-# Map Steam/AC display names to canonical Cup Racing names.
-# Add entries here when a driver's in-game name differs from
-# the name used in the league spreadsheet.
-# Keys are matched case-insensitively.
-DRIVER_ALIASES: dict[str, str] = {
-    # "SteamDisplayName": "Spreadsheet Name",
-}
-
-_ALIAS_LOOKUP: dict[str, str] | None = None
+# Two ways to canonicalise a driver's name to their Cup Racing name:
+#   _GUID_NAME_MAP  — Steam GUID -> canonical name (preferred; survives Steam
+#                     display-name changes). From config.json "driverNames".
+#   _ALIAS_LOOKUP   — display name -> canonical name (fallback, case-insensitive,
+#                     for entries with no GUID). From config.json "driverAliases".
+# GUID mapping wins when both could apply.
+_GUID_NAME_MAP: dict[str, str] = {}
+_ALIAS_LOOKUP: dict[str, str] = {}
 INVALID_LAP_TIME = 999_000_000
 
 
-def _get_alias_lookup() -> dict[str, str]:
+def configure_aliases(mapping: dict[str, str]) -> None:
+    """Install the display-name alias table (config.json driverAliases)."""
     global _ALIAS_LOOKUP
-    if _ALIAS_LOOKUP is None:
-        _ALIAS_LOOKUP = {k.lower().strip(): v for k, v in DRIVER_ALIASES.items()}
-    return _ALIAS_LOOKUP
+    _ALIAS_LOOKUP = {k.lower().strip(): v for k, v in (mapping or {}).items()}
+
+
+def configure_name_map(mapping: dict[str, str]) -> None:
+    """Install the GUID -> canonical name table (config.json driverNames)."""
+    global _GUID_NAME_MAP
+    _GUID_NAME_MAP = {str(k).strip(): v for k, v in (mapping or {}).items() if str(k).strip()}
 
 
 def resolve_driver_name(raw_name: str) -> str:
-    """Apply alias mapping to a raw driver name."""
+    """Apply display-name alias mapping to a raw driver name."""
     clean = raw_name.strip()
     if not clean:
         return clean
-    return _get_alias_lookup().get(clean.lower(), clean)
+    return _ALIAS_LOOKUP.get(clean.lower(), clean)
 
 
 def load_server_result(path: Path) -> dict[str, Any]:
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
 def extract_driver_name(entry: dict) -> str:
-    """Pull the driver name from various AC result structures and resolve aliases."""
+    """Resolve a driver's canonical name from any AC result structure.
+
+    GUID mapping takes precedence over the raw display name, then display-name
+    aliases, so a person maps to one league name even if their Steam name
+    differs across sessions.
+    """
+    guid = extract_driver_guid(entry)
+    if guid and guid in _GUID_NAME_MAP:
+        return _GUID_NAME_MAP[guid]
     if isinstance(entry.get("Driver"), dict):
         raw = entry["Driver"].get("Name", "").strip()
     elif isinstance(entry.get("DriverName"), str):
@@ -73,6 +85,22 @@ def extract_driver_guid(entry: dict) -> str:
     return ""
 
 
+def extract_skin(entry: dict) -> str:
+    value = entry.get("Skin")
+    return value.strip() if isinstance(value, str) else ""
+
+
+def extract_team(entry: dict) -> str:
+    """Team lives on the Driver sub-object in Cars[] entries."""
+    driver = entry.get("Driver")
+    if isinstance(driver, dict):
+        team = driver.get("Team", "")
+        if isinstance(team, str):
+            return team.strip()
+    team = entry.get("Team")
+    return team.strip() if isinstance(team, str) else ""
+
+
 def extract_car_id(entry: dict) -> int | None:
     car_id = entry.get("CarId")
     if isinstance(car_id, int):
@@ -91,10 +119,10 @@ class DriverIdentity:
 
     @property
     def identity_key(self) -> str:
-        if self.guid and self.car_id is not None:
-            return f"guid:{self.guid}|car:{self.car_id}"
-        if self.guid and self.car_model:
-            return f"guid:{self.guid}|model:{self.car_model}"
+        # A Steam GUID uniquely identifies a person, so it alone is the key —
+        # one driver stays one identity even if they occupy two car slots in a
+        # session (join, leave, rejoin in a different car). The car id is only a
+        # tiebreaker when no GUID is present.
         if self.guid:
             return f"guid:{self.guid}"
         if self.car_id is not None:
@@ -121,14 +149,39 @@ class DriverRegistry:
 
         label = self._unique_label(ident)
         self.by_identity_key[ident.identity_key] = label
-        self.meta_by_label[label] = {
+        meta = {
             "driver": ident.name,
             "guid": ident.guid,
             "carId": ident.car_id,
             "car": ident.car_model,
         }
+        skin = extract_skin(entry)
+        team = extract_team(entry)
+        if skin:
+            meta["skin"] = skin
+        if team:
+            meta["team"] = team
+        self.meta_by_label[label] = meta
         self.labels.append(label)
         return label
+
+    def enrich_from(self, entry: dict) -> None:
+        """Fill in skin/team on an already-registered identity.
+
+        Used for the Cars[] pass: it adds authoritative metadata but never
+        creates a new driver (a Cars entry with no laps/result is a no-show).
+        """
+        ident = extract_driver_identity(entry)
+        label = self.by_identity_key.get(ident.identity_key)
+        if not label:
+            return
+        meta = self.meta_by_label[label]
+        skin = extract_skin(entry)
+        team = extract_team(entry)
+        if skin and "skin" not in meta:
+            meta["skin"] = skin
+        if team and "team" not in meta:
+            meta["team"] = team
 
     def label_for_entry(self, entry: dict) -> str:
         ident = extract_driver_identity(entry)
@@ -188,6 +241,15 @@ def extract_driver_identity(entry: dict) -> DriverIdentity:
 
 def _valid_lap_time(value: Any) -> bool:
     return isinstance(value, (int, float)) and 0 < value < INVALID_LAP_TIME
+
+
+def _as_list(value: Any) -> list:
+    """Coerce a possibly-null AC field to a list.
+
+    Real result files sometimes carry ``"Events": null`` / ``"Laps": null``
+    rather than an empty array, so ``dict.get(key, [])`` is not enough.
+    """
+    return value if isinstance(value, list) else []
 
 
 # ---------------------------------------------------------------------------
@@ -252,9 +314,9 @@ def _first_lap_grid(laps: list, registry: DriverRegistry) -> list[str]:
 
 def process_qualifying(qual_data: dict) -> dict[str, Any]:
     """Process a qualifying session into structured output."""
-    results = qual_data.get("Result", [])
-    laps = qual_data.get("Laps", [])
-    registry = _build_driver_registry(results, laps)
+    results = _as_list(qual_data.get("Result"))
+    laps = _as_list(qual_data.get("Laps"))
+    registry = _build_driver_registry(results, laps, _as_list(qual_data.get("Cars")))
     grid = _build_qualifying_grid(results, registry)
 
     times_by_driver: dict[str, dict[str, Any]] = {}
@@ -284,14 +346,25 @@ def process_qualifying(qual_data: dict) -> dict[str, Any]:
 # Race processing
 # ---------------------------------------------------------------------------
 
-def process_race(race_data: dict, grid: list[str] | None = None) -> dict[str, Any]:
-    """Process a single race result JSON into structured output."""
-    laps_raw = race_data.get("Laps", [])
-    events_raw = race_data.get("Events", [])
-    results_raw = race_data.get("Result", [])
+def process_race(
+    race_data: dict,
+    grid: list[str] | None = None,
+    grid_meta: dict[str, Any] | None = None,
+    notes: list[str] | None = None,
+) -> dict[str, Any]:
+    """Process a single race result JSON into structured output.
 
-    registry = _build_driver_registry(results_raw, laps_raw)
+    ``grid_meta`` (gridSource / gridConfidence / gridScore) is embedded in the
+    output. When grid confidence is low or unknown, positionChanges is nulled
+    because it would be derived from an unreliable starting order.
+    """
+    laps_raw = _as_list(race_data.get("Laps"))
+    events_raw = _as_list(race_data.get("Events"))
+    results_raw = _as_list(race_data.get("Result"))
 
+    registry = _build_driver_registry(results_raw, laps_raw, _as_list(race_data.get("Cars")), notes)
+
+    grid_provided = grid is not None
     if grid is None:
         grid = _first_lap_grid(laps_raw, registry)
 
@@ -301,14 +374,29 @@ def process_race(race_data: dict, grid: list[str] | None = None) -> dict[str, An
     )
     positions = _compute_positions(laps_by_driver, drivers)
     position_details = _compute_position_details(laps_by_driver, drivers)
-    pos_changes = _compute_position_changes(positions, grid)
+    overtakes = _compute_overtakes(laps_by_driver, drivers)
     contacts = _map_contacts_to_laps(events_raw, laps_raw, registry)
     pace = _compute_pace(laps_by_driver)
     result = _build_result(results_raw, laps_raw, registry)
     driver_meta = _build_driver_metadata(drivers, registry)
 
+    if grid_meta is not None:
+        meta = grid_meta
+    elif grid_provided:
+        meta = {"gridSource": "provided", "gridConfidence": "high", "gridScore": None}
+    else:
+        meta = {"gridSource": "first-lap-inferred", "gridConfidence": "low", "gridScore": None}
+    confidence = meta.get("gridConfidence", "low")
+    if confidence in ("high", "medium"):
+        pos_changes: dict[str, Any] | None = _compute_position_changes(positions, grid)
+    else:
+        pos_changes = None
+
     return {
         "grid": grid,
+        "gridSource": meta.get("gridSource"),
+        "gridConfidence": confidence,
+        "gridScore": meta.get("gridScore"),
         "drivers": driver_meta,
         "laps": laps_by_driver,
         "sectors": sectors_by_driver,
@@ -317,14 +405,37 @@ def process_race(race_data: dict, grid: list[str] | None = None) -> dict[str, An
         "positions": positions,
         "positionDetails": position_details,
         "positionChanges": pos_changes,
+        "overtakes": overtakes,
         "result": result,
         "contacts": contacts,
         "pace": pace,
     }
 
 
-def _build_driver_registry(results: list, laps: list) -> DriverRegistry:
+def build_registry(session_data: dict, notes: list[str] | None = None) -> DriverRegistry:
+    """Public helper: build a DriverRegistry from a raw session JSON.
+
+    Seeds from the authoritative Cars[] map first (named entries only), then
+    laps and results. Used by grid inference and the ingest layer so every
+    consumer shares the same driver labels.
+    """
+    return _build_driver_registry(
+        _as_list(session_data.get("Result")),
+        _as_list(session_data.get("Laps")),
+        _as_list(session_data.get("Cars")),
+        notes,
+    )
+
+
+def _build_driver_registry(
+    results: list,
+    laps: list,
+    cars: list | None = None,
+    notes: list[str] | None = None,
+) -> DriverRegistry:
     registry = DriverRegistry()
+
+    # Register from laps first so the car a driver actually drove is canonical.
     for lap in laps:
         if _valid_lap_time(lap.get("LapTime", 0)):
             registry.register_entry(lap)
@@ -336,7 +447,32 @@ def _build_driver_registry(results: list, laps: list) -> DriverRegistry:
     for entry in results:
         if _result_entry_has_evidence(entry, extract_driver_identity(entry).identity_key in lap_keys):
             registry.register_entry(entry)
+
+    # Cars[] is authoritative for skin/team but must not invent drivers who
+    # never participated, so it only enriches existing identities. Multi-GUID
+    # slots are flagged as possible driver swaps.
+    for car in cars or []:
+        if not extract_driver_name(car):
+            continue
+        if notes is not None:
+            guids = _nonempty_guids(car)
+            if len(guids) > 1:
+                notes.append(
+                    f"car {extract_car_id(car)} had multiple GUIDs "
+                    f"({', '.join(guids)}) — possible driver swap"
+                )
+        registry.enrich_from(car)
     return registry
+
+
+def _nonempty_guids(car: dict) -> list[str]:
+    driver = car.get("Driver")
+    if not isinstance(driver, dict):
+        return []
+    guids = driver.get("GuidsList")
+    if not isinstance(guids, list):
+        return []
+    return [str(g).strip() for g in guids if str(g).strip()]
 
 
 def _collect_drivers(
@@ -547,6 +683,54 @@ def _compute_position_changes(
     return changes
 
 
+def _compute_overtakes(
+    laps_by_driver: dict[str, list[int]], drivers: list[str]
+) -> list[dict[str, Any]]:
+    """Derive discrete on-track passes from consecutive leader-lap snapshots.
+
+    For each lap transition n -> n+1, any driver A who was behind driver B at
+    lap n and ahead of B at lap n+1 records a pass of B. Only counts snapshots
+    where both drivers are ``classified`` on both laps, which suppresses pit /
+    DNF artifacts. Lapped-traffic passes are not distinguished (documented in
+    SCHEMA.md). ``positionsGained`` is A's net places gained over that lap.
+    """
+    snapshots = _position_snapshots(laps_by_driver, drivers)
+    overtakes: list[dict[str, Any]] = []
+
+    for i in range(len(snapshots) - 1):
+        before = {r["driver"]: r for r in snapshots[i]}
+        after = {r["driver"]: r for r in snapshots[i + 1]}
+        leader_lap = snapshots[i + 1][0]["leaderLap"] if snapshots[i + 1] else i + 2
+
+        for driver, a_after in after.items():
+            a_before = before.get(driver)
+            if a_before is None:
+                continue
+            if a_before["status"] != "classified" or a_after["status"] != "classified":
+                continue
+            gained = a_before["position"] - a_after["position"]
+            if gained <= 0:
+                continue
+            for other, b_after in after.items():
+                if other == driver:
+                    continue
+                b_before = before.get(other)
+                if b_before is None:
+                    continue
+                if b_before["status"] != "classified" or b_after["status"] != "classified":
+                    continue
+                # A was behind B, now ahead of B → A passed B.
+                if a_before["position"] > b_before["position"] and a_after["position"] < b_after["position"]:
+                    overtakes.append({
+                        "lap": leader_lap,
+                        "driver": driver,
+                        "passed": other,
+                        "positionsGained": gained,
+                    })
+
+    return overtakes
+
+
 # ---------------------------------------------------------------------------
 # Contact mapping
 # ---------------------------------------------------------------------------
@@ -577,15 +761,31 @@ def _map_contacts_to_laps(
 
         lap_num, lap_confidence = _estimate_lap_for_contact(event, driver1, lap_boundaries)
 
-        contacts.append({
+        contact = {
             "lap": lap_num,
             "lapConfidence": lap_confidence,
             "driver1": driver1,
             "driver2": driver2,
             "impactSpeed": round(impact, 1),
-        })
+        }
+        world = _world_position(event)
+        if world is not None:
+            contact["worldPosition"] = world
+        contacts.append(contact)
 
     return contacts
+
+
+def _world_position(event: dict) -> dict[str, float] | None:
+    """Extract collision location (x, z ground plane) for incident mapping."""
+    pos = event.get("WorldPosition")
+    if not isinstance(pos, dict):
+        return None
+    x = pos.get("X")
+    z = pos.get("Z")
+    if not isinstance(x, (int, float)) or not isinstance(z, (int, float)):
+        return None
+    return {"x": round(float(x), 1), "z": round(float(z), 1)}
 
 
 def _event_party_entry(event: dict, which: str) -> dict:
@@ -727,19 +927,26 @@ def _build_result(
     results: list, laps: list, registry: DriverRegistry
 ) -> list[dict[str, Any]]:
     lap_counts = _valid_lap_counts(laps, registry)
-    output: list[dict[str, Any]] = []
-    seen: set[str] = set()
-    for entry in results:
-        label = registry.existing_label_for_entry(entry)
-        if not label or label in seen:
-            continue
 
-        best_lap = entry.get("BestLap", 0)
-        total_time = entry.get("TotalTime", 0)
+    # A driver who used two car slots has two result entries under one label.
+    # Keep the entry that represents their real finish (a valid total time wins,
+    # then a valid best lap), and remember where it sat in the finishing order.
+    best: dict[str, tuple[tuple[int, int], int, dict]] = {}
+    for idx, entry in enumerate(results):
+        label = registry.existing_label_for_entry(entry)
+        if not label:
+            continue
         has_laps = lap_counts.get(label, 0) > 0
         if not _result_entry_has_evidence(entry, has_laps):
             continue
+        score = _result_evidence_score(entry)
+        current = best.get(label)
+        if current is None or score > current[0]:
+            best[label] = (score, idx, entry)
 
+    output: list[dict[str, Any]] = []
+    for label, (_score, _idx, entry) in sorted(best.items(), key=lambda kv: kv[1][1]):
+        best_lap = entry.get("BestLap", 0)
         meta = registry.meta_by_label.get(label, {})
         output.append({
             "driver": meta.get("driver", label),
@@ -748,14 +955,22 @@ def _build_result(
             "carId": meta.get("carId"),
             "car": extract_car_model(entry) or meta.get("car", ""),
             "position": len(output) + 1,
-            "totalTimeMs": total_time,
+            "totalTimeMs": entry.get("TotalTime", 0),
             "bestLapMs": best_lap if _valid_lap_time(best_lap) else 0,
             "laps": lap_counts.get(label, 0),
             "ballast": entry.get("BallastKG", 0),
             "restrictor": entry.get("Restrictor", 0),
         })
-        seen.add(label)
     return output
+
+
+def _result_evidence_score(entry: dict) -> tuple[int, int]:
+    """Rank a result entry's completeness: real total time first, then best lap."""
+    total_time = entry.get("TotalTime", 0)
+    best_lap = entry.get("BestLap", 0)
+    has_total = 1 if isinstance(total_time, (int, float)) and total_time > 0 else 0
+    has_best = 1 if _valid_lap_time(best_lap) else 0
+    return (has_total, has_best)
 
 
 def _valid_lap_counts(laps: list, registry: DriverRegistry) -> dict[str, int]:
@@ -775,45 +990,30 @@ def _result_entry_has_evidence(entry: dict, has_laps: bool) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# Output merge
+# Practice processing
 # ---------------------------------------------------------------------------
 
-def merge_into_output(
-    output_path: Path,
-    season_id: str,
-    venue_name: str,
-    venue_order: int,
-    qualifying: dict[str, Any] | None,
-    races: dict[str, dict[str, Any]],
-) -> dict[str, Any]:
-    """Read existing output JSON (if any), merge new venue data, write back."""
-    if output_path.exists():
-        with open(output_path) as f:
-            data = json.load(f)
-    else:
-        data = {"version": 1, "lastUpdated": "", "seasons": {}}
+def process_practice(practice_data: dict) -> dict[str, Any]:
+    """Lightweight practice summary: participants, best laps, lap counts."""
+    results = _as_list(practice_data.get("Result"))
+    laps = _as_list(practice_data.get("Laps"))
+    registry = _build_driver_registry(results, laps, _as_list(practice_data.get("Cars")))
 
-    from datetime import datetime, timezone
+    best_laps: dict[str, int] = {}
+    lap_counts: dict[str, int] = {}
+    for lap in laps:
+        label = registry.existing_label_for_entry(lap)
+        lap_time = lap.get("LapTime", 0)
+        if not label or not _valid_lap_time(lap_time):
+            continue
+        lap_counts[label] = lap_counts.get(label, 0) + 1
+        if label not in best_laps or lap_time < best_laps[label]:
+            best_laps[label] = lap_time
 
-    data["lastUpdated"] = datetime.now(timezone.utc).isoformat()
-
-    if season_id not in data["seasons"]:
-        data["seasons"][season_id] = {"venues": {}}
-
-    venue_data: dict[str, Any] = {"venueOrder": venue_order, "races": races}
-    if qualifying:
-        venue_data["qualifying"] = _normalize_qualifying_output(qualifying)
-
-    data["seasons"][season_id]["venues"][venue_name] = venue_data
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-    return data
-
-
-def _normalize_qualifying_output(qualifying: dict[str, Any]) -> dict[str, Any]:
-    if "grid" in qualifying or "times" in qualifying:
-        return {"qual1": qualifying}
-    return qualifying
+    participants = list(lap_counts)
+    return {
+        "participants": participants,
+        "drivers": _build_driver_metadata(participants, registry),
+        "bestLaps": best_laps,
+        "lapCounts": lap_counts,
+    }

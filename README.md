@@ -1,10 +1,11 @@
 # Cup Racing Race Processor
 
-Parses Assetto Corsa server result files into structured race detail data
-for the Cup Racing league. Feeds into Cup Racing Data (portal) and
-Cup Racing Insights.
+Turns Assetto Corsa server result files into an additive historical dataset for
+the Cup Racing league. Drop raw result JSONs into per-season folders, run one
+command, and get a clean per-season dataset that the portal, the insights tool,
+and future analysis consume.
 
-No external dependencies. Python standard library only.
+No external dependencies — Python standard library only (≥3.9).
 
 ---
 
@@ -20,156 +21,170 @@ The CLI is `race-processor`.
 
 ## Workflow
 
-1. Create a venue folder and config: `race-processor init`
-2. Copy AC server result files into the folder
-3. Process: `race-processor process <folder>`
+1. Drop AC server result JSONs into the season folder they belong to:
+   `inbox/S22/`, `inbox/S23/`, …
+2. Run `race-processor ingest`.
 
-Repeat for each venue. Use `race-processor batch` to process all venues at once.
+That's it. No per-venue setup, no flags to remember, no fixed race format. The
+tool groups whatever sessions it finds into events (venue race-days), infers the
+grids, writes `dataset/seasons/<Season>.json` + `dataset/index.json`, and (if
+configured) publishes copies to your consumer repos.
+
+Re-run any time you add more files — it only reprocesses what changed.
+
+```
+inbox/
+├── S22/
+│   ├── 2026_5_26_21_22_QUALIFY.json
+│   ├── 2026_5_26_21_35_RACE.json
+│   └── ...
+├── S23/
+└── ...
+```
+
+Season folders `S1`..`S24` are created automatically. Seasons can be partially
+filled or empty — the tool processes whatever is present.
 
 ---
 
 ## Commands
 
-### `race-processor init`
+### `race-processor ingest`  (the main command)
 
-Creates a venue folder with a `venue.json` config.
+Scans every season folder, builds the dataset additively, publishes.
 
-```sh
-race-processor init process/S20_Imola \
-  --season S20 \
-  --venue "Imola 2025" \
-  --venue-order 1 \
-  --format qual-standard-reverse
-```
+| Flag | Purpose |
+|---|---|
+| `--dry-run` | Report what would happen; write nothing |
+| `--no-publish` | Build the dataset but don't copy to destinations |
+| `--config PATH` | Use a specific `config.json` (default: current directory) |
 
-| Flag | Default | Purpose |
+Events whose source files and relevant config are unchanged since the last run
+are skipped. Bad input never aborts the run — duplicates and aborted restarts
+are dropped with a warning, unreadable files are reported, and everything valid
+still processes.
+
+### `race-processor rebuild`
+
+Same as `ingest` but reprocesses every event from scratch and drops events whose
+raw files no longer exist. Use after changing processing logic.
+
+### `race-processor publish`
+
+Copies the existing `dataset/` to the configured destinations without
+reprocessing.
+
+### `race-processor roster`
+
+Lists every driver GUID and the display names it has used, for filling in
+`driverNames`. Add `-o driver_roster.json` to write an editable template.
+
+---
+
+## Configuration — `config.json`
+
+Auto-created with defaults on first run. Keys:
+
+| Key | Default | Purpose |
 |---|---|---|
-| `--season` | — | Season ID (e.g. `S20`) |
-| `--venue` | — | Venue name (e.g. `"Imola 2025"`) |
-| `--venue-order` | — | Venue number in the season (1, 2, 3...) |
-| `--format` | `qual-standard-reverse` | Race format (see `race-processor formats`) |
+| `inboxDir` | `"inbox"` | Drop-zone root (season subfolders live here) |
+| `datasetDir` | `"dataset"` | Where the output dataset is written |
+| `publishDestinations` | `[]` | Folders to mirror the dataset into (consumer repos) |
+| `driverNames` | `{}` | Map Steam **GUID** → canonical league name (preferred) |
+| `driverAliases` | `{}` | Map display **name** → canonical name (fallback, no GUID) |
+| `trackDisplayNames` | `{}` | Map `TrackName\|TrackConfig` → a nice venue name |
+| `eventGapHours` | `4` | Sessions more than this far apart start a new event |
+| `restartWindowMinutes` | `30` | Window for detecting aborted-restart duplicates |
 
-### `race-processor process`
+Relative paths resolve against the config file's directory. Editing
+`driverNames`, `driverAliases`, or `trackDisplayNames` automatically reprocesses
+affected events on the next `ingest`.
 
-Processes one venue folder.
+### Mapping drivers to your league names
+
+A driver is identified by their Steam **GUID**, so one person stays one driver
+even if they change their Steam display name or cycle through car slots in a
+session. Map GUIDs to your canonical names with `driverNames`:
+
+```json
+"driverNames": { "76561198056789142": "Josie" }
+```
+
+To get the full list of GUIDs to map, run:
 
 ```sh
-race-processor process process/S20_Imola -o data/Cup_Racing_Race_Details.json
+race-processor roster -o driver_roster.json
 ```
 
-| Flag | Default | Purpose |
-|---|---|---|
-| `-o`, `--output` | `Cup_Racing_Race_Details.json` | Output path (merged into existing) |
-| `--dry-run` | off | Preview without writing |
+That writes every driver GUID with the display name(s) it has used and the
+seasons it appears in. Fill in the canonical name for each, then copy the
+`guid → name` pairs into `driverNames` and re-run `ingest`. (`driverAliases` is
+only needed for the rare entry that has no GUID.)
 
-### `race-processor batch`
+Example:
 
-Processes every venue folder in a parent directory.
-
-```sh
-race-processor batch process/ -o data/Cup_Racing_Race_Details.json
-```
-
-| Flag | Default | Purpose |
-|---|---|---|
-| `-o`, `--output` | `Cup_Racing_Race_Details.json` | Output path |
-| `--dry-run` | off | Preview without writing |
-
-### `race-processor formats`
-
-Lists available race formats.
-
----
-
-## Race formats
-
-**`qual-standard-reverse`** (default)
-Q1 → Race 1 (standard) → Race 2 (reverse of Race 1) → Q2 → Race 3 (standard) → Race 4 (reverse of Race 3)
-
-**`qual-standard-standard`**
-Q1 → Race 1 → Race 2 → Q2 → Race 3 → Race 4 (all standard grid)
-
----
-
-## Step by step example
-
-```sh
-# 1. Create a venue folder
-race-processor init process/S20_Imola \
-  --season S20 --venue "Imola 2025" --venue-order 1
-
-# 2. Copy your 6 AC server result files into the folder
-#    (they sort chronologically by filename, so order is automatic)
-cp ~/ac_server/results/260601_18*.json process/S20_Imola/
-cp ~/ac_server/results/260601_19*.json process/S20_Imola/
-cp ~/ac_server/results/260601_20*.json process/S20_Imola/
-
-# 3. Process
-race-processor process process/S20_Imola -o data/Cup_Racing_Race_Details.json
-
-# Or process all venues at once
-race-processor batch process/ -o data/Cup_Racing_Race_Details.json
-```
-
-The folder should look like this after step 2:
-
-```
-process/S20_Imola/
-├── venue.json                  ← created by init
-├── 260601_180000_Q.json        ← qualifying 1
-├── 260601_183000_R.json        ← race 1
-├── 260601_190000_R.json        ← race 2
-├── 260601_193000_Q.json        ← qualifying 2
-├── 260601_200000_R.json        ← race 3
-└── 260601_203000_R.json        ← race 4
-```
-
-Files are matched to sessions by their session type (qualifying vs race),
-read from inside each file — not by filename. Qualifying files fill the
-qualifying slots and race files fill the race slots, each in time order, so
-practice sessions and odd filenames won't throw off the alignment.
-
----
-
-## Handling restarts
-
-If a race was restarted, delete the abandoned result file from the venue
-folder before processing. If you leave an extra race file in the folder, the
-tool will stop and tell you the counts don't match (e.g. "expected 4 race
-file(s) but found 5") rather than guessing — so you can't silently process
-the wrong file. Practice sessions are detected and ignored automatically.
-
----
-
-## What gets captured
-
-For every race the output records, per driver:
-
-- **Lap times** and **sector times** (sector slots kept aligned; un-timed sectors are blank)
-- **Track cuts** and **tyre compound** per lap
-- **Lap-by-lap position**, including drivers who DNF or get lapped
-- **Positions gained / lost**, counting the start off the grid
-- **Pace** (average, median, best lap — excluding lap 1 and unrepresentative laps)
-- **Contacts** between cars, with lap number, who was involved, and impact speed
-
-Drivers are tracked by their Steam ID and car, so two people sharing a display
-name stay separate throughout (shown as e.g. `Alex` and `Alex (car 2)`).
-
----
-
-## Driver name aliases
-
-If a driver's Steam name doesn't match their Cup Racing name, open
-`race_processor/processor.py` and add an entry to `DRIVER_ALIASES`:
-
-```python
-DRIVER_ALIASES = {
-    "SteamName": "Cup Racing Name",
-    "toby_racing94": "Toby",
+```json
+{
+  "inboxDir": "inbox",
+  "datasetDir": "dataset",
+  "publishDestinations": [
+    "../cup-racing-test-portal/sim-racing-historical-viz/data/cup-dataset",
+    "../cup-racing-insights/data/cup-dataset"
+  ],
+  "driverAliases": { "toby_racing94": "Toby" },
+  "trackDisplayNames": { "csp/2144/../jr_road_atlanta_2022|full": "Road Atlanta" },
+  "eventGapHours": 4,
+  "restartWindowMinutes": 30
 }
 ```
 
-Matching is case-insensitive. Set it once; it applies to all future runs.
+---
+
+## Output
+
+An additive dataset under `dataset/`:
+
+```
+dataset/
+├── index.json          # registry of seasons, events, drivers, data-quality notes
+├── SCHEMA.md           # the full field-by-field contract for consumers
+└── seasons/
+    └── S22.json        # one file per season
+```
+
+See **[dataset/SCHEMA.md](dataset/SCHEMA.md)** for the complete schema. In short,
+each race records per driver: lap & sector times, cuts, tyres, lap-by-lap
+positions, positions gained/lost, derived overtakes, qualifying-vs-race deltas,
+pace, the finishing result, and car contacts — plus grid inference metadata and
+full provenance (which files fed each event, what was dropped and why).
+
+Drivers are tracked by Steam ID + car, so two people sharing a display name stay
+separate (`Alex` and `Alex (car 2)`).
+
+---
+
+## How grids are inferred
+
+AC result files don't store the grid. A qualifying session immediately before a
+race is trusted as that race's grid (the league convention). For a race that
+follows another race, the previous finish and its reverse are compared against
+the race's lap-1 order to decide standard vs reverse grid. Every race records
+`gridSource`, `gridConfidence`, and `gridScore` so the decision is auditable;
+when confidence is low, position-change stats are left `null` rather than
+computed from a guessed grid.
+
+---
+
+## Duplicates and restarts
+
+Handled automatically — no manual file deletion:
+
+- **Byte-identical files** → the earliest is kept, the rest dropped.
+- **Aborted restarts** (a short session right before a full one on the same
+  track) → the aborted one is dropped; a race whose leader completed the
+  distance is never dropped.
+
+Every decision is logged to the console and recorded in the event's provenance.
 
 ---
 
@@ -177,5 +192,5 @@ Matching is case-insensitive. Set it once; it applies to all future runs.
 
 ```sh
 pip install pytest
-pytest tests/ -v
+pytest -q
 ```

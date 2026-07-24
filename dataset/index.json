@@ -1,0 +1,1447 @@
+{
+  "schemaVersion": 2,
+  "generator": "cup-racing-race-processor 0.2.0",
+  "lastUpdated": "2026-07-24T07:16:55.405149+00:00",
+  "seasons": {
+    "S10": {
+      "file": "seasons/S10.json",
+      "events": [
+        {
+          "eventId": "2024-10-01-lilski-road-america",
+          "venue": "Lilski Road America",
+          "venueOrder": 1,
+          "date": "2024-10-01",
+          "track": "csp/0/../lilski_road_america",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 13
+        },
+        {
+          "eventId": "2024-10-08-ks-red-bull-ring",
+          "venue": "Ks Red Bull Ring",
+          "venueOrder": 2,
+          "date": "2024-10-08",
+          "track": "csp/0/../ks_red_bull_ring",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2024-10-15-melbourne22",
+          "venue": "Melbourne22",
+          "venueOrder": 3,
+          "date": "2024-10-15",
+          "track": "csp/0/../melbourne22",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-10-22-estoril",
+          "venue": "Estoril",
+          "venueOrder": 4,
+          "date": "2024-10-22",
+          "track": "csp/0/../estoril",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        }
+      ],
+      "drivers": [
+        "Carb0n",
+        "Coochie Warrior",
+        "DatBrie",
+        "Dragan",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "Sunny Park",
+        "TILTY",
+        "haisojoko",
+        "the93owner",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S11": {
+      "file": "seasons/S11.json",
+      "events": [
+        {
+          "eventId": "2024-11-05-00-ajaccio",
+          "venue": "00 Ajaccio",
+          "venueOrder": 1,
+          "date": "2024-11-05",
+          "track": "csp/0/../00_ajaccio",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-11-12-m08-autopolis",
+          "venue": "M08 Autopolis",
+          "venueOrder": 2,
+          "date": "2024-11-12",
+          "track": "csp/0/../m08_autopolis",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-11-19-rt-suzuka",
+          "venue": "Rt Suzuka",
+          "venueOrder": 3,
+          "date": "2024-11-19",
+          "track": "csp/0/../rt_suzuka",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2024-11-26-vhe-interlagos",
+          "venue": "Vhe Interlagos",
+          "venueOrder": 4,
+          "date": "2024-11-26",
+          "track": "csp/0/../vhe_interlagos",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "Lea",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "TILTY",
+        "WildCard",
+        "haisojoko",
+        "lildad559",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S12": {
+      "file": "seasons/S12.json",
+      "events": [
+        {
+          "eventId": "2025-01-21-slipangle-clubmoto2024",
+          "venue": "Slipangle Clubmoto2024",
+          "venueOrder": 1,
+          "date": "2025-01-21",
+          "track": "csp/2144/../slipangle_clubmoto2024",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2025-01-28-deepforest-raceway",
+          "venue": "Deepforest Raceway",
+          "venueOrder": 2,
+          "date": "2025-01-28",
+          "track": "csp/2144/../deepforest_raceway",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2025-02-04-zw-midohio",
+          "venue": "Zw Midohio",
+          "venueOrder": 3,
+          "date": "2025-02-04",
+          "track": "csp/2144/../zw_midohio",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        },
+        {
+          "eventId": "2025-02-11-jr-road-atlanta-2022",
+          "venue": "Road Atlanta",
+          "venueOrder": 4,
+          "date": "2025-02-11",
+          "track": "csp/2144/../jr_road_atlanta_2022",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "Midnight Adults",
+        "NamSayin",
+        "TILTY",
+        "haisojoko",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S13": {
+      "file": "seasons/S13.json",
+      "events": [
+        {
+          "eventId": "2025-03-04-spa",
+          "venue": "Spa",
+          "venueOrder": 1,
+          "date": "2025-03-04",
+          "track": "csp/2144/../spa",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 13
+        },
+        {
+          "eventId": "2025-03-11-bahrain-2020",
+          "venue": "Bahrain 2020",
+          "venueOrder": 2,
+          "date": "2025-03-11",
+          "track": "csp/2144/../bahrain_2020",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2025-03-18-okayama",
+          "venue": "Okayama",
+          "venueOrder": 3,
+          "date": "2025-03-18",
+          "track": "csp/2144/../okayama",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-03-25-ks-vallelunga",
+          "venue": "Ks Vallelunga",
+          "venueOrder": 4,
+          "date": "2025-03-25",
+          "track": "csp/2144/../ks_vallelunga",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        }
+      ],
+      "drivers": [
+        "Coochie Warrior",
+        "DatBrie",
+        "Ghin",
+        "Green The Gamer",
+        "Hedwig",
+        "Jammy",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "ProtossRinAzir",
+        "TILTY",
+        "haisojoko",
+        "tawm04",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S14": {
+      "file": "seasons/S14.json",
+      "events": [
+        {
+          "eventId": "2025-04-15-00-heartlake",
+          "venue": "00 Heartlake",
+          "venueOrder": 1,
+          "date": "2025-04-15",
+          "track": "csp/2144/../00_heartlake",
+          "races": 1,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-04-22-g333-sachsenring-2022",
+          "venue": "G333 Sachsenring 2022",
+          "venueOrder": 2,
+          "date": "2025-04-22",
+          "track": "csp/2144/../g333_sachsenring_2022",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 14
+        },
+        {
+          "eventId": "2025-04-29-00-acopone",
+          "venue": "00 Acopone",
+          "venueOrder": 3,
+          "date": "2025-04-29",
+          "track": "csp/2144/../00_acopone",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2025-05-06-ks-red-bull-ring",
+          "venue": "Ks Red Bull Ring",
+          "venueOrder": 4,
+          "date": "2025-05-06",
+          "track": "csp/2144/../ks_red_bull_ring",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 17
+        }
+      ],
+      "drivers": [
+        "Coochie Warrior",
+        "DatBrie",
+        "Dragan",
+        "Floseidon",
+        "Green The Gamer",
+        "Jammy",
+        "Jee Sun",
+        "JoyceAh",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "ProtossRinAzir",
+        "TILTY",
+        "haisojoko",
+        "sp4k",
+        "tawm04",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S15": {
+      "file": "seasons/S15.json",
+      "events": [
+        {
+          "eventId": "2025-06-10-ks-silverstone",
+          "venue": "Ks Silverstone",
+          "venueOrder": 1,
+          "date": "2025-06-10",
+          "track": "csp/2144/../ks_silverstone",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 15
+        },
+        {
+          "eventId": "2025-06-17-00-pgo",
+          "venue": "00 Pgo",
+          "venueOrder": 2,
+          "date": "2025-06-17",
+          "track": "csp/2144/../00_pgo",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-06-24-imola",
+          "venue": "Imola",
+          "venueOrder": 3,
+          "date": "2025-06-24",
+          "track": "csp/2144/../imola",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        },
+        {
+          "eventId": "2025-07-01-00-kalinago",
+          "venue": "00 Kalinago",
+          "venueOrder": 4,
+          "date": "2025-07-01",
+          "track": "csp/2144/../00_kalinago",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 7
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Floseidon",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "ProtossRinAzir",
+        "TILTY",
+        "Yenzuo",
+        "haisojoko",
+        "sp4k",
+        "tawm04",
+        "the93owner",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S16": {
+      "file": "seasons/S16.json",
+      "events": [
+        {
+          "eventId": "2025-07-22-riverside",
+          "venue": "Riverside",
+          "venueOrder": 1,
+          "date": "2025-07-22",
+          "track": "csp/2144/../riverside",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2025-07-29-rt-daytona",
+          "venue": "Rt Daytona",
+          "venueOrder": 2,
+          "date": "2025-07-29",
+          "track": "csp/2144/../rt_daytona",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 6
+        },
+        {
+          "eventId": "2025-08-05-rt-port-newark",
+          "venue": "Rt Port Newark",
+          "venueOrder": 3,
+          "date": "2025-08-05",
+          "track": "csp/2144/../rt_port_newark",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        },
+        {
+          "eventId": "2025-08-12-silver-city-raceway-66",
+          "venue": "Silver City Raceway 66",
+          "venueOrder": 4,
+          "date": "2025-08-12",
+          "track": "csp/2144/../silver_city_raceway_66",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 7
+        }
+      ],
+      "drivers": [
+        "Carb0n",
+        "DatBrie",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "Jee Sun",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "ProtossRinAzir",
+        "TILTY",
+        "haisojoko",
+        "loseAlotL",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S17": {
+      "file": "seasons/S17.json",
+      "events": [
+        {
+          "eventId": "2025-08-26-fn-redbullring",
+          "venue": "Fn Redbullring",
+          "venueOrder": 1,
+          "date": "2025-08-26",
+          "track": "csp/2144/../fn_redbullring",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2025-09-02-ks-barcelona",
+          "venue": "Ks Barcelona",
+          "venueOrder": 2,
+          "date": "2025-09-02",
+          "track": "csp/2144/../ks_barcelona",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2025-09-09-pinwheel",
+          "venue": "Pinwheel",
+          "venueOrder": 3,
+          "date": "2025-09-09",
+          "track": "csp/2144/../pinwheel",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2025-09-16-melbourne22",
+          "venue": "Melbourne22",
+          "venueOrder": 4,
+          "date": "2025-09-16",
+          "track": "csp/2144/../melbourne22",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Ghin",
+        "Jammy",
+        "Jee Sun",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "ProtossRinAzir",
+        "TILTY",
+        "haisojoko",
+        "jhk301",
+        "kohi",
+        "kohimizu",
+        "tawm04",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S18a": {
+      "file": "seasons/S18a.json",
+      "events": [
+        {
+          "eventId": "2025-10-07-chang",
+          "venue": "Chang",
+          "venueOrder": 1,
+          "date": "2025-10-07",
+          "track": "csp/2144/../chang",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2025-10-14-okayama",
+          "venue": "Okayama",
+          "venueOrder": 2,
+          "date": "2025-10-14",
+          "track": "csp/2144/../okayama",
+          "races": 1,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-10-21-00-palmadera",
+          "venue": "00 Palmadera",
+          "venueOrder": 3,
+          "date": "2025-10-21",
+          "track": "csp/2144/../00_palmadera",
+          "races": 1,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-10-28-rt-fuji-speedway",
+          "venue": "Rt Fuji Speedway",
+          "venueOrder": 4,
+          "date": "2025-10-28",
+          "track": "csp/2144/../rt_fuji_speedway",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 14
+        }
+      ],
+      "drivers": [
+        "ABGeezus",
+        "Coochie Warrior",
+        "DatBrie",
+        "Dominic Decoco",
+        "Green The Gamer",
+        "Jammy",
+        "Jee Sun",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "Pasta Batman",
+        "Sonny Boy",
+        "TILTY",
+        "haisojoko",
+        "jhk301",
+        "kohimizu",
+        "sp4k",
+        "thriftywalnut"
+      ],
+      "dataQuality": []
+    },
+    "S18b": {
+      "file": "seasons/S18b.json",
+      "events": [
+        {
+          "eventId": "2025-11-25-lilski-watkins-glen",
+          "venue": "Lilski Watkins Glen",
+          "venueOrder": 1,
+          "date": "2025-11-25",
+          "track": "csp/2144/../lilski_watkins_glen",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2025-12-02-00-ajaccio",
+          "venue": "00 Ajaccio",
+          "venueOrder": 2,
+          "date": "2025-12-02",
+          "track": "csp/2144/../00_ajaccio",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2025-12-03-rt-sonoma",
+          "venue": "Rt Sonoma",
+          "venueOrder": 3,
+          "date": "2025-12-03",
+          "track": "csp/2144/../rt_sonoma",
+          "races": 1,
+          "qualifying": 0,
+          "practice": 0,
+          "drivers": 1
+        },
+        {
+          "eventId": "2025-12-09-rt-sonoma",
+          "venue": "Rt Sonoma",
+          "venueOrder": 4,
+          "date": "2025-12-09",
+          "track": "csp/2144/../rt_sonoma",
+          "races": 1,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2025-12-09-zandvoort2023",
+          "venue": "Zandvoort2023",
+          "venueOrder": 5,
+          "date": "2025-12-09",
+          "track": "csp/2144/../zandvoort2023",
+          "races": 1,
+          "qualifying": 0,
+          "practice": 0,
+          "drivers": 3
+        },
+        {
+          "eventId": "2025-12-16-zandvoort2023",
+          "venue": "Zandvoort2023",
+          "venueOrder": 6,
+          "date": "2025-12-16",
+          "track": "csp/2144/../zandvoort2023",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        }
+      ],
+      "drivers": [
+        "Dominic Decoco",
+        "Jammy",
+        "NamSayin",
+        "Oby",
+        "Pasta Batman",
+        "Prinnystar",
+        "ProtossRinAzir",
+        "Sonny Boy",
+        "TILTY",
+        "Verslappen",
+        "haisojoko",
+        "tawm04",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S19": {
+      "file": "seasons/S19.json",
+      "events": [
+        {
+          "eventId": "2026-01-06-fn-imola",
+          "venue": "Fn Imola",
+          "venueOrder": 1,
+          "date": "2026-01-06",
+          "track": "csp/2144/../fn_imola",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 15
+        },
+        {
+          "eventId": "2026-01-13-acu-unitedstates",
+          "venue": "Acu Unitedstates",
+          "venueOrder": 2,
+          "date": "2026-01-13",
+          "track": "csp/2144/../acu_unitedstates",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 15
+        },
+        {
+          "eventId": "2026-01-20-singapore-2020",
+          "venue": "Singapore 2020",
+          "venueOrder": 3,
+          "date": "2026-01-20",
+          "track": "csp/2144/../singapore_2020",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2026-01-27-fn-hungaroring",
+          "venue": "Fn Hungaroring",
+          "venueOrder": 4,
+          "date": "2026-01-27",
+          "track": "csp/2144/../fn_hungaroring",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 13
+        }
+      ],
+      "drivers": [
+        "Arren",
+        "Clive",
+        "DatBrie",
+        "Dominic Decoco",
+        "Jammy",
+        "Jee Sun",
+        "JoyceAh",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "Pasta Batman",
+        "Prinnystar",
+        "ProtossRinAzir",
+        "Sonny Boy",
+        "TILTY",
+        "Verslappen",
+        "haisojoko",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S20": {
+      "file": "seasons/S20.json",
+      "events": [
+        {
+          "eventId": "2026-02-24-rt-oulton-park",
+          "venue": "Rt Oulton Park",
+          "venueOrder": 1,
+          "date": "2026-02-24",
+          "track": "csp/2144/../rt_oulton_park",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2026-03-03-ddm-gt6-r246",
+          "venue": "Ddm Gt6 R246",
+          "venueOrder": 2,
+          "date": "2026-03-03",
+          "track": "csp/2144/../ddm_gt6_r246",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2026-03-10-zw-midohio",
+          "venue": "Zw Midohio",
+          "venueOrder": 3,
+          "date": "2026-03-10",
+          "track": "csp/2144/../zw_midohio",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 13
+        },
+        {
+          "eventId": "2026-03-17-doningtonpark2018",
+          "venue": "Doningtonpark2018",
+          "venueOrder": 4,
+          "date": "2026-03-17",
+          "track": "csp/2144/../doningtonpark2018",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 13
+        }
+      ],
+      "drivers": [
+        "Dominic Decoco",
+        "Green The Gamer",
+        "Jammy",
+        "Midnight Adults",
+        "NamSayin",
+        "Oby",
+        "Pasta Batman",
+        "Prinnystar",
+        "Sonny Boy",
+        "TILTY",
+        "Verslappen",
+        "haisojoko",
+        "jingtaint",
+        "sp4k",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S21": {
+      "file": "seasons/S21.json",
+      "events": [
+        {
+          "eventId": "2026-04-07-kyalami-2016",
+          "venue": "Kyalami 2016",
+          "venueOrder": 1,
+          "date": "2026-04-07",
+          "track": "csp/2144/../kyalami_2016",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2026-04-14-shanghai-v2-25",
+          "venue": "Shanghai V2 25",
+          "venueOrder": 2,
+          "date": "2026-04-14",
+          "track": "csp/2144/../shanghai_v2_25",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2026-04-21-monza",
+          "venue": "Monza",
+          "venueOrder": 3,
+          "date": "2026-04-21",
+          "track": "csp/2144/../monza",
+          "races": 2,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 7
+        },
+        {
+          "eventId": "2026-04-28-sepang-v2",
+          "venue": "Sepang V2",
+          "venueOrder": 4,
+          "date": "2026-04-28",
+          "track": "csp/2144/../sepang_v2",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 5
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Jammy",
+        "NamSayin",
+        "ProtossRinAzir",
+        "Sonny Boy",
+        "TILTY",
+        "haisojoko",
+        "tawm",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S22": {
+      "file": "seasons/S22.json",
+      "events": [
+        {
+          "eventId": "2026-05-05-vir",
+          "venue": "Vir",
+          "venueOrder": 1,
+          "date": "2026-05-05",
+          "track": "csp/2144/../vir",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 18
+        },
+        {
+          "eventId": "2026-05-12-charlotte-motor-speedway",
+          "venue": "Charlotte Motor Speedway",
+          "venueOrder": 2,
+          "date": "2026-05-12",
+          "track": "csp/2144/../charlotte_motor_speedway",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 16
+        },
+        {
+          "eventId": "2026-05-19-acu-barcelona-city",
+          "venue": "Acu Barcelona City",
+          "venueOrder": 3,
+          "date": "2026-05-19",
+          "track": "csp/2144/../acu_barcelona-city",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 14
+        },
+        {
+          "eventId": "2026-05-26-jr-road-atlanta-2022",
+          "venue": "Road Atlanta",
+          "venueOrder": 4,
+          "date": "2026-05-26",
+          "track": "csp/2144/../jr_road_atlanta_2022",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 19
+        }
+      ],
+      "drivers": [
+        "Arren",
+        "Cheese",
+        "DK",
+        "DatBrie",
+        "Dominic Decoco",
+        "DonnieYen",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "NamSayin",
+        "Oby",
+        "Pasta Batman",
+        "Pasta Ssempa",
+        "Player",
+        "Prinnystar",
+        "ProtossRinAzir",
+        "Qiutips",
+        "Sonny Boy",
+        "TILTY",
+        "TheHomemaidtacos",
+        "Weensun",
+        "haisojoko",
+        "jingtaint",
+        "sp4k",
+        "the93owner",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S23": {
+      "file": "seasons/S23.json",
+      "events": [
+        {
+          "eventId": "2026-06-30-ks-silverstone",
+          "venue": "Ks Silverstone",
+          "venueOrder": 1,
+          "date": "2026-06-30",
+          "track": "csp/2144/../ks_silverstone",
+          "races": 3,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2026-07-07-spa",
+          "venue": "Spa",
+          "venueOrder": 2,
+          "date": "2026-07-07",
+          "track": "csp/2144/../spa",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2026-07-14-rt-suzuka",
+          "venue": "Rt Suzuka",
+          "venueOrder": 3,
+          "date": "2026-07-14",
+          "track": "csp/2144/../rt_suzuka",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2026-07-21-vhe-interlagos",
+          "venue": "Vhe Interlagos",
+          "venueOrder": 4,
+          "date": "2026-07-21",
+          "track": "csp/2144/../vhe_interlagos",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        }
+      ],
+      "drivers": [
+        "Arren",
+        "Cheese",
+        "DK",
+        "DonnieYen",
+        "Green Birb",
+        "Jammy",
+        "NamSayin",
+        "Pasta Ssempa",
+        "Prinnystar",
+        "ProtossRinAzir",
+        "Sonny Boy",
+        "haisojoko",
+        "thriftywalnut",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S4": {
+      "file": "seasons/S4.json",
+      "events": [
+        {
+          "eventId": "2024-01-16-midfield-raceway",
+          "venue": "Midfield Raceway",
+          "venueOrder": 1,
+          "date": "2024-01-16",
+          "track": "csp/0/../midfield_raceway",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 12
+        },
+        {
+          "eventId": "2024-01-23-ek-usui-circuit",
+          "venue": "Ek Usui Circuit",
+          "venueOrder": 2,
+          "date": "2024-01-23",
+          "track": "csp/0/../ek_usui_circuit",
+          "races": 1,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-01-30-tsukuba-circuit",
+          "venue": "Tsukuba Circuit",
+          "venueOrder": 3,
+          "date": "2024-01-30",
+          "track": "csp/0/../tsukuba_circuit",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2024-02-06-misano",
+          "venue": "Misano",
+          "venueOrder": 4,
+          "date": "2024-02-06",
+          "track": "csp/0/../misano",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 10
+        }
+      ],
+      "drivers": [
+        "ABGeezus",
+        "Bangman03",
+        "DatBrie",
+        "DomTheBomb",
+        "Dominic",
+        "Dragan",
+        "Floseidon",
+        "Hyun Ho Lee",
+        "Jammy",
+        "JoyceAh",
+        "LG",
+        "Midnight Adults",
+        "Monkey",
+        "edwinroar",
+        "haisojoko",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S5": {
+      "file": "seasons/S5.json",
+      "events": [
+        {
+          "eventId": "2024-03-12-ks-silverstone",
+          "venue": "Ks Silverstone",
+          "venueOrder": 1,
+          "date": "2024-03-12",
+          "track": "csp/0/../ks_silverstone",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2024-03-19-mugello",
+          "venue": "Mugello",
+          "venueOrder": 2,
+          "date": "2024-03-19",
+          "track": "csp/0/../mugello",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 10
+        },
+        {
+          "eventId": "2024-03-26-vhe-interlagos",
+          "venue": "Vhe Interlagos",
+          "venueOrder": 3,
+          "date": "2024-03-26",
+          "track": "csp/0/../vhe_interlagos",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-04-02-rt-suzuka",
+          "venue": "Rt Suzuka",
+          "venueOrder": 4,
+          "date": "2024-04-02",
+          "track": "csp/0/../rt_suzuka",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 12
+        }
+      ],
+      "drivers": [
+        "ABGeezus",
+        "DatBrie",
+        "Dominic",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "LG",
+        "Midnight Adults",
+        "NamSayin",
+        "haisojoko",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S6": {
+      "file": "seasons/S6.json",
+      "events": [
+        {
+          "eventId": "2024-04-16-midfield-raceway",
+          "venue": "Midfield Raceway",
+          "venueOrder": 1,
+          "date": "2024-04-16",
+          "track": "csp/0/../midfield_raceway",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-04-23-vir",
+          "venue": "Vir",
+          "venueOrder": 2,
+          "date": "2024-04-23",
+          "track": "csp/0/../vir",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 11
+        },
+        {
+          "eventId": "2024-04-30-ks-zandvoort",
+          "venue": "Ks Zandvoort",
+          "venueOrder": 3,
+          "date": "2024-04-30",
+          "track": "csp/0/../ks_zandvoort",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2024-05-07-ks-laguna-seca",
+          "venue": "Ks Laguna Seca",
+          "venueOrder": 4,
+          "date": "2024-05-07",
+          "track": "csp/0/../ks_laguna_seca",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 8
+        }
+      ],
+      "drivers": [
+        "Carb0n",
+        "Coochie Warrior",
+        "DatBrie",
+        "Dragan",
+        "Ghin",
+        "Green The Gamer",
+        "Jammy",
+        "JoyceAh",
+        "Midnight Adults",
+        "Monkey",
+        "NamSayin",
+        "Oijo",
+        "futagirl203",
+        "haisojoko",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S7": {
+      "file": "seasons/S7.json",
+      "events": [
+        {
+          "eventId": "2024-06-11-ks-nurburgring",
+          "venue": "Ks Nurburgring",
+          "venueOrder": 1,
+          "date": "2024-06-11",
+          "track": "csp/0/../ks_nurburgring",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 7
+        },
+        {
+          "eventId": "2024-06-18-lilski-watkins-glen",
+          "venue": "Lilski Watkins Glen",
+          "venueOrder": 2,
+          "date": "2024-06-18",
+          "track": "csp/0/../lilski_watkins_glen",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 9
+        },
+        {
+          "eventId": "2024-06-25-ks-brands-hatch",
+          "venue": "Ks Brands Hatch",
+          "venueOrder": 3,
+          "date": "2024-06-25",
+          "track": "csp/0/../ks_brands_hatch",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 7
+        },
+        {
+          "eventId": "2024-07-02-spa",
+          "venue": "Spa",
+          "venueOrder": 4,
+          "date": "2024-07-02",
+          "track": "csp/0/../spa",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 6
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Green The Gamer",
+        "Hedwig",
+        "Jammy",
+        "Midnight Adults",
+        "NamSayin",
+        "haisojoko",
+        "tawm04",
+        "the93owner",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S8": {
+      "file": "seasons/S8.json",
+      "events": [
+        {
+          "eventId": "2024-07-09-oran-park-lidar",
+          "venue": "Oran Park Lidar",
+          "venueOrder": 1,
+          "date": "2024-07-09",
+          "track": "csp/0/../oran_park_lidar",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 14
+        },
+        {
+          "eventId": "2024-07-16-00-silver-coin",
+          "venue": "00 Silver Coin",
+          "venueOrder": 2,
+          "date": "2024-07-16",
+          "track": "csp/0/../00_silver_coin",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 16
+        },
+        {
+          "eventId": "2024-07-23-tsukuba-circuit",
+          "venue": "Tsukuba Circuit",
+          "venueOrder": 3,
+          "date": "2024-07-23",
+          "track": "csp/0/../tsukuba_circuit",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 16
+        },
+        {
+          "eventId": "2024-07-30-prototype-zwartkops-raceway",
+          "venue": "Prototype Zwartkops Raceway",
+          "venueOrder": 4,
+          "date": "2024-07-30",
+          "track": "csp/0/../prototype_zwartkops_raceway",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 12
+        }
+      ],
+      "drivers": [
+        "Bangman03",
+        "Coochie Warrior",
+        "DatBrie",
+        "Dragan",
+        "Floseidon",
+        "Ghin",
+        "Green The Gamer",
+        "Hedwig",
+        "Jammy",
+        "JoyceAh",
+        "Kartaiko",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "TILTY",
+        "Yenzuo",
+        "haisojoko",
+        "jingtaint",
+        "tawm04",
+        "the93owner",
+        "voth"
+      ],
+      "dataQuality": []
+    },
+    "S9": {
+      "file": "seasons/S9.json",
+      "events": [
+        {
+          "eventId": "2024-08-13-mugello",
+          "venue": "Mugello",
+          "venueOrder": 1,
+          "date": "2024-08-13",
+          "track": "csp/0/../mugello",
+          "races": 2,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 7
+        },
+        {
+          "eventId": "2024-08-20-pinwheel",
+          "venue": "Pinwheel",
+          "venueOrder": 2,
+          "date": "2024-08-20",
+          "track": "csp/0/../pinwheel",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2024-08-27-gt-dragontrail",
+          "venue": "Gt Dragontrail",
+          "venueOrder": 3,
+          "date": "2024-08-27",
+          "track": "csp/0/../gt_dragontrail",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 8
+        },
+        {
+          "eventId": "2024-09-03-00-palmadera",
+          "venue": "00 Palmadera",
+          "venueOrder": 4,
+          "date": "2024-09-03",
+          "track": "csp/0/../00_palmadera",
+          "races": 3,
+          "qualifying": 3,
+          "practice": 0,
+          "drivers": 5
+        }
+      ],
+      "drivers": [
+        "DatBrie",
+        "Green The Gamer",
+        "Hedwig",
+        "Jammy",
+        "Midnight Adults",
+        "NamSayin",
+        "Oijo",
+        "haisojoko",
+        "tawm04",
+        "voth"
+      ],
+      "dataQuality": []
+    }
+  }
+}

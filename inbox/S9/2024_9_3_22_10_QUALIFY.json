@@ -1,0 +1,933 @@
+{
+	"TrackName": "csp/0/../00_palmadera",
+	"TrackConfig": "chicane",
+	"Type": "QUALIFY",
+	"DurationSecs": 0,
+	"RaceLaps": 0,
+	"Cars": [
+		{
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "00_JosieRacing",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 1,
+			"Driver": {
+				"Name": "Oijo",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198401386081",
+				"GuidsList": [
+					"76561198401386081"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "00_TobyRacing",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 2,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "17_gsi_blackout_66",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 3,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "18_gsi_blackout_29",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 4,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "15_gsi_scarlet_47",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 5,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198208077979",
+				"GuidsList": [
+					"76561198208077979"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "16_gsi_scarlet_23",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 6,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197967093333",
+				"GuidsList": [
+					"76561197967093333"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "11_gsi_horizon_40",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 7,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198105980059",
+				"GuidsList": [
+					"76561198105980059"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "12_gsi_horizon_7",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 8,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198056872534",
+				"GuidsList": [
+					"76561198056872534"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "11_gsi_horizon_40",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 9,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197966374236",
+				"GuidsList": [
+					"76561197966374236"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "13_gsi_suzuki_35",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 10,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197960427864",
+				"GuidsList": [
+					"76561197960427864"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "14_gsi_suzuki_82",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 11,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561197984244290",
+				"GuidsList": [
+					"76561197984244290"
+				]
+			},
+			"Model": "rss_formula_hybrid_2023",
+			"Skin": "13_gsi_suzuki_35",
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Result": [
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 67279,
+			"TotalTime": 313801,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 67813,
+			"TotalTime": 474450,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 68778,
+			"TotalTime": 552433,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 69744,
+			"TotalTime": 558855,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 69930,
+			"TotalTime": 518851,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198208077979",
+			"CarId": 5,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197967093333",
+			"CarId": 6,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198105980059",
+			"CarId": 7,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198056872534",
+			"CarId": 8,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197966374236",
+			"CarId": 9,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197960427864",
+			"CarId": 10,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561197984244290",
+			"CarId": 11,
+			"CarModel": "rss_formula_hybrid_2023",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Laps": [
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5728443,
+			"LapTime": 74716,
+			"Sectors": [
+				34657,
+				17145,
+				22914
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5741338,
+			"LapTime": 87564,
+			"Sectors": [
+				46402,
+				17672,
+				23490
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C3",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5747983,
+			"LapTime": 94280,
+			"Sectors": [
+				47800,
+				20502,
+				25978
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5751060,
+			"LapTime": 97358,
+			"Sectors": [
+				48151,
+				20453,
+				28754
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5769024,
+			"LapTime": 115239,
+			"Sectors": [
+				53984,
+				29147,
+				32108
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5812348,
+			"LapTime": 71001,
+			"Sectors": [
+				30172,
+				17262,
+				23567
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "C3",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5815661,
+			"LapTime": 67683,
+			"Sectors": [
+				28726,
+				16573,
+				22384
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5818872,
+			"LapTime": 67813,
+			"Sectors": [
+				28825,
+				16519,
+				22469
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5839325,
+			"LapTime": 70299,
+			"Sectors": [
+				30492,
+				16955,
+				22852
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5841525,
+			"LapTime": 113072,
+			"Sectors": [
+				72734,
+				17308,
+				23030
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5881938,
+			"LapTime": 69592,
+			"Sectors": [
+				29713,
+				16794,
+				23085
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C3",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5900216,
+			"LapTime": 84555,
+			"Sectors": [
+				38115,
+				19426,
+				27014
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5903472,
+			"LapTime": 84597,
+			"Sectors": [
+				41891,
+				17802,
+				24904
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5910171,
+			"LapTime": 70856,
+			"Sectors": [
+				30397,
+				17231,
+				23228
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5920510,
+			"LapTime": 79004,
+			"Sectors": [
+				38162,
+				17816,
+				23026
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5967495,
+			"LapTime": 67279,
+			"Sectors": [
+				28674,
+				16249,
+				22356
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5990264,
+			"LapTime": 69744,
+			"Sectors": [
+				30265,
+				17014,
+				22465
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5994056,
+			"LapTime": 112123,
+			"Sectors": [
+				71542,
+				17158,
+				23423
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 5995519,
+			"LapTime": 85349,
+			"Sectors": [
+				45313,
+				16961,
+				23075
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6035117,
+			"LapTime": 131543,
+			"Sectors": [
+				77660,
+				20007,
+				33876
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6062649,
+			"LapTime": 72391,
+			"Sectors": [
+				31279,
+				17474,
+				23638
+			],
+			"Cuts": 2,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6063373,
+			"LapTime": 69315,
+			"Sectors": [
+				29845,
+				16839,
+				22631
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6102644,
+			"LapTime": 107130,
+			"Sectors": [
+				67115,
+				17019,
+				22996
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6128149,
+			"LapTime": 93143,
+			"Sectors": [
+				39027,
+				19466,
+				34650
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6137380,
+			"LapTime": 74007,
+			"Sectors": [
+				33839,
+				17074,
+				23094
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6142432,
+			"LapTime": 79791,
+			"Sectors": [
+				39646,
+				17240,
+				22905
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Oijo",
+			"DriverGuid": "76561198401386081",
+			"CarId": 1,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6172580,
+			"LapTime": 69930,
+			"Sectors": [
+				30284,
+				16920,
+				22726
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 2,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6206162,
+			"LapTime": 68778,
+			"Sectors": [
+				29384,
+				16763,
+				22631
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 3,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6212557,
+			"LapTime": 70119,
+			"Sectors": [
+				30600,
+				16947,
+				22572
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "C4",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 4,
+			"CarModel": "rss_formula_hybrid_2023",
+			"Timestamp": 6224610,
+			"LapTime": 96464,
+			"Sectors": [
+				40250,
+				24093,
+				32121
+			],
+			"Cuts": 2,
+			"BallastKG": 0,
+			"Tyre": "C5",
+			"Restrictor": 0
+		}
+	],
+	"Events": [
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 3,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 34.827717,
+			"WorldPosition": {
+				"X": 857.0301,
+				"Y": 0.82196224,
+				"Z": 590.51575
+			},
+			"RelPosition": {
+				"X": -0.9932836,
+				"Y": 0.47398448,
+				"Z": -1.9715047
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 4,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 71.0444,
+			"WorldPosition": {
+				"X": 874.5981,
+				"Y": 0.35237777,
+				"Z": 529.6244
+			},
+			"RelPosition": {
+				"X": 0.012583242,
+				"Y": -0.08030071,
+				"Z": 3.316285
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 3,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 245.71268,
+			"WorldPosition": {
+				"X": -466.21448,
+				"Y": 109.3953,
+				"Z": 606.7224
+			},
+			"RelPosition": {
+				"X": -0.9864701,
+				"Y": -0.20265885,
+				"Z": 2.9595442
+			}
+		}
+	]
+}

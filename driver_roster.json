@@ -1,0 +1,823 @@
+{
+  "_help": "Fill canonicalName for each driver, then copy the guid->name pairs into config.json \"driverNames\". Re-run ingest afterwards.",
+  "drivers": [
+    {
+      "guid": "76561198056789142",
+      "canonicalName": "",
+      "namesSeen": [
+        "haisojoko"
+      ],
+      "suggested": "haisojoko",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198354688139",
+      "canonicalName": "",
+      "namesSeen": [
+        "Jammy"
+      ],
+      "suggested": "Jammy",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198968530276",
+      "canonicalName": "",
+      "namesSeen": [
+        "NamSayin",
+        "Hyun Ho Lee"
+      ],
+      "suggested": "NamSayin",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561197967093333",
+      "canonicalName": "",
+      "namesSeen": [
+        "voth"
+      ],
+      "suggested": "voth",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561197966374236",
+      "canonicalName": "",
+      "namesSeen": [
+        "DatBrie"
+      ],
+      "suggested": "DatBrie",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S19",
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198401386081",
+      "canonicalName": "",
+      "namesSeen": [
+        "Oby",
+        "Oijo"
+      ],
+      "suggested": "Oby",
+      "seasons": [
+        "S6",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561197984244290",
+      "canonicalName": "",
+      "namesSeen": [
+        "TILTY"
+      ],
+      "suggested": "TILTY",
+      "seasons": [
+        "S8",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198117594890",
+      "canonicalName": "",
+      "namesSeen": [
+        "Green The Gamer",
+        "Dragan"
+      ],
+      "suggested": "Green The Gamer",
+      "seasons": [
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S18a",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198208077979",
+      "canonicalName": "",
+      "namesSeen": [
+        "Midnight Adults"
+      ],
+      "suggested": "Midnight Adults",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18a",
+        "S19",
+        "S20"
+      ]
+    },
+    {
+      "guid": "76561198141802891",
+      "canonicalName": "",
+      "namesSeen": [
+        "thriftywalnut"
+      ],
+      "suggested": "thriftywalnut",
+      "seasons": [
+        "S13",
+        "S14",
+        "S15",
+        "S17",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561197960427864",
+      "canonicalName": "",
+      "namesSeen": [
+        "tawm04",
+        "tawm"
+      ],
+      "suggested": "tawm04",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S17",
+        "S18b",
+        "S21"
+      ]
+    },
+    {
+      "guid": "76561198038077208",
+      "canonicalName": "",
+      "namesSeen": [
+        "Sonny Boy"
+      ],
+      "suggested": "Sonny Boy",
+      "seasons": [
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198389079329",
+      "canonicalName": "",
+      "namesSeen": [
+        "JoyceAh"
+      ],
+      "suggested": "JoyceAh",
+      "seasons": [
+        "S4",
+        "S5",
+        "S6",
+        "S8",
+        "S10",
+        "S12",
+        "S14",
+        "S15",
+        "S19",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198193231731",
+      "canonicalName": "",
+      "namesSeen": [
+        "ProtossRinAzir"
+      ],
+      "suggested": "ProtossRinAzir",
+      "seasons": [
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18b",
+        "S19",
+        "S21",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198005723384",
+      "canonicalName": "",
+      "namesSeen": [
+        "Dominic Decoco",
+        "Dominic",
+        "DomTheBomb"
+      ],
+      "suggested": "Dominic Decoco",
+      "seasons": [
+        "S4",
+        "S5",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198025524098",
+      "canonicalName": "",
+      "namesSeen": [
+        "ABGeezus",
+        "Verslappen"
+      ],
+      "suggested": "ABGeezus",
+      "seasons": [
+        "S4",
+        "S5",
+        "S18a",
+        "S18b",
+        "S19",
+        "S20"
+      ]
+    },
+    {
+      "guid": "76561198031826856",
+      "canonicalName": "",
+      "namesSeen": [
+        "Prinnystar"
+      ],
+      "suggested": "Prinnystar",
+      "seasons": [
+        "S18b",
+        "S19",
+        "S20",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561197970345239",
+      "canonicalName": "",
+      "namesSeen": [
+        "Ghin",
+        "Player"
+      ],
+      "suggested": "Ghin",
+      "seasons": [
+        "S5",
+        "S6",
+        "S8",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561199471527780",
+      "canonicalName": "",
+      "namesSeen": [
+        "the93owner"
+      ],
+      "suggested": "the93owner",
+      "seasons": [
+        "S7",
+        "S8",
+        "S10",
+        "S15",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198056979683",
+      "canonicalName": "",
+      "namesSeen": [
+        "Pasta Batman"
+      ],
+      "suggested": "Pasta Batman",
+      "seasons": [
+        "S18a",
+        "S18b",
+        "S19",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198071311765",
+      "canonicalName": "",
+      "namesSeen": [
+        "Dragan"
+      ],
+      "suggested": "Dragan",
+      "seasons": [
+        "S4",
+        "S8",
+        "S10",
+        "S14"
+      ]
+    },
+    {
+      "guid": "76561199212867652",
+      "canonicalName": "",
+      "namesSeen": [
+        "jingtaint"
+      ],
+      "suggested": "jingtaint",
+      "seasons": [
+        "S8",
+        "S12",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198869091448",
+      "canonicalName": "",
+      "namesSeen": [
+        "sp4k"
+      ],
+      "suggested": "sp4k",
+      "seasons": [
+        "S14",
+        "S15",
+        "S18a",
+        "S20",
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198338286564",
+      "canonicalName": "",
+      "namesSeen": [
+        "Pasta Ssempa"
+      ],
+      "suggested": "Pasta Ssempa",
+      "seasons": [
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561197996231719",
+      "canonicalName": "",
+      "namesSeen": [
+        "Arren"
+      ],
+      "suggested": "Arren",
+      "seasons": [
+        "S19",
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198806249253",
+      "canonicalName": "",
+      "namesSeen": [
+        "DK"
+      ],
+      "suggested": "DK",
+      "seasons": [
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198430304383",
+      "canonicalName": "",
+      "namesSeen": [
+        "Jee Sun",
+        "WildCard",
+        "Clive",
+        "Lea",
+        "Sunny Park"
+      ],
+      "suggested": "Jee Sun",
+      "seasons": [
+        "S10",
+        "S11",
+        "S14",
+        "S16",
+        "S17",
+        "S18a",
+        "S19"
+      ]
+    },
+    {
+      "guid": "76561198074422554",
+      "canonicalName": "",
+      "namesSeen": [
+        "Coochie Warrior"
+      ],
+      "suggested": "Coochie Warrior",
+      "seasons": [
+        "S6",
+        "S8",
+        "S10",
+        "S13",
+        "S14",
+        "S18a",
+        "S18b"
+      ]
+    },
+    {
+      "guid": "76561198046498897",
+      "canonicalName": "",
+      "namesSeen": [
+        "Monkey"
+      ],
+      "suggested": "Monkey",
+      "seasons": [
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "guid": "76561198105980059",
+      "canonicalName": "",
+      "namesSeen": [
+        "Hedwig",
+        "edwinroar"
+      ],
+      "suggested": "Hedwig",
+      "seasons": [
+        "S4",
+        "S7",
+        "S8",
+        "S9",
+        "S13"
+      ]
+    },
+    {
+      "guid": "76561198116185565",
+      "canonicalName": "",
+      "namesSeen": [
+        "Cheese"
+      ],
+      "suggested": "Cheese",
+      "seasons": [
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198347375985",
+      "canonicalName": "",
+      "namesSeen": [
+        "LG"
+      ],
+      "suggested": "LG",
+      "seasons": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "guid": "76561198390249602",
+      "canonicalName": "",
+      "namesSeen": [
+        "lildad559"
+      ],
+      "suggested": "lildad559",
+      "seasons": [
+        "S11"
+      ]
+    },
+    {
+      "guid": "76561199196882805",
+      "canonicalName": "",
+      "namesSeen": [
+        "DonnieYen"
+      ],
+      "suggested": "DonnieYen",
+      "seasons": [
+        "S22",
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198056872534",
+      "canonicalName": "",
+      "namesSeen": [
+        "Floseidon"
+      ],
+      "suggested": "Floseidon",
+      "seasons": [
+        "S4",
+        "S7",
+        "S8",
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "guid": "76561198112590354",
+      "canonicalName": "",
+      "namesSeen": [
+        "Yenzuo"
+      ],
+      "suggested": "Yenzuo",
+      "seasons": [
+        "S8",
+        "S15"
+      ]
+    },
+    {
+      "guid": "76561198081959601",
+      "canonicalName": "",
+      "namesSeen": [
+        "Qiutips"
+      ],
+      "suggested": "Qiutips",
+      "seasons": [
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198032977828",
+      "canonicalName": "",
+      "namesSeen": [
+        "Bangman03"
+      ],
+      "suggested": "Bangman03",
+      "seasons": [
+        "S4",
+        "S8"
+      ]
+    },
+    {
+      "guid": "76561198049951756",
+      "canonicalName": "",
+      "namesSeen": [
+        "Carb0n"
+      ],
+      "suggested": "Carb0n",
+      "seasons": [
+        "S6",
+        "S10",
+        "S16"
+      ]
+    },
+    {
+      "guid": "76561199075854755",
+      "canonicalName": "",
+      "namesSeen": [
+        "kohimizu",
+        "kohi"
+      ],
+      "suggested": "kohimizu",
+      "seasons": [
+        "S17",
+        "S18a"
+      ]
+    },
+    {
+      "guid": "76561198053780068",
+      "canonicalName": "",
+      "namesSeen": [
+        "jhk301"
+      ],
+      "suggested": "jhk301",
+      "seasons": [
+        "S17",
+        "S18a"
+      ]
+    },
+    {
+      "guid": "76561197981856436",
+      "canonicalName": "",
+      "namesSeen": [
+        "Weensun"
+      ],
+      "suggested": "Weensun",
+      "seasons": [
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198205342281",
+      "canonicalName": "",
+      "namesSeen": [
+        "futagirl203"
+      ],
+      "suggested": "futagirl203",
+      "seasons": [
+        "S6"
+      ]
+    },
+    {
+      "guid": "76561199473565714",
+      "canonicalName": "",
+      "namesSeen": [
+        "loseAlotL"
+      ],
+      "suggested": "loseAlotL",
+      "seasons": [
+        "S16"
+      ]
+    },
+    {
+      "guid": "76561198123547304",
+      "canonicalName": "",
+      "namesSeen": [
+        "TheHomemaidtacos"
+      ],
+      "suggested": "TheHomemaidtacos",
+      "seasons": [
+        "S22"
+      ]
+    },
+    {
+      "guid": "76561198188806278",
+      "canonicalName": "",
+      "namesSeen": [
+        "Green Birb"
+      ],
+      "suggested": "Green Birb",
+      "seasons": [
+        "S23"
+      ]
+    },
+    {
+      "guid": "76561198069972927",
+      "canonicalName": "",
+      "namesSeen": [
+        "Kartaiko"
+      ],
+      "suggested": "Kartaiko",
+      "seasons": [
+        "S8"
+      ]
+    },
+    {
+      "guid": "$#@@!$kicked",
+      "canonicalName": "",
+      "namesSeen": [
+        "Player"
+      ],
+      "suggested": "Player",
+      "seasons": [
+        "S22"
+      ]
+    }
+  ]
+}

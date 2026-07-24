@@ -1,0 +1,115 @@
+"""Configuration loading for the race processor.
+
+A single ``config.json`` at the repo root holds every knob: where the drop
+zone lives, where the dataset is written, where to publish it, driver aliases,
+track display names, and the event-grouping thresholds. The file is created
+with sensible defaults on first run.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any
+
+CONFIG_FILENAME = "config.json"
+
+DEFAULT_CONFIG: dict[str, Any] = {
+    "inboxDir": "inbox",
+    "datasetDir": "dataset",
+    "publishDestinations": [],
+    "driverNames": {},
+    "driverAliases": {},
+    "trackDisplayNames": {},
+    "eventGapHours": 4,
+    "restartWindowMinutes": 30,
+}
+
+_KNOWN_KEYS = set(DEFAULT_CONFIG)
+
+
+@dataclass(frozen=True)
+class Config:
+    """Resolved configuration. Paths are absolute."""
+
+    root: Path
+    inbox_dir: Path
+    dataset_dir: Path
+    publish_destinations: tuple[Path, ...]
+    driver_names: dict[str, str] = field(default_factory=dict)
+    driver_aliases: dict[str, str] = field(default_factory=dict)
+    track_display_names: dict[str, str] = field(default_factory=dict)
+    event_gap_hours: float = 4.0
+    restart_window_minutes: float = 30.0
+
+    def fingerprint(self) -> str:
+        """Stable hash of the config values that affect dataset content.
+
+        Used so that editing an alias or a track display name forces affected
+        events to reprocess on the next ingest, even though their source files
+        are unchanged.
+        """
+        payload = json.dumps(
+            {
+                "driverNames": self.driver_names,
+                "driverAliases": self.driver_aliases,
+                "trackDisplayNames": self.track_display_names,
+                "eventGapHours": self.event_gap_hours,
+                "restartWindowMinutes": self.restart_window_minutes,
+            },
+            sort_keys=True,
+        )
+        return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def default_config_path(root: Path) -> Path:
+    return root / CONFIG_FILENAME
+
+
+def write_default_config(path: Path) -> None:
+    path.write_text(json.dumps(DEFAULT_CONFIG, indent=2) + "\n", encoding="utf-8")
+
+
+def load_config(path: Path, *, warn=print) -> Config:
+    """Load config from ``path``. Relative paths resolve against its directory.
+
+    Unknown top-level keys emit a warning (typo guard) but are ignored.
+    Missing keys fall back to defaults.
+    """
+    root = path.parent.resolve()
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must contain a JSON object")
+
+    for key in raw:
+        if key not in _KNOWN_KEYS:
+            warn(f"WARNING: unknown config key '{key}' in {path.name} (ignored)")
+
+    merged = {**DEFAULT_CONFIG, **raw}
+
+    def resolve(p: str) -> Path:
+        candidate = Path(p)
+        return candidate if candidate.is_absolute() else (root / candidate).resolve()
+
+    return Config(
+        root=root,
+        inbox_dir=resolve(str(merged["inboxDir"])),
+        dataset_dir=resolve(str(merged["datasetDir"])),
+        publish_destinations=tuple(resolve(str(d)) for d in merged["publishDestinations"]),
+        driver_names=dict(merged["driverNames"]),
+        driver_aliases=dict(merged["driverAliases"]),
+        track_display_names=dict(merged["trackDisplayNames"]),
+        event_gap_hours=float(merged["eventGapHours"]),
+        restart_window_minutes=float(merged["restartWindowMinutes"]),
+    )
+
+
+def load_or_create_config(root: Path, *, warn=print) -> Config:
+    """Load config from ``root``; create it with defaults if absent."""
+    path = default_config_path(root)
+    if not path.exists():
+        write_default_config(path)
+        warn(f"Created {path.name} with defaults. Edit it to set publish destinations.")
+    return load_config(path, warn=warn)
