@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S11",
-  "lastUpdated": "2026-07-24T07:58:19.286125+00:00",
+  "lastUpdated": "2026-07-24T11:32:09.896412+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2024-11-05-00-ajaccio",
-      "signature": "005d4ed67a5e1042",
+      "signature": "9fed7eb5530df80d",
       "venue": "00 Ajaccio",
       "date": "2024-11-05",
       "track": "csp/0/../00_ajaccio",
@@ -5624,7 +5624,7 @@
     },
     {
       "eventId": "2024-11-12-m08-autopolis",
-      "signature": "a0472a87f0c42aea",
+      "signature": "82d472f69ac50c36",
       "venue": "M08 Autopolis",
       "date": "2024-11-12",
       "track": "csp/0/../m08_autopolis",
@@ -5640,7 +5640,7 @@
             "Brie",
             "Colin",
             "Ghin",
-            "WildCard",
+            "Wild Card",
             "Mike",
             "Ryan"
           ],
@@ -5701,8 +5701,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "6_Patrese_r8_r9"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -5780,7 +5780,7 @@
                 83933
               ]
             },
-            "WildCard": {
+            "Wild Card": {
               "bestMs": 105723,
               "laps": [
                 169609,
@@ -5835,7 +5835,7 @@
             "Brie",
             "Colin",
             "Mike",
-            "WildCard",
+            "Wild Card",
             "Ryan"
           ],
           "drivers": {
@@ -5895,8 +5895,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "tyuap-mike-139"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -6013,7 +6013,7 @@
                 96235
               ]
             },
-            "WildCard": {
+            "Wild Card": {
               "bestMs": 103716,
               "laps": [
                 147770,
@@ -6042,7 +6042,7 @@
             "Brie",
             "Colin",
             "Ghin",
-            "WildCard",
+            "Wild Card",
             "Mike",
             "Ryan"
           ],
@@ -6106,8 +6106,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "6_Patrese_r8_r9"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -6191,7 +6191,7 @@
               137221,
               121406
             ],
-            "WildCard": [
+            "Wild Card": [
               127474,
               106611,
               113436,
@@ -6462,7 +6462,7 @@
                 44964
               ]
             ],
-            "WildCard": [
+            "Wild Card": [
               [
                 47919,
                 40081,
@@ -6617,7 +6617,7 @@
               0,
               0
             ],
-            "WildCard": [
+            "Wild Card": [
               0,
               0,
               0,
@@ -6704,7 +6704,7 @@
               "C",
               "C"
             ],
-            "WildCard": [
+            "Wild Card": [
               "C",
               "C",
               "C",
@@ -6793,7 +6793,7 @@
               11,
               11
             ],
-            "WildCard": [
+            "Wild Card": [
               10,
               10,
               11,
@@ -7123,7 +7123,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "WildCard": [
+            "Wild Card": [
               {
                 "lap": 1,
                 "position": 10,
@@ -7279,7 +7279,7 @@
               "lost": 3,
               "net": -3
             },
-            "WildCard": {
+            "Wild Card": {
               "gained": 1,
               "lost": 2,
               "net": -1
@@ -7299,7 +7299,7 @@
             {
               "lap": 3,
               "driver": "Green Kyle",
-              "passed": "WildCard",
+              "passed": "Wild Card",
               "positionsGained": 1
             },
             {
@@ -7322,7 +7322,7 @@
             },
             {
               "lap": 4,
-              "driver": "WildCard",
+              "driver": "Wild Card",
               "passed": "Ghin",
               "positionsGained": 1
             },
@@ -7458,8 +7458,8 @@
               "restrictor": 0
             },
             {
-              "driver": "WildCard",
-              "driverKey": "WildCard",
+              "driver": "Wild Card",
+              "driverKey": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -7500,7 +7500,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Ghin",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 42.2,
               "worldPosition": {
                 "x": 38.2,
@@ -7510,7 +7510,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Ghin",
               "impactSpeed": 39.6,
               "worldPosition": {
@@ -7521,7 +7521,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Ryan",
               "impactSpeed": 27.9,
               "worldPosition": {
@@ -7544,7 +7544,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Ryan",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 24.1,
               "worldPosition": {
                 "x": 42.4,
@@ -7555,7 +7555,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Ghin",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 29.4,
               "worldPosition": {
                 "x": 52.7,
@@ -7565,7 +7565,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Ghin",
               "impactSpeed": 8.1,
               "worldPosition": {
@@ -7599,7 +7599,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Green Kyle",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 43.2,
               "worldPosition": {
                 "x": 465.4,
@@ -7609,7 +7609,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Green Kyle",
               "impactSpeed": 40.8,
               "worldPosition": {
@@ -7667,7 +7667,7 @@
               "bestMs": 103956,
               "lapsUsed": 3
             },
-            "WildCard": {
+            "Wild Card": {
               "avgMs": 110554,
               "medianMs": 111086,
               "bestMs": 106611,
@@ -7732,7 +7732,7 @@
               "finishPosition": 9,
               "delta": -4
             },
-            "WildCard": {
+            "Wild Card": {
               "qualPosition": 9,
               "finishPosition": 10,
               "delta": -1
@@ -7755,7 +7755,7 @@
             "Brie",
             "Ryan",
             "Green Kyle",
-            "WildCard",
+            "Wild Card",
             "Ghin"
           ],
           "gridSource": "previous-race",
@@ -7825,8 +7825,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "6_Patrese_r8_r9"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -7911,7 +7911,7 @@
               91653,
               88146
             ],
-            "WildCard": [
+            "Wild Card": [
               293785,
               104855,
               104529,
@@ -8202,7 +8202,7 @@
                 32779
               ]
             ],
-            "WildCard": [
+            "Wild Card": [
               [
                 209037,
                 41013,
@@ -8313,7 +8313,7 @@
               0,
               0
             ],
-            "WildCard": [
+            "Wild Card": [
               0,
               0,
               0,
@@ -8396,7 +8396,7 @@
               "C",
               "C"
             ],
-            "WildCard": [
+            "Wild Card": [
               "C",
               "C",
               "C",
@@ -8481,7 +8481,7 @@
               3,
               3
             ],
-            "WildCard": [
+            "Wild Card": [
               11,
               11,
               11,
@@ -8841,7 +8841,7 @@
                 "status": "classified"
               }
             ],
-            "WildCard": [
+            "Wild Card": [
               {
                 "lap": 1,
                 "position": 11,
@@ -8964,7 +8964,7 @@
               "lost": 1,
               "net": 6
             },
-            "WildCard": {
+            "Wild Card": {
               "gained": 1,
               "lost": 1,
               "net": 0
@@ -9162,8 +9162,8 @@
               "restrictor": 0
             },
             {
-              "driver": "WildCard",
-              "driverKey": "WildCard",
+              "driver": "Wild Card",
+              "driverKey": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -9193,7 +9193,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Lee",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 14.2,
               "worldPosition": {
                 "x": 125.9,
@@ -9203,7 +9203,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Lee",
               "impactSpeed": 10.7,
               "worldPosition": {
@@ -9410,7 +9410,7 @@
               "bestMs": 85772,
               "lapsUsed": 5
             },
-            "WildCard": {
+            "Wild Card": {
               "avgMs": 104282,
               "medianMs": 104529,
               "bestMs": 103463,
@@ -9469,7 +9469,7 @@
               "finishPosition": 9,
               "delta": 1
             },
-            "WildCard": {
+            "Wild Card": {
               "qualPosition": 9,
               "finishPosition": 10,
               "delta": -1
@@ -9491,7 +9491,7 @@
             "Brie",
             "Colin",
             "Mike",
-            "WildCard",
+            "Wild Card",
             "Ryan",
             "Ghin"
           ],
@@ -9555,8 +9555,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "tyuap-mike-139"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -9642,7 +9642,7 @@
               96986,
               94313
             ],
-            "WildCard": [
+            "Wild Card": [
               247238,
               344207
             ],
@@ -9918,7 +9918,7 @@
                 33534
               ]
             ],
-            "WildCard": [
+            "Wild Card": [
               [
                 161374,
                 43956,
@@ -10050,7 +10050,7 @@
               0,
               0
             ],
-            "WildCard": [
+            "Wild Card": [
               0,
               0
             ],
@@ -10134,7 +10134,7 @@
               "C",
               "C"
             ],
-            "WildCard": [
+            "Wild Card": [
               "C",
               "C"
             ],
@@ -10218,7 +10218,7 @@
               8,
               8
             ],
-            "WildCard": [
+            "Wild Card": [
               11,
               11,
               11,
@@ -10548,7 +10548,7 @@
                 "status": "classified"
               }
             ],
-            "WildCard": [
+            "Wild Card": [
               {
                 "lap": 1,
                 "position": 11,
@@ -10704,7 +10704,7 @@
               "lost": 1,
               "net": 0
             },
-            "WildCard": {
+            "Wild Card": {
               "gained": 0,
               "lost": 2,
               "net": -2
@@ -10926,8 +10926,8 @@
               "restrictor": 0
             },
             {
-              "driver": "WildCard",
-              "driverKey": "WildCard",
+              "driver": "Wild Card",
+              "driverKey": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -10966,7 +10966,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Ghin",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 9.9,
               "worldPosition": {
                 "x": 516.3,
@@ -10976,7 +10976,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Ghin",
               "impactSpeed": 39.8,
               "worldPosition": {
@@ -10987,7 +10987,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Lee",
               "impactSpeed": 51.5,
               "worldPosition": {
@@ -10999,7 +10999,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Lee",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 41.0,
               "worldPosition": {
                 "x": -522.7,
@@ -11056,7 +11056,7 @@
               "bestMs": 94313,
               "lapsUsed": 5
             },
-            "WildCard": {
+            "Wild Card": {
               "avgMs": 344207,
               "medianMs": 344207,
               "bestMs": 344207,
@@ -11121,7 +11121,7 @@
               "finishPosition": 9,
               "delta": 1
             },
-            "WildCard": {
+            "Wild Card": {
               "qualPosition": 9,
               "finishPosition": 11,
               "delta": -2
@@ -11140,7 +11140,7 @@
             "Mike",
             "Ryan",
             "Ghin",
-            "WildCard"
+            "Wild Card"
           ],
           "gridSource": "previous-race",
           "gridConfidence": "medium",
@@ -11216,8 +11216,8 @@
               "car": "asr_1991_williams_fw14",
               "skin": "6_Patrese_r8_r9"
             },
-            "WildCard": {
-              "driver": "WildCard",
+            "Wild Card": {
+              "driver": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -11303,7 +11303,7 @@
               114422,
               101955
             ],
-            "WildCard": [
+            "Wild Card": [
               115164,
               122049,
               106766,
@@ -11622,7 +11622,7 @@
                 39128
               ]
             ],
-            "WildCard": [
+            "Wild Card": [
               [
                 35135,
                 42435,
@@ -11729,7 +11729,7 @@
               0,
               0
             ],
-            "WildCard": [
+            "Wild Card": [
               0,
               0,
               0,
@@ -11816,7 +11816,7 @@
               "C",
               "C"
             ],
-            "WildCard": [
+            "Wild Card": [
               "C",
               "C",
               "C",
@@ -11905,7 +11905,7 @@
               11,
               11
             ],
-            "WildCard": [
+            "Wild Card": [
               10,
               10,
               10,
@@ -12295,7 +12295,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "WildCard": [
+            "Wild Card": [
               {
                 "lap": 1,
                 "position": 10,
@@ -12385,7 +12385,7 @@
               "lost": 1,
               "net": -1
             },
-            "WildCard": {
+            "Wild Card": {
               "gained": 2,
               "lost": 1,
               "net": 1
@@ -12454,7 +12454,7 @@
             },
             {
               "lap": 4,
-              "driver": "WildCard",
+              "driver": "Wild Card",
               "passed": "Mike",
               "positionsGained": 1
             },
@@ -12473,7 +12473,7 @@
             {
               "lap": 5,
               "driver": "Mike",
-              "passed": "WildCard",
+              "passed": "Wild Card",
               "positionsGained": 1
             },
             {
@@ -12614,8 +12614,8 @@
               "restrictor": 0
             },
             {
-              "driver": "WildCard",
-              "driverKey": "WildCard",
+              "driver": "Wild Card",
+              "driverKey": "Wild Card",
               "guid": "76561198430304383",
               "carId": 12,
               "car": "asr_1991_williams_fw14",
@@ -12711,7 +12711,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Josie",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 16.4,
               "worldPosition": {
                 "x": 18.3,
@@ -12744,7 +12744,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Colin",
-              "driver2": "WildCard",
+              "driver2": "Wild Card",
               "impactSpeed": 127.3,
               "worldPosition": {
                 "x": -561.3,
@@ -12754,7 +12754,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "WildCard",
+              "driver1": "Wild Card",
               "driver2": "Colin",
               "impactSpeed": 119.1,
               "worldPosition": {
@@ -12824,7 +12824,7 @@
               "bestMs": 101955,
               "lapsUsed": 4
             },
-            "WildCard": {
+            "Wild Card": {
               "avgMs": 119470,
               "medianMs": 119674,
               "bestMs": 106766,
@@ -12877,7 +12877,7 @@
               "finishPosition": 9,
               "delta": -1
             },
-            "WildCard": {
+            "Wild Card": {
               "qualPosition": 9,
               "finishPosition": 10,
               "delta": -1
@@ -12932,7 +12932,7 @@
     },
     {
       "eventId": "2024-11-19-rt-suzuka",
-      "signature": "a1c331646c0d6a85",
+      "signature": "a7a7a608376a2b5a",
       "venue": "Rt Suzuka",
       "date": "2024-11-19",
       "track": "csp/0/../rt_suzuka",
@@ -20949,7 +20949,7 @@
     },
     {
       "eventId": "2024-11-26-vhe-interlagos",
-      "signature": "7770172d26decc43",
+      "signature": "7fa541ea34aeefbe",
       "venue": "Vhe Interlagos",
       "date": "2024-11-26",
       "track": "csp/0/../vhe_interlagos",

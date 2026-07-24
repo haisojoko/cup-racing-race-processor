@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S19",
-  "lastUpdated": "2026-07-24T07:58:19.939872+00:00",
+  "lastUpdated": "2026-07-24T11:32:10.592419+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2026-01-06-fn-imola",
-      "signature": "335d22a04f66d8e1",
+      "signature": "cbab7dd937aac141",
       "venue": "Fn Imola",
       "date": "2026-01-06",
       "track": "csp/2144/../fn_imola",
@@ -7393,7 +7393,7 @@
     },
     {
       "eventId": "2026-01-13-acu-unitedstates",
-      "signature": "f3b427bf0a7cc073",
+      "signature": "d40e638c36cd5eb1",
       "venue": "Acu Unitedstates",
       "date": "2026-01-13",
       "track": "csp/2144/../acu_unitedstates",
@@ -7415,7 +7415,7 @@
             "Colin",
             "Michael G",
             "Timmy",
-            "Jee Sun"
+            "Clive"
           ],
           "drivers": {
             "James": {
@@ -7516,8 +7516,8 @@
               "car": "tatuusfa1",
               "skin": "05-TatuusWilliamsFW14"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Clive": {
+              "driver": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -7598,7 +7598,7 @@
                 180496
               ]
             },
-            "Jee Sun": {
+            "Clive": {
               "bestMs": 144066,
               "laps": [
                 169171,
@@ -7777,8 +7777,8 @@
               "car": "tatuusfa1",
               "skin": "05-TatuusWilliamsFW14"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Clive": {
+              "driver": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -7823,7 +7823,7 @@
                 153729
               ]
             },
-            "Jee Sun": {
+            "Clive": {
               "bestMs": 138707,
               "laps": [
                 153906,
@@ -7937,7 +7937,7 @@
             "Colin",
             "Michael G",
             "Timmy",
-            "Jee Sun"
+            "Clive"
           ],
           "gridSource": "qualifying",
           "gridConfidence": "high",
@@ -8041,8 +8041,8 @@
               "car": "tatuusfa1",
               "skin": "05-TatuusWilliamsFW14"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Clive": {
+              "driver": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -8134,7 +8134,7 @@
               132452,
               131875
             ],
-            "Jee Sun": [
+            "Clive": [
               145118,
               143854,
               142656,
@@ -8450,7 +8450,7 @@
                 44528
               ]
             ],
-            "Jee Sun": [
+            "Clive": [
               [
                 43490,
                 56273,
@@ -8558,7 +8558,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Clive": [
               0,
               0,
               0,
@@ -8650,7 +8650,7 @@
               "M",
               "M"
             ],
-            "Jee Sun": [
+            "Clive": [
               "S",
               "S",
               "S",
@@ -8742,7 +8742,7 @@
               10,
               10
             ],
-            "Jee Sun": [
+            "Clive": [
               10,
               13,
               13,
@@ -9114,7 +9114,7 @@
                 "status": "classified"
               }
             ],
-            "Jee Sun": [
+            "Clive": [
               {
                 "lap": 1,
                 "position": 10,
@@ -9212,7 +9212,7 @@
               "lost": 0,
               "net": 4
             },
-            "Jee Sun": {
+            "Clive": {
               "gained": 5,
               "lost": 5,
               "net": 0
@@ -9228,7 +9228,7 @@
             {
               "lap": 2,
               "driver": "Mike",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 2
             },
             {
@@ -9246,7 +9246,7 @@
             {
               "lap": 2,
               "driver": "Walnut",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 3
             },
             {
@@ -9258,7 +9258,7 @@
             {
               "lap": 2,
               "driver": "Timmy",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 1
             },
             {
@@ -9270,7 +9270,7 @@
             {
               "lap": 2,
               "driver": "Brie",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 3
             },
             {
@@ -9324,13 +9324,13 @@
             {
               "lap": 4,
               "driver": "Michael G",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 1
             },
             {
               "lap": 4,
               "driver": "Colin",
-              "passed": "Jee Sun",
+              "passed": "Clive",
               "positionsGained": 1
             }
           ],
@@ -9518,8 +9518,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Clive",
+              "driverKey": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -9849,7 +9849,7 @@
               "bestMs": 131875,
               "lapsUsed": 3
             },
-            "Jee Sun": {
+            "Clive": {
               "avgMs": 143255,
               "medianMs": 143255,
               "bestMs": 142656,
@@ -9927,7 +9927,7 @@
               "finishPosition": 14,
               "delta": -2
             },
-            "Jee Sun": {
+            "Clive": {
               "qualPosition": 15,
               "finishPosition": 15,
               "delta": 0
@@ -9950,7 +9950,7 @@
             "Mike",
             "Michael G",
             "Colin",
-            "Jee Sun"
+            "Clive"
           ],
           "gridSource": "previous-race",
           "gridConfidence": "medium",
@@ -10054,8 +10054,8 @@
               "car": "tatuusfa1",
               "skin": "04-TatuusFerrari642"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Clive": {
+              "driver": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -10147,7 +10147,7 @@
               134569,
               133390
             ],
-            "Jee Sun": [
+            "Clive": [
               164718,
               144341,
               142887,
@@ -10463,7 +10463,7 @@
                 45432
               ]
             ],
-            "Jee Sun": [
+            "Clive": [
               [
                 45895,
                 72239,
@@ -10571,7 +10571,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Clive": [
               0,
               0,
               0,
@@ -10663,7 +10663,7 @@
               "S",
               "S"
             ],
-            "Jee Sun": [
+            "Clive": [
               "S",
               "S",
               "S",
@@ -10755,7 +10755,7 @@
               8,
               8
             ],
-            "Jee Sun": [
+            "Clive": [
               14,
               14,
               14,
@@ -11127,7 +11127,7 @@
                 "status": "classified"
               }
             ],
-            "Jee Sun": [
+            "Clive": [
               {
                 "lap": 1,
                 "position": 14,
@@ -11225,7 +11225,7 @@
               "lost": 5,
               "net": 6
             },
-            "Jee Sun": {
+            "Clive": {
               "gained": 1,
               "lost": 0,
               "net": 1
@@ -11518,8 +11518,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Clive",
+              "driverKey": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -11625,7 +11625,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Clive",
               "driver2": "Arren",
               "impactSpeed": 38.5,
               "worldPosition": {
@@ -11813,7 +11813,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Arren",
-              "driver2": "Jee Sun",
+              "driver2": "Clive",
               "impactSpeed": 39.4,
               "worldPosition": {
                 "x": -182.8,
@@ -11857,7 +11857,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Walnut",
-              "driver2": "Jee Sun",
+              "driver2": "Clive",
               "impactSpeed": 12.2,
               "worldPosition": {
                 "x": 226.6,
@@ -11867,7 +11867,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Clive",
               "driver2": "Walnut",
               "impactSpeed": 15.1,
               "worldPosition": {
@@ -11879,7 +11879,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Walnut",
-              "driver2": "Jee Sun",
+              "driver2": "Clive",
               "impactSpeed": 16.0,
               "worldPosition": {
                 "x": 833.9,
@@ -11889,7 +11889,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Clive",
               "driver2": "Walnut",
               "impactSpeed": 17.8,
               "worldPosition": {
@@ -12104,7 +12104,7 @@
               "bestMs": 131845,
               "lapsUsed": 3
             },
-            "Jee Sun": {
+            "Clive": {
               "avgMs": 143027,
               "medianMs": 142887,
               "bestMs": 141853,
@@ -12177,7 +12177,7 @@
               "finishPosition": 13,
               "delta": -5
             },
-            "Jee Sun": {
+            "Clive": {
               "qualPosition": 15,
               "finishPosition": 14,
               "delta": 1
@@ -12205,7 +12205,7 @@
             "Colin",
             "Mike",
             "Timmy",
-            "Jee Sun"
+            "Clive"
           ],
           "gridSource": "qualifying",
           "gridConfidence": "medium",
@@ -12309,8 +12309,8 @@
               "car": "tatuusfa1",
               "skin": "05-TatuusWilliamsFW14"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Clive": {
+              "driver": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -12402,7 +12402,7 @@
               131215,
               142102
             ],
-            "Jee Sun": [
+            "Clive": [
               142990,
               139362
             ]
@@ -12716,7 +12716,7 @@
                 53842
               ]
             ],
-            "Jee Sun": [
+            "Clive": [
               [
                 44395,
                 54252,
@@ -12814,7 +12814,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Clive": [
               0,
               0
             ]
@@ -12904,7 +12904,7 @@
               "M",
               "M"
             ],
-            "Jee Sun": [
+            "Clive": [
               "S",
               "S"
             ]
@@ -12994,7 +12994,7 @@
               14,
               14
             ],
-            "Jee Sun": [
+            "Clive": [
               15,
               14,
               15,
@@ -13366,7 +13366,7 @@
                 "status": "classified"
               }
             ],
-            "Jee Sun": [
+            "Clive": [
               {
                 "lap": 1,
                 "position": 15,
@@ -13464,7 +13464,7 @@
               "lost": 5,
               "net": 0
             },
-            "Jee Sun": {
+            "Clive": {
               "gained": 1,
               "lost": 1,
               "net": 0
@@ -13515,7 +13515,7 @@
             },
             {
               "lap": 2,
-              "driver": "Jee Sun",
+              "driver": "Clive",
               "passed": "Timmy",
               "positionsGained": 1
             },
@@ -13764,8 +13764,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Clive",
+              "driverKey": "Clive",
               "guid": "76561198430304383",
               "carId": 13,
               "car": "tatuusfa1",
@@ -14084,7 +14084,7 @@
               "bestMs": 131215,
               "lapsUsed": 3
             },
-            "Jee Sun": {
+            "Clive": {
               "avgMs": 139362,
               "medianMs": 139362,
               "bestMs": 139362,
@@ -14206,7 +14206,7 @@
     },
     {
       "eventId": "2026-01-20-singapore-2020",
-      "signature": "73be52ee0e72bc5f",
+      "signature": "5c807f166cbb12a6",
       "venue": "Singapore 2020",
       "date": "2026-01-20",
       "track": "csp/2144/../singapore_2020",
@@ -18413,7 +18413,7 @@
     },
     {
       "eventId": "2026-01-27-fn-hungaroring",
-      "signature": "a9b1cae9bd764238",
+      "signature": "c9af6864d5de2990",
       "venue": "Fn Hungaroring",
       "date": "2026-01-27",
       "track": "csp/2144/../fn_hungaroring",

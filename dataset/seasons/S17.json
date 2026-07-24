@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S17",
-  "lastUpdated": "2026-07-24T07:58:19.755695+00:00",
+  "lastUpdated": "2026-07-24T11:32:10.396384+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2025-08-26-fn-redbullring",
-      "signature": "c6a01ca224dc098d",
+      "signature": "8b79bae1a2f17cc2",
       "venue": "Fn Redbullring",
       "date": "2025-08-26",
       "track": "csp/2144/../fn_redbullring",
@@ -65,8 +65,8 @@
               "car": "rss_formula_hybrid_v12-r",
               "skin": "04_gsi_scarlet_21"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Hana": {
+              "driver": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -152,7 +152,7 @@
                 88483
               ]
             },
-            "Jee Sun": {
+            "Hana": {
               "bestMs": 297011,
               "laps": [
                 297011
@@ -168,7 +168,7 @@
             "Toby",
             "Alfred",
             "Colin",
-            "Jee Sun"
+            "Hana"
           ],
           "drivers": {
             "Josie": {
@@ -213,8 +213,8 @@
               "car": "rss_formula_hybrid_v12-r",
               "skin": "04_gsi_scarlet_21"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Hana": {
+              "driver": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -274,7 +274,7 @@
                 163736
               ]
             },
-            "Jee Sun": {
+            "Hana": {
               "bestMs": 83860,
               "laps": [
                 94571,
@@ -322,7 +322,7 @@
             "Tawm",
             "Colin",
             "Alfred",
-            "Jee Sun"
+            "Hana"
           ],
           "gridSource": "qualifying",
           "gridConfidence": "high",
@@ -377,8 +377,8 @@
               "car": "rss_formula_hybrid_v12-r",
               "skin": "03_gsi_ascent_v12r_31"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Hana": {
+              "driver": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -447,7 +447,7 @@
               79502,
               74765
             ],
-            "Jee Sun": [
+            "Hana": [
               140717,
               107503,
               221154
@@ -703,7 +703,7 @@
                 24660
               ]
             ],
-            "Jee Sun": [
+            "Hana": [
               [
                 74158,
                 36220,
@@ -783,7 +783,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Hana": [
               0,
               0,
               0
@@ -851,7 +851,7 @@
               "C4",
               "C4"
             ],
-            "Jee Sun": [
+            "Hana": [
               "C5",
               "C5",
               "C5"
@@ -921,7 +921,7 @@
               7,
               7
             ],
-            "Jee Sun": [
+            "Hana": [
               8,
               8,
               8,
@@ -1240,7 +1240,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Jee Sun": [
+            "Hana": [
               {
                 "lap": 1,
                 "position": 8,
@@ -1321,7 +1321,7 @@
               "lost": 0,
               "net": 0
             },
-            "Jee Sun": {
+            "Hana": {
               "gained": 0,
               "lost": 0,
               "net": 0
@@ -1452,8 +1452,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Hana",
+              "driverKey": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -1576,7 +1576,7 @@
               "bestMs": 74765,
               "lapsUsed": 5
             },
-            "Jee Sun": {
+            "Hana": {
               "avgMs": 107503,
               "medianMs": 107503,
               "bestMs": 107503,
@@ -1625,7 +1625,7 @@
             "Colin",
             "Tawm",
             "Alfred",
-            "Jee Sun"
+            "Hana"
           ],
           "gridSource": "previous-race",
           "gridConfidence": "medium",
@@ -1680,8 +1680,8 @@
               "car": "rss_formula_hybrid_v12-r",
               "skin": "03_gsi_ascent_v12r_31"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Hana": {
+              "driver": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -1748,7 +1748,7 @@
               85313,
               113816
             ],
-            "Jee Sun": [
+            "Hana": [
               91458,
               145412,
               169193,
@@ -1995,7 +1995,7 @@
                 26676
               ]
             ],
-            "Jee Sun": [
+            "Hana": [
               [
                 26793,
                 36261,
@@ -2078,7 +2078,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Hana": [
               0,
               0,
               0,
@@ -2145,7 +2145,7 @@
               "C4",
               "C4"
             ],
-            "Jee Sun": [
+            "Hana": [
               "C5",
               "C5",
               "C5",
@@ -2216,7 +2216,7 @@
               6,
               6
             ],
-            "Jee Sun": [
+            "Hana": [
               7,
               7,
               7,
@@ -2535,7 +2535,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Jee Sun": [
+            "Hana": [
               {
                 "lap": 1,
                 "position": 7,
@@ -2616,7 +2616,7 @@
               "lost": 1,
               "net": 1
             },
-            "Jee Sun": {
+            "Hana": {
               "gained": 1,
               "lost": 0,
               "net": 1
@@ -2722,8 +2722,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Hana",
+              "driverKey": "Hana",
               "guid": "76561198430304383",
               "carId": 2,
               "car": "rss_formula_hybrid_v12-r",
@@ -2903,7 +2903,7 @@
               "bestMs": 83066,
               "lapsUsed": 4
             },
-            "Jee Sun": {
+            "Hana": {
               "avgMs": 134059,
               "medianMs": 145412,
               "bestMs": 87572,
@@ -2951,7 +2951,7 @@
             "Toby",
             "Alfred",
             "Colin",
-            "Jee Sun",
+            "Hana",
             "Tawm"
           ],
           "gridSource": "qualifying",
@@ -3000,8 +3000,8 @@
               "car": "rss_formula_hybrid_v12-r",
               "skin": "04_gsi_scarlet_21"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Hana": {
+              "driver": "Hana",
               "guid": "",
               "carId": null,
               "car": ""
@@ -4266,7 +4266,7 @@
     },
     {
       "eventId": "2025-09-02-ks-barcelona",
-      "signature": "0dcbb38a5f031681",
+      "signature": "365a9d2f6d3b0f01",
       "venue": "Ks Barcelona",
       "date": "2025-09-02",
       "track": "csp/2144/../ks_barcelona",
@@ -9867,7 +9867,7 @@
     },
     {
       "eventId": "2025-09-09-pinwheel",
-      "signature": "76853aef0ec6b0f8",
+      "signature": "848a1adcbc25f50b",
       "venue": "Pinwheel",
       "date": "2025-09-09",
       "track": "csp/2144/../pinwheel",
@@ -14447,7 +14447,7 @@
     },
     {
       "eventId": "2025-09-16-melbourne22",
-      "signature": "e1c0d8d0b0ce6d5f",
+      "signature": "16cff27e95694fbf",
       "venue": "Melbourne22",
       "date": "2025-09-16",
       "track": "csp/2144/../melbourne22",

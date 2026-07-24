@@ -112,6 +112,7 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
     processor.configure_name_map(cfg.driver_names)
     processor.configure_aliases(cfg.driver_aliases)
     processor.configure_shared_guids(cfg.shared_guids)
+    processor.configure_guest_slot_names(cfg.guest_slot_names)
     fingerprint = cfg.fingerprint()
 
     if not dry_run:
@@ -130,6 +131,7 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
     any_written = False
     total_events = 0
     for season_id in sorted(season_ids, key=_season_sort_key):
+        processor.set_current_season(season_id)
         folder = cfg.inbox_dir / season_id
         scan = scan_season(folder, cfg.restart_window_minutes) if folder.exists() else _empty_scan()
 

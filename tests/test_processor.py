@@ -6,6 +6,8 @@ from race_processor.processor import (
     configure_aliases,
     configure_name_map,
     configure_shared_guids,
+    configure_guest_slot_names,
+    set_current_season,
     extract_driver_name,
     resolve_driver_name,
     build_grid_from_qualifying,
@@ -643,3 +645,17 @@ def test_shared_guid_splits_one_account_into_separate_drivers():
     assert "Sunny" not in result["laps"]
     configure_shared_guids(set())
     configure_name_map({})
+
+def test_guest_slot_name_depends_on_season():
+    # One guest-slot GUID, a different person each season.
+    configure_guest_slot_names({"slot-g": {"S16": "Alan", "S17": "Hana"}})
+    entry = {"DriverName": "Jee Sun", "DriverGuid": "slot-g"}
+    set_current_season("S16")
+    assert extract_driver_name(entry) == "Alan"
+    set_current_season("S17")
+    assert extract_driver_name(entry) == "Hana"
+    # A season with no override falls back to the display name.
+    set_current_season("S14")
+    assert extract_driver_name(entry) == "Jee Sun"
+    set_current_season("")
+    configure_guest_slot_names({})

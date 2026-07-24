@@ -50,7 +50,9 @@
     "76561198188806278": "Francis",
     "76561198069972927": "Henly"
   },
-  "driverAliases": {},
+  "driverAliases": {
+    "WildCard": "Wild Card"
+  },
   "sharedGuids": [
     "76561198430304383"
   ],
@@ -58,5 +60,15 @@
     "csp/2144/../jr_road_atlanta_2022|full": "Road Atlanta"
   },
   "eventGapHours": 4,
-  "restartWindowMinutes": 30
+  "restartWindowMinutes": 30,
+  "guestSlotNames": {
+    "76561198430304383": {
+      "S10": "Big Mike",
+      "S14": "Sunny",
+      "S16": "Alan",
+      "S17": "Hana",
+      "S18a": "Clive",
+      "S19": "Clive"
+    }
+  }
 }

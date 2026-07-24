@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S10",
-  "lastUpdated": "2026-07-24T07:58:19.194595+00:00",
+  "lastUpdated": "2026-07-24T11:32:09.798917+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2024-10-01-lilski-road-america",
-      "signature": "3ff7def7dd605c65",
+      "signature": "766b14d51cc59acd",
       "venue": "Lilski Road America",
       "date": "2024-10-01",
       "track": "csp/0/../lilski_road_america",
@@ -6788,7 +6788,7 @@
     },
     {
       "eventId": "2024-10-08-ks-red-bull-ring",
-      "signature": "f989205a20d62551",
+      "signature": "1c9659dbfd291d47",
       "venue": "Ks Red Bull Ring",
       "date": "2024-10-08",
       "track": "csp/0/../ks_red_bull_ring",
@@ -12410,7 +12410,7 @@
     },
     {
       "eventId": "2024-10-15-melbourne22",
-      "signature": "cbdb43de66667458",
+      "signature": "1d745b432a927980",
       "venue": "Melbourne22",
       "date": "2024-10-15",
       "track": "csp/0/../melbourne22",
@@ -12492,8 +12492,8 @@
               "car": "eatc_volkswagen_golf_gti_mk7",
               "skin": "00_Base"
             },
-            "Sunny Park": {
-              "driver": "Sunny Park",
+            "Big Mike": {
+              "driver": "Big Mike",
               "guid": "76561198430304383",
               "carId": 1,
               "car": "eatc_audi_rs3_lms_evo",
@@ -12544,7 +12544,7 @@
                 114237
               ]
             },
-            "Sunny Park": {
+            "Big Mike": {
               "bestMs": 138851,
               "laps": [
                 153894,
@@ -12780,7 +12780,7 @@
             "Green Kyle",
             "Austin",
             "Ghin",
-            "Sunny Park"
+            "Big Mike"
           ],
           "gridSource": "qualifying",
           "gridConfidence": "medium",
@@ -12855,8 +12855,8 @@
               "car": "eatc_lynk_03",
               "skin": "78_orange_co"
             },
-            "Sunny Park": {
-              "driver": "Sunny Park",
+            "Big Mike": {
+              "driver": "Big Mike",
               "guid": "76561198430304383",
               "carId": 1,
               "car": "eatc_audi_rs3_lms_evo",
@@ -12924,7 +12924,7 @@
               133870,
               134159
             ],
-            "Sunny Park": [
+            "Big Mike": [
               172007,
               150213,
               163845,
@@ -13160,7 +13160,7 @@
                 63674
               ]
             ],
-            "Sunny Park": [
+            "Big Mike": [
               [
                 58391,
                 27293,
@@ -13244,7 +13244,7 @@
               0,
               0
             ],
-            "Sunny Park": [
+            "Big Mike": [
               0,
               0,
               0,
@@ -13312,7 +13312,7 @@
               "M",
               "M"
             ],
-            "Sunny Park": [
+            "Big Mike": [
               "M",
               "M",
               "M",
@@ -13383,7 +13383,7 @@
               7,
               7
             ],
-            "Sunny Park": [
+            "Big Mike": [
               10,
               10,
               9,
@@ -13680,7 +13680,7 @@
                 "status": "classified"
               }
             ],
-            "Sunny Park": [
+            "Big Mike": [
               {
                 "lap": 1,
                 "position": 10,
@@ -13759,7 +13759,7 @@
               "lost": 0,
               "net": 2
             },
-            "Sunny Park": {
+            "Big Mike": {
               "gained": 1,
               "lost": 0,
               "net": 1
@@ -13927,8 +13927,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Sunny Park",
-              "driverKey": "Sunny Park",
+              "driver": "Big Mike",
+              "driverKey": "Big Mike",
               "guid": "76561198430304383",
               "carId": 1,
               "car": "eatc_audi_rs3_lms_evo",
@@ -14210,7 +14210,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sunny Park",
+              "driver1": "Big Mike",
               "driver2": "Ghin",
               "impactSpeed": 20.0,
               "worldPosition": {
@@ -14222,7 +14222,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Ghin",
-              "driver2": "Sunny Park",
+              "driver2": "Big Mike",
               "impactSpeed": 16.0,
               "worldPosition": {
                 "x": 305.0,
@@ -14232,7 +14232,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sunny Park",
+              "driver1": "Big Mike",
               "driver2": "Ghin",
               "impactSpeed": 18.8,
               "worldPosition": {
@@ -14243,7 +14243,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sunny Park",
+              "driver1": "Big Mike",
               "driver2": "Isaac",
               "impactSpeed": 22.1,
               "worldPosition": {
@@ -14255,7 +14255,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Isaac",
-              "driver2": "Sunny Park",
+              "driver2": "Big Mike",
               "impactSpeed": 16.9,
               "worldPosition": {
                 "x": -725.6,
@@ -14318,7 +14318,7 @@
               "bestMs": 129016,
               "lapsUsed": 4
             },
-            "Sunny Park": {
+            "Big Mike": {
               "avgMs": 160234,
               "medianMs": 163845,
               "bestMs": 150213,
@@ -16922,7 +16922,7 @@
     },
     {
       "eventId": "2024-10-22-estoril",
-      "signature": "6597cb2b41164721",
+      "signature": "794b9ad518fa7a74",
       "venue": "Estoril",
       "date": "2024-10-22",
       "track": "csp/0/../estoril",

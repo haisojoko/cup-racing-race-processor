@@ -25,6 +25,11 @@ _ALIAS_LOOKUP: dict[str, str] = {}
 # For these the "one GUID = one person" rule is wrong, so identity falls back to
 # the display name and the GUID->name map is ignored. From config.json sharedGuids.
 _SHARED_GUIDS: set[str] = set()
+# {guid: {season_id: name}} for a guest slot reused by a different person each
+# season. Requires _CURRENT_SEASON to be set (the ingest layer sets it per
+# season). A guid with guest names is always treated as shared.
+_GUEST_SLOT_NAMES: dict[str, dict[str, str]] = {}
+_CURRENT_SEASON: str = ""
 INVALID_LAP_TIME = 999_000_000
 
 
@@ -44,6 +49,26 @@ def configure_shared_guids(guids) -> None:
     """Install the set of shared/guest GUIDs (config.json sharedGuids)."""
     global _SHARED_GUIDS
     _SHARED_GUIDS = {str(g).strip() for g in (guids or ()) if str(g).strip()}
+
+
+def configure_guest_slot_names(mapping) -> None:
+    """Install the {guid: {season: name}} guest-slot table (guestSlotNames)."""
+    global _GUEST_SLOT_NAMES
+    _GUEST_SLOT_NAMES = {
+        str(g).strip(): {str(s).strip(): v for s, v in (m or {}).items()}
+        for g, m in (mapping or {}).items() if str(g).strip()
+    }
+
+
+def set_current_season(season_id: str) -> None:
+    """Tell the resolver which season is being processed (for guest slots)."""
+    global _CURRENT_SEASON
+    _CURRENT_SEASON = season_id or ""
+
+
+def _guid_is_shared(guid: str) -> bool:
+    """A GUID that is not one person: an explicit shared guid or a guest slot."""
+    return bool(guid) and (guid in _SHARED_GUIDS or guid in _GUEST_SLOT_NAMES)
 
 
 def resolve_driver_name(raw_name: str) -> str:
@@ -67,7 +92,12 @@ def extract_driver_name(entry: dict) -> str:
     differs across sessions.
     """
     guid = extract_driver_guid(entry)
-    if guid and guid in _GUID_NAME_MAP and guid not in _SHARED_GUIDS:
+    # A guest slot's occupant is decided by which season we're processing.
+    if guid and _CURRENT_SEASON:
+        season_map = _GUEST_SLOT_NAMES.get(guid)
+        if season_map and _CURRENT_SEASON in season_map:
+            return season_map[_CURRENT_SEASON]
+    if guid and guid in _GUID_NAME_MAP and not _guid_is_shared(guid):
         return _GUID_NAME_MAP[guid]
     if isinstance(entry.get("Driver"), dict):
         raw = entry["Driver"].get("Name", "").strip()
@@ -133,10 +163,11 @@ class DriverIdentity:
         # one driver stays one identity even if they occupy two car slots in a
         # session (join, leave, rejoin in a different car). The car id is only a
         # tiebreaker when no GUID is present.
-        if self.guid and self.guid not in _SHARED_GUIDS:
+        if self.guid and not _guid_is_shared(self.guid):
             return f"guid:{self.guid}"
-        # A shared/guest GUID is not one person: split it by display name so each
-        # name that used the account becomes its own driver.
+        # A shared/guest GUID is not one person: split it by resolved name (a
+        # display name, or the season's guest-slot name) so each occupant becomes
+        # its own driver.
         if self.guid:
             return f"shared:{self.guid}|name:{self.name.casefold()}"
         if self.car_id is not None:

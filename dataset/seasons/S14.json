@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S14",
-  "lastUpdated": "2026-07-24T07:58:19.551136+00:00",
+  "lastUpdated": "2026-07-24T11:32:10.178259+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2025-04-15-00-heartlake",
-      "signature": "dc5cec9d88b24ae5",
+      "signature": "639fc806f91ef6ef",
       "venue": "00 Heartlake",
       "date": "2025-04-15",
       "track": "csp/2144/../00_heartlake",
@@ -26,7 +26,7 @@
             "Toby",
             "Joyce",
             "Colin",
-            "Jee Sun"
+            "Sunny"
           ],
           "drivers": {
             "Josie": {
@@ -106,8 +106,8 @@
               "car": "ks_mazda_rx7_spirit_r",
               "skin": "09_competition_yellow_b"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Sunny": {
+              "driver": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -208,7 +208,7 @@
                 75617
               ]
             },
-            "Jee Sun": {
+            "Sunny": {
               "bestMs": 104900,
               "laps": [
                 109051,
@@ -264,7 +264,7 @@
             "Toby",
             "Joyce",
             "Colin",
-            "Jee Sun"
+            "Sunny"
           ],
           "drivers": {
             "Josie": {
@@ -337,8 +337,8 @@
               "car": "ks_mazda_rx7_spirit_r",
               "skin": "09_competition_yellow_b"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Sunny": {
+              "driver": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -464,7 +464,7 @@
                 89978
               ]
             },
-            "Jee Sun": {
+            "Sunny": {
               "bestMs": 123581,
               "laps": [
                 123581,
@@ -498,7 +498,7 @@
             "Toby",
             "Joyce",
             "Colin",
-            "Jee Sun"
+            "Sunny"
           ],
           "gridSource": "qualifying",
           "gridConfidence": "high",
@@ -581,8 +581,8 @@
               "car": "ks_mazda_rx7_spirit_r",
               "skin": "09_competition_yellow_b"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Sunny": {
+              "driver": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -704,7 +704,7 @@
               93325,
               99167
             ],
-            "Jee Sun": [
+            "Sunny": [
               110027,
               103741,
               102767,
@@ -1196,7 +1196,7 @@
                 39559
               ]
             ],
-            "Jee Sun": [
+            "Sunny": [
               [
                 46803,
                 27895,
@@ -1344,7 +1344,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Sunny": [
               0,
               0,
               0,
@@ -1468,7 +1468,7 @@
               "SM",
               "SM"
             ],
-            "Jee Sun": [
+            "Sunny": [
               "SM",
               "SM",
               "SM",
@@ -1599,7 +1599,7 @@
               11,
               11
             ],
-            "Jee Sun": [
+            "Sunny": [
               11,
               11,
               12,
@@ -2228,7 +2228,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Jee Sun": [
+            "Sunny": [
               {
                 "lap": 1,
                 "position": 11,
@@ -2341,7 +2341,7 @@
               "lost": 1,
               "net": 0
             },
-            "Jee Sun": {
+            "Sunny": {
               "gained": 1,
               "lost": 1,
               "net": 0
@@ -2405,7 +2405,7 @@
             {
               "lap": 3,
               "driver": "Alfred",
-              "passed": "Jee Sun",
+              "passed": "Sunny",
               "positionsGained": 1
             },
             {
@@ -2638,8 +2638,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Sunny",
+              "driverKey": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -2864,7 +2864,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "James",
               "impactSpeed": 102.7,
               "worldPosition": {
@@ -2876,7 +2876,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "James",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 101.8,
               "worldPosition": {
                 "x": -269.9,
@@ -2995,7 +2995,7 @@
               "bestMs": 89433,
               "lapsUsed": 6
             },
-            "Jee Sun": {
+            "Sunny": {
               "avgMs": 108218,
               "medianMs": 105154,
               "bestMs": 102767,
@@ -3058,7 +3058,7 @@
               "finishPosition": 11,
               "delta": 0
             },
-            "Jee Sun": {
+            "Sunny": {
               "qualPosition": 12,
               "finishPosition": 12,
               "delta": 0
@@ -3095,7 +3095,7 @@
     },
     {
       "eventId": "2025-04-22-g333-sachsenring-2022",
-      "signature": "ef3be073616baac4",
+      "signature": "69e858ee40f43e8a",
       "venue": "G333 Sachsenring 2022",
       "date": "2025-04-22",
       "track": "csp/2144/../g333_sachsenring_2022",
@@ -8367,7 +8367,7 @@
     },
     {
       "eventId": "2025-04-29-00-acopone",
-      "signature": "2f984059329dd532",
+      "signature": "3e84b483a28c830c",
       "venue": "00 Acopone",
       "date": "2025-04-29",
       "track": "csp/2144/../00_acopone",
@@ -14032,7 +14032,7 @@
     },
     {
       "eventId": "2025-05-06-ks-red-bull-ring",
-      "signature": "4c888780bc1dcc8d",
+      "signature": "ca05283258bb9c11",
       "venue": "Ks Red Bull Ring",
       "date": "2025-05-06",
       "track": "csp/2144/../ks_red_bull_ring",
@@ -14054,7 +14054,7 @@
             "Nick",
             "Joyce",
             "Colin",
-            "Jee Sun"
+            "Sunny"
           ],
           "drivers": {
             "Josie": {
@@ -14155,8 +14155,8 @@
               "car": "ks_mazda_rx7_spirit_r",
               "skin": "09_competition_yellow_b"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Sunny": {
+              "driver": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -14355,7 +14355,7 @@
                 64814
               ]
             },
-            "Jee Sun": {
+            "Sunny": {
               "bestMs": 71744,
               "laps": [
                 132533,
@@ -14698,7 +14698,7 @@
             "Nick",
             "Joyce",
             "Colin",
-            "Jee Sun",
+            "Sunny",
             "Caleb"
           ],
           "gridSource": "qualifying",
@@ -14803,8 +14803,8 @@
               "car": "ks_mazda_rx7_spirit_r",
               "skin": "09_competition_yellow_b"
             },
-            "Jee Sun": {
-              "driver": "Jee Sun",
+            "Sunny": {
+              "driver": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -14992,7 +14992,7 @@
               73123,
               63397
             ],
-            "Jee Sun": [
+            "Sunny": [
               89266,
               65471,
               75292,
@@ -15623,7 +15623,7 @@
                 28341
               ]
             ],
-            "Jee Sun": [
+            "Sunny": [
               [
                 58275,
                 30991
@@ -15870,7 +15870,7 @@
               0,
               0
             ],
-            "Jee Sun": [
+            "Sunny": [
               0,
               0,
               0,
@@ -16066,7 +16066,7 @@
               "SM",
               "SM"
             ],
-            "Jee Sun": [
+            "Sunny": [
               "SM",
               "SM",
               "SM",
@@ -16271,7 +16271,7 @@
               14,
               14
             ],
-            "Jee Sun": [
+            "Sunny": [
               16,
               16,
               16,
@@ -17251,7 +17251,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Jee Sun": [
+            "Sunny": [
               {
                 "lap": 1,
                 "position": 16,
@@ -17459,7 +17459,7 @@
               "lost": 2,
               "net": 0
             },
-            "Jee Sun": {
+            "Sunny": {
               "gained": 0,
               "lost": 1,
               "net": -1
@@ -17795,8 +17795,8 @@
               "restrictor": 0
             },
             {
-              "driver": "Jee Sun",
-              "driverKey": "Jee Sun",
+              "driver": "Sunny",
+              "driverKey": "Sunny",
               "guid": "76561198430304383",
               "carId": 15,
               "car": "subaru_wrx_sti_zenki_meg&sbt",
@@ -17835,7 +17835,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Colin",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 7.2,
               "worldPosition": {
                 "x": -229.0,
@@ -17845,7 +17845,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Colin",
               "impactSpeed": 35.4,
               "worldPosition": {
@@ -17857,7 +17857,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Colin",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 35.4,
               "worldPosition": {
                 "x": -169.7,
@@ -17989,7 +17989,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Josie",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 76.8,
               "worldPosition": {
                 "x": -103.2,
@@ -17999,7 +17999,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Josie",
               "impactSpeed": 76.5,
               "worldPosition": {
@@ -18033,7 +18033,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Lee",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 57.3,
               "worldPosition": {
                 "x": -131.5,
@@ -18065,7 +18065,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Samson",
               "impactSpeed": 23.1,
               "worldPosition": {
@@ -18077,7 +18077,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Samson",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 23.2,
               "worldPosition": {
                 "x": -138.9,
@@ -18121,7 +18121,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Caleb",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 74.9,
               "worldPosition": {
                 "x": -146.1,
@@ -18131,7 +18131,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Caleb",
               "impactSpeed": 74.9,
               "worldPosition": {
@@ -18142,7 +18142,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Samson",
               "impactSpeed": 233.5,
               "worldPosition": {
@@ -18154,7 +18154,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Samson",
-              "driver2": "Jee Sun",
+              "driver2": "Sunny",
               "impactSpeed": 189.8,
               "worldPosition": {
                 "x": -156.4,
@@ -18164,7 +18164,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Jee Sun",
+              "driver1": "Sunny",
               "driver2": "Samson",
               "impactSpeed": 9.3,
               "worldPosition": {
@@ -18280,7 +18280,7 @@
               "bestMs": 63051,
               "lapsUsed": 8
             },
-            "Jee Sun": {
+            "Sunny": {
               "avgMs": 72394,
               "medianMs": 72358,
               "bestMs": 65471,
@@ -18364,7 +18364,7 @@
               "finishPosition": 14,
               "delta": 0
             },
-            "Jee Sun": {
+            "Sunny": {
               "qualPosition": 15,
               "finishPosition": 16,
               "delta": -1

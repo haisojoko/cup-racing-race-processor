@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
-  "lastUpdated": "2026-07-24T07:58:30.559870+00:00",
+  "lastUpdated": "2026-07-24T11:32:11.117525+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -53,6 +53,7 @@
       ],
       "drivers": [
         "Austin",
+        "Big Mike",
         "Brie",
         "Calvin",
         "Colin",
@@ -66,7 +67,6 @@
         "Lee",
         "Mike",
         "Nick",
-        "Sunny Park",
         "Toby"
       ],
       "dataQuality": []
@@ -133,7 +133,7 @@
         "Ryan",
         "Tawm",
         "Toby",
-        "WildCard"
+        "Wild Card"
       ],
       "dataQuality": []
     },
@@ -323,13 +323,13 @@
         "Green Kyle",
         "Isaac",
         "James",
-        "Jee Sun",
         "Josie",
         "Joyce",
         "Lee",
         "Mike",
         "Nick",
         "Samson",
+        "Sunny",
         "Tawm",
         "Toby",
         "Walnut"
@@ -454,6 +454,7 @@
         }
       ],
       "drivers": [
+        "Alan",
         "Alfred",
         "Brie",
         "Calvin",
@@ -462,7 +463,6 @@
         "Green Kyle",
         "Isaac",
         "James",
-        "Jee Sun",
         "Josie",
         "Lee",
         "Lucian",
@@ -528,7 +528,6 @@
         "Isaac",
         "Ivan",
         "James",
-        "Jee Sun",
         "Josie",
         "Lee",
         "Mike",
@@ -590,13 +589,13 @@
         "Allan",
         "Austin",
         "Brie",
+        "Clive",
         "Dom",
         "Green Kyle",
         "Hana",
         "Isaac",
         "Ivan",
         "James",
-        "Jee Sun",
         "Jerry",
         "Josie",
         "Lee",
@@ -732,7 +731,6 @@
         "Dom",
         "Isaac",
         "James",
-        "Jee Sun",
         "Jerry",
         "Josie",
         "Joyce",

@@ -23,6 +23,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "driverNames": {},
     "driverAliases": {},
     "sharedGuids": [],
+    "guestSlotNames": {},
     "trackDisplayNames": {},
     "eventGapHours": 4,
     "restartWindowMinutes": 30,
@@ -42,6 +43,9 @@ class Config:
     driver_names: dict[str, str] = field(default_factory=dict)
     driver_aliases: dict[str, str] = field(default_factory=dict)
     shared_guids: tuple[str, ...] = ()
+    # {guid: {season_id: canonical name}} — for a guest slot reused by a
+    # different person each season. Overrides the display name for that season.
+    guest_slot_names: dict[str, dict[str, str]] = field(default_factory=dict)
     track_display_names: dict[str, str] = field(default_factory=dict)
     event_gap_hours: float = 4.0
     restart_window_minutes: float = 30.0
@@ -58,6 +62,7 @@ class Config:
                 "driverNames": self.driver_names,
                 "driverAliases": self.driver_aliases,
                 "sharedGuids": sorted(self.shared_guids),
+                "guestSlotNames": self.guest_slot_names,
                 "trackDisplayNames": self.track_display_names,
                 "eventGapHours": self.event_gap_hours,
                 "restartWindowMinutes": self.restart_window_minutes,
@@ -104,6 +109,10 @@ def load_config(path: Path, *, warn=print) -> Config:
         driver_names=dict(merged["driverNames"]),
         driver_aliases=dict(merged["driverAliases"]),
         shared_guids=tuple(str(g).strip() for g in merged["sharedGuids"] if str(g).strip()),
+        guest_slot_names={
+            str(g).strip(): {str(s).strip(): str(n) for s, n in (m or {}).items()}
+            for g, m in dict(merged["guestSlotNames"]).items() if str(g).strip()
+        },
         track_display_names=dict(merged["trackDisplayNames"]),
         event_gap_hours=float(merged["eventGapHours"]),
         restart_window_minutes=float(merged["restartWindowMinutes"]),
