@@ -413,6 +413,27 @@ def test_overtakes_full_race_present_as_list():
     result = process_race(RACE_RESULT, grid=["Josie", "Toby", "Lee"])
     assert isinstance(result["overtakes"], list)
 
+def test_overtakes_include_launch_when_grid_supplied():
+    # A is on pole; B crosses lap 1 ahead → B passed A off the line (lap 1).
+    laps = {"A": [110, 100], "B": [100, 100]}
+    overtakes = _compute_overtakes(laps, ["A", "B"], ["A", "B"])
+    launch = [o for o in overtakes if o["lap"] == 1 and o["driver"] == "B" and o["passed"] == "A"]
+    assert launch
+    assert launch[0]["positionsGained"] == 1
+
+def test_overtakes_omit_launch_without_grid():
+    # Same laps, no grid → the opening-lap pass is not inferred.
+    laps = {"A": [110, 100], "B": [100, 100]}
+    overtakes = _compute_overtakes(laps, ["A", "B"])
+    assert not [o for o in overtakes if o["lap"] == 1]
+
+def test_process_race_reverse_grid_records_launch_overtakes():
+    # Trusted (medium) reverse grid puts Lee on pole; Josie starts last but
+    # runs to the front → launch passes should appear at lap 1.
+    meta = {"gridSource": "reversed-previous", "gridConfidence": "medium", "gridScore": 0.6}
+    result = process_race(RACE_RESULT, grid=["Lee", "Toby", "Josie"], grid_meta=meta)
+    assert any(o["lap"] == 1 for o in result["overtakes"])
+
 
 # ---- Identity: one GUID across two car slots ----
 

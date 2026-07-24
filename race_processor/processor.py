@@ -417,14 +417,6 @@ def process_race(
     laps_by_driver, sectors_by_driver, cuts_by_driver, tyres_by_driver = _build_lap_tables(
         laps_raw, drivers, registry
     )
-    positions = _compute_positions(laps_by_driver, drivers)
-    position_details = _compute_position_details(laps_by_driver, drivers)
-    overtakes = _compute_overtakes(laps_by_driver, drivers)
-    contacts = _map_contacts_to_laps(events_raw, laps_raw, registry)
-    pace = _compute_pace(laps_by_driver)
-    result = _build_result(results_raw, laps_raw, registry)
-    driver_meta = _build_driver_metadata(drivers, registry)
-
     if grid_meta is not None:
         meta = grid_meta
     elif grid_provided:
@@ -432,10 +424,22 @@ def process_race(
     else:
         meta = {"gridSource": "first-lap-inferred", "gridConfidence": "low", "gridScore": None}
     confidence = meta.get("gridConfidence", "low")
-    if confidence in ("high", "medium"):
-        pos_changes: dict[str, Any] | None = _compute_position_changes(positions, grid)
-    else:
-        pos_changes = None
+    # Launch overtakes and positionChanges both need a trustworthy start order.
+    # A low/unknown grid is derived from lap 1 itself, so it would add no real
+    # launch passes anyway — gate both on the same confidence.
+    trusted_grid = grid if confidence in ("high", "medium") else None
+
+    positions = _compute_positions(laps_by_driver, drivers)
+    position_details = _compute_position_details(laps_by_driver, drivers)
+    overtakes = _compute_overtakes(laps_by_driver, drivers, trusted_grid)
+    contacts = _map_contacts_to_laps(events_raw, laps_raw, registry)
+    pace = _compute_pace(laps_by_driver)
+    result = _build_result(results_raw, laps_raw, registry)
+    driver_meta = _build_driver_metadata(drivers, registry)
+
+    pos_changes: dict[str, Any] | None = (
+        _compute_position_changes(positions, grid) if trusted_grid is not None else None
+    )
 
     return {
         "grid": grid,
@@ -728,8 +732,28 @@ def _compute_position_changes(
     return changes
 
 
+def _grid_snapshot(
+    grid: list[str], laps_by_driver: dict[str, list[int]]
+) -> list[dict[str, Any]] | None:
+    """A synthetic lap-0 snapshot from the starting grid.
+
+    Densified over drivers who have lap data (a DNS on the grid is dropped),
+    so transitioning grid -> lap 1 exposes launch-phase overtakes.
+    """
+    dense = [d for d in grid if d in laps_by_driver]
+    if len(dense) < 2:
+        return None
+    return [
+        {"driver": d, "leaderLap": 0, "lapsCompleted": 0, "totalTimeMs": 0,
+         "status": "classified", "position": i + 1}
+        for i, d in enumerate(dense)
+    ]
+
+
 def _compute_overtakes(
-    laps_by_driver: dict[str, list[int]], drivers: list[str]
+    laps_by_driver: dict[str, list[int]],
+    drivers: list[str],
+    grid: list[str] | None = None,
 ) -> list[dict[str, Any]]:
     """Derive discrete on-track passes from consecutive leader-lap snapshots.
 
@@ -738,8 +762,16 @@ def _compute_overtakes(
     where both drivers are ``classified`` on both laps, which suppresses pit /
     DNF artifacts. Lapped-traffic passes are not distinguished (documented in
     SCHEMA.md). ``positionsGained`` is A's net places gained over that lap.
+
+    When ``grid`` is supplied (only for trusted grids — see build_race), a
+    lap-0 grid snapshot is prepended so opening-lap passes off the start line
+    are captured as ``lap == 1`` overtakes.
     """
     snapshots = _position_snapshots(laps_by_driver, drivers)
+    if grid:
+        grid_snap = _grid_snapshot(grid, laps_by_driver)
+        if grid_snap is not None:
+            snapshots = [grid_snap, *snapshots]
     overtakes: list[dict[str, Any]] = []
 
     for i in range(len(snapshots) - 1):

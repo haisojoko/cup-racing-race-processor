@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S18b",
-  "lastUpdated": "2026-07-24T11:32:10.513424+00:00",
+  "lastUpdated": "2026-07-24T14:22:16.592889+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -1406,6 +1406,54 @@
             }
           },
           "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Toby",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Dom",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Lee",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Walnut",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Tawm",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Timmy",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Jerry",
+              "positionsGained": 7
+            },
             {
               "lap": 2,
               "driver": "Josie",
@@ -2811,6 +2859,66 @@
             }
           },
           "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Dom",
+              "passed": "Toby",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Dom",
+              "passed": "Josie",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Dom",
+              "passed": "Alfred",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Toby",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Josie",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Alfred",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Alfred",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Jerry",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Jerry",
+              "positionsGained": 1
+            },
             {
               "lap": 2,
               "driver": "Dom",
@@ -4949,6 +5057,60 @@
           },
           "overtakes": [
             {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Dom",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Jerry",
+              "passed": "Dom",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Dom",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Tawm",
+              "passed": "Dom",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Dom",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Dom",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Michael G",
+              "positionsGained": 2
+            },
+            {
               "lap": 2,
               "driver": "Dom",
               "passed": "Colin",
@@ -6677,6 +6839,60 @@
             }
           },
           "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Jerry",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Michael G",
+              "passed": "Allan",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Michael G",
+              "passed": "Mike",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Tawm",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Mike",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Tawm",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Tawm",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
             {
               "lap": 2,
               "driver": "Tawm",
@@ -8779,6 +8995,30 @@
           },
           "overtakes": [
             {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
               "lap": 2,
               "driver": "Lee",
               "passed": "Josie",
@@ -10821,6 +11061,36 @@
           },
           "overtakes": [
             {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Michael G",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Michael G",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Michael G",
+              "positionsGained": 1
+            },
+            {
               "lap": 2,
               "driver": "Jerry",
               "passed": "Josie",
@@ -12731,6 +13001,96 @@
             }
           },
           "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Jerry",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Jerry",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Jerry",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Allan",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Colin",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Jerry",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Michael G",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Mike",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Jerry",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Alfred",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Jerry",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Michael G",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Mike",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Alfred",
+              "positionsGained": 3
+            },
             {
               "lap": 2,
               "driver": "Jerry",

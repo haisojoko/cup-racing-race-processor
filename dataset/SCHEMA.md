@@ -165,6 +165,9 @@ unreliable start order.
 - **Overtakes include lapped traffic.** A pass is any classified-vs-classified
   position swap between consecutive leader-laps; being lapped/unlapped is not
   distinguished.
+- **Opening-lap (`lap == 1`) overtakes** are the grid → lap-1 launch, recorded
+  only when the grid is trusted (`gridConfidence` high/medium). Low/unknown
+  grids are derived from lap-1 order itself, so no launch passes are emitted.
 - **Lap timestamps are server-uptime ms**, not wall-clock — usable only for
   intra-session ordering.
 - **Reverse-grid confidence is often `medium`.** After a reverse start the fast
