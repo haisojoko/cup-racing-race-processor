@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S21",
-  "lastUpdated": "2026-07-24T14:22:16.873425+00:00",
+  "lastUpdated": "2026-07-24T14:31:42.986443+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2026-04-07-kyalami-2016",
-      "signature": "390936a270fb5681",
+      "signature": "ab32d23a1001d6f2",
       "venue": "Kyalami 2016",
       "date": "2026-04-07",
       "track": "csp/2144/../kyalami_2016",
@@ -1679,60 +1679,25 @@
         },
         "2": {
           "grid": [
-            "Josie",
-            "James",
-            "Lee",
-            "Walnut",
-            "Allan",
-            "Alfred",
+            "Colin",
             "Brie",
-            "Colin"
+            "Alfred",
+            "Allan",
+            "Walnut",
+            "Lee",
+            "James",
+            "Josie"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.571,
+          "gridScore": -0.571,
           "drivers": {
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 1,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "07_Honda_test"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 6,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "21_Prestazioni_da_Corsa"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 7,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "28_Prestazioni_da_Corsa"
-            },
-            "Walnut": {
-              "driver": "Walnut",
-              "guid": "76561198141802891",
-              "carId": 2,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "14_Redbull"
-            },
-            "Allan": {
-              "driver": "Allan",
-              "guid": "76561198038077208",
-              "carId": 10,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "16_Williams"
-            },
-            "Alfred": {
-              "driver": "Alfred",
-              "guid": "76561198193231731",
-              "carId": 4,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "31_VRC_Motorsport"
+              "skin": "22_Aguri"
             },
             "Brie": {
               "driver": "Brie",
@@ -1741,68 +1706,58 @@
               "car": "vrc_formula_alpha_2007_mc22",
               "skin": "15_Redbull"
             },
-            "Colin": {
-              "driver": "Colin",
-              "guid": "76561197967093333",
-              "carId": 1,
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 4,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "22_Aguri"
+              "skin": "31_VRC_Motorsport"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 10,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "16_Williams"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 2,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "14_Redbull"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 7,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "28_Prestazioni_da_Corsa"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 6,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "21_Prestazioni_da_Corsa"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "07_Honda_test"
             }
           },
           "laps": {
-            "Josie": [
-              81534,
-              75996,
-              76032,
-              75667,
-              75588,
-              75712,
-              75817
-            ],
-            "James": [
-              83645,
-              81957,
-              75730,
-              75286,
-              75336,
-              75384,
-              75185
-            ],
-            "Lee": [
-              83717,
-              85547,
-              76853,
-              77551,
-              76461,
-              76499,
-              77736
-            ],
-            "Walnut": [
-              83166,
-              76661,
-              76161,
-              76733,
-              76039,
-              76929,
-              76220
-            ],
-            "Allan": [
-              96995,
-              77313,
-              78430,
-              77820,
-              79712,
-              76709,
-              77164
-            ],
-            "Alfred": [
-              85573,
-              83408,
-              81403,
-              79453,
-              82225,
-              83057,
-              80525
+            "Colin": [
+              89546,
+              82730,
+              83419,
+              81514,
+              80947,
+              85722,
+              81800
             ],
             "Brie": [
               92292,
@@ -1813,237 +1768,97 @@
               80264,
               79567
             ],
-            "Colin": [
-              89546,
-              82730,
-              83419,
-              81514,
-              80947,
-              85722,
-              81800
+            "Alfred": [
+              85573,
+              83408,
+              81403,
+              79453,
+              82225,
+              83057,
+              80525
+            ],
+            "Allan": [
+              96995,
+              77313,
+              78430,
+              77820,
+              79712,
+              76709,
+              77164
+            ],
+            "Walnut": [
+              83166,
+              76661,
+              76161,
+              76733,
+              76039,
+              76929,
+              76220
+            ],
+            "Lee": [
+              83717,
+              85547,
+              76853,
+              77551,
+              76461,
+              76499,
+              77736
+            ],
+            "James": [
+              83645,
+              81957,
+              75730,
+              75286,
+              75336,
+              75384,
+              75185
+            ],
+            "Josie": [
+              81534,
+              75996,
+              76032,
+              75667,
+              75588,
+              75712,
+              75817
             ]
           },
           "sectors": {
-            "Josie": [
+            "Colin": [
               [
-                29752,
-                29412,
-                22370
-              ],
-              [
-                24461,
-                29125,
-                22410
-              ],
-              [
-                24614,
-                29152,
-                22266
-              ],
-              [
-                24412,
-                28971,
-                22284
-              ],
-              [
-                24391,
-                28966,
-                22231
-              ],
-              [
-                24304,
-                29061,
-                22347
-              ],
-              [
-                24418,
-                29115,
-                22284
-              ]
-            ],
-            "James": [
-              [
-                29771,
-                30790,
-                23084
-              ],
-              [
-                30189,
-                29623,
-                22145
-              ],
-              [
-                24443,
-                29039,
-                22248
-              ],
-              [
-                24278,
-                28827,
-                22181
-              ],
-              [
-                24436,
-                28818,
-                22082
-              ],
-              [
-                24412,
-                28818,
-                22154
-              ],
-              [
-                24273,
-                28759,
-                22153
-              ]
-            ],
-            "Lee": [
-              [
-                30752,
-                30366,
-                22599
-              ],
-              [
-                33095,
-                29615,
-                22837
-              ],
-              [
-                24752,
-                29385,
-                22716
-              ],
-              [
-                25023,
-                30113,
-                22415
-              ],
-              [
-                24603,
-                29240,
-                22618
-              ],
-              [
-                24484,
-                29574,
-                22441
-              ],
-              [
-                24663,
-                29484,
-                23589
-              ]
-            ],
-            "Walnut": [
-              [
-                30007,
-                30303,
-                22856
-              ],
-              [
-                24889,
-                29183,
-                22589
-              ],
-              [
-                24582,
-                29195,
-                22384
-              ],
-              [
-                24632,
-                29525,
-                22576
-              ],
-              [
-                24455,
-                29129,
-                22455
-              ],
-              [
-                25205,
-                29318,
-                22406
-              ],
-              [
-                24713,
-                29107,
-                22400
-              ]
-            ],
-            "Allan": [
-              [
-                31404,
-                30595,
-                34996
-              ],
-              [
-                24923,
-                29430,
-                22960
-              ],
-              [
-                26077,
-                29587,
-                22766
-              ],
-              [
-                24791,
-                29786,
-                23243
-              ],
-              [
-                25209,
-                31824,
-                22679
-              ],
-              [
-                24698,
-                29430,
-                22581
-              ],
-              [
-                24717,
-                29682,
-                22765
-              ]
-            ],
-            "Alfred": [
-              [
-                31011,
-                30780,
-                23782
-              ],
-              [
-                28337,
-                31716,
-                23355
-              ],
-              [
-                25761,
-                31873,
-                23769
-              ],
-              [
-                25561,
-                30497,
-                23395
-              ],
-              [
-                25777,
-                33102,
-                23346
-              ],
-              [
-                27761,
-                31064,
-                24232
-              ],
-              [
-                26255,
+                33081,
                 30969,
-                23301
+                25496
+              ],
+              [
+                27547,
+                31172,
+                24011
+              ],
+              [
+                26282,
+                30695,
+                26442
+              ],
+              [
+                26434,
+                30919,
+                24161
+              ],
+              [
+                26573,
+                30722,
+                23652
+              ],
+              [
+                29242,
+                32189,
+                24291
+              ],
+              [
+                26892,
+                30861,
+                24047
               ]
             ],
             "Brie": [
@@ -2083,91 +1898,231 @@
                 23566
               ]
             ],
-            "Colin": [
+            "Alfred": [
               [
-                33081,
+                31011,
+                30780,
+                23782
+              ],
+              [
+                28337,
+                31716,
+                23355
+              ],
+              [
+                25761,
+                31873,
+                23769
+              ],
+              [
+                25561,
+                30497,
+                23395
+              ],
+              [
+                25777,
+                33102,
+                23346
+              ],
+              [
+                27761,
+                31064,
+                24232
+              ],
+              [
+                26255,
                 30969,
-                25496
+                23301
+              ]
+            ],
+            "Allan": [
+              [
+                31404,
+                30595,
+                34996
               ],
               [
-                27547,
-                31172,
-                24011
+                24923,
+                29430,
+                22960
               ],
               [
-                26282,
-                30695,
-                26442
+                26077,
+                29587,
+                22766
               ],
               [
-                26434,
-                30919,
-                24161
+                24791,
+                29786,
+                23243
               ],
               [
-                26573,
-                30722,
-                23652
+                25209,
+                31824,
+                22679
               ],
               [
-                29242,
-                32189,
-                24291
+                24698,
+                29430,
+                22581
               ],
               [
-                26892,
-                30861,
-                24047
+                24717,
+                29682,
+                22765
+              ]
+            ],
+            "Walnut": [
+              [
+                30007,
+                30303,
+                22856
+              ],
+              [
+                24889,
+                29183,
+                22589
+              ],
+              [
+                24582,
+                29195,
+                22384
+              ],
+              [
+                24632,
+                29525,
+                22576
+              ],
+              [
+                24455,
+                29129,
+                22455
+              ],
+              [
+                25205,
+                29318,
+                22406
+              ],
+              [
+                24713,
+                29107,
+                22400
+              ]
+            ],
+            "Lee": [
+              [
+                30752,
+                30366,
+                22599
+              ],
+              [
+                33095,
+                29615,
+                22837
+              ],
+              [
+                24752,
+                29385,
+                22716
+              ],
+              [
+                25023,
+                30113,
+                22415
+              ],
+              [
+                24603,
+                29240,
+                22618
+              ],
+              [
+                24484,
+                29574,
+                22441
+              ],
+              [
+                24663,
+                29484,
+                23589
+              ]
+            ],
+            "James": [
+              [
+                29771,
+                30790,
+                23084
+              ],
+              [
+                30189,
+                29623,
+                22145
+              ],
+              [
+                24443,
+                29039,
+                22248
+              ],
+              [
+                24278,
+                28827,
+                22181
+              ],
+              [
+                24436,
+                28818,
+                22082
+              ],
+              [
+                24412,
+                28818,
+                22154
+              ],
+              [
+                24273,
+                28759,
+                22153
+              ]
+            ],
+            "Josie": [
+              [
+                29752,
+                29412,
+                22370
+              ],
+              [
+                24461,
+                29125,
+                22410
+              ],
+              [
+                24614,
+                29152,
+                22266
+              ],
+              [
+                24412,
+                28971,
+                22284
+              ],
+              [
+                24391,
+                28966,
+                22231
+              ],
+              [
+                24304,
+                29061,
+                22347
+              ],
+              [
+                24418,
+                29115,
+                22284
               ]
             ]
           },
           "cuts": {
-            "Josie": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "James": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Lee": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Walnut": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Allan": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Alfred": [
+            "Colin": [
               0,
               0,
               0,
@@ -2185,7 +2140,52 @@
               0,
               0
             ],
-            "Colin": [
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
               0,
               0,
               0,
@@ -2196,52 +2196,7 @@
             ]
           },
           "tyres": {
-            "Josie": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "James": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Lee": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Walnut": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Allan": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Alfred": [
+            "Colin": [
               "S",
               "S",
               "S",
@@ -2259,7 +2214,52 @@
               "S",
               "S"
             ],
-            "Colin": [
+            "Alfred": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Allan": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Walnut": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Lee": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "James": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Josie": [
               "S",
               "S",
               "S",
@@ -2270,59 +2270,14 @@
             ]
           },
           "positions": {
-            "Josie": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
-            ],
-            "James": [
-              3,
-              3,
-              3,
-              3,
-              3,
-              3,
-              3
-            ],
-            "Lee": [
-              4,
-              5,
-              4,
-              4,
-              4,
-              4,
-              4
-            ],
-            "Walnut": [
-              2,
-              2,
-              2,
-              2,
-              2,
-              2,
-              2
-            ],
-            "Allan": [
+            "Colin": [
+              6,
+              6,
+              7,
+              7,
+              7,
               8,
-              8,
-              6,
-              6,
-              5,
-              5,
-              5
-            ],
-            "Alfred": [
-              5,
-              4,
-              5,
-              5,
-              6,
-              6,
-              6
+              8
             ],
             "Brie": [
               7,
@@ -2333,277 +2288,102 @@
               7,
               7
             ],
-            "Colin": [
+            "Alfred": [
+              5,
+              4,
+              5,
+              5,
               6,
               6,
-              7,
-              7,
-              7,
+              6
+            ],
+            "Allan": [
               8,
-              8
+              8,
+              6,
+              6,
+              5,
+              5,
+              5
+            ],
+            "Walnut": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Lee": [
+              4,
+              5,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "James": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Josie": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
             ]
           },
           "positionDetails": {
-            "Josie": [
+            "Colin": [
               {
                 "lap": 1,
-                "position": 1,
+                "position": 6,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 1,
+                "position": 6,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 1,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 1,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "James": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 3,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 5,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 4,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 4,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 4,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Walnut": [
-              {
-                "lap": 1,
-                "position": 2,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 2,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 2,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 2,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 2,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Allan": [
-              {
-                "lap": 1,
                 "position": 8,
-                "lapsCompleted": 1,
+                "lapsCompleted": 6,
                 "status": "classified"
               },
               {
-                "lap": 2,
+                "lap": 7,
                 "position": 8,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 6,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 6,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 5,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 5,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 5,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Alfred": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 6,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 6,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 6,
                 "lapsCompleted": 7,
                 "status": "classified"
               }
@@ -2652,121 +2432,431 @@
                 "status": "classified"
               }
             ],
-            "Colin": [
+            "Alfred": [
               {
                 "lap": 1,
-                "position": 6,
+                "position": 5,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 6,
+                "position": 4,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 7,
+                "position": 6,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 6,
                 "status": "classified"
               },
               {
                 "lap": 7,
+                "position": 6,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
                 "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 5,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 2,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 4,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 3,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 1,
                 "lapsCompleted": 7,
                 "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "Josie": {
+            "Colin": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
-            },
-            "James": {
-              "gained": 0,
-              "lost": 1,
-              "net": -1
-            },
-            "Lee": {
-              "gained": 1,
-              "lost": 2,
-              "net": -1
-            },
-            "Walnut": {
-              "gained": 2,
-              "lost": 0,
-              "net": 2
-            },
-            "Allan": {
-              "gained": 3,
-              "lost": 3,
-              "net": 0
-            },
-            "Alfred": {
-              "gained": 2,
-              "lost": 2,
-              "net": 0
+              "lost": 7,
+              "net": -7
             },
             "Brie": {
               "gained": 1,
-              "lost": 1,
-              "net": 0
+              "lost": 6,
+              "net": -5
             },
-            "Colin": {
-              "gained": 2,
-              "lost": 2,
-              "net": 0
+            "Alfred": {
+              "gained": 1,
+              "lost": 4,
+              "net": -3
+            },
+            "Allan": {
+              "gained": 3,
+              "lost": 4,
+              "net": -1
+            },
+            "Walnut": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
+            },
+            "Lee": {
+              "gained": 3,
+              "lost": 1,
+              "net": 2
+            },
+            "James": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            },
+            "Josie": {
+              "gained": 7,
+              "lost": 0,
+              "net": 7
             }
           },
           "overtakes": [
             {
               "lap": 1,
-              "driver": "Walnut",
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
               "passed": "James",
-              "positionsGained": 2
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Lee",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Brie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 7
             },
             {
               "lap": 1,
               "driver": "Walnut",
+              "passed": "Alfred",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Brie",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "James",
               "passed": "Lee",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Brie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Alfred",
               "positionsGained": 2
             },
             {
               "lap": 1,
-              "driver": "Alfred",
-              "passed": "Allan",
-              "positionsGained": 1
+              "driver": "Lee",
+              "passed": "Colin",
+              "positionsGained": 2
             },
             {
               "lap": 1,
-              "driver": "Colin",
+              "driver": "Lee",
               "passed": "Brie",
               "positionsGained": 2
             },
             {
               "lap": 1,
-              "driver": "Colin",
+              "driver": "Lee",
               "passed": "Allan",
               "positionsGained": 2
             },
@@ -2960,40 +3050,10 @@
             }
           ],
           "pace": {
-            "Josie": {
-              "avgMs": 75802,
-              "medianMs": 75764,
-              "bestMs": 75588,
-              "lapsUsed": 6
-            },
-            "James": {
-              "avgMs": 76480,
-              "medianMs": 75360,
-              "bestMs": 75185,
-              "lapsUsed": 6
-            },
-            "Lee": {
-              "avgMs": 78441,
-              "medianMs": 77202,
-              "bestMs": 76461,
-              "lapsUsed": 6
-            },
-            "Walnut": {
-              "avgMs": 76457,
-              "medianMs": 76440,
-              "bestMs": 76039,
-              "lapsUsed": 6
-            },
-            "Allan": {
-              "avgMs": 77858,
-              "medianMs": 77566,
-              "bestMs": 76709,
-              "lapsUsed": 6
-            },
-            "Alfred": {
-              "avgMs": 81678,
-              "medianMs": 81814,
-              "bestMs": 79453,
+            "Colin": {
+              "avgMs": 82689,
+              "medianMs": 82265,
+              "bestMs": 80947,
               "lapsUsed": 6
             },
             "Brie": {
@@ -3002,10 +3062,40 @@
               "bestMs": 79567,
               "lapsUsed": 6
             },
-            "Colin": {
-              "avgMs": 82689,
-              "medianMs": 82265,
-              "bestMs": 80947,
+            "Alfred": {
+              "avgMs": 81678,
+              "medianMs": 81814,
+              "bestMs": 79453,
+              "lapsUsed": 6
+            },
+            "Allan": {
+              "avgMs": 77858,
+              "medianMs": 77566,
+              "bestMs": 76709,
+              "lapsUsed": 6
+            },
+            "Walnut": {
+              "avgMs": 76457,
+              "medianMs": 76440,
+              "bestMs": 76039,
+              "lapsUsed": 6
+            },
+            "Lee": {
+              "avgMs": 78441,
+              "medianMs": 77202,
+              "bestMs": 76461,
+              "lapsUsed": 6
+            },
+            "James": {
+              "avgMs": 76480,
+              "medianMs": 75360,
+              "bestMs": 75185,
+              "lapsUsed": 6
+            },
+            "Josie": {
+              "avgMs": 75802,
+              "medianMs": 75764,
+              "bestMs": 75588,
               "lapsUsed": 6
             }
           },
@@ -4503,7 +4593,7 @@
     },
     {
       "eventId": "2026-04-14-shanghai-v2-25",
-      "signature": "b1fd3bcffe116f34",
+      "signature": "785a9652b0906deb",
       "venue": "Shanghai V2 25",
       "date": "2026-04-14",
       "track": "csp/2144/../shanghai_v2_25",
@@ -6152,60 +6242,25 @@
         },
         "2": {
           "grid": [
-            "James",
-            "Josie",
-            "Walnut",
-            "Lee",
-            "Allan",
-            "Brie",
+            "Mike",
             "Colin",
-            "Mike"
+            "Brie",
+            "Allan",
+            "Lee",
+            "Walnut",
+            "Josie",
+            "James"
           ],
-          "gridSource": "previous-race",
-          "gridConfidence": "high",
-          "gridScore": 1.0,
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -1.0,
           "drivers": {
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 7,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "21_Prestazioni_da_Corsa"
-            },
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 3,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "07_Honda_test"
-            },
-            "Walnut": {
-              "driver": "Walnut",
-              "guid": "76561198141802891",
-              "carId": 1,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "22_Aguri"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 8,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "28_Prestazioni_da_Corsa"
-            },
-            "Allan": {
-              "driver": "Allan",
-              "guid": "76561198038077208",
-              "carId": 11,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "16_Williams"
-            },
-            "Brie": {
-              "driver": "Brie",
-              "guid": "76561197966374236",
-              "carId": 2,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "14_Redbull"
+              "skin": "15_Redbull"
             },
             "Colin": {
               "driver": "Colin",
@@ -6214,68 +6269,58 @@
               "car": "vrc_formula_alpha_2007_mc22",
               "skin": "94_VRC_Motorsport"
             },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 3,
+            "Brie": {
+              "driver": "Brie",
+              "guid": "76561197966374236",
+              "carId": 2,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "15_Redbull"
+              "skin": "14_Redbull"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 11,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "16_Williams"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 8,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "28_Prestazioni_da_Corsa"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 1,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "22_Aguri"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "07_Honda_test"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 7,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "21_Prestazioni_da_Corsa"
             }
           },
           "laps": {
-            "James": [
-              97852,
-              95023,
-              95397,
-              94976,
-              94858,
-              95140,
-              95181
-            ],
-            "Josie": [
-              99118,
-              103920,
-              96533,
-              96474,
-              99481,
-              96283,
-              98421
-            ],
-            "Walnut": [
-              100320,
-              100462,
-              97341,
-              96772,
-              96467,
-              97103,
-              96856
-            ],
-            "Lee": [
-              101659,
-              100023,
-              100799,
-              99673,
-              98204,
-              100514,
-              98480
-            ],
-            "Allan": [
-              103567,
-              97714,
-              97431,
-              96835,
-              98294,
-              99115,
-              99554
-            ],
-            "Brie": [
-              111031,
-              102381,
-              100732,
-              99379,
-              100567,
-              98164,
-              99658
+            "Mike": [
+              136126,
+              105558,
+              108962,
+              106306,
+              103276,
+              104549,
+              102576
             ],
             "Colin": [
               116553,
@@ -6286,237 +6331,97 @@
               102542,
               104798
             ],
-            "Mike": [
-              136126,
-              105558,
-              108962,
-              106306,
-              103276,
-              104549,
-              102576
+            "Brie": [
+              111031,
+              102381,
+              100732,
+              99379,
+              100567,
+              98164,
+              99658
+            ],
+            "Allan": [
+              103567,
+              97714,
+              97431,
+              96835,
+              98294,
+              99115,
+              99554
+            ],
+            "Lee": [
+              101659,
+              100023,
+              100799,
+              99673,
+              98204,
+              100514,
+              98480
+            ],
+            "Walnut": [
+              100320,
+              100462,
+              97341,
+              96772,
+              96467,
+              97103,
+              96856
+            ],
+            "Josie": [
+              99118,
+              103920,
+              96533,
+              96474,
+              99481,
+              96283,
+              98421
+            ],
+            "James": [
+              97852,
+              95023,
+              95397,
+              94976,
+              94858,
+              95140,
+              95181
             ]
           },
           "sectors": {
-            "James": [
+            "Mike": [
               [
-                38029,
-                35402,
-                24421
+                71223,
+                38565,
+                26338
               ],
               [
-                35205,
-                35167,
-                24651
+                38566,
+                40703,
+                26289
               ],
               [
-                35299,
-                35496,
-                24602
+                40346,
+                39735,
+                28881
               ],
               [
-                35154,
-                35266,
-                24556
+                39985,
+                40387,
+                25934
               ],
               [
-                35071,
-                35231,
-                24556
+                38165,
+                38809,
+                26302
               ],
               [
-                35186,
-                35479,
-                24475
+                39232,
+                39128,
+                26189
               ],
               [
-                35258,
-                35217,
-                24706
-              ]
-            ],
-            "Josie": [
-              [
-                38678,
-                35884,
-                24556
-              ],
-              [
-                35961,
-                39653,
-                28306
-              ],
-              [
-                35784,
-                36072,
-                24677
-              ],
-              [
-                35552,
-                35965,
-                24957
-              ],
-              [
-                38529,
-                36193,
-                24759
-              ],
-              [
-                35474,
-                35654,
-                25155
-              ],
-              [
-                35645,
-                37719,
-                25057
-              ]
-            ],
-            "Walnut": [
-              [
-                39219,
-                35896,
-                25205
-              ],
-              [
-                35891,
-                38849,
-                25722
-              ],
-              [
-                35537,
-                36720,
-                25084
-              ],
-              [
-                35626,
-                36360,
-                24786
-              ],
-              [
-                35362,
-                35950,
-                25155
-              ],
-              [
-                35733,
-                36188,
-                25182
-              ],
-              [
-                35741,
-                35803,
-                25312
-              ]
-            ],
-            "Lee": [
-              [
-                39491,
-                36923,
-                25245
-              ],
-              [
-                36892,
-                36671,
-                26460
-              ],
-              [
-                36472,
-                39267,
-                25060
-              ],
-              [
-                36453,
-                36981,
-                26239
-              ],
-              [
-                36775,
-                36504,
-                24925
-              ],
-              [
-                38986,
-                36585,
-                24943
-              ],
-              [
-                37335,
-                36283,
-                24862
-              ]
-            ],
-            "Allan": [
-              [
-                40922,
-                37747,
-                24898
-              ],
-              [
-                36284,
-                36163,
-                25267
-              ],
-              [
-                36410,
-                35964,
-                25057
-              ],
-              [
-                36000,
-                35901,
-                24934
-              ],
-              [
-                36915,
-                36602,
-                24777
-              ],
-              [
-                35634,
-                35914,
-                27567
-              ],
-              [
-                35938,
-                37157,
-                26459
-              ]
-            ],
-            "Brie": [
-              [
-                40251,
-                45360,
-                25420
-              ],
-              [
-                37027,
-                40217,
-                25137
-              ],
-              [
-                37462,
-                38101,
-                25169
-              ],
-              [
-                37121,
-                37234,
-                25024
-              ],
-              [
-                36955,
-                37255,
-                26357
-              ],
-              [
-                36271,
-                36958,
-                24935
-              ],
-              [
-                37589,
-                36811,
-                25258
+                38064,
+                38218,
+                26294
               ]
             ],
             "Colin": [
@@ -6556,91 +6461,231 @@
                 30033
               ]
             ],
-            "Mike": [
+            "Brie": [
               [
-                71223,
-                38565,
-                26338
+                40251,
+                45360,
+                25420
               ],
               [
-                38566,
-                40703,
-                26289
+                37027,
+                40217,
+                25137
               ],
               [
-                40346,
-                39735,
-                28881
+                37462,
+                38101,
+                25169
               ],
               [
-                39985,
-                40387,
-                25934
+                37121,
+                37234,
+                25024
               ],
               [
-                38165,
-                38809,
-                26302
+                36955,
+                37255,
+                26357
               ],
               [
-                39232,
-                39128,
-                26189
+                36271,
+                36958,
+                24935
               ],
               [
-                38064,
-                38218,
-                26294
+                37589,
+                36811,
+                25258
+              ]
+            ],
+            "Allan": [
+              [
+                40922,
+                37747,
+                24898
+              ],
+              [
+                36284,
+                36163,
+                25267
+              ],
+              [
+                36410,
+                35964,
+                25057
+              ],
+              [
+                36000,
+                35901,
+                24934
+              ],
+              [
+                36915,
+                36602,
+                24777
+              ],
+              [
+                35634,
+                35914,
+                27567
+              ],
+              [
+                35938,
+                37157,
+                26459
+              ]
+            ],
+            "Lee": [
+              [
+                39491,
+                36923,
+                25245
+              ],
+              [
+                36892,
+                36671,
+                26460
+              ],
+              [
+                36472,
+                39267,
+                25060
+              ],
+              [
+                36453,
+                36981,
+                26239
+              ],
+              [
+                36775,
+                36504,
+                24925
+              ],
+              [
+                38986,
+                36585,
+                24943
+              ],
+              [
+                37335,
+                36283,
+                24862
+              ]
+            ],
+            "Walnut": [
+              [
+                39219,
+                35896,
+                25205
+              ],
+              [
+                35891,
+                38849,
+                25722
+              ],
+              [
+                35537,
+                36720,
+                25084
+              ],
+              [
+                35626,
+                36360,
+                24786
+              ],
+              [
+                35362,
+                35950,
+                25155
+              ],
+              [
+                35733,
+                36188,
+                25182
+              ],
+              [
+                35741,
+                35803,
+                25312
+              ]
+            ],
+            "Josie": [
+              [
+                38678,
+                35884,
+                24556
+              ],
+              [
+                35961,
+                39653,
+                28306
+              ],
+              [
+                35784,
+                36072,
+                24677
+              ],
+              [
+                35552,
+                35965,
+                24957
+              ],
+              [
+                38529,
+                36193,
+                24759
+              ],
+              [
+                35474,
+                35654,
+                25155
+              ],
+              [
+                35645,
+                37719,
+                25057
+              ]
+            ],
+            "James": [
+              [
+                38029,
+                35402,
+                24421
+              ],
+              [
+                35205,
+                35167,
+                24651
+              ],
+              [
+                35299,
+                35496,
+                24602
+              ],
+              [
+                35154,
+                35266,
+                24556
+              ],
+              [
+                35071,
+                35231,
+                24556
+              ],
+              [
+                35186,
+                35479,
+                24475
+              ],
+              [
+                35258,
+                35217,
+                24706
               ]
             ]
           },
           "cuts": {
-            "James": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Josie": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Walnut": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Lee": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Allan": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Brie": [
+            "Mike": [
               0,
               0,
               0,
@@ -6658,7 +6703,52 @@
               0,
               0
             ],
-            "Mike": [
+            "Brie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
               0,
               0,
               0,
@@ -6669,52 +6759,7 @@
             ]
           },
           "tyres": {
-            "James": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Josie": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Walnut": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Lee": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Allan": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Brie": [
+            "Mike": [
               "S",
               "S",
               "S",
@@ -6732,7 +6777,52 @@
               "S",
               "S"
             ],
-            "Mike": [
+            "Brie": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Allan": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Lee": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Walnut": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Josie": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "James": [
               "S",
               "S",
               "S",
@@ -6743,59 +6833,14 @@
             ]
           },
           "positions": {
-            "James": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
-            ],
-            "Josie": [
-              2,
-              5,
-              4,
-              4,
-              4,
-              3,
-              3
-            ],
-            "Walnut": [
-              3,
-              2,
-              2,
-              2,
-              2,
-              2,
-              2
-            ],
-            "Lee": [
-              4,
-              4,
-              5,
-              5,
-              5,
-              5,
-              5
-            ],
-            "Allan": [
-              5,
-              3,
-              3,
-              3,
-              3,
-              4,
-              4
-            ],
-            "Brie": [
-              6,
-              6,
-              6,
-              6,
-              6,
-              6,
-              6
+            "Mike": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
             ],
             "Colin": [
               7,
@@ -6806,277 +6851,102 @@
               7,
               7
             ],
-            "Mike": [
-              8,
-              8,
-              8,
-              8,
-              8,
-              8,
-              8
+            "Brie": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "Allan": [
+              5,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4
+            ],
+            "Lee": [
+              4,
+              4,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Walnut": [
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Josie": [
+              2,
+              5,
+              4,
+              4,
+              4,
+              3,
+              3
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
             ]
           },
           "positionDetails": {
-            "James": [
+            "Mike": [
               {
                 "lap": 1,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 1,
+                "position": 8,
                 "lapsCompleted": 6,
                 "status": "classified"
               },
               {
                 "lap": 7,
-                "position": 1,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Josie": [
-              {
-                "lap": 1,
-                "position": 2,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 5,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 4,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 3,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Walnut": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 2,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 2,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 2,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 2,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 5,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 5,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 5,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Allan": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 4,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 4,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Brie": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 6,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 6,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 6,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 6,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 6,
+                "position": 8,
                 "lapsCompleted": 7,
                 "status": "classified"
               }
@@ -7125,94 +6995,446 @@
                 "status": "classified"
               }
             ],
-            "Mike": [
+            "Brie": [
               {
                 "lap": 1,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 8,
+                "position": 6,
                 "lapsCompleted": 6,
                 "status": "classified"
               },
               {
                 "lap": 7,
-                "position": 8,
+                "position": 6,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 4,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 5,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 2,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 3,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 1,
                 "lapsCompleted": 7,
                 "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "James": {
+            "Mike": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
-            },
-            "Josie": {
-              "gained": 2,
-              "lost": 3,
-              "net": -1
-            },
-            "Walnut": {
-              "gained": 1,
-              "lost": 0,
-              "net": 1
-            },
-            "Lee": {
-              "gained": 0,
-              "lost": 1,
-              "net": -1
-            },
-            "Allan": {
-              "gained": 2,
-              "lost": 1,
-              "net": 1
-            },
-            "Brie": {
-              "gained": 0,
-              "lost": 0,
-              "net": 0
+              "lost": 7,
+              "net": -7
             },
             "Colin": {
               "gained": 0,
-              "lost": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Brie": {
+              "gained": 0,
+              "lost": 3,
+              "net": -3
+            },
+            "Allan": {
+              "gained": 2,
+              "lost": 2,
               "net": 0
             },
-            "Mike": {
-              "gained": 0,
-              "lost": 0,
+            "Lee": {
+              "gained": 1,
+              "lost": 1,
               "net": 0
+            },
+            "Walnut": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            },
+            "Josie": {
+              "gained": 7,
+              "lost": 3,
+              "net": 4
+            },
+            "James": {
+              "gained": 7,
+              "lost": 0,
+              "net": 7
             }
           },
           "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Lee",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Brie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Lee",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Brie",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Brie",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Mike",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Brie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
             {
               "lap": 2,
               "driver": "Walnut",
@@ -7408,40 +7630,10 @@
             }
           ],
           "pace": {
-            "James": {
-              "avgMs": 95096,
-              "medianMs": 95082,
-              "bestMs": 94858,
-              "lapsUsed": 6
-            },
-            "Josie": {
-              "avgMs": 98519,
-              "medianMs": 97477,
-              "bestMs": 96283,
-              "lapsUsed": 6
-            },
-            "Walnut": {
-              "avgMs": 97500,
-              "medianMs": 96980,
-              "bestMs": 96467,
-              "lapsUsed": 6
-            },
-            "Lee": {
-              "avgMs": 99616,
-              "medianMs": 99848,
-              "bestMs": 98204,
-              "lapsUsed": 6
-            },
-            "Allan": {
-              "avgMs": 98157,
-              "medianMs": 98004,
-              "bestMs": 96835,
-              "lapsUsed": 6
-            },
-            "Brie": {
-              "avgMs": 100147,
-              "medianMs": 100112,
-              "bestMs": 98164,
+            "Mike": {
+              "avgMs": 105204,
+              "medianMs": 105054,
+              "bestMs": 102576,
               "lapsUsed": 6
             },
             "Colin": {
@@ -7450,10 +7642,40 @@
               "bestMs": 100738,
               "lapsUsed": 6
             },
-            "Mike": {
-              "avgMs": 105204,
-              "medianMs": 105054,
-              "bestMs": 102576,
+            "Brie": {
+              "avgMs": 100147,
+              "medianMs": 100112,
+              "bestMs": 98164,
+              "lapsUsed": 6
+            },
+            "Allan": {
+              "avgMs": 98157,
+              "medianMs": 98004,
+              "bestMs": 96835,
+              "lapsUsed": 6
+            },
+            "Lee": {
+              "avgMs": 99616,
+              "medianMs": 99848,
+              "bestMs": 98204,
+              "lapsUsed": 6
+            },
+            "Walnut": {
+              "avgMs": 97500,
+              "medianMs": 96980,
+              "bestMs": 96467,
+              "lapsUsed": 6
+            },
+            "Josie": {
+              "avgMs": 98519,
+              "medianMs": 97477,
+              "bestMs": 96283,
+              "lapsUsed": 6
+            },
+            "James": {
+              "avgMs": 95096,
+              "medianMs": 95082,
+              "bestMs": 94858,
               "lapsUsed": 6
             }
           },
@@ -8875,60 +9097,25 @@
         },
         "4": {
           "grid": [
-            "James",
-            "Walnut",
-            "Josie",
-            "Allan",
-            "Lee",
-            "Brie",
+            "Mike",
             "Colin",
-            "Mike"
+            "Brie",
+            "Lee",
+            "Allan",
+            "Josie",
+            "Walnut",
+            "James"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.5,
+          "gridScore": -0.5,
           "drivers": {
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 7,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "21_Prestazioni_da_Corsa"
-            },
-            "Walnut": {
-              "driver": "Walnut",
-              "guid": "76561198141802891",
-              "carId": 1,
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 3,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "22_Aguri"
-            },
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "07_Honda_test"
-            },
-            "Allan": {
-              "driver": "Allan",
-              "guid": "76561198038077208",
-              "carId": 11,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "16_Williams"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 8,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "28_Prestazioni_da_Corsa"
-            },
-            "Brie": {
-              "driver": "Brie",
-              "guid": "76561197966374236",
-              "carId": 2,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "14_Redbull"
+              "skin": "15_Redbull"
             },
             "Colin": {
               "driver": "Colin",
@@ -8937,68 +9124,57 @@
               "car": "vrc_formula_alpha_2007_mc22",
               "skin": "94_VRC_Motorsport"
             },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 3,
+            "Brie": {
+              "driver": "Brie",
+              "guid": "76561197966374236",
+              "carId": 2,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "15_Redbull"
+              "skin": "14_Redbull"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 8,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "28_Prestazioni_da_Corsa"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 11,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "16_Williams"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "07_Honda_test"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 1,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "22_Aguri"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 7,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "21_Prestazioni_da_Corsa"
             }
           },
           "laps": {
-            "James": [
-              104632,
-              98565,
-              95746,
-              95684,
-              98381,
-              95618,
-              94736
-            ],
-            "Walnut": [
-              104540,
-              97122,
-              96156,
-              96601,
-              98438,
-              97158,
-              96660
-            ],
-            "Josie": [
-              100358,
-              96059,
-              97680,
-              96660,
-              97519,
-              96395,
-              96788
-            ],
-            "Allan": [
-              107229,
-              97510,
-              97899,
-              97393,
-              97156,
-              96679,
-              97003
-            ],
-            "Lee": [
-              99362,
-              96307,
-              97678,
-              96153,
-              99301,
-              102682,
-              95950
-            ],
-            "Brie": [
-              109403,
-              99133,
-              115462,
-              105684,
-              99616,
-              100167,
-              99630
+            "Mike": [
+              123705,
+              109628,
+              123455,
+              119959,
+              103132,
+              120830
             ],
             "Colin": [
               116086,
@@ -9009,236 +9185,92 @@
               100857,
               109984
             ],
-            "Mike": [
-              123705,
-              109628,
-              123455,
-              119959,
-              103132,
-              120830
+            "Brie": [
+              109403,
+              99133,
+              115462,
+              105684,
+              99616,
+              100167,
+              99630
+            ],
+            "Lee": [
+              99362,
+              96307,
+              97678,
+              96153,
+              99301,
+              102682,
+              95950
+            ],
+            "Allan": [
+              107229,
+              97510,
+              97899,
+              97393,
+              97156,
+              96679,
+              97003
+            ],
+            "Josie": [
+              100358,
+              96059,
+              97680,
+              96660,
+              97519,
+              96395,
+              96788
+            ],
+            "Walnut": [
+              104540,
+              97122,
+              96156,
+              96601,
+              98438,
+              97158,
+              96660
+            ],
+            "James": [
+              104632,
+              98565,
+              95746,
+              95684,
+              98381,
+              95618,
+              94736
             ]
           },
           "sectors": {
-            "James": [
+            "Mike": [
               [
-                43112,
-                36909,
-                24611
+                44099,
+                54244,
+                25362
               ],
               [
-                37698,
-                35297,
-                25570
+                38488,
+                44681,
+                26459
               ],
               [
-                35225,
-                35244,
-                25277
+                43023,
+                45454,
+                34978
               ],
               [
-                35272,
-                35802,
-                24610
+                54398,
+                39038,
+                26523
               ],
               [
-                36857,
-                36716,
-                24808
+                37193,
+                39290,
+                26649
               ],
               [
-                35697,
-                35284,
-                24637
-              ],
-              [
-                35332,
-                35172,
-                24232
-              ]
-            ],
-            "Walnut": [
-              [
-                42814,
-                36221,
-                25505
-              ],
-              [
-                36381,
-                35873,
-                24868
-              ],
-              [
-                35397,
-                36090,
-                24669
-              ],
-              [
-                36107,
-                35550,
-                24944
-              ],
-              [
-                37013,
-                36208,
-                25217
-              ],
-              [
-                36601,
-                35744,
-                24813
-              ],
-              [
-                35860,
-                35825,
-                24975
-              ]
-            ],
-            "Josie": [
-              [
-                39465,
-                36103,
-                24790
-              ],
-              [
-                35404,
-                35960,
-                24695
-              ],
-              [
-                36281,
-                36487,
-                24912
-              ],
-              [
-                35810,
-                36127,
-                24723
-              ],
-              [
-                35734,
-                35654,
-                26131
-              ],
-              [
-                35610,
-                35761,
-                25024
-              ],
-              [
-                36043,
-                35734,
-                25011
-              ]
-            ],
-            "Allan": [
-              [
-                43360,
-                38138,
-                25731
-              ],
-              [
-                36625,
-                35815,
-                25070
-              ],
-              [
-                36465,
-                35968,
-                25466
-              ],
-              [
-                35909,
-                36725,
-                24759
-              ],
-              [
-                36059,
-                36194,
-                24903
-              ],
-              [
-                36051,
-                35693,
-                24935
-              ],
-              [
-                36271,
-                35753,
-                24979
-              ]
-            ],
-            "Lee": [
-              [
-                38874,
-                35810,
-                24678
-              ],
-              [
-                35939,
-                35820,
-                24548
-              ],
-              [
-                36653,
-                36347,
-                24678
-              ],
-              [
-                35843,
-                35605,
-                24705
-              ],
-              [
-                35905,
-                35806,
-                27590
-              ],
-              [
-                35906,
-                35703,
-                31073
-              ],
-              [
-                35740,
-                35725,
-                24485
-              ]
-            ],
-            "Brie": [
-              [
-                45098,
-                38115,
-                26190
-              ],
-              [
-                37006,
-                37152,
-                24975
-              ],
-              [
-                37279,
-                52763,
-                25420
-              ],
-              [
-                42747,
-                37467,
-                25470
-              ],
-              [
-                36935,
-                37463,
-                25218
-              ],
-              [
-                37662,
-                37098,
-                25407
-              ],
-              [
-                36972,
-                37372,
-                25286
+                54392,
+                40253,
+                26185
               ]
             ],
             "Colin": [
@@ -9278,51 +9310,231 @@
                 25520
               ]
             ],
-            "Mike": [
+            "Brie": [
               [
-                44099,
-                54244,
-                25362
+                45098,
+                38115,
+                26190
               ],
               [
-                38488,
-                44681,
-                26459
+                37006,
+                37152,
+                24975
               ],
               [
-                43023,
-                45454,
-                34978
+                37279,
+                52763,
+                25420
               ],
               [
-                54398,
-                39038,
-                26523
+                42747,
+                37467,
+                25470
               ],
               [
-                37193,
-                39290,
-                26649
+                36935,
+                37463,
+                25218
               ],
               [
-                54392,
-                40253,
-                26185
+                37662,
+                37098,
+                25407
+              ],
+              [
+                36972,
+                37372,
+                25286
+              ]
+            ],
+            "Lee": [
+              [
+                38874,
+                35810,
+                24678
+              ],
+              [
+                35939,
+                35820,
+                24548
+              ],
+              [
+                36653,
+                36347,
+                24678
+              ],
+              [
+                35843,
+                35605,
+                24705
+              ],
+              [
+                35905,
+                35806,
+                27590
+              ],
+              [
+                35906,
+                35703,
+                31073
+              ],
+              [
+                35740,
+                35725,
+                24485
+              ]
+            ],
+            "Allan": [
+              [
+                43360,
+                38138,
+                25731
+              ],
+              [
+                36625,
+                35815,
+                25070
+              ],
+              [
+                36465,
+                35968,
+                25466
+              ],
+              [
+                35909,
+                36725,
+                24759
+              ],
+              [
+                36059,
+                36194,
+                24903
+              ],
+              [
+                36051,
+                35693,
+                24935
+              ],
+              [
+                36271,
+                35753,
+                24979
+              ]
+            ],
+            "Josie": [
+              [
+                39465,
+                36103,
+                24790
+              ],
+              [
+                35404,
+                35960,
+                24695
+              ],
+              [
+                36281,
+                36487,
+                24912
+              ],
+              [
+                35810,
+                36127,
+                24723
+              ],
+              [
+                35734,
+                35654,
+                26131
+              ],
+              [
+                35610,
+                35761,
+                25024
+              ],
+              [
+                36043,
+                35734,
+                25011
+              ]
+            ],
+            "Walnut": [
+              [
+                42814,
+                36221,
+                25505
+              ],
+              [
+                36381,
+                35873,
+                24868
+              ],
+              [
+                35397,
+                36090,
+                24669
+              ],
+              [
+                36107,
+                35550,
+                24944
+              ],
+              [
+                37013,
+                36208,
+                25217
+              ],
+              [
+                36601,
+                35744,
+                24813
+              ],
+              [
+                35860,
+                35825,
+                24975
+              ]
+            ],
+            "James": [
+              [
+                43112,
+                36909,
+                24611
+              ],
+              [
+                37698,
+                35297,
+                25570
+              ],
+              [
+                35225,
+                35244,
+                25277
+              ],
+              [
+                35272,
+                35802,
+                24610
+              ],
+              [
+                36857,
+                36716,
+                24808
+              ],
+              [
+                35697,
+                35284,
+                24637
+              ],
+              [
+                35332,
+                35172,
+                24232
               ]
             ]
           },
           "cuts": {
-            "James": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Walnut": [
-              0,
+            "Mike": [
               0,
               0,
               0,
@@ -9330,25 +9542,7 @@
               0,
               0
             ],
-            "Josie": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Allan": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Lee": [
+            "Colin": [
               0,
               0,
               0,
@@ -9366,7 +9560,7 @@
               0,
               0
             ],
-            "Colin": [
+            "Lee": [
               0,
               0,
               0,
@@ -9375,7 +9569,35 @@
               0,
               0
             ],
-            "Mike": [
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
               0,
               0,
               0,
@@ -9385,53 +9607,7 @@
             ]
           },
           "tyres": {
-            "James": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Walnut": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Josie": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Allan": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Lee": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Brie": [
-              "S",
+            "Mike": [
               "S",
               "S",
               "S",
@@ -9448,7 +9624,53 @@
               "S",
               "S"
             ],
-            "Mike": [
+            "Brie": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Lee": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Allan": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Josie": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Walnut": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "James": [
+              "S",
               "S",
               "S",
               "S",
@@ -9458,59 +9680,14 @@
             ]
           },
           "positions": {
-            "James": [
-              4,
-              4,
-              4,
-              4,
-              4,
-              2,
-              2
-            ],
-            "Walnut": [
-              3,
-              3,
-              3,
-              3,
-              3,
-              3,
-              3
-            ],
-            "Josie": [
-              2,
-              2,
-              2,
-              2,
-              1,
-              1,
-              1
-            ],
-            "Allan": [
-              5,
-              5,
-              5,
-              5,
-              5,
-              5,
-              5
-            ],
-            "Lee": [
-              1,
-              1,
-              1,
-              1,
-              2,
-              4,
-              4
-            ],
-            "Brie": [
-              6,
-              6,
-              7,
-              7,
-              7,
-              7,
-              6
+            "Mike": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
             ],
             "Colin": [
               7,
@@ -9521,325 +9698,62 @@
               6,
               7
             ],
-            "Mike": [
-              8,
-              8,
-              8,
-              8,
-              8,
-              8,
-              8
+            "Brie": [
+              6,
+              6,
+              7,
+              7,
+              7,
+              7,
+              6
+            ],
+            "Lee": [
+              1,
+              1,
+              1,
+              1,
+              2,
+              4,
+              4
+            ],
+            "Allan": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1
+            ],
+            "Walnut": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "James": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              2,
+              2
             ]
           },
           "positionDetails": {
-            "James": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 4,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 2,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 2,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Walnut": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 3,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Josie": [
-              {
-                "lap": 1,
-                "position": 2,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 2,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 1,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 1,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 1,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Allan": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 5,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 5,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 5,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 5,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 1,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 1,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 1,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 1,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 2,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 4,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 4,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Brie": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 7,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 7,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 7,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 7,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 6,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
-            "Colin": [
-              {
-                "lap": 1,
-                "position": 7,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 7,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 6,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 6,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 6,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 6,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 7,
-                "lapsCompleted": 7,
-                "status": "classified"
-              }
-            ],
             "Mike": [
               {
                 "lap": 1,
@@ -9883,86 +9797,448 @@
                 "lapsCompleted": 6,
                 "status": "dnf_or_lapped"
               }
+            ],
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 7,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Brie": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 6,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 4,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 5,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 1,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 3,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 2,
+                "lapsCompleted": 7,
+                "status": "classified"
+              }
             ]
           },
           "positionChanges": {
-            "James": {
-              "gained": 2,
-              "lost": 3,
-              "net": -1
-            },
-            "Walnut": {
+            "Mike": {
               "gained": 0,
-              "lost": 1,
-              "net": -1
-            },
-            "Josie": {
-              "gained": 2,
-              "lost": 0,
-              "net": 2
-            },
-            "Allan": {
-              "gained": 0,
-              "lost": 1,
-              "net": -1
-            },
-            "Lee": {
-              "gained": 4,
-              "lost": 3,
-              "net": 1
-            },
-            "Brie": {
-              "gained": 1,
-              "lost": 1,
-              "net": 0
+              "lost": 7,
+              "net": -7
             },
             "Colin": {
               "gained": 1,
-              "lost": 1,
+              "lost": 6,
+              "net": -5
+            },
+            "Brie": {
+              "gained": 1,
+              "lost": 4,
+              "net": -3
+            },
+            "Lee": {
+              "gained": 3,
+              "lost": 3,
               "net": 0
             },
-            "Mike": {
+            "Allan": {
               "gained": 0,
               "lost": 0,
               "net": 0
+            },
+            "Josie": {
+              "gained": 5,
+              "lost": 0,
+              "net": 5
+            },
+            "Walnut": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            },
+            "James": {
+              "gained": 6,
+              "lost": 0,
+              "net": 6
             }
           },
           "overtakes": [
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Josie",
-              "positionsGained": 4
+              "passed": "Brie",
+              "positionsGained": 3
             },
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Walnut",
-              "positionsGained": 4
+              "passed": "Colin",
+              "positionsGained": 3
             },
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "James",
-              "positionsGained": 4
+              "passed": "Mike",
+              "positionsGained": 3
             },
             {
               "lap": 1,
-              "driver": "Lee",
+              "driver": "Josie",
               "passed": "Allan",
               "positionsGained": 4
             },
             {
               "lap": 1,
               "driver": "Josie",
-              "passed": "Walnut",
-              "positionsGained": 1
+              "passed": "Brie",
+              "positionsGained": 4
             },
             {
               "lap": 1,
               "driver": "Josie",
-              "passed": "James",
-              "positionsGained": 1
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Brie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Mike",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Brie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 4
             },
             {
               "lap": 3,
@@ -10203,34 +10479,16 @@
             }
           ],
           "pace": {
-            "James": {
-              "avgMs": 96455,
-              "medianMs": 95715,
-              "bestMs": 94736,
-              "lapsUsed": 6
+            "Mike": {
+              "avgMs": 115401,
+              "medianMs": 119959,
+              "bestMs": 103132,
+              "lapsUsed": 5
             },
-            "Walnut": {
-              "avgMs": 97022,
-              "medianMs": 96891,
-              "bestMs": 96156,
-              "lapsUsed": 6
-            },
-            "Josie": {
-              "avgMs": 96850,
-              "medianMs": 96724,
-              "bestMs": 96059,
-              "lapsUsed": 6
-            },
-            "Allan": {
-              "avgMs": 97273,
-              "medianMs": 97274,
-              "bestMs": 96679,
-              "lapsUsed": 6
-            },
-            "Lee": {
-              "avgMs": 98012,
-              "medianMs": 96992,
-              "bestMs": 95950,
+            "Colin": {
+              "avgMs": 102846,
+              "medianMs": 101585,
+              "bestMs": 100857,
               "lapsUsed": 6
             },
             "Brie": {
@@ -10239,17 +10497,35 @@
               "bestMs": 99133,
               "lapsUsed": 6
             },
-            "Colin": {
-              "avgMs": 102846,
-              "medianMs": 101585,
-              "bestMs": 100857,
+            "Lee": {
+              "avgMs": 98012,
+              "medianMs": 96992,
+              "bestMs": 95950,
               "lapsUsed": 6
             },
-            "Mike": {
-              "avgMs": 115401,
-              "medianMs": 119959,
-              "bestMs": 103132,
-              "lapsUsed": 5
+            "Allan": {
+              "avgMs": 97273,
+              "medianMs": 97274,
+              "bestMs": 96679,
+              "lapsUsed": 6
+            },
+            "Josie": {
+              "avgMs": 96850,
+              "medianMs": 96724,
+              "bestMs": 96059,
+              "lapsUsed": 6
+            },
+            "Walnut": {
+              "avgMs": 97022,
+              "medianMs": 96891,
+              "bestMs": 96156,
+              "lapsUsed": 6
+            },
+            "James": {
+              "avgMs": 96455,
+              "medianMs": 95715,
+              "bestMs": 94736,
+              "lapsUsed": 6
             }
           },
           "qualVsRace": {
@@ -10338,7 +10614,7 @@
     },
     {
       "eventId": "2026-04-21-monza",
-      "signature": "8a25af1c6236b0c6",
+      "signature": "92ab6917db90bcee",
       "venue": "Monza",
       "date": "2026-04-21",
       "track": "csp/2144/../monza",
@@ -12201,17 +12477,38 @@
         },
         "2": {
           "grid": [
+            "Tawm",
+            "Colin",
+            "Allan",
             "James",
             "Josie",
-            "Walnut",
             "Lee",
-            "Allan",
-            "Colin"
+            "Walnut"
           ],
-          "gridSource": "qualifying",
-          "gridConfidence": "high",
-          "gridScore": 0.733,
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.067,
           "drivers": {
+            "Tawm": {
+              "driver": "Tawm",
+              "guid": "",
+              "carId": null,
+              "car": ""
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 5,
+              "car": "vrc_formula_alpha_2007_mc22",
+              "skin": "94_VRC_Motorsport"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 11,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "16_Williams"
+            },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
@@ -12226,13 +12523,6 @@
               "car": "vrc_formula_alpha_2007_mc22",
               "skin": "07_Honda_test"
             },
-            "Walnut": {
-              "driver": "Walnut",
-              "guid": "76561198141802891",
-              "carId": 1,
-              "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "22_Aguri"
-            },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
@@ -12240,22 +12530,35 @@
               "car": "vrc_formula_alpha_2007_f07",
               "skin": "28_Prestazioni_da_Corsa"
             },
-            "Allan": {
-              "driver": "Allan",
-              "guid": "76561198038077208",
-              "carId": 11,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "16_Williams"
-            },
-            "Colin": {
-              "driver": "Colin",
-              "guid": "76561197967093333",
-              "carId": 5,
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 1,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "94_VRC_Motorsport"
+              "skin": "22_Aguri"
             }
           },
           "laps": {
+            "Colin": [
+              93362,
+              89174,
+              94412,
+              88108,
+              116434,
+              88826,
+              88405,
+              88214
+            ],
+            "Allan": [
+              91068,
+              85058,
+              84359,
+              86677,
+              86257,
+              86860,
+              84615,
+              84419
+            ],
             "James": [
               84633,
               83884,
@@ -12276,16 +12579,6 @@
               82520,
               82136
             ],
-            "Walnut": [
-              88337,
-              83433,
-              83281,
-              83386,
-              83651,
-              83000,
-              83216,
-              82883
-            ],
             "Lee": [
               103115,
               94889,
@@ -12295,28 +12588,102 @@
               84039,
               83232
             ],
-            "Allan": [
-              91068,
-              85058,
-              84359,
-              86677,
-              86257,
-              86860,
-              84615,
-              84419
-            ],
-            "Colin": [
-              93362,
-              89174,
-              94412,
-              88108,
-              116434,
-              88826,
-              88405,
-              88214
+            "Walnut": [
+              88337,
+              83433,
+              83281,
+              83386,
+              83651,
+              83000,
+              83216,
+              82883
             ]
           },
           "sectors": {
+            "Colin": [
+              [
+                36159,
+                28998,
+                28205
+              ],
+              [
+                31880,
+                28773,
+                28521
+              ],
+              [
+                32052,
+                28543,
+                33817
+              ],
+              [
+                31547,
+                28468,
+                28093
+              ],
+              [
+                40861,
+                47700,
+                27873
+              ],
+              [
+                31893,
+                29456,
+                27477
+              ],
+              [
+                31854,
+                28327,
+                28224
+              ],
+              [
+                31357,
+                28863,
+                27994
+              ]
+            ],
+            "Allan": [
+              [
+                34727,
+                29773,
+                26568
+              ],
+              [
+                31004,
+                27946,
+                26108
+              ],
+              [
+                30850,
+                27342,
+                26167
+              ],
+              [
+                30891,
+                29727,
+                26059
+              ],
+              [
+                31001,
+                27212,
+                28044
+              ],
+              [
+                31200,
+                28800,
+                26860
+              ],
+              [
+                31110,
+                27400,
+                26105
+              ],
+              [
+                30563,
+                27882,
+                25974
+              ]
+            ],
             "James": [
               [
                 32343,
@@ -12401,6 +12768,43 @@
                 25182
               ]
             ],
+            "Lee": [
+              [
+                34121,
+                43120,
+                25874
+              ],
+              [
+                41997,
+                26626,
+                26266
+              ],
+              [
+                30918,
+                27206,
+                25443
+              ],
+              [
+                97459,
+                26955,
+                26127
+              ],
+              [
+                30975,
+                41355,
+                25573
+              ],
+              [
+                31177,
+                27459,
+                25403
+              ],
+              [
+                30950,
+                26658,
+                25624
+              ]
+            ],
             "Walnut": [
               [
                 34337,
@@ -12442,130 +12846,29 @@
                 26554,
                 25371
               ]
-            ],
-            "Lee": [
-              [
-                34121,
-                43120,
-                25874
-              ],
-              [
-                41997,
-                26626,
-                26266
-              ],
-              [
-                30918,
-                27206,
-                25443
-              ],
-              [
-                97459,
-                26955,
-                26127
-              ],
-              [
-                30975,
-                41355,
-                25573
-              ],
-              [
-                31177,
-                27459,
-                25403
-              ],
-              [
-                30950,
-                26658,
-                25624
-              ]
-            ],
-            "Allan": [
-              [
-                34727,
-                29773,
-                26568
-              ],
-              [
-                31004,
-                27946,
-                26108
-              ],
-              [
-                30850,
-                27342,
-                26167
-              ],
-              [
-                30891,
-                29727,
-                26059
-              ],
-              [
-                31001,
-                27212,
-                28044
-              ],
-              [
-                31200,
-                28800,
-                26860
-              ],
-              [
-                31110,
-                27400,
-                26105
-              ],
-              [
-                30563,
-                27882,
-                25974
-              ]
-            ],
-            "Colin": [
-              [
-                36159,
-                28998,
-                28205
-              ],
-              [
-                31880,
-                28773,
-                28521
-              ],
-              [
-                32052,
-                28543,
-                33817
-              ],
-              [
-                31547,
-                28468,
-                28093
-              ],
-              [
-                40861,
-                47700,
-                27873
-              ],
-              [
-                31893,
-                29456,
-                27477
-              ],
-              [
-                31854,
-                28327,
-                28224
-              ],
-              [
-                31357,
-                28863,
-                27994
-              ]
             ]
           },
           "cuts": {
+            "Colin": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "James": [
               0,
               0,
@@ -12586,16 +12889,6 @@
               0,
               0
             ],
-            "Walnut": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
             "Lee": [
               0,
               0,
@@ -12605,17 +12898,7 @@
               0,
               0
             ],
-            "Allan": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Colin": [
+            "Walnut": [
               0,
               0,
               0,
@@ -12627,6 +12910,26 @@
             ]
           },
           "tyres": {
+            "Colin": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Allan": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
             "James": [
               "S",
               "S",
@@ -12647,16 +12950,6 @@
               "S",
               "S"
             ],
-            "Walnut": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
             "Lee": [
               "S",
               "S",
@@ -12666,17 +12959,7 @@
               "S",
               "S"
             ],
-            "Allan": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Colin": [
+            "Walnut": [
               "S",
               "S",
               "S",
@@ -12688,6 +12971,26 @@
             ]
           },
           "positions": {
+            "Colin": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Allan": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
             "James": [
               1,
               1,
@@ -12708,16 +13011,6 @@
               2,
               2
             ],
-            "Walnut": [
-              3,
-              3,
-              3,
-              3,
-              3,
-              3,
-              3,
-              3
-            ],
             "Lee": [
               6,
               6,
@@ -12728,28 +13021,118 @@
               6,
               6
             ],
-            "Allan": [
-              4,
-              4,
-              4,
-              4,
-              4,
-              4,
-              4,
-              4
-            ],
-            "Colin": [
-              5,
-              5,
-              5,
-              5,
-              5,
-              5,
-              5,
-              5
+            "Walnut": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
             ]
           },
           "positionDetails": {
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 5,
+                "lapsCompleted": 7,
+                "status": "classified"
+              },
+              {
+                "lap": 8,
+                "position": 5,
+                "lapsCompleted": 8,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              },
+              {
+                "lap": 7,
+                "position": 4,
+                "lapsCompleted": 7,
+                "status": "classified"
+              },
+              {
+                "lap": 8,
+                "position": 4,
+                "lapsCompleted": 8,
+                "status": "classified"
+              }
+            ],
             "James": [
               {
                 "lap": 1,
@@ -12846,56 +13229,6 @@
               {
                 "lap": 8,
                 "position": 2,
-                "lapsCompleted": 8,
-                "status": "classified"
-              }
-            ],
-            "Walnut": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 3,
-                "lapsCompleted": 7,
-                "status": "classified"
-              },
-              {
-                "lap": 8,
-                "position": 3,
                 "lapsCompleted": 8,
                 "status": "classified"
               }
@@ -12950,151 +13283,131 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Allan": [
+            "Walnut": [
               {
                 "lap": 1,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 6,
                 "status": "classified"
               },
               {
                 "lap": 7,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 7,
                 "status": "classified"
               },
               {
                 "lap": 8,
-                "position": 4,
-                "lapsCompleted": 8,
-                "status": "classified"
-              }
-            ],
-            "Colin": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 5,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 5,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 5,
-                "lapsCompleted": 6,
-                "status": "classified"
-              },
-              {
-                "lap": 7,
-                "position": 5,
-                "lapsCompleted": 7,
-                "status": "classified"
-              },
-              {
-                "lap": 8,
-                "position": 5,
+                "position": 3,
                 "lapsCompleted": 8,
                 "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "James": {
+            "Colin": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
+              "lost": 4,
+              "net": -4
             },
-            "Josie": {
-              "gained": 0,
-              "lost": 0,
-              "net": 0
-            },
-            "Walnut": {
-              "gained": 0,
-              "lost": 0,
-              "net": 0
-            },
-            "Lee": {
+            "Allan": {
               "gained": 0,
               "lost": 2,
               "net": -2
             },
-            "Allan": {
-              "gained": 1,
+            "James": {
+              "gained": 2,
               "lost": 0,
-              "net": 1
+              "net": 2
             },
-            "Colin": {
-              "gained": 1,
+            "Josie": {
+              "gained": 2,
               "lost": 0,
-              "net": 1
+              "net": 2
+            },
+            "Lee": {
+              "gained": 0,
+              "lost": 1,
+              "net": -1
+            },
+            "Walnut": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
             }
           },
           "overtakes": [
             {
               "lap": 1,
-              "driver": "Allan",
-              "passed": "Lee",
-              "positionsGained": 1
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 2
             },
             {
               "lap": 1,
-              "driver": "Colin",
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
               "passed": "Lee",
-              "positionsGained": 1
+              "positionsGained": 3
             }
           ],
           "result": [
@@ -13213,6 +13526,18 @@
             }
           ],
           "pace": {
+            "Colin": {
+              "avgMs": 89523,
+              "medianMs": 88616,
+              "bestMs": 88108,
+              "lapsUsed": 6
+            },
+            "Allan": {
+              "avgMs": 85464,
+              "medianMs": 85058,
+              "bestMs": 84359,
+              "lapsUsed": 7
+            },
             "James": {
               "avgMs": 82469,
               "medianMs": 82233,
@@ -13225,29 +13550,17 @@
               "bestMs": 82136,
               "lapsUsed": 7
             },
-            "Walnut": {
-              "avgMs": 83264,
-              "medianMs": 83281,
-              "bestMs": 82883,
-              "lapsUsed": 7
-            },
             "Lee": {
               "avgMs": 88726,
               "medianMs": 84039,
               "bestMs": 83232,
               "lapsUsed": 5
             },
-            "Allan": {
-              "avgMs": 85464,
-              "medianMs": 85058,
-              "bestMs": 84359,
+            "Walnut": {
+              "avgMs": 83264,
+              "medianMs": 83281,
+              "bestMs": 82883,
               "lapsUsed": 7
-            },
-            "Colin": {
-              "avgMs": 89523,
-              "medianMs": 88616,
-              "bestMs": 88108,
-              "lapsUsed": 6
             }
           },
           "qualVsRace": {
@@ -13319,7 +13632,7 @@
     },
     {
       "eventId": "2026-04-28-sepang-v2",
-      "signature": "58c677ddff00016f",
+      "signature": "29018a5861ac5e6d",
       "venue": "Sepang V2",
       "date": "2026-04-28",
       "track": "csp/2144/../sepang_v2",
@@ -14257,36 +14570,22 @@
         },
         "2": {
           "grid": [
-            "James",
-            "Josie",
-            "Allan",
+            "Colin",
             "Walnut",
-            "Colin"
+            "Allan",
+            "Josie",
+            "James"
           ],
-          "gridSource": "previous-race",
-          "gridConfidence": "high",
-          "gridScore": 0.8,
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.8,
           "drivers": {
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 7,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "21_Prestazioni_da_Corsa"
-            },
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 5,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "07_Honda_test"
-            },
-            "Allan": {
-              "driver": "Allan",
-              "guid": "76561198038077208",
-              "carId": 11,
-              "car": "vrc_formula_alpha_2007_f07",
-              "skin": "16_Williams"
+              "skin": "94_VRC_Motorsport"
             },
             "Walnut": {
               "driver": "Walnut",
@@ -14295,38 +14594,35 @@
               "car": "vrc_formula_alpha_2007_mc22",
               "skin": "22_Aguri"
             },
-            "Colin": {
-              "driver": "Colin",
-              "guid": "76561197967093333",
-              "carId": 5,
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 11,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "16_Williams"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
               "car": "vrc_formula_alpha_2007_mc22",
-              "skin": "94_VRC_Motorsport"
+              "skin": "07_Honda_test"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 7,
+              "car": "vrc_formula_alpha_2007_f07",
+              "skin": "21_Prestazioni_da_Corsa"
             }
           },
           "laps": {
-            "James": [
-              101703,
-              94711,
-              94065,
-              93406,
-              93831,
-              93397
-            ],
-            "Josie": [
-              113761,
-              94578,
-              96119,
-              94898,
-              94039,
-              94713
-            ],
-            "Allan": [
-              104418,
-              95921,
-              95628,
-              96137,
-              96379,
-              96026
+            "Colin": [
+              126938,
+              118164,
+              109750,
+              120129,
+              122283
             ],
             "Walnut": [
               123726,
@@ -14336,109 +14632,57 @@
               102387,
               94508
             ],
-            "Colin": [
-              126938,
-              118164,
-              109750,
-              120129,
-              122283
+            "Allan": [
+              104418,
+              95921,
+              95628,
+              96137,
+              96379,
+              96026
+            ],
+            "Josie": [
+              113761,
+              94578,
+              96119,
+              94898,
+              94039,
+              94713
+            ],
+            "James": [
+              101703,
+              94711,
+              94065,
+              93406,
+              93831,
+              93397
             ]
           },
           "sectors": {
-            "James": [
+            "Colin": [
               [
-                31448,
-                32117,
-                38138
+                32817,
+                35208,
+                58913
               ],
               [
-                24362,
-                31582,
-                38767
+                26840,
+                35029,
+                56295
               ],
               [
-                24760,
-                31568,
-                37737
+                28818,
+                35028,
+                45904
               ],
               [
-                24466,
-                31684,
-                37256
+                26232,
+                41561,
+                52336
               ],
               [
-                24445,
-                31410,
-                37976
-              ],
-              [
-                24525,
-                31545,
-                37327
-              ]
-            ],
-            "Josie": [
-              [
-                30786,
-                32611,
-                50364
-              ],
-              [
-                24693,
-                31932,
-                37953
-              ],
-              [
-                24502,
-                31811,
-                39806
-              ],
-              [
-                25081,
-                31779,
-                38038
-              ],
-              [
-                24536,
-                31617,
-                37886
-              ],
-              [
-                24787,
-                31945,
-                37981
-              ]
-            ],
-            "Allan": [
-              [
-                31846,
-                33997,
-                38575
-              ],
-              [
-                24848,
-                32968,
-                38105
-              ],
-              [
-                24672,
-                32904,
-                38052
-              ],
-              [
-                24615,
-                32624,
-                38898
-              ],
-              [
-                24753,
-                33506,
-                38120
-              ],
-              [
-                24778,
-                33358,
-                37890
+                42354,
+                39357,
+                40572
               ]
             ],
             "Walnut": [
@@ -14473,44 +14717,112 @@
                 37763
               ]
             ],
-            "Colin": [
+            "Allan": [
               [
-                32817,
-                35208,
-                58913
+                31846,
+                33997,
+                38575
               ],
               [
-                26840,
-                35029,
-                56295
+                24848,
+                32968,
+                38105
               ],
               [
-                28818,
-                35028,
-                45904
+                24672,
+                32904,
+                38052
               ],
               [
-                26232,
-                41561,
-                52336
+                24615,
+                32624,
+                38898
               ],
               [
-                42354,
-                39357,
-                40572
+                24753,
+                33506,
+                38120
+              ],
+              [
+                24778,
+                33358,
+                37890
+              ]
+            ],
+            "Josie": [
+              [
+                30786,
+                32611,
+                50364
+              ],
+              [
+                24693,
+                31932,
+                37953
+              ],
+              [
+                24502,
+                31811,
+                39806
+              ],
+              [
+                25081,
+                31779,
+                38038
+              ],
+              [
+                24536,
+                31617,
+                37886
+              ],
+              [
+                24787,
+                31945,
+                37981
+              ]
+            ],
+            "James": [
+              [
+                31448,
+                32117,
+                38138
+              ],
+              [
+                24362,
+                31582,
+                38767
+              ],
+              [
+                24760,
+                31568,
+                37737
+              ],
+              [
+                24466,
+                31684,
+                37256
+              ],
+              [
+                24445,
+                31410,
+                37976
+              ],
+              [
+                24525,
+                31545,
+                37327
               ]
             ]
           },
           "cuts": {
-            "James": [
-              0,
+            "Colin": [
               0,
               0,
               0,
               0,
               0
             ],
-            "Josie": [
+            "Walnut": [
               0,
               0,
               0,
@@ -14526,7 +14838,7 @@
               0,
               0
             ],
-            "Walnut": [
+            "Josie": [
               0,
               0,
               0,
@@ -14534,7 +14846,8 @@
               0,
               0
             ],
-            "Colin": [
+            "James": [
+              0,
               0,
               0,
               0,
@@ -14543,24 +14856,7 @@
             ]
           },
           "tyres": {
-            "James": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Josie": [
-              "S",
-              "S",
-              "S",
-              "S",
-              "S",
-              "S"
-            ],
-            "Allan": [
-              "S",
+            "Colin": [
               "S",
               "S",
               "S",
@@ -14575,7 +14871,24 @@
               "S",
               "S"
             ],
-            "Colin": [
+            "Allan": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "Josie": [
+              "S",
+              "S",
+              "S",
+              "S",
+              "S",
+              "S"
+            ],
+            "James": [
+              "S",
               "S",
               "S",
               "S",
@@ -14584,29 +14897,13 @@
             ]
           },
           "positions": {
-            "James": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
-            ],
-            "Josie": [
-              3,
-              3,
-              3,
-              3,
-              3,
-              3
-            ],
-            "Allan": [
-              2,
-              2,
-              2,
-              2,
-              2,
-              2
+            "Colin": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
             ],
             "Walnut": [
               4,
@@ -14616,168 +14913,32 @@
               4,
               4
             ],
-            "Colin": [
-              5,
-              5,
-              5,
-              5,
-              5,
-              5
+            "Allan": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Josie": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
             ]
           },
           "positionDetails": {
-            "James": [
-              {
-                "lap": 1,
-                "position": 1,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 1,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 1,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 1,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 1,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 1,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Josie": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Allan": [
-              {
-                "lap": 1,
-                "position": 2,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 2,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 2,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 2,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Walnut": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 4,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 4,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
             "Colin": [
               {
                 "lap": 1,
@@ -14815,40 +14976,234 @@
                 "lapsCompleted": 5,
                 "status": "dnf_or_lapped"
               }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
             ]
           },
           "positionChanges": {
-            "James": {
+            "Colin": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
+              "lost": 4,
+              "net": -4
             },
-            "Josie": {
+            "Walnut": {
               "gained": 0,
-              "lost": 1,
-              "net": -1
+              "lost": 2,
+              "net": -2
             },
             "Allan": {
               "gained": 1,
               "lost": 0,
               "net": 1
             },
-            "Walnut": {
-              "gained": 0,
+            "Josie": {
+              "gained": 1,
               "lost": 0,
-              "net": 0
+              "net": 1
             },
-            "Colin": {
-              "gained": 0,
+            "James": {
+              "gained": 4,
               "lost": 0,
-              "net": 0
+              "net": 4
             }
           },
           "overtakes": [
             {
               "lap": 1,
-              "driver": "Allan",
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
               "passed": "Josie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Walnut",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Allan",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
               "positionsGained": 1
             }
           ],
@@ -14988,16 +15343,16 @@
             }
           ],
           "pace": {
-            "James": {
-              "avgMs": 93882,
-              "medianMs": 93831,
-              "bestMs": 93397,
-              "lapsUsed": 5
+            "Colin": {
+              "avgMs": 117582,
+              "medianMs": 119146,
+              "bestMs": 109750,
+              "lapsUsed": 4
             },
-            "Josie": {
-              "avgMs": 94869,
-              "medianMs": 94713,
-              "bestMs": 94039,
+            "Walnut": {
+              "avgMs": 96308,
+              "medianMs": 94535,
+              "bestMs": 94353,
               "lapsUsed": 5
             },
             "Allan": {
@@ -15006,17 +15361,17 @@
               "bestMs": 95628,
               "lapsUsed": 5
             },
-            "Walnut": {
-              "avgMs": 96308,
-              "medianMs": 94535,
-              "bestMs": 94353,
+            "Josie": {
+              "avgMs": 94869,
+              "medianMs": 94713,
+              "bestMs": 94039,
               "lapsUsed": 5
             },
-            "Colin": {
-              "avgMs": 117582,
-              "medianMs": 119146,
-              "bestMs": 109750,
-              "lapsUsed": 4
+            "James": {
+              "avgMs": 93882,
+              "medianMs": 93831,
+              "bestMs": 93397,
+              "lapsUsed": 5
             }
           },
           "qualVsRace": {

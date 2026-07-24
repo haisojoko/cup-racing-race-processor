@@ -100,6 +100,7 @@ def infer_grid(
     fresh_quali_grid: list[str] | None = None,
     previous_finish: list[str] | None = None,
     registry: DriverRegistry | None = None,
+    forced_reverse: bool = False,
     qualifying_grid: list[str] | None = None,  # back-compat alias
 ) -> GridDecision:
     """Infer a race's starting grid.
@@ -111,12 +112,28 @@ def infer_grid(
 
     ``previous_finish``: finish order of the preceding race, used to decide
     standard vs reverse grid when no fresh qualifying precedes this race.
+
+    ``forced_reverse``: the league's known format says this race is a reverse
+    grid (e.g. R2/R4 of a reverse-grid season). The grid is then the previous
+    finish reversed, taken on trust rather than guessed — so it no longer
+    degrades to a low-confidence lap-1 fallback. If the previous finish is
+    unavailable (missing data), we fall through to normal inference.
     """
     if fresh_quali_grid is None:
         fresh_quali_grid = qualifying_grid
     if registry is None:
         registry = build_registry(race_data)
     observed = lap1_crossing_order(race_data, registry)
+
+    # Known reverse-grid race: reverse the (reliable) previous finish directly.
+    if forced_reverse and previous_finish and len(previous_finish) >= MIN_COMMON:
+        reversed_finish = list(reversed(previous_finish))
+        tau = kendall_tau(observed, reversed_finish)
+        # Trust the format; lap-1 order only nuances confidence (post-reverse
+        # the fast cars scythe forward, so agreement is naturally imperfect).
+        confidence = "high" if (tau is None or tau >= 0.2) else "medium"
+        grid = _grid_from_candidate(reversed_finish, observed)
+        return GridDecision(grid, "reversed-previous", confidence, tau)
 
     # A qualifying immediately before the race sets the grid — trust it.
     if fresh_quali_grid:

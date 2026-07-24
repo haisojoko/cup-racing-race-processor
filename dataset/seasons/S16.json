@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S16",
-  "lastUpdated": "2026-07-24T14:22:16.399514+00:00",
+  "lastUpdated": "2026-07-24T14:31:42.487753+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2025-07-22-riverside",
-      "signature": "28943c35137706ac",
+      "signature": "55ddffe215a4350e",
       "venue": "Riverside",
       "date": "2025-07-22",
       "track": "csp/2144/../riverside",
@@ -1858,75 +1858,27 @@
         },
         "2": {
           "grid": [
-            "Josie",
-            "James",
-            "Lee",
-            "Toby",
-            "Mike",
-            "Green Kyle",
-            "Colin",
-            "Calvin",
+            "Ghin",
             "Alfred",
-            "Ghin"
+            "Calvin",
+            "Colin",
+            "Green Kyle",
+            "Mike",
+            "Toby",
+            "Lee",
+            "James",
+            "Josie"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.556,
+          "gridScore": -0.556,
           "drivers": {
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "23_Armor_All"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 8,
-              "car": "ac_legends_gt_shelby_daytona",
-              "skin": "01"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 3,
-              "car": "ac_legends_gt_ferrari_365gtb",
-              "skin": "02"
-            },
-            "Toby": {
-              "driver": "Toby",
-              "guid": "76561198401386081",
-              "carId": 1,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "33_Gitanes"
-            },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 6,
+            "Ghin": {
+              "driver": "Ghin",
+              "guid": "76561197970345239",
+              "carId": 4,
               "car": "ac_legends_gt_pantera_gr4",
-              "skin": "155_orange"
-            },
-            "Green Kyle": {
-              "driver": "Green Kyle",
-              "guid": "76561198117594890",
-              "carId": 12,
-              "car": "ac_legends_gt_bmw_csl",
-              "skin": "bmw24"
-            },
-            "Colin": {
-              "driver": "Colin",
-              "guid": "76561197967093333",
-              "carId": 11,
-              "car": "ac_legends_gt_nissan_gtr",
-              "skin": "39New"
-            },
-            "Calvin": {
-              "driver": "Calvin",
-              "guid": "",
-              "carId": null,
-              "car": ""
+              "skin": "Castrol_49_black"
             },
             "Alfred": {
               "driver": "Alfred",
@@ -1935,70 +1887,68 @@
               "car": "ac_legends_gt_911rsr_74",
               "skin": "09_ecuador"
             },
-            "Ghin": {
-              "driver": "Ghin",
-              "guid": "76561197970345239",
-              "carId": 4,
+            "Calvin": {
+              "driver": "Calvin",
+              "guid": "",
+              "carId": null,
+              "car": ""
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 11,
+              "car": "ac_legends_gt_nissan_gtr",
+              "skin": "39New"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 12,
+              "car": "ac_legends_gt_bmw_csl",
+              "skin": "bmw24"
+            },
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 6,
               "car": "ac_legends_gt_pantera_gr4",
-              "skin": "Castrol_49_black"
+              "skin": "155_orange"
+            },
+            "Toby": {
+              "driver": "Toby",
+              "guid": "76561198401386081",
+              "carId": 1,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "33_Gitanes"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 3,
+              "car": "ac_legends_gt_ferrari_365gtb",
+              "skin": "02"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 8,
+              "car": "ac_legends_gt_shelby_daytona",
+              "skin": "01"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "23_Armor_All"
             }
           },
           "laps": {
-            "Josie": [
-              91498,
-              82454,
-              81655,
-              82198,
-              81361,
-              81172
-            ],
-            "James": [
-              92082,
-              82566,
-              82080,
-              82336,
-              82563,
-              81737
-            ],
-            "Lee": [
-              109803,
-              84204,
-              84825,
-              85032,
-              84172,
-              85019
-            ],
-            "Toby": [
-              99842,
-              82730,
-              82501,
-              82518,
-              86202,
-              81468
-            ],
-            "Mike": [
-              114297,
-              87794,
-              83927,
-              100141,
-              84686,
-              84378
-            ],
-            "Green Kyle": [
-              94848,
-              83911,
-              84349,
-              84461,
-              96176,
-              84341
-            ],
-            "Colin": [
-              117937,
-              87242,
-              92698,
-              92471,
-              88293,
-              86058
+            "Ghin": [
+              148711,
+              157839,
+              98122,
+              143951
             ],
             "Alfred": [
               96951,
@@ -2008,236 +1958,84 @@
               86162,
               85867
             ],
-            "Ghin": [
-              148711,
-              157839,
-              98122,
-              143951
+            "Colin": [
+              117937,
+              87242,
+              92698,
+              92471,
+              88293,
+              86058
+            ],
+            "Green Kyle": [
+              94848,
+              83911,
+              84349,
+              84461,
+              96176,
+              84341
+            ],
+            "Mike": [
+              114297,
+              87794,
+              83927,
+              100141,
+              84686,
+              84378
+            ],
+            "Toby": [
+              99842,
+              82730,
+              82501,
+              82518,
+              86202,
+              81468
+            ],
+            "Lee": [
+              109803,
+              84204,
+              84825,
+              85032,
+              84172,
+              85019
+            ],
+            "James": [
+              92082,
+              82566,
+              82080,
+              82336,
+              82563,
+              81737
+            ],
+            "Josie": [
+              91498,
+              82454,
+              81655,
+              82198,
+              81361,
+              81172
             ]
           },
           "sectors": {
-            "Josie": [
+            "Ghin": [
               [
-                32624,
-                29057,
-                29817
+                64035,
+                37403,
+                47273
               ],
               [
-                23815,
-                29066,
-                29573
+                34116,
+                59121,
+                64602
               ],
               [
-                23515,
-                28719,
-                29421
+                28075,
+                38056,
+                31991
               ],
               [
-                24044,
-                28845,
-                29309
-              ],
-              [
-                23648,
-                28598,
-                29115
-              ],
-              [
-                23352,
-                28624,
-                29196
-              ]
-            ],
-            "James": [
-              [
-                33482,
-                29210,
-                29390
-              ],
-              [
-                23661,
-                29686,
-                29219
-              ],
-              [
-                23499,
-                29357,
-                29224
-              ],
-              [
-                23980,
-                29142,
-                29214
-              ],
-              [
-                23693,
-                29494,
-                29376
-              ],
-              [
-                23386,
-                29074,
-                29277
-              ]
-            ],
-            "Lee": [
-              [
-                49561,
-                30299,
-                29943
-              ],
-              [
-                24380,
-                29876,
-                29948
-              ],
-              [
-                24700,
-                29844,
-                30281
-              ],
-              [
-                24034,
-                30092,
-                30906
-              ],
-              [
-                24570,
-                29740,
-                29862
-              ],
-              [
-                24508,
-                30501,
-                30010
-              ]
-            ],
-            "Toby": [
-              [
-                41059,
-                29286,
-                29497
-              ],
-              [
-                23798,
-                29386,
-                29546
-              ],
-              [
-                23663,
-                29534,
-                29304
-              ],
-              [
-                23432,
-                29629,
-                29457
-              ],
-              [
-                25240,
-                31648,
-                29314
-              ],
-              [
-                23390,
-                28953,
-                29125
-              ]
-            ],
-            "Mike": [
-              [
-                54690,
-                29839,
-                29768
-              ],
-              [
-                24417,
-                33578,
-                29799
-              ],
-              [
-                24339,
-                29578,
-                30010
-              ],
-              [
-                27227,
-                41000,
-                31914
-              ],
-              [
-                24459,
-                30073,
-                30154
-              ],
-              [
-                24991,
-                29389,
-                29998
-              ]
-            ],
-            "Green Kyle": [
-              [
-                34475,
-                30299,
-                30074
-              ],
-              [
-                24691,
-                29516,
-                29704
-              ],
-              [
-                24341,
-                30191,
-                29817
-              ],
-              [
-                24220,
-                29930,
-                30311
-              ],
-              [
-                34868,
-                31509,
-                29799
-              ],
-              [
-                24456,
-                29695,
-                30190
-              ]
-            ],
-            "Colin": [
-              [
-                57101,
-                30299,
-                30537
-              ],
-              [
-                26547,
-                29871,
-                30824
-              ],
-              [
-                25531,
-                36634,
-                30533
-              ],
-              [
-                26695,
-                35068,
-                30708
-              ],
-              [
-                25464,
-                32143,
-                30686
-              ],
-              [
-                25550,
-                30142,
-                30366
+                69630,
+                41683,
+                32638
               ]
             ],
             "Alfred": [
@@ -2272,71 +2070,239 @@
                 30321
               ]
             ],
-            "Ghin": [
+            "Colin": [
               [
-                64035,
-                37403,
-                47273
+                57101,
+                30299,
+                30537
               ],
               [
-                34116,
-                59121,
-                64602
+                26547,
+                29871,
+                30824
               ],
               [
-                28075,
-                38056,
-                31991
+                25531,
+                36634,
+                30533
               ],
               [
-                69630,
-                41683,
-                32638
+                26695,
+                35068,
+                30708
+              ],
+              [
+                25464,
+                32143,
+                30686
+              ],
+              [
+                25550,
+                30142,
+                30366
+              ]
+            ],
+            "Green Kyle": [
+              [
+                34475,
+                30299,
+                30074
+              ],
+              [
+                24691,
+                29516,
+                29704
+              ],
+              [
+                24341,
+                30191,
+                29817
+              ],
+              [
+                24220,
+                29930,
+                30311
+              ],
+              [
+                34868,
+                31509,
+                29799
+              ],
+              [
+                24456,
+                29695,
+                30190
+              ]
+            ],
+            "Mike": [
+              [
+                54690,
+                29839,
+                29768
+              ],
+              [
+                24417,
+                33578,
+                29799
+              ],
+              [
+                24339,
+                29578,
+                30010
+              ],
+              [
+                27227,
+                41000,
+                31914
+              ],
+              [
+                24459,
+                30073,
+                30154
+              ],
+              [
+                24991,
+                29389,
+                29998
+              ]
+            ],
+            "Toby": [
+              [
+                41059,
+                29286,
+                29497
+              ],
+              [
+                23798,
+                29386,
+                29546
+              ],
+              [
+                23663,
+                29534,
+                29304
+              ],
+              [
+                23432,
+                29629,
+                29457
+              ],
+              [
+                25240,
+                31648,
+                29314
+              ],
+              [
+                23390,
+                28953,
+                29125
+              ]
+            ],
+            "Lee": [
+              [
+                49561,
+                30299,
+                29943
+              ],
+              [
+                24380,
+                29876,
+                29948
+              ],
+              [
+                24700,
+                29844,
+                30281
+              ],
+              [
+                24034,
+                30092,
+                30906
+              ],
+              [
+                24570,
+                29740,
+                29862
+              ],
+              [
+                24508,
+                30501,
+                30010
+              ]
+            ],
+            "James": [
+              [
+                33482,
+                29210,
+                29390
+              ],
+              [
+                23661,
+                29686,
+                29219
+              ],
+              [
+                23499,
+                29357,
+                29224
+              ],
+              [
+                23980,
+                29142,
+                29214
+              ],
+              [
+                23693,
+                29494,
+                29376
+              ],
+              [
+                23386,
+                29074,
+                29277
+              ]
+            ],
+            "Josie": [
+              [
+                32624,
+                29057,
+                29817
+              ],
+              [
+                23815,
+                29066,
+                29573
+              ],
+              [
+                23515,
+                28719,
+                29421
+              ],
+              [
+                24044,
+                28845,
+                29309
+              ],
+              [
+                23648,
+                28598,
+                29115
+              ],
+              [
+                23352,
+                28624,
+                29196
               ]
             ]
           },
           "cuts": {
-            "Josie": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "James": [
-              0,
-              0,
+            "Ghin": [
               0,
               0,
               0,
               0
             ],
-            "Lee": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Toby": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Mike": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Green Kyle": [
+            "Alfred": [
               0,
               0,
               0,
@@ -2352,7 +2318,7 @@
               0,
               0
             ],
-            "Alfred": [
+            "Green Kyle": [
               0,
               0,
               0,
@@ -2360,7 +2326,41 @@
               0,
               0
             ],
-            "Ghin": [
+            "Mike": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Toby": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
               0,
               0,
               0,
@@ -2368,57 +2368,7 @@
             ]
           },
           "tyres": {
-            "Josie": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "James": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Lee": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Toby": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Mike": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Green Kyle": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Colin": [
-              "V70",
-              "V70",
+            "Ghin": [
               "V70",
               "V70",
               "V70",
@@ -2432,7 +2382,57 @@
               "V70",
               "V70"
             ],
-            "Ghin": [
+            "Colin": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Green Kyle": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Mike": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Toby": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Lee": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "James": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Josie": [
+              "V70",
+              "V70",
               "V70",
               "V70",
               "V70",
@@ -2440,61 +2440,13 @@
             ]
           },
           "positions": {
-            "Josie": [
-              1,
-              1,
-              1,
-              1,
-              1,
-              1
-            ],
-            "James": [
-              2,
-              2,
-              2,
-              2,
-              2,
-              2
-            ],
-            "Lee": [
-              6,
-              6,
-              5,
-              5,
-              5,
-              5
-            ],
-            "Toby": [
-              5,
-              4,
-              4,
-              4,
-              3,
-              3
-            ],
-            "Mike": [
-              7,
-              7,
-              7,
-              6,
-              6,
-              6
-            ],
-            "Green Kyle": [
-              3,
-              3,
-              3,
-              3,
-              4,
-              4
-            ],
-            "Colin": [
-              8,
-              8,
-              8,
-              7,
-              7,
-              7
+            "Ghin": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
             ],
             "Alfred": [
               4,
@@ -2504,240 +2456,136 @@
               8,
               8
             ],
-            "Ghin": [
-              9,
-              9,
-              9,
-              9,
-              9,
-              9
+            "Colin": [
+              8,
+              8,
+              8,
+              7,
+              7,
+              7
+            ],
+            "Green Kyle": [
+              3,
+              3,
+              3,
+              3,
+              4,
+              4
+            ],
+            "Mike": [
+              7,
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "Toby": [
+              5,
+              4,
+              4,
+              4,
+              3,
+              3
+            ],
+            "Lee": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5
+            ],
+            "James": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Josie": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
             ]
           },
           "positionDetails": {
-            "Josie": [
+            "Ghin": [
               {
                 "lap": 1,
-                "position": 1,
+                "position": 9,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 1,
+                "position": 9,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 1,
+                "position": 9,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 1,
+                "position": 9,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 1,
-                "lapsCompleted": 5,
-                "status": "classified"
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
               },
               {
                 "lap": 6,
-                "position": 1,
-                "lapsCompleted": 6,
-                "status": "classified"
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
               }
             ],
-            "James": [
+            "Alfred": [
               {
                 "lap": 1,
-                "position": 2,
+                "position": 4,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 2,
+                "position": 5,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 2,
+                "position": 6,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 2,
+                "position": 8,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 2,
+                "position": 8,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 2,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 5,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 5,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Toby": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 3,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Mike": [
-              {
-                "lap": 1,
-                "position": 7,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 7,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 7,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 6,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 6,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 6,
-                "lapsCompleted": 6,
-                "status": "classified"
-              }
-            ],
-            "Green Kyle": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              },
-              {
-                "lap": 5,
-                "position": 4,
-                "lapsCompleted": 5,
-                "status": "classified"
-              },
-              {
-                "lap": 6,
-                "position": 4,
+                "position": 8,
                 "lapsCompleted": 6,
                 "status": "classified"
               }
@@ -2780,172 +2628,426 @@
                 "status": "classified"
               }
             ],
-            "Alfred": [
+            "Green Kyle": [
               {
                 "lap": 1,
-                "position": 4,
+                "position": 3,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 5,
+                "position": 3,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 6,
+                "position": 3,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 8,
+                "position": 3,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 8,
+                "position": 4,
                 "lapsCompleted": 5,
                 "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 8,
+                "position": 4,
                 "lapsCompleted": 6,
                 "status": "classified"
               }
             ],
-            "Ghin": [
+            "Mike": [
               {
                 "lap": 1,
-                "position": 9,
+                "position": 7,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 9,
+                "position": 7,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 9,
+                "position": 7,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 9,
+                "position": 6,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 9,
-                "lapsCompleted": 4,
-                "status": "dnf_or_lapped"
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
               },
               {
                 "lap": 6,
-                "position": 9,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Toby": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
                 "lapsCompleted": 4,
-                "status": "dnf_or_lapped"
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "Josie": {
+            "Ghin": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
+              "lost": 8,
+              "net": -8
             },
-            "James": {
+            "Alfred": {
               "gained": 0,
-              "lost": 0,
-              "net": 0
+              "lost": 6,
+              "net": -6
             },
-            "Lee": {
+            "Colin": {
               "gained": 1,
-              "lost": 3,
-              "net": -2
+              "lost": 5,
+              "net": -4
             },
-            "Toby": {
-              "gained": 2,
+            "Green Kyle": {
+              "gained": 1,
               "lost": 1,
-              "net": 1
+              "net": 0
             },
             "Mike": {
               "gained": 1,
               "lost": 2,
               "net": -1
             },
-            "Green Kyle": {
+            "Toby": {
               "gained": 3,
-              "lost": 1,
+              "lost": 0,
+              "net": 3
+            },
+            "Lee": {
+              "gained": 2,
+              "lost": 0,
               "net": 2
             },
-            "Colin": {
-              "gained": 1,
-              "lost": 1,
-              "net": 0
-            },
-            "Alfred": {
-              "gained": 4,
-              "lost": 4,
-              "net": 0
-            },
-            "Ghin": {
-              "gained": 0,
+            "James": {
+              "gained": 6,
               "lost": 0,
-              "net": 0
+              "net": 6
+            },
+            "Josie": {
+              "gained": 8,
+              "lost": 0,
+              "net": 8
             }
           },
           "overtakes": [
             {
               "lap": 1,
-              "driver": "Green Kyle",
+              "driver": "Josie",
+              "passed": "James",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Green Kyle",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
               "passed": "Toby",
-              "positionsGained": 3
+              "positionsGained": 8
             },
             {
               "lap": 1,
-              "driver": "Green Kyle",
+              "driver": "Josie",
               "passed": "Lee",
-              "positionsGained": 3
+              "positionsGained": 8
             },
             {
               "lap": 1,
-              "driver": "Green Kyle",
+              "driver": "Josie",
               "passed": "Mike",
-              "positionsGained": 3
+              "positionsGained": 8
             },
             {
               "lap": 1,
-              "driver": "Alfred",
-              "passed": "Toby",
-              "positionsGained": 4
-            },
-            {
-              "lap": 1,
-              "driver": "Alfred",
-              "passed": "Lee",
-              "positionsGained": 4
-            },
-            {
-              "lap": 1,
-              "driver": "Alfred",
-              "passed": "Mike",
-              "positionsGained": 4
-            },
-            {
-              "lap": 1,
-              "driver": "Alfred",
+              "driver": "Josie",
               "passed": "Colin",
-              "positionsGained": 4
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ghin",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Green Kyle",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Toby",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Lee",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ghin",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Alfred",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Ghin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Ghin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Ghin",
+              "positionsGained": 1
             },
             {
               "lap": 2,
@@ -3221,34 +3323,22 @@
             }
           ],
           "pace": {
-            "Josie": {
-              "avgMs": 81768,
-              "medianMs": 81655,
-              "bestMs": 81172,
-              "lapsUsed": 5
+            "Ghin": {
+              "avgMs": 133304,
+              "medianMs": 143951,
+              "bestMs": 98122,
+              "lapsUsed": 3
             },
-            "James": {
-              "avgMs": 82256,
-              "medianMs": 82336,
-              "bestMs": 81737,
-              "lapsUsed": 5
+            "Alfred": {
+              "avgMs": 89356,
+              "medianMs": 87736,
+              "bestMs": 85867,
+              "lapsUsed": 4
             },
-            "Lee": {
-              "avgMs": 84650,
-              "medianMs": 84825,
-              "bestMs": 84172,
-              "lapsUsed": 5
-            },
-            "Toby": {
-              "avgMs": 83084,
-              "medianMs": 82518,
-              "bestMs": 81468,
-              "lapsUsed": 5
-            },
-            "Mike": {
-              "avgMs": 88185,
-              "medianMs": 84686,
-              "bestMs": 83927,
+            "Colin": {
+              "avgMs": 89352,
+              "medianMs": 88293,
+              "bestMs": 86058,
               "lapsUsed": 5
             },
             "Green Kyle": {
@@ -3257,23 +3347,35 @@
               "bestMs": 83911,
               "lapsUsed": 5
             },
-            "Colin": {
-              "avgMs": 89352,
-              "medianMs": 88293,
-              "bestMs": 86058,
+            "Mike": {
+              "avgMs": 88185,
+              "medianMs": 84686,
+              "bestMs": 83927,
               "lapsUsed": 5
             },
-            "Alfred": {
-              "avgMs": 89356,
-              "medianMs": 87736,
-              "bestMs": 85867,
-              "lapsUsed": 4
+            "Toby": {
+              "avgMs": 83084,
+              "medianMs": 82518,
+              "bestMs": 81468,
+              "lapsUsed": 5
             },
-            "Ghin": {
-              "avgMs": 133304,
-              "medianMs": 143951,
-              "bestMs": 98122,
-              "lapsUsed": 3
+            "Lee": {
+              "avgMs": 84650,
+              "medianMs": 84825,
+              "bestMs": 84172,
+              "lapsUsed": 5
+            },
+            "James": {
+              "avgMs": 82256,
+              "medianMs": 82336,
+              "bestMs": 81737,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 81768,
+              "medianMs": 81655,
+              "bestMs": 81172,
+              "lapsUsed": 5
             }
           },
           "qualVsRace": {
@@ -4965,7 +5067,7 @@
     },
     {
       "eventId": "2025-07-29-rt-daytona",
-      "signature": "916f95f9d97488c4",
+      "signature": "b6023a3d500d5441",
       "venue": "Rt Daytona",
       "date": "2025-07-29",
       "track": "csp/2144/../rt_daytona",
@@ -5936,44 +6038,23 @@
         },
         "2": {
           "grid": [
-            "Josie",
-            "James",
-            "Toby",
-            "Lee",
+            "Mike",
             "Green Kyle",
-            "Mike"
+            "Lee",
+            "Toby",
+            "James",
+            "Josie"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.333,
+          "gridScore": -0.333,
           "drivers": {
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "23_Armor_All"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 8,
-              "car": "ac_legends_gt_shelby_daytona",
-              "skin": "01"
-            },
-            "Toby": {
-              "driver": "Toby",
-              "guid": "76561198401386081",
-              "carId": 1,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "33_Gitanes"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 3,
-              "car": "ac_legends_gt_ferrari_365gtb",
-              "skin": "02"
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 6,
+              "car": "ac_legends_gt_pantera_gr4",
+              "skin": "155_orange"
             },
             "Green Kyle": {
               "driver": "Green Kyle",
@@ -5982,37 +6063,41 @@
               "car": "ac_legends_gt_bmw_csl",
               "skin": "bmw24"
             },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 6,
-              "car": "ac_legends_gt_pantera_gr4",
-              "skin": "155_orange"
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 3,
+              "car": "ac_legends_gt_ferrari_365gtb",
+              "skin": "02"
+            },
+            "Toby": {
+              "driver": "Toby",
+              "guid": "76561198401386081",
+              "carId": 1,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "33_Gitanes"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 8,
+              "car": "ac_legends_gt_shelby_daytona",
+              "skin": "01"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "23_Armor_All"
             }
           },
           "laps": {
-            "Josie": [
-              137802,
-              117445,
-              120074
-            ],
-            "James": [
-              133233,
-              118430,
-              126389,
-              121570
-            ],
-            "Toby": [
-              133771,
-              120066,
-              121130,
-              117542
-            ],
-            "Lee": [
-              133203,
-              120464,
-              122043,
-              124011
+            "Mike": [
+              141420,
+              133069,
+              120493,
+              122909
             ],
             "Green Kyle": [
               135008,
@@ -6020,95 +6105,51 @@
               122052,
               124199
             ],
-            "Mike": [
-              141420,
-              133069,
-              120493,
-              122909
+            "Lee": [
+              133203,
+              120464,
+              122043,
+              124011
+            ],
+            "Toby": [
+              133771,
+              120066,
+              121130,
+              117542
+            ],
+            "James": [
+              133233,
+              118430,
+              126389,
+              121570
+            ],
+            "Josie": [
+              137802,
+              117445,
+              120074
             ]
           },
           "sectors": {
-            "Josie": [
+            "Mike": [
               [
-                58012,
-                45725,
-                34065
+                60653,
+                42813,
+                37954
               ],
               [
-                43407,
-                41750,
-                32288
+                45981,
+                54278,
+                32810
               ],
               [
-                44349,
-                42128,
-                33597
-              ]
-            ],
-            "James": [
-              [
-                57223,
-                42835,
-                33175
+                44740,
+                43303,
+                32450
               ],
               [
-                43780,
-                42300,
-                32350
-              ],
-              [
-                43760,
-                42310,
-                40319
-              ],
-              [
-                45768,
-                43024,
-                32778
-              ]
-            ],
-            "Toby": [
-              [
-                57532,
-                43551,
-                32688
-              ],
-              [
-                44412,
-                42754,
-                32900
-              ],
-              [
-                45009,
-                42403,
-                33718
-              ],
-              [
-                43149,
-                42021,
-                32372
-              ]
-            ],
-            "Lee": [
-              [
-                56945,
-                42993,
-                33265
-              ],
-              [
-                44468,
-                42670,
-                33326
-              ],
-              [
-                44534,
-                42985,
-                34524
-              ],
-              [
-                47465,
-                43218,
-                33328
+                45600,
+                43578,
+                33731
               ]
             ],
             "Green Kyle": [
@@ -6133,48 +6174,92 @@
                 32503
               ]
             ],
-            "Mike": [
+            "Lee": [
               [
-                60653,
-                42813,
-                37954
+                56945,
+                42993,
+                33265
               ],
               [
-                45981,
-                54278,
-                32810
+                44468,
+                42670,
+                33326
               ],
               [
-                44740,
-                43303,
-                32450
+                44534,
+                42985,
+                34524
               ],
               [
-                45600,
-                43578,
-                33731
+                47465,
+                43218,
+                33328
+              ]
+            ],
+            "Toby": [
+              [
+                57532,
+                43551,
+                32688
+              ],
+              [
+                44412,
+                42754,
+                32900
+              ],
+              [
+                45009,
+                42403,
+                33718
+              ],
+              [
+                43149,
+                42021,
+                32372
+              ]
+            ],
+            "James": [
+              [
+                57223,
+                42835,
+                33175
+              ],
+              [
+                43780,
+                42300,
+                32350
+              ],
+              [
+                43760,
+                42310,
+                40319
+              ],
+              [
+                45768,
+                43024,
+                32778
+              ]
+            ],
+            "Josie": [
+              [
+                58012,
+                45725,
+                34065
+              ],
+              [
+                43407,
+                41750,
+                32288
+              ],
+              [
+                44349,
+                42128,
+                33597
               ]
             ]
           },
           "cuts": {
-            "Josie": [
-              0,
-              0,
-              0
-            ],
-            "James": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Toby": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Lee": [
+            "Mike": [
               0,
               0,
               0,
@@ -6186,32 +6271,32 @@
               0,
               0
             ],
-            "Mike": [
+            "Lee": [
               0,
+              0,
+              0,
+              0
+            ],
+            "Toby": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
               0,
               0,
               0
             ]
           },
           "tyres": {
-            "Josie": [
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "James": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Toby": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Lee": [
+            "Mike": [
               "V70",
               "V70",
               "V70",
@@ -6223,37 +6308,36 @@
               "V70",
               "V70"
             ],
-            "Mike": [
+            "Lee": [
               "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Toby": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "James": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Josie": [
               "V70",
               "V70",
               "V70"
             ]
           },
           "positions": {
-            "Josie": [
-              5,
-              5,
-              2,
-              6
-            ],
-            "James": [
-              2,
-              1,
-              5,
-              2
-            ],
-            "Toby": [
-              3,
-              3,
-              1,
-              1
-            ],
-            "Lee": [
-              1,
-              2,
-              3,
-              3
+            "Mike": [
+              6,
+              6,
+              6,
+              5
             ],
             "Green Kyle": [
               4,
@@ -6261,14 +6345,162 @@
               4,
               4
             ],
-            "Mike": [
-              6,
-              6,
-              6,
-              5
+            "Lee": [
+              1,
+              2,
+              3,
+              3
+            ],
+            "Toby": [
+              3,
+              3,
+              1,
+              1
+            ],
+            "James": [
+              2,
+              1,
+              5,
+              2
+            ],
+            "Josie": [
+              5,
+              5,
+              2,
+              6
             ]
           },
           "positionDetails": {
+            "Mike": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Green Kyle": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Toby": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
             "Josie": [
               {
                 "lap": 1,
@@ -6294,193 +6526,87 @@
                 "lapsCompleted": 3,
                 "status": "dnf_or_lapped"
               }
-            ],
-            "James": [
-              {
-                "lap": 1,
-                "position": 2,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 1,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Toby": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 1,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 1,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 1,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Green Kyle": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Mike": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 6,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
             ]
           },
           "positionChanges": {
-            "Josie": {
-              "gained": 3,
-              "lost": 8,
-              "net": -5
+            "Mike": {
+              "gained": 1,
+              "lost": 5,
+              "net": -4
             },
-            "James": {
-              "gained": 4,
-              "lost": 4,
+            "Green Kyle": {
+              "gained": 0,
+              "lost": 2,
+              "net": -2
+            },
+            "Lee": {
+              "gained": 2,
+              "lost": 2,
               "net": 0
             },
             "Toby": {
-              "gained": 2,
-              "lost": 0,
-              "net": 2
-            },
-            "Lee": {
               "gained": 3,
-              "lost": 2,
-              "net": 1
-            },
-            "Green Kyle": {
-              "gained": 1,
               "lost": 0,
-              "net": 1
+              "net": 3
             },
-            "Mike": {
-              "gained": 1,
-              "lost": 0,
-              "net": 1
+            "James": {
+              "gained": 7,
+              "lost": 4,
+              "net": 3
+            },
+            "Josie": {
+              "gained": 4,
+              "lost": 4,
+              "net": 0
             }
           },
           "overtakes": [
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "James",
-              "positionsGained": 3
+              "passed": "Green Kyle",
+              "positionsGained": 2
             },
             {
               "lap": 1,
               "driver": "Lee",
+              "passed": "Mike",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "James",
               "passed": "Toby",
               "positionsGained": 3
             },
             {
               "lap": 1,
-              "driver": "Lee",
-              "passed": "Josie",
+              "driver": "James",
+              "passed": "Green Kyle",
               "positionsGained": 3
             },
             {
               "lap": 1,
-              "driver": "Green Kyle",
-              "passed": "Josie",
+              "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
               "positionsGained": 1
             },
             {
@@ -6736,28 +6862,10 @@
             }
           ],
           "pace": {
-            "Josie": {
-              "avgMs": 118760,
-              "medianMs": 118760,
-              "bestMs": 117445,
-              "lapsUsed": 2
-            },
-            "James": {
-              "avgMs": 122130,
-              "medianMs": 121570,
-              "bestMs": 118430,
-              "lapsUsed": 3
-            },
-            "Toby": {
-              "avgMs": 119579,
-              "medianMs": 120066,
-              "bestMs": 117542,
-              "lapsUsed": 3
-            },
-            "Lee": {
-              "avgMs": 122173,
-              "medianMs": 122043,
-              "bestMs": 120464,
+            "Mike": {
+              "avgMs": 125490,
+              "medianMs": 122909,
+              "bestMs": 120493,
               "lapsUsed": 3
             },
             "Green Kyle": {
@@ -6766,11 +6874,29 @@
               "bestMs": 119972,
               "lapsUsed": 3
             },
-            "Mike": {
-              "avgMs": 125490,
-              "medianMs": 122909,
-              "bestMs": 120493,
+            "Lee": {
+              "avgMs": 122173,
+              "medianMs": 122043,
+              "bestMs": 120464,
               "lapsUsed": 3
+            },
+            "Toby": {
+              "avgMs": 119579,
+              "medianMs": 120066,
+              "bestMs": 117542,
+              "lapsUsed": 3
+            },
+            "James": {
+              "avgMs": 122130,
+              "medianMs": 121570,
+              "bestMs": 118430,
+              "lapsUsed": 3
+            },
+            "Josie": {
+              "avgMs": 118760,
+              "medianMs": 118760,
+              "bestMs": 117445,
+              "lapsUsed": 2
             }
           },
           "qualVsRace": {
@@ -7543,7 +7669,7 @@
             "Josie"
           ],
           "gridSource": "reversed-previous",
-          "gridConfidence": "medium",
+          "gridConfidence": "high",
           "gridScore": 0.333,
           "drivers": {
             "Mike": {
@@ -8502,7 +8628,7 @@
     },
     {
       "eventId": "2025-08-05-rt-port-newark",
-      "signature": "81e6c0946adfb773",
+      "signature": "f91d690dfd3a3708",
       "venue": "Rt Port Newark",
       "date": "2025-08-05",
       "track": "csp/2144/../rt_port_newark",
@@ -10106,68 +10232,26 @@
         },
         "2": {
           "grid": [
-            "Toby",
-            "James",
-            "Brie",
-            "Colin",
-            "Mike",
-            "Josie",
-            "Ghin",
+            "Alan",
             "Lucian",
-            "Alan"
+            "Ghin",
+            "Josie",
+            "Mike",
+            "Colin",
+            "Brie",
+            "James",
+            "Toby"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.556,
+          "gridScore": -0.556,
           "drivers": {
-            "Toby": {
-              "driver": "Toby",
-              "guid": "76561198401386081",
-              "carId": 1,
+            "Alan": {
+              "driver": "Alan",
+              "guid": "76561198430304383",
+              "carId": 0,
               "car": "ac_legends_gt_911rsr_74",
-              "skin": "33_Gitanes"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 8,
-              "car": "ac_legends_gt_shelby_daytona",
-              "skin": "01"
-            },
-            "Brie": {
-              "driver": "Brie",
-              "guid": "76561197966374236",
-              "carId": 7,
-              "car": "ac_legends_gt_porsche_906",
-              "skin": "000_1967_Fuji_08_4k"
-            },
-            "Colin": {
-              "driver": "Colin",
-              "guid": "76561197967093333",
-              "carId": 11,
-              "car": "ac_legends_gt_nissan_gtr",
-              "skin": "39New"
-            },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 6,
-              "car": "ac_legends_gt_pantera_gr4",
-              "skin": "155_orange"
-            },
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 4,
-              "car": "ac_legends_gt_pantera_gr4",
-              "skin": "Castrol_49_black"
-            },
-            "Ghin": {
-              "driver": "Ghin",
-              "guid": "76561197970345239",
-              "carId": 5,
-              "car": "ac_legends_gt_pantera_gr4",
-              "skin": "77_white"
+              "skin": "23_Armor_All"
             },
             "Lucian": {
               "driver": "Lucian",
@@ -10176,49 +10260,71 @@
               "car": "ac_legends_gt_911rsr_74",
               "skin": "09_ecuador"
             },
-            "Alan": {
-              "driver": "Alan",
-              "guid": "76561198430304383",
-              "carId": 0,
+            "Ghin": {
+              "driver": "Ghin",
+              "guid": "76561197970345239",
+              "carId": 5,
+              "car": "ac_legends_gt_pantera_gr4",
+              "skin": "77_white"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 4,
+              "car": "ac_legends_gt_pantera_gr4",
+              "skin": "Castrol_49_black"
+            },
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 6,
+              "car": "ac_legends_gt_pantera_gr4",
+              "skin": "155_orange"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 11,
+              "car": "ac_legends_gt_nissan_gtr",
+              "skin": "39New"
+            },
+            "Brie": {
+              "driver": "Brie",
+              "guid": "76561197966374236",
+              "carId": 7,
+              "car": "ac_legends_gt_porsche_906",
+              "skin": "000_1967_Fuji_08_4k"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 8,
+              "car": "ac_legends_gt_shelby_daytona",
+              "skin": "01"
+            },
+            "Toby": {
+              "driver": "Toby",
+              "guid": "76561198401386081",
+              "carId": 1,
               "car": "ac_legends_gt_911rsr_74",
-              "skin": "23_Armor_All"
+              "skin": "33_Gitanes"
             }
           },
           "laps": {
-            "Toby": [
-              118003,
-              94290,
-              95625,
-              96668,
-              96240
+            "Alan": [
+              154779,
+              349780
             ],
-            "James": [
-              103903,
-              94852,
-              95248,
-              96652,
-              94380
+            "Lucian": [
+              129931,
+              109923,
+              127269,
+              144832
             ],
-            "Brie": [
-              107845,
-              97277,
-              100154,
-              95947,
-              96958
-            ],
-            "Colin": [
-              122603,
-              102323,
-              100879,
-              100234,
-              120304
-            ],
-            "Mike": [
-              106455,
-              96830,
-              99416,
-              97355,
-              104394
+            "Ghin": [
+              343172,
+              117065,
+              109906
             ],
             "Josie": [
               145713,
@@ -10227,156 +10333,92 @@
               108762,
               111753
             ],
-            "Ghin": [
-              343172,
-              117065,
-              109906
+            "Mike": [
+              106455,
+              96830,
+              99416,
+              97355,
+              104394
             ],
-            "Lucian": [
-              129931,
-              109923,
-              127269,
-              144832
+            "Colin": [
+              122603,
+              102323,
+              100879,
+              100234,
+              120304
             ],
-            "Alan": [
-              154779,
-              349780
+            "Brie": [
+              107845,
+              97277,
+              100154,
+              95947,
+              96958
+            ],
+            "James": [
+              103903,
+              94852,
+              95248,
+              96652,
+              94380
+            ],
+            "Toby": [
+              118003,
+              94290,
+              95625,
+              96668,
+              96240
             ]
           },
           "sectors": {
-            "Toby": [
+            "Alan": [
               [
-                44036,
-                31550,
-                42417
+                81460,
+                33966,
+                39353
               ],
               [
-                33971,
-                28549,
-                31770
-              ],
-              [
-                34506,
-                29051,
-                32068
-              ],
-              [
-                34622,
-                28832,
-                33214
-              ],
-              [
-                34486,
-                28894,
-                32860
+                276200,
+                33710,
+                39870
               ]
             ],
-            "James": [
+            "Lucian": [
               [
-                42820,
-                28732,
-                32351
+                43023,
+                32386,
+                54522
               ],
               [
-                33954,
-                28732,
-                32166
+                43376,
+                30677,
+                35870
               ],
               [
-                34098,
-                28872,
-                32278
+                54602,
+                36464,
+                36203
               ],
               [
-                34080,
-                28863,
-                33709
-              ],
-              [
-                33512,
-                28517,
-                32351
+                54522,
+                33057,
+                57253
               ]
             ],
-            "Brie": [
+            "Ghin": [
               [
-                45470,
-                30159,
-                32216
+                264873,
+                33034,
+                45265
               ],
               [
-                34889,
-                29840,
-                32548
+                45664,
+                34169,
+                37232
               ],
               [
-                38392,
-                29380,
-                32382
-              ],
-              [
-                34860,
-                29358,
-                31729
-              ],
-              [
-                34224,
-                29781,
-                32953
-              ]
-            ],
-            "Colin": [
-              [
-                48930,
-                31288,
-                42385
-              ],
-              [
-                37060,
-                31271,
-                33992
-              ],
-              [
-                37060,
-                30924,
-                32895
-              ],
-              [
-                36789,
-                30636,
-                32809
-              ],
-              [
-                55923,
-                30204,
-                34177
-              ]
-            ],
-            "Mike": [
-              [
-                43454,
-                30061,
-                32940
-              ],
-              [
-                34748,
-                29053,
-                33029
-              ],
-              [
-                34427,
-                32248,
-                32741
-              ],
-              [
-                35040,
-                29088,
-                33227
-              ],
-              [
-                34293,
-                36139,
-                33962
+                39864,
+                32769,
+                37273
               ]
             ],
             "Josie": [
@@ -10406,81 +10448,159 @@
                 38494
               ]
             ],
-            "Ghin": [
+            "Mike": [
               [
-                264873,
-                33034,
-                45265
+                43454,
+                30061,
+                32940
               ],
               [
-                45664,
-                34169,
-                37232
+                34748,
+                29053,
+                33029
               ],
               [
-                39864,
-                32769,
-                37273
+                34427,
+                32248,
+                32741
+              ],
+              [
+                35040,
+                29088,
+                33227
+              ],
+              [
+                34293,
+                36139,
+                33962
               ]
             ],
-            "Lucian": [
+            "Colin": [
               [
-                43023,
-                32386,
-                54522
+                48930,
+                31288,
+                42385
               ],
               [
-                43376,
-                30677,
-                35870
+                37060,
+                31271,
+                33992
               ],
               [
-                54602,
-                36464,
-                36203
+                37060,
+                30924,
+                32895
               ],
               [
-                54522,
-                33057,
-                57253
+                36789,
+                30636,
+                32809
+              ],
+              [
+                55923,
+                30204,
+                34177
               ]
             ],
-            "Alan": [
+            "Brie": [
               [
-                81460,
-                33966,
-                39353
+                45470,
+                30159,
+                32216
               ],
               [
-                276200,
-                33710,
-                39870
+                34889,
+                29840,
+                32548
+              ],
+              [
+                38392,
+                29380,
+                32382
+              ],
+              [
+                34860,
+                29358,
+                31729
+              ],
+              [
+                34224,
+                29781,
+                32953
+              ]
+            ],
+            "James": [
+              [
+                42820,
+                28732,
+                32351
+              ],
+              [
+                33954,
+                28732,
+                32166
+              ],
+              [
+                34098,
+                28872,
+                32278
+              ],
+              [
+                34080,
+                28863,
+                33709
+              ],
+              [
+                33512,
+                28517,
+                32351
+              ]
+            ],
+            "Toby": [
+              [
+                44036,
+                31550,
+                42417
+              ],
+              [
+                33971,
+                28549,
+                31770
+              ],
+              [
+                34506,
+                29051,
+                32068
+              ],
+              [
+                34622,
+                28832,
+                33214
+              ],
+              [
+                34486,
+                28894,
+                32860
               ]
             ]
           },
           "cuts": {
-            "Toby": [
+            "Alan": [
               0,
+              0
+            ],
+            "Lucian": [
               0,
               0,
               0,
               0
             ],
-            "James": [
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            "Brie": [
-              0,
-              0,
+            "Ghin": [
               0,
               0,
               0
             ],
-            "Colin": [
+            "Josie": [
               0,
               0,
               0,
@@ -10494,74 +10614,37 @@
               0,
               0
             ],
-            "Josie": [
+            "Colin": [
               0,
               0,
               0,
               0,
               0
             ],
-            "Ghin": [
+            "Brie": [
               0,
-              0,
-              0
-            ],
-            "Lucian": [
               0,
               0,
               0,
               0
             ],
-            "Alan": [
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Toby": [
+              0,
+              0,
+              0,
               0,
               0
             ]
           },
           "tyres": {
-            "Toby": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "James": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Brie": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Colin": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Mike": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Josie": [
-              "V70",
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Ghin": [
-              "V70",
+            "Alan": [
               "V70",
               "V70"
             ],
@@ -10571,60 +10654,61 @@
               "V70",
               "V70"
             ],
-            "Alan": [
+            "Ghin": [
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Josie": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Mike": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Colin": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Brie": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "James": [
+              "V70",
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Toby": [
+              "V70",
+              "V70",
+              "V70",
               "V70",
               "V70"
             ]
           },
           "positions": {
-            "Toby": [
-              4,
-              4,
-              4,
-              4,
-              3
-            ],
-            "James": [
-              1,
-              1,
-              1,
-              1,
-              1
-            ],
-            "Brie": [
-              3,
-              3,
-              3,
-              3,
-              2
-            ],
-            "Colin": [
-              5,
-              5,
-              5,
-              5,
-              5
-            ],
-            "Mike": [
-              2,
-              2,
-              2,
-              2,
-              4
-            ],
-            "Josie": [
-              7,
-              7,
-              6,
-              6,
-              6
-            ],
-            "Ghin": [
+            "Alan": [
+              8,
               9,
-              8,
-              8,
-              8,
-              8
+              9,
+              9,
+              9
             ],
             "Lucian": [
               6,
@@ -10633,139 +10717,181 @@
               7,
               7
             ],
-            "Alan": [
+            "Ghin": [
+              9,
               8,
-              9,
-              9,
-              9,
-              9
+              8,
+              8,
+              8
+            ],
+            "Josie": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "Mike": [
+              2,
+              2,
+              2,
+              2,
+              4
+            ],
+            "Colin": [
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Brie": [
+              3,
+              3,
+              3,
+              3,
+              2
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Toby": [
+              4,
+              4,
+              4,
+              4,
+              3
             ]
           },
           "positionDetails": {
-            "Toby": [
+            "Alan": [
               {
                 "lap": 1,
-                "position": 4,
+                "position": 8,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 4,
+                "position": 9,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "dnf_or_lapped"
               },
               {
                 "lap": 4,
-                "position": 4,
-                "lapsCompleted": 4,
-                "status": "classified"
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "dnf_or_lapped"
               },
               {
                 "lap": 5,
-                "position": 3,
-                "lapsCompleted": 5,
-                "status": "classified"
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "dnf_or_lapped"
               }
             ],
-            "James": [
+            "Lucian": [
               {
                 "lap": 1,
-                "position": 1,
+                "position": 6,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 1,
+                "position": 6,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 1,
-                "lapsCompleted": 5,
-                "status": "classified"
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
               }
             ],
-            "Brie": [
+            "Ghin": [
               {
                 "lap": 1,
-                "position": 3,
+                "position": 9,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 3,
+                "position": 8,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 3,
+                "position": 8,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "dnf_or_lapped"
               },
               {
                 "lap": 5,
-                "position": 2,
-                "lapsCompleted": 5,
-                "status": "classified"
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "dnf_or_lapped"
               }
             ],
-            "Colin": [
+            "Josie": [
               {
                 "lap": 1,
-                "position": 5,
+                "position": 7,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 5,
+                "position": 7,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 5,
+                "position": 6,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 5,
+                "position": 6,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 5,
+                "position": 6,
                 "lapsCompleted": 5,
                 "status": "classified"
               }
@@ -10802,222 +10928,330 @@
                 "status": "classified"
               }
             ],
-            "Josie": [
+            "Colin": [
               {
                 "lap": 1,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 6,
+                "position": 5,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 6,
+                "position": 5,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 6,
+                "position": 5,
                 "lapsCompleted": 5,
                 "status": "classified"
               }
             ],
-            "Ghin": [
+            "Brie": [
               {
                 "lap": 1,
-                "position": 9,
+                "position": 3,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 8,
+                "position": 3,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 8,
+                "position": 3,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 8,
-                "lapsCompleted": 3,
-                "status": "dnf_or_lapped"
-              },
-              {
-                "lap": 5,
-                "position": 8,
-                "lapsCompleted": 3,
-                "status": "dnf_or_lapped"
-              }
-            ],
-            "Lucian": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 7,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 7,
+                "position": 3,
                 "lapsCompleted": 4,
                 "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 7,
-                "lapsCompleted": 4,
-                "status": "dnf_or_lapped"
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
               }
             ],
-            "Alan": [
+            "James": [
               {
                 "lap": 1,
-                "position": 8,
+                "position": 1,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 9,
+                "position": 1,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 9,
-                "lapsCompleted": 2,
-                "status": "dnf_or_lapped"
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 9,
-                "lapsCompleted": 2,
-                "status": "dnf_or_lapped"
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
               },
               {
                 "lap": 5,
-                "position": 9,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Toby": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
                 "lapsCompleted": 2,
-                "status": "dnf_or_lapped"
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "Toby": {
+            "Alan": {
+              "gained": 0,
+              "lost": 8,
+              "net": -8
+            },
+            "Lucian": {
+              "gained": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Ghin": {
+              "gained": 1,
+              "lost": 6,
+              "net": -5
+            },
+            "Josie": {
               "gained": 1,
               "lost": 3,
               "net": -2
-            },
-            "James": {
-              "gained": 1,
-              "lost": 0,
-              "net": 1
-            },
-            "Brie": {
-              "gained": 1,
-              "lost": 0,
-              "net": 1
-            },
-            "Colin": {
-              "gained": 0,
-              "lost": 1,
-              "net": -1
             },
             "Mike": {
               "gained": 3,
               "lost": 2,
               "net": 1
             },
-            "Josie": {
+            "Colin": {
               "gained": 1,
-              "lost": 1,
-              "net": 0
-            },
-            "Ghin": {
-              "gained": 1,
-              "lost": 2,
-              "net": -1
-            },
-            "Lucian": {
-              "gained": 2,
-              "lost": 1,
+              "lost": 0,
               "net": 1
             },
-            "Alan": {
-              "gained": 1,
-              "lost": 1,
-              "net": 0
+            "Brie": {
+              "gained": 5,
+              "lost": 0,
+              "net": 5
+            },
+            "James": {
+              "gained": 7,
+              "lost": 0,
+              "net": 7
+            },
+            "Toby": {
+              "gained": 6,
+              "lost": 0,
+              "net": 6
             }
           },
           "overtakes": [
             {
               "lap": 1,
               "driver": "James",
-              "passed": "Toby",
+              "passed": "Mike",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Brie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Lucian",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alan",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ghin",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Lucian",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Josie",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Alan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Mike",
+              "passed": "Ghin",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Brie",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Brie",
+              "passed": "Lucian",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Brie",
+              "passed": "Josie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Brie",
+              "passed": "Alan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Brie",
+              "passed": "Ghin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Colin",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Lucian",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Josie",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Alan",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Ghin",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Lucian",
               "positionsGained": 1
             },
             {
               "lap": 1,
-              "driver": "Mike",
-              "passed": "Brie",
-              "positionsGained": 3
-            },
-            {
-              "lap": 1,
-              "driver": "Mike",
-              "passed": "Toby",
-              "positionsGained": 3
-            },
-            {
-              "lap": 1,
-              "driver": "Mike",
-              "passed": "Colin",
-              "positionsGained": 3
-            },
-            {
-              "lap": 1,
-              "driver": "Lucian",
+              "driver": "Colin",
               "passed": "Josie",
-              "positionsGained": 2
+              "positionsGained": 1
             },
             {
               "lap": 1,
-              "driver": "Lucian",
-              "passed": "Ghin",
-              "positionsGained": 2
+              "driver": "Colin",
+              "passed": "Alan",
+              "positionsGained": 1
             },
             {
               "lap": 1,
-              "driver": "Alan",
+              "driver": "Colin",
               "passed": "Ghin",
               "positionsGained": 1
             },
@@ -11311,28 +11545,28 @@
             }
           ],
           "pace": {
-            "Toby": {
-              "avgMs": 95706,
-              "medianMs": 95932,
-              "bestMs": 94290,
-              "lapsUsed": 4
+            "Alan": {
+              "avgMs": 349780,
+              "medianMs": 349780,
+              "bestMs": 349780,
+              "lapsUsed": 1
             },
-            "James": {
-              "avgMs": 95283,
-              "medianMs": 95050,
-              "bestMs": 94380,
-              "lapsUsed": 4
+            "Lucian": {
+              "avgMs": 127341,
+              "medianMs": 127269,
+              "bestMs": 109923,
+              "lapsUsed": 3
             },
-            "Brie": {
-              "avgMs": 97584,
-              "medianMs": 97118,
-              "bestMs": 95947,
-              "lapsUsed": 4
+            "Ghin": {
+              "avgMs": 113486,
+              "medianMs": 113486,
+              "bestMs": 109906,
+              "lapsUsed": 2
             },
-            "Colin": {
-              "avgMs": 105935,
-              "medianMs": 101601,
-              "bestMs": 100234,
+            "Josie": {
+              "avgMs": 108135,
+              "medianMs": 108406,
+              "bestMs": 103977,
               "lapsUsed": 4
             },
             "Mike": {
@@ -11341,29 +11575,29 @@
               "bestMs": 96830,
               "lapsUsed": 4
             },
-            "Josie": {
-              "avgMs": 108135,
-              "medianMs": 108406,
-              "bestMs": 103977,
+            "Colin": {
+              "avgMs": 105935,
+              "medianMs": 101601,
+              "bestMs": 100234,
               "lapsUsed": 4
             },
-            "Ghin": {
-              "avgMs": 113486,
-              "medianMs": 113486,
-              "bestMs": 109906,
-              "lapsUsed": 2
+            "Brie": {
+              "avgMs": 97584,
+              "medianMs": 97118,
+              "bestMs": 95947,
+              "lapsUsed": 4
             },
-            "Lucian": {
-              "avgMs": 127341,
-              "medianMs": 127269,
-              "bestMs": 109923,
-              "lapsUsed": 3
+            "James": {
+              "avgMs": 95283,
+              "medianMs": 95050,
+              "bestMs": 94380,
+              "lapsUsed": 4
             },
-            "Alan": {
-              "avgMs": 349780,
-              "medianMs": 349780,
-              "bestMs": 349780,
-              "lapsUsed": 1
+            "Toby": {
+              "avgMs": 95706,
+              "medianMs": 95932,
+              "bestMs": 94290,
+              "lapsUsed": 4
             }
           },
           "qualVsRace": {
@@ -12773,7 +13007,7 @@
     },
     {
       "eventId": "2025-08-12-silver-city-raceway-66",
-      "signature": "f05b16a516e546db",
+      "signature": "aead74518ed75e78",
       "venue": "Silver City Raceway 66",
       "date": "2025-08-12",
       "track": "csp/2144/../silver_city_raceway_66",
@@ -14026,52 +14260,24 @@
         },
         "2": {
           "grid": [
-            "Josie",
-            "James",
-            "Toby",
-            "Lee",
-            "Mike",
+            "Brie",
             "Alfred",
-            "Brie"
+            "Mike",
+            "Lee",
+            "Toby",
+            "James",
+            "Josie"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.238,
+          "gridScore": -0.238,
           "drivers": {
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "23_Armor_All"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 8,
-              "car": "ac_legends_gt_shelby_daytona",
-              "skin": "01"
-            },
-            "Toby": {
-              "driver": "Toby",
-              "guid": "76561198401386081",
-              "carId": 1,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "33_Gitanes"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 3,
-              "car": "ac_legends_gt_ferrari_365gtb",
-              "skin": "02"
-            },
-            "Mike": {
-              "driver": "Mike",
-              "guid": "76561197984244290",
-              "carId": 6,
-              "car": "ac_legends_gt_pantera_gr4",
-              "skin": "155_orange"
+            "Brie": {
+              "driver": "Brie",
+              "guid": "76561197966374236",
+              "carId": 7,
+              "car": "ac_legends_gt_porsche_906",
+              "skin": "byump_51_brie"
             },
             "Alfred": {
               "driver": "Alfred",
@@ -14080,44 +14286,48 @@
               "car": "ac_legends_gt_911rsr_74",
               "skin": "09_ecuador"
             },
-            "Brie": {
-              "driver": "Brie",
-              "guid": "76561197966374236",
-              "carId": 7,
-              "car": "ac_legends_gt_porsche_906",
-              "skin": "byump_51_brie"
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 6,
+              "car": "ac_legends_gt_pantera_gr4",
+              "skin": "155_orange"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 3,
+              "car": "ac_legends_gt_ferrari_365gtb",
+              "skin": "02"
+            },
+            "Toby": {
+              "driver": "Toby",
+              "guid": "76561198401386081",
+              "carId": 1,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "33_Gitanes"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 8,
+              "car": "ac_legends_gt_shelby_daytona",
+              "skin": "01"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "23_Armor_All"
             }
           },
           "laps": {
-            "Josie": [
-              160116,
-              149760,
-              147159,
-              145719
-            ],
-            "James": [
-              156187,
-              154581,
-              149116,
-              153518
-            ],
-            "Toby": [
-              165360,
-              151506,
-              164591,
-              149511
-            ],
-            "Lee": [
-              160069,
-              156002,
-              156036,
-              164893
-            ],
-            "Mike": [
-              167293,
-              159746,
-              157345,
-              153712
+            "Brie": [
+              157053,
+              160420,
+              155831,
+              158488
             ],
             "Alfred": [
               187951,
@@ -14125,122 +14335,58 @@
               159801,
               161968
             ],
-            "Brie": [
-              157053,
-              160420,
-              155831,
-              158488
+            "Mike": [
+              167293,
+              159746,
+              157345,
+              153712
+            ],
+            "Lee": [
+              160069,
+              156002,
+              156036,
+              164893
+            ],
+            "Toby": [
+              165360,
+              151506,
+              164591,
+              149511
+            ],
+            "James": [
+              156187,
+              154581,
+              149116,
+              153518
+            ],
+            "Josie": [
+              160116,
+              149760,
+              147159,
+              145719
             ]
           },
           "sectors": {
-            "Josie": [
+            "Brie": [
               [
-                29687,
-                80659,
-                49770
+                26706,
+                80707,
+                49640
               ],
               [
-                21721,
-                79668,
-                48371
+                22526,
+                81662,
+                56232
               ],
               [
-                21041,
-                78885,
-                47233
+                21403,
+                85446,
+                48982
               ],
               [
-                21010,
-                77935,
-                46774
-              ]
-            ],
-            "James": [
-              [
-                27554,
-                80289,
-                48344
-              ],
-              [
-                27222,
-                79595,
-                47764
-              ],
-              [
-                21689,
-                80001,
-                47426
-              ],
-              [
-                21695,
-                83989,
-                47834
-              ]
-            ],
-            "Toby": [
-              [
-                29392,
-                85828,
-                50140
-              ],
-              [
-                21591,
-                80896,
-                49019
-              ],
-              [
-                21757,
-                88371,
-                54463
-              ],
-              [
-                21404,
-                80186,
-                47921
-              ]
-            ],
-            "Lee": [
-              [
-                27981,
-                82286,
-                49802
-              ],
-              [
-                24994,
-                82102,
-                48906
-              ],
-              [
-                21827,
-                85563,
-                48646
-              ],
-              [
-                21941,
-                87633,
-                55319
-              ]
-            ],
-            "Mike": [
-              [
-                29526,
-                85157,
-                52610
-              ],
-              [
-                21331,
-                85901,
-                52514
-              ],
-              [
-                22003,
-                85046,
-                50296
-              ],
-              [
-                21853,
-                82656,
-                49203
+                21278,
+                87611,
+                49599
               ]
             ],
             "Alfred": [
@@ -14265,55 +14411,119 @@
                 52114
               ]
             ],
-            "Brie": [
+            "Mike": [
               [
-                26706,
-                80707,
-                49640
+                29526,
+                85157,
+                52610
               ],
               [
-                22526,
-                81662,
-                56232
+                21331,
+                85901,
+                52514
               ],
               [
-                21403,
-                85446,
-                48982
+                22003,
+                85046,
+                50296
               ],
               [
-                21278,
-                87611,
-                49599
+                21853,
+                82656,
+                49203
+              ]
+            ],
+            "Lee": [
+              [
+                27981,
+                82286,
+                49802
+              ],
+              [
+                24994,
+                82102,
+                48906
+              ],
+              [
+                21827,
+                85563,
+                48646
+              ],
+              [
+                21941,
+                87633,
+                55319
+              ]
+            ],
+            "Toby": [
+              [
+                29392,
+                85828,
+                50140
+              ],
+              [
+                21591,
+                80896,
+                49019
+              ],
+              [
+                21757,
+                88371,
+                54463
+              ],
+              [
+                21404,
+                80186,
+                47921
+              ]
+            ],
+            "James": [
+              [
+                27554,
+                80289,
+                48344
+              ],
+              [
+                27222,
+                79595,
+                47764
+              ],
+              [
+                21689,
+                80001,
+                47426
+              ],
+              [
+                21695,
+                83989,
+                47834
+              ]
+            ],
+            "Josie": [
+              [
+                29687,
+                80659,
+                49770
+              ],
+              [
+                21721,
+                79668,
+                48371
+              ],
+              [
+                21041,
+                78885,
+                47233
+              ],
+              [
+                21010,
+                77935,
+                46774
               ]
             ]
           },
           "cuts": {
-            "Josie": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "James": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Toby": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Lee": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Mike": [
+            "Brie": [
               0,
               0,
               0,
@@ -14325,7 +14535,31 @@
               0,
               0
             ],
-            "Brie": [
+            "Mike": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Toby": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
               0,
               0,
               0,
@@ -14333,31 +14567,7 @@
             ]
           },
           "tyres": {
-            "Josie": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "James": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Toby": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Lee": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Mike": [
+            "Brie": [
               "V70",
               "V70",
               "V70",
@@ -14369,7 +14579,31 @@
               "V70",
               "V70"
             ],
-            "Brie": [
+            "Mike": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Lee": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Toby": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "James": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Josie": [
               "V70",
               "V70",
               "V70",
@@ -14377,35 +14611,11 @@
             ]
           },
           "positions": {
-            "Josie": [
-              4,
-              1,
-              1,
-              1
-            ],
-            "James": [
-              1,
+            "Brie": [
               2,
-              2,
-              2
-            ],
-            "Toby": [
               5,
               4,
-              5,
-              3
-            ],
-            "Lee": [
-              3,
-              3,
-              3,
-              5
-            ],
-            "Mike": [
-              6,
-              6,
-              6,
-              6
+              4
             ],
             "Alfred": [
               7,
@@ -14413,140 +14623,60 @@
               7,
               7
             ],
-            "Brie": [
-              2,
+            "Mike": [
+              6,
+              6,
+              6,
+              6
+            ],
+            "Lee": [
+              3,
+              3,
+              3,
+              5
+            ],
+            "Toby": [
               5,
               4,
-              4
+              5,
+              3
+            ],
+            "James": [
+              1,
+              2,
+              2,
+              2
+            ],
+            "Josie": [
+              4,
+              1,
+              1,
+              1
             ]
           },
           "positionDetails": {
-            "Josie": [
+            "Brie": [
               {
                 "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
                 "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 1,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 1,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 1,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "James": [
-              {
-                "lap": 1,
-                "position": 1,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 2,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Toby": [
-              {
-                "lap": 1,
-                "position": 5,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
                 "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Mike": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 6,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 6,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 6,
                 "lapsCompleted": 4,
                 "status": "classified"
               }
@@ -14577,118 +14707,234 @@
                 "status": "classified"
               }
             ],
-            "Brie": [
+            "Mike": [
               {
                 "lap": 1,
-                "position": 2,
+                "position": 6,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 5,
+                "position": 6,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 4,
+                "position": 6,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Toby": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
                 "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
                 "lapsCompleted": 4,
                 "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "Josie": {
-              "gained": 3,
-              "lost": 3,
-              "net": 0
-            },
-            "James": {
+            "Brie": {
               "gained": 1,
-              "lost": 1,
-              "net": 0
+              "lost": 4,
+              "net": -3
             },
-            "Toby": {
-              "gained": 3,
+            "Alfred": {
+              "gained": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Mike": {
+              "gained": 0,
               "lost": 3,
-              "net": 0
+              "net": -3
             },
             "Lee": {
               "gained": 1,
               "lost": 2,
               "net": -1
             },
-            "Mike": {
-              "gained": 0,
+            "Toby": {
+              "gained": 3,
               "lost": 1,
-              "net": -1
+              "net": 2
             },
-            "Alfred": {
-              "gained": 0,
+            "James": {
+              "gained": 5,
               "lost": 1,
-              "net": -1
+              "net": 4
             },
-            "Brie": {
+            "Josie": {
               "gained": 6,
-              "lost": 3,
-              "net": 3
+              "lost": 0,
+              "net": 6
             }
           },
           "overtakes": [
             {
               "lap": 1,
               "driver": "James",
-              "passed": "Josie",
-              "positionsGained": 1
+              "passed": "Brie",
+              "positionsGained": 5
             },
             {
               "lap": 1,
-              "driver": "Brie",
+              "driver": "James",
               "passed": "Lee",
               "positionsGained": 5
             },
             {
               "lap": 1,
-              "driver": "Brie",
-              "passed": "Josie",
-              "positionsGained": 5
-            },
-            {
-              "lap": 1,
-              "driver": "Brie",
+              "driver": "James",
               "passed": "Toby",
               "positionsGained": 5
             },
             {
               "lap": 1,
-              "driver": "Brie",
+              "driver": "James",
               "passed": "Mike",
               "positionsGained": 5
             },
             {
               "lap": 1,
-              "driver": "Brie",
+              "driver": "James",
               "passed": "Alfred",
               "positionsGained": 5
             },
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Josie",
+              "passed": "Mike",
               "positionsGained": 1
             },
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Toby",
+              "passed": "Alfred",
               "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Toby",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 3
             },
             {
               "lap": 2,
@@ -14961,34 +15207,10 @@
             }
           ],
           "pace": {
-            "Josie": {
-              "avgMs": 147546,
-              "medianMs": 147159,
-              "bestMs": 145719,
-              "lapsUsed": 3
-            },
-            "James": {
-              "avgMs": 152405,
-              "medianMs": 153518,
-              "bestMs": 149116,
-              "lapsUsed": 3
-            },
-            "Toby": {
-              "avgMs": 155203,
-              "medianMs": 151506,
-              "bestMs": 149511,
-              "lapsUsed": 3
-            },
-            "Lee": {
-              "avgMs": 158977,
-              "medianMs": 156036,
-              "bestMs": 156002,
-              "lapsUsed": 3
-            },
-            "Mike": {
-              "avgMs": 156934,
-              "medianMs": 157345,
-              "bestMs": 153712,
+            "Brie": {
+              "avgMs": 158246,
+              "medianMs": 158488,
+              "bestMs": 155831,
               "lapsUsed": 3
             },
             "Alfred": {
@@ -14997,10 +15219,34 @@
               "bestMs": 159801,
               "lapsUsed": 3
             },
-            "Brie": {
-              "avgMs": 158246,
-              "medianMs": 158488,
-              "bestMs": 155831,
+            "Mike": {
+              "avgMs": 156934,
+              "medianMs": 157345,
+              "bestMs": 153712,
+              "lapsUsed": 3
+            },
+            "Lee": {
+              "avgMs": 158977,
+              "medianMs": 156036,
+              "bestMs": 156002,
+              "lapsUsed": 3
+            },
+            "Toby": {
+              "avgMs": 155203,
+              "medianMs": 151506,
+              "bestMs": 149511,
+              "lapsUsed": 3
+            },
+            "James": {
+              "avgMs": 152405,
+              "medianMs": 153518,
+              "bestMs": 149116,
+              "lapsUsed": 3
+            },
+            "Josie": {
+              "avgMs": 147546,
+              "medianMs": 147159,
+              "bestMs": 145719,
               "lapsUsed": 3
             }
           },
@@ -15903,52 +16149,24 @@
         },
         "4": {
           "grid": [
-            "Josie",
-            "Toby",
-            "James",
-            "Lee",
-            "Brie",
+            "Alfred",
             "Mike",
-            "Alfred"
+            "Brie",
+            "Lee",
+            "James",
+            "Toby",
+            "Josie"
           ],
-          "gridSource": "previous-race",
+          "gridSource": "reversed-previous",
           "gridConfidence": "medium",
-          "gridScore": 0.619,
+          "gridScore": -0.619,
           "drivers": {
-            "Josie": {
-              "driver": "Josie",
-              "guid": "76561198056789142",
-              "carId": 0,
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 2,
               "car": "ac_legends_gt_911rsr_74",
-              "skin": "23_Armor_All"
-            },
-            "Toby": {
-              "driver": "Toby",
-              "guid": "76561198401386081",
-              "carId": 1,
-              "car": "ac_legends_gt_911rsr_74",
-              "skin": "33_Gitanes"
-            },
-            "James": {
-              "driver": "James",
-              "guid": "76561198354688139",
-              "carId": 8,
-              "car": "ac_legends_gt_shelby_daytona",
-              "skin": "01"
-            },
-            "Lee": {
-              "driver": "Lee",
-              "guid": "76561198968530276",
-              "carId": 3,
-              "car": "ac_legends_gt_ferrari_365gtb",
-              "skin": "02"
-            },
-            "Brie": {
-              "driver": "Brie",
-              "guid": "76561197966374236",
-              "carId": 7,
-              "car": "ac_legends_gt_porsche_906",
-              "skin": "byump_51_brie"
+              "skin": "09_ecuador"
             },
             "Mike": {
               "driver": "Mike",
@@ -15957,44 +16175,48 @@
               "car": "ac_legends_gt_pantera_gr4",
               "skin": "155_orange"
             },
-            "Alfred": {
-              "driver": "Alfred",
-              "guid": "76561198193231731",
-              "carId": 2,
+            "Brie": {
+              "driver": "Brie",
+              "guid": "76561197966374236",
+              "carId": 7,
+              "car": "ac_legends_gt_porsche_906",
+              "skin": "byump_51_brie"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 3,
+              "car": "ac_legends_gt_ferrari_365gtb",
+              "skin": "02"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 8,
+              "car": "ac_legends_gt_shelby_daytona",
+              "skin": "01"
+            },
+            "Toby": {
+              "driver": "Toby",
+              "guid": "76561198401386081",
+              "carId": 1,
               "car": "ac_legends_gt_911rsr_74",
-              "skin": "09_ecuador"
+              "skin": "33_Gitanes"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "ac_legends_gt_911rsr_74",
+              "skin": "23_Armor_All"
             }
           },
           "laps": {
-            "Josie": [
-              156912,
-              154809,
-              155650,
-              151485
-            ],
-            "Toby": [
-              161010,
-              150759,
-              160281,
-              155776
-            ],
-            "James": [
-              153783,
-              162657,
-              151285,
-              152061
-            ],
-            "Lee": [
-              160548,
-              152576,
-              153763,
-              151349
-            ],
-            "Brie": [
-              169970,
-              152345,
-              150424,
-              151840
+            "Alfred": [
+              216155,
+              187338,
+              169771,
+              162739
             ],
             "Mike": [
               167423,
@@ -16002,55 +16224,123 @@
               157627,
               155593
             ],
-            "Alfred": [
-              216155,
-              187338,
-              169771,
-              162739
+            "Brie": [
+              169970,
+              152345,
+              150424,
+              151840
+            ],
+            "Lee": [
+              160548,
+              152576,
+              153763,
+              151349
+            ],
+            "James": [
+              153783,
+              162657,
+              151285,
+              152061
+            ],
+            "Toby": [
+              161010,
+              150759,
+              160281,
+              155776
+            ],
+            "Josie": [
+              156912,
+              154809,
+              155650,
+              151485
             ]
           },
           "sectors": {
-            "Josie": [
+            "Alfred": [
               [
-                28058,
-                81572,
-                47282
+                28955,
+                132544,
+                54656
               ],
               [
-                20969,
-                78535,
-                55305
+                21868,
+                102074,
+                63396
               ],
               [
-                21649,
-                81715,
-                52286
+                22117,
+                96107,
+                51547
               ],
               [
-                21326,
-                82562,
-                47597
+                22335,
+                89315,
+                51089
               ]
             ],
-            "Toby": [
+            "Mike": [
               [
-                28502,
-                81702,
-                50806
+                29372,
+                88466,
+                49585
               ],
               [
-                22121,
-                80524,
-                48114
+                21917,
+                86846,
+                49239
               ],
               [
-                22450,
-                80842,
-                56989
+                21597,
+                85310,
+                50720
               ],
               [
-                21482,
-                86333,
+                22092,
+                83614,
+                49887
+              ]
+            ],
+            "Brie": [
+              [
+                27789,
+                93073,
+                49108
+              ],
+              [
+                21189,
+                81963,
+                49193
+              ],
+              [
+                21346,
+                80114,
+                48964
+              ],
+              [
+                21444,
+                81157,
+                49239
+              ]
+            ],
+            "Lee": [
+              [
+                27888,
+                82412,
+                50248
+              ],
+              [
+                22446,
+                82467,
+                47663
+              ],
+              [
+                21805,
+                83196,
+                48762
+              ],
+              [
+                21848,
+                81540,
                 47961
               ]
             ],
@@ -16076,103 +16366,71 @@
                 48861
               ]
             ],
-            "Lee": [
+            "Toby": [
               [
-                27888,
-                82412,
-                50248
+                28502,
+                81702,
+                50806
               ],
               [
-                22446,
-                82467,
-                47663
+                22121,
+                80524,
+                48114
               ],
               [
-                21805,
-                83196,
-                48762
+                22450,
+                80842,
+                56989
               ],
               [
-                21848,
-                81540,
+                21482,
+                86333,
                 47961
               ]
             ],
-            "Brie": [
+            "Josie": [
               [
-                27789,
-                93073,
-                49108
+                28058,
+                81572,
+                47282
               ],
               [
-                21189,
-                81963,
-                49193
+                20969,
+                78535,
+                55305
               ],
               [
-                21346,
-                80114,
-                48964
+                21649,
+                81715,
+                52286
               ],
               [
-                21444,
-                81157,
-                49239
-              ]
-            ],
-            "Mike": [
-              [
-                29372,
-                88466,
-                49585
-              ],
-              [
-                21917,
-                86846,
-                49239
-              ],
-              [
-                21597,
-                85310,
-                50720
-              ],
-              [
-                22092,
-                83614,
-                49887
-              ]
-            ],
-            "Alfred": [
-              [
-                28955,
-                132544,
-                54656
-              ],
-              [
-                21868,
-                102074,
-                63396
-              ],
-              [
-                22117,
-                96107,
-                51547
-              ],
-              [
-                22335,
-                89315,
-                51089
+                21326,
+                82562,
+                47597
               ]
             ]
           },
           "cuts": {
-            "Josie": [
+            "Alfred": [
               0,
               0,
               0,
               0
             ],
-            "Toby": [
+            "Mike": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Brie": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
               0,
               0,
               0,
@@ -16184,25 +16442,13 @@
               0,
               0
             ],
-            "Lee": [
+            "Toby": [
               0,
               0,
               0,
               0
             ],
-            "Brie": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Mike": [
-              0,
-              0,
-              0,
-              0
-            ],
-            "Alfred": [
+            "Josie": [
               0,
               0,
               0,
@@ -16210,31 +16456,7 @@
             ]
           },
           "tyres": {
-            "Josie": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Toby": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "James": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Lee": [
-              "V70",
-              "V70",
-              "V70",
-              "V70"
-            ],
-            "Brie": [
+            "Alfred": [
               "V70",
               "V70",
               "V70",
@@ -16246,7 +16468,31 @@
               "V70",
               "V70"
             ],
-            "Alfred": [
+            "Brie": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Lee": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "James": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Toby": [
+              "V70",
+              "V70",
+              "V70",
+              "V70"
+            ],
+            "Josie": [
               "V70",
               "V70",
               "V70",
@@ -16254,35 +16500,11 @@
             ]
           },
           "positions": {
-            "Josie": [
-              2,
-              1,
-              2,
-              2
-            ],
-            "Toby": [
-              4,
-              2,
-              4,
-              5
-            ],
-            "James": [
-              1,
-              4,
-              3,
-              3
-            ],
-            "Lee": [
-              3,
-              3,
-              1,
-              1
-            ],
-            "Brie": [
-              6,
-              5,
-              5,
-              4
+            "Alfred": [
+              7,
+              7,
+              7,
+              7
             ],
             "Mike": [
               5,
@@ -16290,140 +16512,60 @@
               6,
               6
             ],
-            "Alfred": [
-              7,
-              7,
-              7,
-              7
+            "Brie": [
+              6,
+              5,
+              5,
+              4
+            ],
+            "Lee": [
+              3,
+              3,
+              1,
+              1
+            ],
+            "James": [
+              1,
+              4,
+              3,
+              3
+            ],
+            "Toby": [
+              4,
+              2,
+              4,
+              5
+            ],
+            "Josie": [
+              2,
+              1,
+              2,
+              2
             ]
           },
           "positionDetails": {
-            "Josie": [
+            "Alfred": [
               {
                 "lap": 1,
-                "position": 2,
+                "position": 7,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 1,
+                "position": 7,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 2,
+                "position": 7,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 2,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Toby": [
-              {
-                "lap": 1,
-                "position": 4,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 2,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 4,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 5,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "James": [
-              {
-                "lap": 1,
-                "position": 1,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 4,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 3,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 3,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Lee": [
-              {
-                "lap": 1,
-                "position": 3,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 3,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 1,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 1,
-                "lapsCompleted": 4,
-                "status": "classified"
-              }
-            ],
-            "Brie": [
-              {
-                "lap": 1,
-                "position": 6,
-                "lapsCompleted": 1,
-                "status": "classified"
-              },
-              {
-                "lap": 2,
-                "position": 5,
-                "lapsCompleted": 2,
-                "status": "classified"
-              },
-              {
-                "lap": 3,
-                "position": 5,
-                "lapsCompleted": 3,
-                "status": "classified"
-              },
-              {
-                "lap": 4,
-                "position": 4,
+                "position": 7,
                 "lapsCompleted": 4,
                 "status": "classified"
               }
@@ -16454,94 +16596,264 @@
                 "status": "classified"
               }
             ],
-            "Alfred": [
+            "Brie": [
               {
                 "lap": 1,
-                "position": 7,
+                "position": 6,
                 "lapsCompleted": 1,
                 "status": "classified"
               },
               {
                 "lap": 2,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 2,
                 "status": "classified"
               },
               {
                 "lap": 3,
-                "position": 7,
+                "position": 5,
                 "lapsCompleted": 3,
                 "status": "classified"
               },
               {
                 "lap": 4,
-                "position": 7,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Toby": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
                 "lapsCompleted": 4,
                 "status": "classified"
               }
             ]
           },
           "positionChanges": {
-            "Josie": {
-              "gained": 1,
-              "lost": 2,
-              "net": -1
+            "Alfred": {
+              "gained": 0,
+              "lost": 6,
+              "net": -6
             },
-            "Toby": {
+            "Mike": {
+              "gained": 0,
+              "lost": 4,
+              "net": -4
+            },
+            "Brie": {
               "gained": 2,
-              "lost": 5,
-              "net": -3
-            },
-            "James": {
-              "gained": 3,
               "lost": 3,
-              "net": 0
+              "net": -1
             },
             "Lee": {
               "gained": 3,
               "lost": 0,
               "net": 3
             },
-            "Brie": {
-              "gained": 2,
-              "lost": 1,
+            "James": {
+              "gained": 5,
+              "lost": 3,
+              "net": 2
+            },
+            "Toby": {
+              "gained": 4,
+              "lost": 3,
               "net": 1
             },
-            "Mike": {
-              "gained": 1,
+            "Josie": {
+              "gained": 6,
               "lost": 1,
-              "net": 0
-            },
-            "Alfred": {
-              "gained": 0,
-              "lost": 0,
-              "net": 0
+              "net": 5
             }
           },
           "overtakes": [
             {
               "lap": 1,
               "driver": "James",
-              "passed": "Josie",
-              "positionsGained": 2
+              "passed": "Lee",
+              "positionsGained": 4
             },
             {
               "lap": 1,
               "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Brie",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Lee",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
               "passed": "Toby",
-              "positionsGained": 2
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Brie",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 5
             },
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Toby",
+              "passed": "Mike",
               "positionsGained": 1
             },
             {
               "lap": 1,
-              "driver": "Mike",
+              "driver": "Lee",
               "passed": "Brie",
               "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Alfred",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Mike",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Brie",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Toby",
+              "passed": "Alfred",
+              "positionsGained": 2
             },
             {
               "lap": 2,
@@ -16776,34 +17088,10 @@
             }
           ],
           "pace": {
-            "Josie": {
-              "avgMs": 153981,
-              "medianMs": 154809,
-              "bestMs": 151485,
-              "lapsUsed": 3
-            },
-            "Toby": {
-              "avgMs": 155605,
-              "medianMs": 155776,
-              "bestMs": 150759,
-              "lapsUsed": 3
-            },
-            "James": {
-              "avgMs": 155334,
-              "medianMs": 152061,
-              "bestMs": 151285,
-              "lapsUsed": 3
-            },
-            "Lee": {
-              "avgMs": 152563,
-              "medianMs": 152576,
-              "bestMs": 151349,
-              "lapsUsed": 3
-            },
-            "Brie": {
-              "avgMs": 151536,
-              "medianMs": 151840,
-              "bestMs": 150424,
+            "Alfred": {
+              "avgMs": 173283,
+              "medianMs": 169771,
+              "bestMs": 162739,
               "lapsUsed": 3
             },
             "Mike": {
@@ -16812,10 +17100,34 @@
               "bestMs": 155593,
               "lapsUsed": 3
             },
-            "Alfred": {
-              "avgMs": 173283,
-              "medianMs": 169771,
-              "bestMs": 162739,
+            "Brie": {
+              "avgMs": 151536,
+              "medianMs": 151840,
+              "bestMs": 150424,
+              "lapsUsed": 3
+            },
+            "Lee": {
+              "avgMs": 152563,
+              "medianMs": 152576,
+              "bestMs": 151349,
+              "lapsUsed": 3
+            },
+            "James": {
+              "avgMs": 155334,
+              "medianMs": 152061,
+              "bestMs": 151285,
+              "lapsUsed": 3
+            },
+            "Toby": {
+              "avgMs": 155605,
+              "medianMs": 155776,
+              "bestMs": 150759,
+              "lapsUsed": 3
+            },
+            "Josie": {
+              "avgMs": 153981,
+              "medianMs": 154809,
+              "bestMs": 151485,
               "lapsUsed": 3
             }
           },

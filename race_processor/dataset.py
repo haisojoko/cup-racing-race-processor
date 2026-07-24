@@ -42,8 +42,15 @@ def build_event(
     event: Event,
     config_fingerprint: str,
     dropped: list[dict[str, Any]] | None = None,
+    reverse_grid: bool = False,
 ) -> dict[str, Any]:
-    """Process every session in an event into the output event object."""
+    """Process every session in an event into the output event object.
+
+    ``reverse_grid`` marks a reverse-grid season: races in even positions
+    (R2, R4, …) take the reverse of the preceding race's finish as their grid.
+    Numbering is positional over the races actually present, so a missing early
+    race can shift the odd/even parity — the format is applied on a best effort.
+    """
     notes: list[str] = []
 
     quali_sorted = sorted(event.qualifying, key=lambda s: s.timestamp)
@@ -76,6 +83,7 @@ def build_event(
             fresh_quali_grid=fresh_grid,
             previous_finish=prev_finish,
             registry=registry,
+            forced_reverse=reverse_grid and i % 2 == 0,
         )
         race = process_race(s.data, grid=decision.grid, grid_meta=decision.as_meta(), notes=notes)
         race["qualVsRace"] = _qual_vs_race(qgrid, race["result"]) if qgrid else None

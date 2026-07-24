@@ -73,6 +73,25 @@ def test_ambiguous_falls_back_to_first_lap():
         assert decision.source in ("previous-race", "reversed-previous")
 
 
+def test_forced_reverse_trusts_format_over_ambiguous_lap1():
+    finish = ["a", "b", "c", "d", "e"]
+    # Jumbled lap-1 order that normal inference would treat as low-confidence.
+    observed = ["c", "a", "e", "b", "d"]
+    race = _race_from_order(observed)
+    decision = infer_grid(race, fresh_quali_grid=None, previous_finish=finish, forced_reverse=True)
+    assert decision.source == "reversed-previous"
+    assert decision.confidence in ("high", "medium")
+    assert decision.grid[:5] == list(reversed(finish))
+
+
+def test_forced_reverse_without_previous_finish_falls_through():
+    order = ["a", "b", "c"]
+    race = _race_from_order(order)
+    decision = infer_grid(race, fresh_quali_grid=None, previous_finish=None, forced_reverse=True)
+    # Nothing to reverse → ordinary inference (first-lap here), not a crash.
+    assert decision.source in ("first-lap-inferred", "unknown")
+
+
 def test_no_signal_is_unknown():
     race = {"TrackName": "x", "TrackConfig": "", "Type": "RACE", "Laps": [], "Result": [], "Cars": [], "Events": []}
     decision = infer_grid(race, fresh_quali_grid=None, previous_finish=None)

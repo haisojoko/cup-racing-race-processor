@@ -147,6 +147,7 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
         event_objs: list[dict] = []
         current_ids: set[str] = set()
         rebuilt = reused = 0
+        reverse_grid = season_id in cfg.reverse_grid_seasons
         for ev in current_events:
             current_ids.add(ev.event_id)
             sig = ds.event_signature(ev, fingerprint)
@@ -155,7 +156,7 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
                 event_objs.append(old)
                 reused += 1
             else:
-                event_objs.append(ds.build_event(ev, fingerprint, scan.dropped))
+                event_objs.append(ds.build_event(ev, fingerprint, scan.dropped, reverse_grid))
                 rebuilt += 1
 
         if not rebuild:

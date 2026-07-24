@@ -24,6 +24,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "driverAliases": {},
     "sharedGuids": [],
     "guestSlotNames": {},
+    "reverseGridSeasons": [],
     "trackDisplayNames": {},
     "eventGapHours": 4,
     "restartWindowMinutes": 30,
@@ -46,6 +47,9 @@ class Config:
     # {guid: {season_id: canonical name}} — for a guest slot reused by a
     # different person each season. Overrides the display name for that season.
     guest_slot_names: dict[str, dict[str, str]] = field(default_factory=dict)
+    # Season IDs (e.g. "S19") that run a reverse-grid format: R1/R3 from
+    # qualifying, R2/R4 the reverse of the preceding race's finish.
+    reverse_grid_seasons: tuple[str, ...] = ()
     track_display_names: dict[str, str] = field(default_factory=dict)
     event_gap_hours: float = 4.0
     restart_window_minutes: float = 30.0
@@ -63,6 +67,7 @@ class Config:
                 "driverAliases": self.driver_aliases,
                 "sharedGuids": sorted(self.shared_guids),
                 "guestSlotNames": self.guest_slot_names,
+                "reverseGridSeasons": sorted(self.reverse_grid_seasons),
                 "trackDisplayNames": self.track_display_names,
                 "eventGapHours": self.event_gap_hours,
                 "restartWindowMinutes": self.restart_window_minutes,
@@ -113,6 +118,7 @@ def load_config(path: Path, *, warn=print) -> Config:
             str(g).strip(): {str(s).strip(): str(n) for s, n in (m or {}).items()}
             for g, m in dict(merged["guestSlotNames"]).items() if str(g).strip()
         },
+        reverse_grid_seasons=tuple(str(x).strip() for x in merged["reverseGridSeasons"] if str(x).strip()),
         track_display_names=dict(merged["trackDisplayNames"]),
         event_gap_hours=float(merged["eventGapHours"]),
         restart_window_minutes=float(merged["restartWindowMinutes"]),
