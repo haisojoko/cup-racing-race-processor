@@ -1,7 +1,11 @@
 {
   "inboxDir": "inbox",
   "datasetDir": "dataset",
-  "publishDestinations": [],
+  "publishDestinations": [
+    "../cup-racing-test-portal/sim-racing-historical-viz/data/races",
+    "../cup-racing-analysis-tool/data/races",
+    "../cup-racing-insights/data/races"
+  ],
   "driverNames": {
     "76561198056789142": "Josie",
     "76561198354688139": "James",
