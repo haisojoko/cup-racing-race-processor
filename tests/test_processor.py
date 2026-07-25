@@ -21,6 +21,7 @@ from race_processor.processor import (
     _compute_positions,
     _compute_position_details,
     _compute_position_changes,
+    _dedup_mirrored_contacts,
 )
 
 from .fixtures import QUALIFYING_RESULT, RACE_RESULT
@@ -680,3 +681,42 @@ def test_guest_slot_name_depends_on_season():
     assert extract_driver_name(entry) == "Jee Sun"
     set_current_season("")
     configure_guest_slot_names({})
+
+
+# ---- Contact dedup (AC logs each collision from both cars) ----
+
+def _contact(d1, d2, spd, x, z, lap=None):
+    c = {"lap": lap, "lapConfidence": "unknown", "driver1": d1, "driver2": d2, "impactSpeed": spd}
+    c["worldPosition"] = {"x": x, "z": z}
+    return c
+
+def test_dedup_collapses_mirror_pair_keeping_higher_impact():
+    # Same collision reported by both cars: swapped pair, ~same point, diff speed.
+    contacts = [
+        _contact("A", "B", 12.9, -378.3, 188.5),
+        _contact("B", "A", 10.6, -378.5, 188.7),
+    ]
+    out = _dedup_mirrored_contacts(contacts)
+    assert len(out) == 1
+    assert out[0]["impactSpeed"] == 12.9  # keeps the higher
+
+def test_dedup_keeps_distinct_collisions_far_apart():
+    contacts = [
+        _contact("A", "B", 12.0, 0.0, 0.0),
+        _contact("A", "B", 15.0, 200.0, -50.0),   # same pair, different corner
+    ]
+    assert len(_dedup_mirrored_contacts(contacts)) == 2
+
+def test_dedup_keeps_same_corner_different_known_lap():
+    contacts = [
+        _contact("A", "B", 12.0, 0.0, 0.0, lap=2),
+        _contact("A", "B", 12.0, 0.5, 0.3, lap=5),  # near, but a different lap
+    ]
+    assert len(_dedup_mirrored_contacts(contacts)) == 2
+
+def test_dedup_leaves_unrelated_pairs():
+    contacts = [
+        _contact("A", "B", 12.0, 0.0, 0.0),
+        _contact("A", "C", 12.0, 0.2, 0.1),   # near but different pair
+    ]
+    assert len(_dedup_mirrored_contacts(contacts)) == 2

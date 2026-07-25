@@ -162,6 +162,11 @@ unreliable start order.
 - **Contact lap is usually `null`.** AC collision events carry no timestamp, so
   `contacts[].lap` cannot be attributed; `worldPosition {x,z}` is provided
   instead for locating incidents.
+- **Contacts are de-mirrored.** AC logs each car-to-car collision twice (once
+  per car, driver1/driver2 swapped, each with its own impact speed/position).
+  Mirror pairs — same unordered pair, contact points within 3 m, not a
+  different known lap — are collapsed to one contact (higher impact kept), so
+  counts reflect physical collisions, not log lines.
 - **Overtakes include lapped traffic.** A pass is any classified-vs-classified
   position swap between consecutive leader-laps; being lapped/unlapped is not
   distinguished.

@@ -7,6 +7,7 @@ detail records suitable for the Cup Racing Data SPA and cup-racing-insights.
 from __future__ import annotations
 
 import json
+import math
 import statistics
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -850,7 +851,52 @@ def _map_contacts_to_laps(
             contact["worldPosition"] = world
         contacts.append(contact)
 
-    return contacts
+    return _dedup_mirrored_contacts(contacts)
+
+
+# AC logs each car-to-car collision twice — once from each car's point of view,
+# with driver1/driver2 swapped and each car reporting its own impact speed and a
+# slightly different contact point. Left as-is this doubles every contact count.
+_CONTACT_DEDUP_RADIUS_M = 3.0
+
+
+def _contact_distance(a: dict, b: dict) -> float:
+    return math.hypot(a["x"] - b["x"], a["z"] - b["z"])
+
+
+def _dedup_mirrored_contacts(contacts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Collapse mirror-image collision events into one physical contact.
+
+    A later event is a mirror of a kept one when it shares the same unordered
+    driver pair, its contact point is within a few metres, and it is not on a
+    different *known* lap. The survivor keeps the higher impact speed and any
+    lap number that was resolved on either side.
+    """
+    kept: list[dict[str, Any]] = []
+    for c in contacts:
+        pair = frozenset((c["driver1"], c["driver2"]))
+        wp = c.get("worldPosition")
+        match = None
+        if wp is not None and c["driver1"] != c["driver2"]:
+            for k in kept:
+                if frozenset((k["driver1"], k["driver2"])) != pair:
+                    continue
+                kwp = k.get("worldPosition")
+                if kwp is None or _contact_distance(wp, kwp) > _CONTACT_DEDUP_RADIUS_M:
+                    continue
+                if c["lap"] is not None and k["lap"] is not None and c["lap"] != k["lap"]:
+                    continue  # same corner, different lap → distinct collisions
+                match = k
+                break
+        if match is None:
+            kept.append(c)
+            continue
+        if (c.get("impactSpeed") or 0) > (match.get("impactSpeed") or 0):
+            match["impactSpeed"] = c["impactSpeed"]
+        if match["lap"] is None and c["lap"] is not None:
+            match["lap"] = c["lap"]
+            match["lapConfidence"] = c["lapConfidence"]
+    return kept
 
 
 def _world_position(event: dict) -> dict[str, float] | None:

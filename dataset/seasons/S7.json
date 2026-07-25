@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.2.0",
   "season": "S7",
-  "lastUpdated": "2026-07-24T14:31:41.676619+00:00",
+  "lastUpdated": "2026-07-25T18:18:21.345181+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -1232,21 +1232,10 @@
               "lapConfidence": "unknown",
               "driver1": "Kevin",
               "driver2": "Brie",
-              "impactSpeed": 20.3,
-              "worldPosition": {
-                "x": -6.8,
-                "z": -751.9
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Brie",
-              "driver2": "Kevin",
               "impactSpeed": 24.5,
               "worldPosition": {
                 "x": -6.8,
-                "z": -751.6
+                "z": -751.9
               }
             },
             {
@@ -1263,34 +1252,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Tawm",
-              "impactSpeed": 15.6,
-              "worldPosition": {
-                "x": -58.9,
-                "z": -86.4
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Josie",
               "driver2": "James",
-              "impactSpeed": 5.0,
+              "impactSpeed": 15.7,
               "worldPosition": {
                 "x": -12.2,
                 "z": -414.1
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Josie",
-              "impactSpeed": 15.7,
-              "worldPosition": {
-                "x": -11.1,
-                "z": -411.8
               }
             },
             {
@@ -1302,28 +1269,6 @@
               "worldPosition": {
                 "x": 4.6,
                 "z": -395.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Josie",
-              "impactSpeed": 10.5,
-              "worldPosition": {
-                "x": 4.7,
-                "z": -395.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "James",
-              "impactSpeed": 6.9,
-              "worldPosition": {
-                "x": 4.8,
-                "z": -394.5
               }
             }
           ],
@@ -2268,7 +2213,7 @@
               "lapConfidence": "unknown",
               "driver1": "Kevin",
               "driver2": "Tawm",
-              "impactSpeed": 4.3,
+              "impactSpeed": 5.7,
               "worldPosition": {
                 "x": 3.7,
                 "z": -979.8
@@ -2277,31 +2222,9 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Tawm",
-              "driver2": "Kevin",
-              "impactSpeed": 5.7,
-              "worldPosition": {
-                "x": 3.6,
-                "z": -980.2
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "James",
               "driver2": "Isaac",
               "impactSpeed": 211.4,
-              "worldPosition": {
-                "x": -5.3,
-                "z": -325.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Isaac",
-              "driver2": "James",
-              "impactSpeed": 210.0,
               "worldPosition": {
                 "x": -5.3,
                 "z": -325.8
@@ -3177,7 +3100,7 @@
               "lapConfidence": "unknown",
               "driver1": "James",
               "driver2": "Josie",
-              "impactSpeed": 15.6,
+              "impactSpeed": 23.1,
               "worldPosition": {
                 "x": -202.8,
                 "z": -792.0
@@ -3186,34 +3109,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "James",
-              "impactSpeed": 23.1,
-              "worldPosition": {
-                "x": -202.7,
-                "z": -791.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "James",
               "driver2": "Brie",
-              "impactSpeed": 43.3,
+              "impactSpeed": 56.0,
               "worldPosition": {
                 "x": -49.4,
                 "z": -1016.3
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Brie",
-              "driver2": "James",
-              "impactSpeed": 56.0,
-              "worldPosition": {
-                "x": -50.0,
-                "z": -1016.5
               }
             }
           ],
@@ -4894,32 +4795,10 @@
               "lapConfidence": "unknown",
               "driver1": "Lee",
               "driver2": "Isaac",
-              "impactSpeed": 12.9,
-              "worldPosition": {
-                "x": 254.0,
-                "z": 445.9
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Colin",
-              "impactSpeed": 28.6,
-              "worldPosition": {
-                "x": 227.2,
-                "z": 244.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Isaac",
-              "driver2": "Lee",
               "impactSpeed": 16.0,
               "worldPosition": {
                 "x": 254.0,
-                "z": 444.8
+                "z": 445.9
               }
             },
             {
@@ -4931,17 +4810,6 @@
               "worldPosition": {
                 "x": -340.2,
                 "z": 755.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Lee",
-              "driver2": "Tawm",
-              "impactSpeed": 43.8,
-              "worldPosition": {
-                "x": -340.5,
-                "z": 755.3
               }
             }
           ],
@@ -6091,21 +5959,10 @@
               "lapConfidence": "unknown",
               "driver1": "Brie",
               "driver2": "Lee",
-              "impactSpeed": 10.8,
+              "impactSpeed": 11.4,
               "worldPosition": {
                 "x": -202.8,
                 "z": -958.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Lee",
-              "driver2": "Brie",
-              "impactSpeed": 11.4,
-              "worldPosition": {
-                "x": -202.4,
-                "z": -958.6
               }
             },
             {
@@ -6122,17 +5979,6 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "Tawm",
-              "impactSpeed": 7.3,
-              "worldPosition": {
-                "x": 249.4,
-                "z": 101.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Tawm",
               "driver2": "Isaac",
               "impactSpeed": 117.8,
@@ -6144,34 +5990,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Isaac",
-              "driver2": "Tawm",
-              "impactSpeed": 109.1,
-              "worldPosition": {
-                "x": -365.2,
-                "z": 735.1
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Tawm",
               "driver2": "Josie",
-              "impactSpeed": 17.6,
+              "impactSpeed": 37.3,
               "worldPosition": {
                 "x": -368.3,
                 "z": 703.4
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "Tawm",
-              "impactSpeed": 37.3,
-              "worldPosition": {
-                "x": -368.4,
-                "z": 703.8
               }
             },
             {
@@ -6188,31 +6012,9 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Tawm",
-              "impactSpeed": 142.4,
-              "worldPosition": {
-                "x": -456.0,
-                "z": -273.5
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Isaac",
               "driver2": "Lee",
               "impactSpeed": 31.6,
-              "worldPosition": {
-                "x": -299.7,
-                "z": -1004.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Lee",
-              "driver2": "Isaac",
-              "impactSpeed": 6.0,
               "worldPosition": {
                 "x": -299.7,
                 "z": -1004.8
@@ -6226,17 +6028,6 @@
               "impactSpeed": 123.7,
               "worldPosition": {
                 "x": -329.3,
-                "z": -998.7
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Isaac",
-              "impactSpeed": 110.7,
-              "worldPosition": {
-                "x": -329.2,
                 "z": -998.7
               }
             }
@@ -7493,17 +7284,6 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Colin",
-              "driver2": "Tawm",
-              "impactSpeed": 104.9,
-              "worldPosition": {
-                "x": -425.6,
-                "z": -654.6
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Kevin",
               "driver2": "Brie",
               "impactSpeed": 126.2,
@@ -7515,34 +7295,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Brie",
-              "driver2": "Kevin",
-              "impactSpeed": 124.4,
-              "worldPosition": {
-                "x": -365.7,
-                "z": 689.1
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Isaac",
               "driver2": "Josie",
-              "impactSpeed": 103.8,
-              "worldPosition": {
-                "x": -329.3,
-                "z": 761.9
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "Isaac",
               "impactSpeed": 107.0,
               "worldPosition": {
                 "x": -329.3,
-                "z": 762.0
+                "z": 761.9
               }
             },
             {
@@ -7561,7 +7319,7 @@
               "lapConfidence": "unknown",
               "driver1": "Isaac",
               "driver2": "Josie",
-              "impactSpeed": 23.4,
+              "impactSpeed": 37.4,
               "worldPosition": {
                 "x": -437.9,
                 "z": -532.2
@@ -7572,43 +7330,10 @@
               "lapConfidence": "unknown",
               "driver1": "Josie",
               "driver2": "James",
-              "impactSpeed": 81.9,
+              "impactSpeed": 82.0,
               "worldPosition": {
                 "x": -436.2,
                 "z": -517.2
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Josie",
-              "driver2": "Isaac",
-              "impactSpeed": 37.4,
-              "worldPosition": {
-                "x": -437.6,
-                "z": -531.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Isaac",
-              "impactSpeed": 156.5,
-              "worldPosition": {
-                "x": -441.9,
-                "z": -482.0
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Josie",
-              "impactSpeed": 82.0,
-              "worldPosition": {
-                "x": -436.5,
-                "z": -517.1
               }
             }
           ],
@@ -9134,7 +8859,7 @@
               "lapConfidence": "unknown",
               "driver1": "Brie",
               "driver2": "Lee",
-              "impactSpeed": 31.2,
+              "impactSpeed": 33.2,
               "worldPosition": {
                 "x": 149.6,
                 "z": -156.0
@@ -9143,34 +8868,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Lee",
-              "driver2": "Brie",
-              "impactSpeed": 33.2,
-              "worldPosition": {
-                "x": 149.6,
-                "z": -155.8
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Colin",
               "driver2": "James",
-              "impactSpeed": 16.5,
+              "impactSpeed": 57.2,
               "worldPosition": {
                 "x": 207.6,
                 "z": 493.7
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "James",
-              "driver2": "Colin",
-              "impactSpeed": 57.2,
-              "worldPosition": {
-                "x": 207.9,
-                "z": 493.6
               }
             }
           ],
@@ -10236,7 +9939,7 @@
               "lapConfidence": "unknown",
               "driver1": "Colin",
               "driver2": "Green Kyle",
-              "impactSpeed": 45.7,
+              "impactSpeed": 48.8,
               "worldPosition": {
                 "x": -251.4,
                 "z": -141.4
@@ -10245,34 +9948,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Green Kyle",
-              "driver2": "Colin",
-              "impactSpeed": 48.8,
-              "worldPosition": {
-                "x": -251.3,
-                "z": -141.4
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Josie",
               "driver2": "Green Kyle",
-              "impactSpeed": 20.8,
+              "impactSpeed": 22.9,
               "worldPosition": {
                 "x": -167.1,
                 "z": -112.2
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Green Kyle",
-              "driver2": "Josie",
-              "impactSpeed": 22.9,
-              "worldPosition": {
-                "x": -167.6,
-                "z": -112.5
               }
             }
           ],
@@ -11409,34 +11090,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Colin",
-              "driver2": "Kevin",
-              "impactSpeed": 0.4,
-              "worldPosition": {
-                "x": -443.4,
-                "z": -951.4
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Kevin",
               "driver2": "Colin",
-              "impactSpeed": 63.5,
-              "worldPosition": {
-                "x": 571.6,
-                "z": 711.6
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Colin",
-              "driver2": "Kevin",
               "impactSpeed": 69.0,
               "worldPosition": {
                 "x": 571.6,
-                "z": 711.5
+                "z": 711.6
               }
             }
           ],
@@ -12179,28 +11838,6 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Green Kyle",
-              "impactSpeed": 49.2,
-              "worldPosition": {
-                "x": -429.6,
-                "z": -927.6
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Lee",
-              "impactSpeed": 31.0,
-              "worldPosition": {
-                "x": -438.8,
-                "z": -946.7
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Lee",
               "driver2": "Kevin",
               "impactSpeed": 13.2,
@@ -12212,34 +11849,12 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Kevin",
-              "driver2": "Lee",
-              "impactSpeed": 12.3,
-              "worldPosition": {
-                "x": -435.6,
-                "z": -961.2
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
               "driver1": "Green Kyle",
               "driver2": "Colin",
-              "impactSpeed": 49.0,
-              "worldPosition": {
-                "x": 609.6,
-                "z": 569.9
-              }
-            },
-            {
-              "lap": null,
-              "lapConfidence": "unknown",
-              "driver1": "Colin",
-              "driver2": "Green Kyle",
               "impactSpeed": 51.3,
               "worldPosition": {
                 "x": 609.6,
-                "z": 569.7
+                "z": 569.9
               }
             }
           ],
