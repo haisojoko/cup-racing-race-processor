@@ -1,4 +1,11 @@
 {
+  // === Cup Racing race-processor config ===
+  // Plain JSON, except // and # comments are allowed on their OWN line.
+  // Each new season, these are the only keys you normally touch:
+  //   - reverseGridSeasons : add the season ID if it runs reverse grids
+  //   - seasonClasses      : add a block if it's multi-class (copy the S24a one)
+  //   - driverNames        : add new drivers (run `race-processor roster` first)
+  //   - trackDisplayNames  : optional, clean names for new venues
   "inboxDir": "inbox",
   "datasetDir": "dataset",
   "publishDestinations": [
@@ -6,6 +13,7 @@
     "../cup-racing-analysis-tool/data/races",
     "../cup-racing-insights/data/races"
   ],
+  // GUID -> league name. Run `race-processor roster` to list unmapped GUIDs.
   "driverNames": {
     "76561198056789142": "Josie",
     "76561198354688139": "James",
@@ -60,6 +68,8 @@
   "sharedGuids": [
     "76561198430304383"
   ],
+  // Track key -> clean venue name. Add entries to strip AC mod prefixes
+  // (e.g. "vhe_interlagos" showing as "Vhe Interlagos"). Key is "<track>|<config>".
   "trackDisplayNames": {
     "csp/2144/../jr_road_atlanta_2022|full": "Road Atlanta"
   },
@@ -75,6 +85,45 @@
       "S19": "Clive"
     }
   },
+  // Multi-class seasons only, one block per season. "split" = a champion per
+  // class; "combined" = one champion. byCarModel maps a class to car-model glob
+  // patterns; "fallback" catches cars matching nothing. S14 (GT3/Street) and
+  // S24a (Hypercar/GT3) are the reference blocks -- copy one and adjust.
+  "seasonClasses": {
+    "S14": {
+      "championship": "split",
+      "order": ["GT3", "Street"],
+      "byCarModel": {
+        "GT3": ["*gtm*"]
+      },
+      "fallback": "Street"
+    },
+    "S18a": {
+      "championship": "combined",
+      "order": ["Hypercar", "GT3"],
+      "byCarModel": {
+        "Hypercar": ["*mph*", "vrc_pt_*"],
+        "GT3": ["*gtm*"]
+      }
+    },
+    "S18b": {
+      "championship": "combined",
+      "order": ["Hypercar", "GT3"],
+      "byCarModel": {
+        "Hypercar": ["*mph*", "vrc_pt_*"],
+        "GT3": ["*gtm*"]
+      }
+    },
+    "S24a": {
+      "championship": "split",
+      "order": ["Hypercar", "GT3"],
+      "byCarModel": {
+        "Hypercar": ["*mph*", "vrc_pt_*"],
+        "GT3": ["*gtm*"]
+      }
+    }
+  },
+  // Add each season ID that runs a reverse-grid format.
   "reverseGridSeasons": [
     "S10",
     "S11",
@@ -86,6 +135,7 @@
     "S20",
     "S21",
     "S22",
-    "S23"
+    "S23",
+    "S24a"
   ]
 }

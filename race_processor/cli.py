@@ -64,6 +64,17 @@ def main(argv: list[str] | None = None) -> None:
     ros.add_argument("-o", "--output", type=Path, default=None,
                      help="Write a driver_roster.json template (default: print a summary)")
 
+    rec = sub.add_parser("recap", help="Write per-driver encouraging weekend cards from the dataset")
+    rec.add_argument("--season", default=None, help="Season ID, e.g. S23 (default: latest with races)")
+    rec.add_argument("--round", type=int, default=None, dest="round_no", metavar="N",
+                     help="Venue number within the season, 1-based (default: the latest round)")
+    rec.add_argument("--driver", default=None, help="Only write this one driver's card")
+    rec.add_argument("--out", type=Path, default=None, help="Output folder (default: <root>/recap)")
+    rec.add_argument("--midfield-only", action="store_true",
+                     help="Write only the midfield briefing, not per-driver cards")
+    rec.add_argument("--all-rounds", action="store_true", dest="all_rounds",
+                     help="Every round of the season, not just the latest one")
+
     args = parser.parse_args(argv)
 
     if args.command == "ingest":
@@ -74,6 +85,10 @@ def main(argv: list[str] | None = None) -> None:
         _run_publish(args.config)
     elif args.command == "roster":
         _run_roster(args.config, args.output)
+    elif args.command == "recap":
+        _run_recap(args.config, season=args.season, round_no=args.round_no,
+                   driver=args.driver, out=args.out, midfield_only=args.midfield_only,
+                   all_rounds=args.all_rounds)
     else:
         parser.print_help()
 
@@ -169,13 +184,24 @@ def _run_build(config_path: Path | None, *, dry_run: bool, no_publish: bool, reb
             continue
 
         total_events += len(event_objs)
-        season_data = ds.assemble_season(season_id, event_objs, scan.unprocessed)
+        season_data = ds.assemble_season(
+            season_id, event_objs, scan.unprocessed,
+            cfg.season_classes.get(season_id), warn=lambda m: print(f"  {m}"),
+        )
         verb = "would write" if dry_run else "wrote"
         for e in season_data["events"]:
             races = len(e.get("races", {}))
             quals = len(e.get("qualifying", {}))
             print(f"  [{season_id}] {e['venueOrder']}. {e['venue']} ({e['date']}) — "
                   f"{quals} qual, {races} race(s)")
+
+        classes = season_data.get("classes")
+        if classes:
+            tally = {name: 0 for name in classes["order"]}
+            for name in classes["drivers"].values():
+                tally[name] = tally.get(name, 0) + 1
+            breakdown = ", ".join(f"{name} {n}" for name, n in tally.items())
+            print(f"  [{season_id}] {classes['championship']} championship — {breakdown}")
 
         if not dry_run:
             wrote = ds.write_json_if_changed(ds.season_path(cfg.dataset_dir, season_id), season_data)
@@ -286,6 +312,37 @@ def _run_roster(config_path: Path | None, output: Path | None) -> None:
     }
     output.write_text(_json.dumps(template, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {output} ({len(rows)} drivers).")
+
+
+def _run_recap(config_path: Path | None, *, season: str | None, round_no: int | None,
+               driver: str | None, out: Path | None, midfield_only: bool,
+               all_rounds: bool) -> None:
+    from . import recap
+
+    cfg = _load_config(config_path)
+    if not (cfg.dataset_dir / "seasons").exists():
+        print(f"Error: no dataset at {cfg.dataset_dir}. Run ingest first.", file=sys.stderr)
+        sys.exit(1)
+    out_dir = out if out is not None else (cfg.root / "recap")
+
+    try:
+        if all_rounds:
+            sid, rounds = recap.list_rounds(cfg.dataset_dir, season)
+            targets: list[tuple[str | None, int | None]] = [(sid, r) for r in rounds]
+        else:
+            targets = [(season, round_no)]
+        for tgt_season, tgt_round in targets:
+            info = recap.generate(cfg.dataset_dir, out_dir, season=tgt_season,
+                                  round_no=tgt_round, only_driver=driver,
+                                  midfield_only=midfield_only)
+            print(f"[RECAP] {info['season']} · {info['venue']} ({info['date']}) — "
+                  f"{info['drivers']} driver card(s)")
+            for name, headline in info["summary"]:
+                print(f"  {name:16} {headline}")
+            print(f"Wrote -> {info['out']}")
+    except ValueError as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        sys.exit(1)
 
 
 def _empty_scan():

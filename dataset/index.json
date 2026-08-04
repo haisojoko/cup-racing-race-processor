@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generator": "cup-racing-race-processor 0.2.0",
-  "lastUpdated": "2026-07-24T11:32:11.117525+00:00",
+  "generator": "cup-racing-race-processor 0.3.0",
+  "lastUpdated": "2026-07-26T20:40:32.082213+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -334,7 +334,14 @@
         "Toby",
         "Walnut"
       ],
-      "dataQuality": []
+      "dataQuality": [],
+      "classes": {
+        "championship": "split",
+        "order": [
+          "GT3",
+          "Street"
+        ]
+      }
     },
     "S15": {
       "file": "seasons/S15.json",
@@ -605,7 +612,14 @@
         "Toby",
         "Walnut"
       ],
-      "dataQuality": []
+      "dataQuality": [],
+      "classes": {
+        "championship": "combined",
+        "order": [
+          "Hypercar",
+          "GT3"
+        ]
+      }
     },
     "S18b": {
       "file": "seasons/S18b.json",
@@ -671,7 +685,14 @@
         "Toby",
         "Walnut"
       ],
-      "dataQuality": []
+      "dataQuality": [],
+      "classes": {
+        "championship": "combined",
+        "order": [
+          "Hypercar",
+          "GT3"
+        ]
+      }
     },
     "S19": {
       "file": "seasons/S19.json",

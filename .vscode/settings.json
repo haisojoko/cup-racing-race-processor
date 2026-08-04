@@ -1,0 +1,8 @@
+{
+  // config.json uses // and # comments (the race-processor loader strips them
+  // before parsing). Treat it as JSONC so the editor stops flagging
+  // "Comments are not permitted in JSON".
+  "files.associations": {
+    "config.json": "jsonc"
+  }
+}

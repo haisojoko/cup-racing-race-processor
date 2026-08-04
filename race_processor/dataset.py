@@ -15,12 +15,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from .classes import (
+    SeasonClassSpec,
+    apply_classes,
+    resolve_driver_classes,
+    season_class_block,
+)
 from .events import Event
 from .gridinfer import infer_grid
 from .processor import build_registry, process_practice, process_qualifying, process_race
 
+# Stays 2: the class fields are additive, and the contract reserves version
+# bumps for breaking changes (see SCHEMA.md "Versioning policy").
 SCHEMA_VERSION = 2
-GENERATOR = "cup-racing-race-processor 0.2.0"
+GENERATOR = "cup-racing-race-processor 0.3.0"
 
 
 # ---------------------------------------------------------------------------
@@ -190,12 +198,21 @@ def assemble_season(
     season_id: str,
     event_objects: list[dict[str, Any]],
     unprocessed: list[dict[str, Any]],
+    class_spec: SeasonClassSpec | None = None,
+    *,
+    warn=None,
 ) -> dict[str, Any]:
-    """Order events by date, (re)compute venueOrder, wrap in the season record."""
+    """Order events by date, (re)compute venueOrder, wrap in the season record.
+
+    ``class_spec`` marks a multi-class season. Classes are resolved across the
+    whole season (not per event) and applied here rather than in ``build_event``
+    so that events reused from disk on an incremental ingest are annotated too.
+    """
     ordered = sorted(event_objects, key=lambda e: (e["date"], e["eventId"]))
     for i, e in enumerate(ordered, 1):
         e["venueOrder"] = i
-    return {
+
+    season: dict[str, Any] = {
         "schemaVersion": SCHEMA_VERSION,
         "generator": GENERATOR,
         "season": season_id,
@@ -203,6 +220,18 @@ def assemble_season(
         "unprocessed": unprocessed,
         "events": ordered,
     }
+
+    if class_spec is not None:
+        driver_classes, warnings = resolve_driver_classes(class_spec, ordered)
+        for message in warnings:
+            if warn:
+                warn(f"WARNING [{season_id}] class: {message}")
+        apply_classes(ordered, driver_classes)
+        block = season_class_block(class_spec, driver_classes)
+        if block:
+            season["classes"] = block
+
+    return season
 
 
 def write_json_if_changed(path: Path, data: dict[str, Any]) -> bool:
@@ -277,12 +306,21 @@ def build_index(dataset_dir: Path) -> dict[str, Any]:
                 quality.append(f"{e['date']} {e['venue']}: {note}")
         for un in data.get("unprocessed", []):
             quality.append(f"{season_id}: unprocessed {un['file']} ({un['reason']})")
-        seasons[season_id] = {
+        entry = {
             "file": f"seasons/{path.name}",
             "events": events_summary,
             "drivers": sorted(driver_set),
             "dataQuality": quality,
         }
+        # Surfaced here so a consumer can tell a multi-class season from the
+        # index alone, without loading every season file.
+        classes = data.get("classes")
+        if classes:
+            entry["classes"] = {
+                "championship": classes.get("championship", "combined"),
+                "order": classes.get("order", []),
+            }
+        seasons[season_id] = entry
     return {
         "schemaVersion": SCHEMA_VERSION,
         "generator": GENERATOR,

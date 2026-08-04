@@ -11,11 +11,25 @@ No external dependencies — Python standard library only (≥3.9).
 
 ## Install
 
+Pure standard library — **nothing to install**. Run it straight from the repo:
+
 ```sh
-pip install -e .
+python3 -m race_processor.cli <command>     # e.g. python3 -m race_processor.cli ingest
 ```
 
-The CLI is `race-processor`.
+On Windows, use `python` (or `py`) in place of `python3` in every command below.
+
+Prefer the shorter `race-processor` command? Put it in a virtual environment —
+this also sidesteps macOS Homebrew's `externally-managed-environment` (PEP 668)
+error you get from a bare `pip install`:
+
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -e .
+.venv/bin/race-processor ingest
+```
+
+Both forms are identical; the docs below use `race-processor` for brevity.
 
 ---
 
@@ -79,6 +93,36 @@ reprocessing.
 Lists every driver GUID and the display names it has used, for filling in
 `driverNames`. Add `-o driver_roster.json` to write an editable template.
 
+### `race-processor recap`
+
+Once a race day is in the dataset, write one encouraging **weekend card** per
+driver — the single most meaningful thing they did, plus two supporting facts —
+as Markdown you can paste straight into a Discord DM. Also writes a midfield
+briefing for pundits. It only reads the dataset; it never states anything the
+data can't back up.
+
+```sh
+race-processor recap                          # latest round of the latest season, every driver
+race-processor recap --season S23             # that season's most recent round
+race-processor recap --season S23 --round 2   # a specific round (venue no. 2)
+race-processor recap --driver Arren           # just one driver's card
+race-processor recap --season S23 --all-rounds # every round of the season, not just the latest
+race-processor recap --midfield-only          # only the pundit briefing
+```
+
+Output lands in `recap/<season>/<venue>/`:
+
+| File | What it is |
+|---|---|
+| `<driver>.md` | One card per driver — headline, two supports, and a "More" list |
+| `_everyone.md` | Every card in one file, to skim and pick from |
+| `_midfield.md` | The midfield briefing — closest battles, movers, milestones |
+
+Cards are positive by design and measured against each driver's **own history**
+and their **midfield peers**, never against the race winner — so the front-runner
+never sweeps every superlative. Places-gained is skipped when the grid couldn't
+be trusted; official standings and penalties stay in the league's own records.
+
 ---
 
 ## Configuration — `config.json`
@@ -99,6 +143,23 @@ Auto-created with defaults on first run. Keys:
 Relative paths resolve against the config file's directory. Editing
 `driverNames`, `driverAliases`, or `trackDisplayNames` automatically reprocesses
 affected events on the next `ingest`.
+
+> **`config.json` allows comments.** Whole-line `//` or `#` comments are stripped
+> before parsing, so the file documents itself — its header block lists what to
+> change each season.
+
+### Setting up a new season
+
+Most seasons need nothing. When one does, edit `config.json`:
+
+| If the season… | Edit… |
+|---|---|
+| runs a reverse grid | `reverseGridSeasons` — add the season ID, e.g. `"S24a"` |
+| is multi-class | `seasonClasses` — copy the `S24a` block (a champion **per class**) or the `S18a` block (one **combined** champion) and adjust the car-model patterns |
+| has new drivers | `driverNames` — run `race-processor roster` to list unmapped GUIDs, then paste `guid → name` pairs |
+| shows an ugly auto venue name | `trackDisplayNames` — map `"<track>\|<config>"` to a clean name |
+
+Editing any of these reprocesses the affected events on the next `ingest`.
 
 ### Mapping drivers to your league names
 

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generator": "cup-racing-race-processor 0.2.0",
+  "generator": "cup-racing-race-processor 0.3.0",
   "season": "S18b",
-  "lastUpdated": "2026-07-25T18:18:22.324941+00:00",
+  "lastUpdated": "2026-07-26T20:40:31.458871+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2025-11-25-lilski-watkins-glen",
-      "signature": "5fd8c0e5668c2f69",
+      "signature": "a6d31fdcabaaa15f",
       "venue": "Lilski Watkins Glen",
       "date": "2025-11-25",
       "track": "csp/2144/../lilski_watkins_glen",
@@ -31,70 +31,80 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             }
           },
           "times": {
@@ -214,70 +224,80 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             }
           },
           "times": {
@@ -405,70 +425,80 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             }
           },
           "laps": {
@@ -1587,7 +1617,8 @@
               "bestLapMs": 89604,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Toby",
@@ -1600,7 +1631,8 @@
               "bestLapMs": 102378,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "James",
@@ -1613,7 +1645,8 @@
               "bestLapMs": 92445,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Dom",
@@ -1626,7 +1659,8 @@
               "bestLapMs": 103870,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Lee",
@@ -1639,7 +1673,8 @@
               "bestLapMs": 103503,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Walnut",
@@ -1652,7 +1687,8 @@
               "bestLapMs": 104392,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Jerry",
@@ -1665,7 +1701,8 @@
               "bestLapMs": 103149,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Tawm",
@@ -1678,7 +1715,8 @@
               "bestLapMs": 104784,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Timmy",
@@ -1691,7 +1729,8 @@
               "bestLapMs": 108673,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 7
             },
             {
               "driver": "Alfred",
@@ -1704,7 +1743,8 @@
               "bestLapMs": 98643,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             }
           ],
           "contacts": [
@@ -1896,69 +1936,79 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "",
               "carId": null,
-              "car": ""
+              "car": "",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             }
           },
           "laps": {
@@ -2985,7 +3035,8 @@
               "bestLapMs": 102485,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "James",
@@ -2998,7 +3049,8 @@
               "bestLapMs": 91993,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Toby",
@@ -3011,7 +3063,8 @@
               "bestLapMs": 103333,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Josie",
@@ -3024,7 +3077,8 @@
               "bestLapMs": 90208,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Walnut",
@@ -3037,7 +3091,8 @@
               "bestLapMs": 104789,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Jerry",
@@ -3050,7 +3105,8 @@
               "bestLapMs": 103383,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Lee",
@@ -3063,7 +3119,8 @@
               "bestLapMs": 103504,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Timmy",
@@ -3076,7 +3133,8 @@
               "bestLapMs": 107555,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Alfred",
@@ -3089,7 +3147,8 @@
               "bestLapMs": 97004,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             }
           ],
           "contacts": [
@@ -3300,7 +3359,7 @@
     },
     {
       "eventId": "2025-12-02-00-ajaccio",
-      "signature": "48793619212c9766",
+      "signature": "17b00d90c485d4a0",
       "venue": "00 Ajaccio",
       "date": "2025-12-02",
       "track": "csp/2144/../00_ajaccio",
@@ -3327,84 +3386,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "times": {
@@ -3548,84 +3619,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "times": {
@@ -3769,84 +3852,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "laps": {
@@ -5155,7 +5250,8 @@
               "bestLapMs": 94665,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "James",
@@ -5168,7 +5264,8 @@
               "bestLapMs": 95605,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Lee",
@@ -5181,7 +5278,8 @@
               "bestLapMs": 105766,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Toby",
@@ -5194,7 +5292,8 @@
               "bestLapMs": 105757,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Jerry",
@@ -5207,7 +5306,8 @@
               "bestLapMs": 106724,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Walnut",
@@ -5220,7 +5320,8 @@
               "bestLapMs": 108323,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Dom",
@@ -5233,7 +5334,8 @@
               "bestLapMs": 106610,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Allan",
@@ -5246,7 +5348,8 @@
               "bestLapMs": 110163,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Mike",
@@ -5259,7 +5362,8 @@
               "bestLapMs": 108791,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 7
             },
             {
               "driver": "Tawm",
@@ -5272,7 +5376,8 @@
               "bestLapMs": 110260,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 8
             },
             {
               "driver": "Michael G",
@@ -5285,7 +5390,8 @@
               "bestLapMs": 112762,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 9
             },
             {
               "driver": "Colin",
@@ -5298,7 +5404,8 @@
               "bestLapMs": 110425,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 10
             }
           ],
           "contacts": [
@@ -5530,84 +5637,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Dom": {
               "driver": "Dom",
               "guid": "76561198005723384",
               "carId": 4,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Tawm": {
               "driver": "Tawm",
               "guid": "76561197960427864",
               "carId": 7,
               "car": "rss_gtm_bayer_v8",
-              "skin": "tyuap_04_tawm"
+              "skin": "tyuap_04_tawm",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "laps": {
@@ -6922,7 +7041,8 @@
               "bestLapMs": 96875,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Lee",
@@ -6935,7 +7055,8 @@
               "bestLapMs": 106149,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Jerry",
@@ -6948,7 +7069,8 @@
               "bestLapMs": 105920,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Josie",
@@ -6961,7 +7083,8 @@
               "bestLapMs": 96316,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Toby",
@@ -6974,7 +7097,8 @@
               "bestLapMs": 106574,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Walnut",
@@ -6987,7 +7111,8 @@
               "bestLapMs": 107094,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Dom",
@@ -7000,7 +7125,8 @@
               "bestLapMs": 106401,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Michael G",
@@ -7013,7 +7139,8 @@
               "bestLapMs": 109918,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Tawm",
@@ -7026,7 +7153,8 @@
               "bestLapMs": 109055,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 7
             },
             {
               "driver": "Allan",
@@ -7039,7 +7167,8 @@
               "bestLapMs": 109813,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 8
             },
             {
               "driver": "Mike",
@@ -7052,7 +7181,8 @@
               "bestLapMs": 108561,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 9
             },
             {
               "driver": "Colin",
@@ -7065,7 +7195,8 @@
               "bestLapMs": 109644,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 10
             }
           ],
           "contacts": [
@@ -7441,7 +7572,7 @@
     },
     {
       "eventId": "2025-12-09-rt-sonoma",
-      "signature": "fcbec60aa456df68",
+      "signature": "f22215d35e088e51",
       "venue": "Rt Sonoma",
       "date": "2025-12-09",
       "track": "csp/2144/../rt_sonoma",
@@ -7464,56 +7595,64 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "times": {
@@ -7619,56 +7758,64 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "times": {
@@ -7774,56 +7921,64 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             }
           },
           "laps": {
@@ -8812,7 +8967,8 @@
               "bestLapMs": 90046,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Lee",
@@ -8825,7 +8981,8 @@
               "bestLapMs": 89171,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Josie",
@@ -8838,7 +8995,8 @@
               "bestLapMs": 80182,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Toby",
@@ -8851,7 +9009,8 @@
               "bestLapMs": 91279,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Allan",
@@ -8864,7 +9023,8 @@
               "bestLapMs": 91662,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "James",
@@ -8877,7 +9037,8 @@
               "bestLapMs": 81145,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Timmy",
@@ -8890,7 +9051,8 @@
               "bestLapMs": 93619,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Colin",
@@ -8903,7 +9065,8 @@
               "bestLapMs": 95808,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             }
           ],
           "contacts": [
@@ -9064,7 +9227,7 @@
     },
     {
       "eventId": "2025-12-16-zandvoort2023",
-      "signature": "7b0defe6e662bd90",
+      "signature": "f34f7ca7159316e2",
       "venue": "Zandvoort2023",
       "date": "2025-12-16",
       "track": "csp/2144/../zandvoort2023",
@@ -9091,84 +9254,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             }
           },
           "times": {
@@ -9316,84 +9491,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             }
           },
           "times": {
@@ -9539,84 +9726,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             }
           },
           "laps": {
@@ -10911,7 +11110,8 @@
               "bestLapMs": 94791,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Toby",
@@ -10924,7 +11124,8 @@
               "bestLapMs": 95672,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "James",
@@ -10937,7 +11138,8 @@
               "bestLapMs": 87278,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Lee",
@@ -10950,7 +11152,8 @@
               "bestLapMs": 95473,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Walnut",
@@ -10963,7 +11166,8 @@
               "bestLapMs": 96337,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Josie",
@@ -10976,7 +11180,8 @@
               "bestLapMs": 84544,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Allan",
@@ -10989,7 +11194,8 @@
               "bestLapMs": 97313,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Colin",
@@ -11002,7 +11208,8 @@
               "bestLapMs": 98617,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Michael G",
@@ -11015,7 +11222,8 @@
               "bestLapMs": 98106,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 7
             },
             {
               "driver": "Mike",
@@ -11028,7 +11236,8 @@
               "bestLapMs": 98932,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 8
             },
             {
               "driver": "Timmy",
@@ -11041,7 +11250,8 @@
               "bestLapMs": 99199,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 9
             },
             {
               "driver": "Alfred",
@@ -11054,7 +11264,8 @@
               "bestLapMs": 118329,
               "laps": 4,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             }
           ],
           "contacts": [
@@ -11275,84 +11486,96 @@
               "guid": "76561198056789142",
               "carId": 15,
               "car": "vrc_pt_2024_ferrenzo_csp",
-              "skin": "50"
+              "skin": "50",
+              "class": "Hypercar"
             },
             "James": {
               "driver": "James",
               "guid": "76561198354688139",
               "carId": 3,
               "car": "rss_mph_lanzo_v8_evo",
-              "skin": "00_yellow_63"
+              "skin": "00_yellow_63",
+              "class": "Hypercar"
             },
             "Jerry": {
               "driver": "Jerry",
               "guid": "76561198025524098",
               "carId": 5,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "01_rss_racing_18"
+              "skin": "01_rss_racing_18",
+              "class": "GT3"
             },
             "Lee": {
               "driver": "Lee",
               "guid": "76561198968530276",
               "carId": 0,
               "car": "rss_gtm_hyperion_v8",
-              "skin": "00_factory_65"
+              "skin": "00_factory_65",
+              "class": "GT3"
             },
             "Toby": {
               "driver": "Toby",
               "guid": "76561198401386081",
               "carId": 2,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "tyuap_51_brie"
+              "skin": "tyuap_51_brie",
+              "class": "GT3"
             },
             "Walnut": {
               "driver": "Walnut",
               "guid": "76561198141802891",
               "carId": 17,
               "car": "rss_gtm_protech_p92_f6",
-              "skin": "05_carbon_fibre"
+              "skin": "05_carbon_fibre",
+              "class": "GT3"
             },
             "Alfred": {
               "driver": "Alfred",
               "guid": "76561198193231731",
               "carId": 9,
               "car": "rss_mph_bayer_hybrid_v8",
-              "skin": "01_hybrid_red"
+              "skin": "01_hybrid_red",
+              "class": "Hypercar"
             },
             "Allan": {
               "driver": "Allan",
               "guid": "76561198038077208",
               "carId": 16,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "05_carbons_26"
+              "skin": "05_carbons_26",
+              "class": "GT3"
             },
             "Michael G": {
               "driver": "Michael G",
               "guid": "76561198056979683",
               "carId": 14,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "00_silver_54"
+              "skin": "00_silver_54",
+              "class": "GT3"
             },
             "Mike": {
               "driver": "Mike",
               "guid": "76561197984244290",
               "carId": 1,
               "car": "rss_gtm_furiano_96_v6",
-              "skin": "05_carbons"
+              "skin": "05_carbons",
+              "class": "GT3"
             },
             "Colin": {
               "driver": "Colin",
               "guid": "76561197967093333",
               "carId": 12,
               "car": "rss_gtm_akuro_v6_evo2",
-              "skin": "04_duraoil_30"
+              "skin": "04_duraoil_30",
+              "class": "GT3"
             },
             "Timmy": {
               "driver": "Timmy",
               "guid": "76561198031826856",
               "carId": 8,
               "car": "rss_gtm_bayer_v8",
-              "skin": "00_rss_special_17"
+              "skin": "00_rss_special_17",
+              "class": "GT3"
             }
           },
           "laps": {
@@ -12867,7 +13090,8 @@
               "bestLapMs": 84118,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Lee",
@@ -12880,7 +13104,8 @@
               "bestLapMs": 95095,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 1
             },
             {
               "driver": "Walnut",
@@ -12893,7 +13118,8 @@
               "bestLapMs": 96451,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Jerry",
@@ -12906,7 +13132,8 @@
               "bestLapMs": 94187,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             },
             {
               "driver": "Allan",
@@ -12919,7 +13146,8 @@
               "bestLapMs": 97801,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 4
             },
             {
               "driver": "Colin",
@@ -12932,7 +13160,8 @@
               "bestLapMs": 99230,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 5
             },
             {
               "driver": "Mike",
@@ -12945,7 +13174,8 @@
               "bestLapMs": 98385,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 6
             },
             {
               "driver": "Timmy",
@@ -12958,7 +13188,8 @@
               "bestLapMs": 101423,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 7
             },
             {
               "driver": "Toby",
@@ -12971,7 +13202,8 @@
               "bestLapMs": 95475,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 8
             },
             {
               "driver": "James",
@@ -12984,7 +13216,8 @@
               "bestLapMs": 89015,
               "laps": 6,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 2
             },
             {
               "driver": "Michael G",
@@ -12997,7 +13230,8 @@
               "bestLapMs": 97675,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 9
             },
             {
               "driver": "Alfred",
@@ -13010,7 +13244,8 @@
               "bestLapMs": 114788,
               "laps": 5,
               "ballast": 0,
-              "restrictor": 0
+              "restrictor": 0,
+              "classPosition": 3
             }
           ],
           "contacts": [
@@ -13307,5 +13542,28 @@
       },
       "venueOrder": 4
     }
-  ]
+  ],
+  "classes": {
+    "championship": "combined",
+    "order": [
+      "Hypercar",
+      "GT3"
+    ],
+    "drivers": {
+      "Alfred": "Hypercar",
+      "Allan": "GT3",
+      "Colin": "GT3",
+      "Dom": "GT3",
+      "James": "Hypercar",
+      "Jerry": "GT3",
+      "Josie": "Hypercar",
+      "Lee": "GT3",
+      "Michael G": "GT3",
+      "Mike": "GT3",
+      "Tawm": "GT3",
+      "Timmy": "GT3",
+      "Toby": "GT3",
+      "Walnut": "GT3"
+    }
+  }
 }
