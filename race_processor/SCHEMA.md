@@ -45,7 +45,8 @@ additive — a new season or a newly backfilled event only touches its own file.
           "races": 3, "qualifying": 2, "practice": 0, "drivers": 19 }
       ],
       "drivers": ["<canonical labels seen this season>"],
-      "dataQuality": ["2026-05-26 Road Atlanta: dropped ... (byte-identical)"]
+      "dataQuality": ["2026-05-26 Road Atlanta: dropped ... (byte-identical)"],
+      "classes": { "championship": "split", "order": ["GT3", "Street"] }  // multi-class only
     }
   }
 }
@@ -60,9 +61,33 @@ additive — a new season or a newly backfilled event only touches its own file.
   "season": "S22",
   "lastUpdated": "<UTC ISO-8601>",
   "unprocessed": [ { "file": "bad.json", "reason": "unreadable|unrecognized", "detail": "..." } ],
+  "classes": <Classes>,        // present only on multi-class seasons
   "events": [ <Event>, ... ]   // ordered by date; venueOrder is 1-based by date
 }
 ```
+
+### Classes (multi-class seasons only)
+
+```jsonc
+{
+  "championship": "split",              // "combined" = one WDC | "split" = a WDC per class
+  "order": ["GT3", "Street"],           // display order, fastest class first
+  "drivers": { "<label>": "GT3", ... }  // every classified driver in the season
+}
+```
+
+Absent entirely on single-class seasons, so most season files are unaffected.
+Which car belongs to which class is a **league rule**, declared per season in
+the processor's `config.json` — the car packs change between seasons, so the
+mapping is never inferred from car names in code.
+
+Class is resolved **once per driver per season** (from the car they raced most),
+not per race. Drivers do not switch cars mid-season, so this is correct and it
+also survives the occasional race where the server logged a blank car model.
+
+`championship` describes the standings, not the field: S18a and S18b ran two
+classes under a **single** WDC, while S14 and S24a award a WDC per class.
+`classPosition` is emitted for every multi-class season regardless.
 
 ### Event
 
@@ -96,7 +121,7 @@ Times are ms. Driver maps are keyed by **driver label** (see Driver identity).
 | `gridSource` | string | `qualifying` \| `previous-race` \| `reversed-previous` \| `first-lap-inferred` \| `unknown` \| `provided` |
 | `gridConfidence` | string | `high` \| `medium` \| `low` \| `unknown` |
 | `gridScore` | number\|null | Kendall tau of the chosen grid vs lap-1 order (null when inferred/unknown) |
-| `drivers` | `{label: {driver, guid, carId, car, skin?, team?}}` | metadata |
+| `drivers` | `{label: {driver, guid, carId, car, skin?, team?, class?}}` | metadata (`class` on multi-class seasons only) |
 | `laps` | `{label: [ms]}` | valid lap times, in order |
 | `sectors` | `{label: [[ms|null,…]]}` | per-lap sector times, index-aligned with `laps` |
 | `cuts` | `{label: [int]}` | per-lap cut count, index-aligned |
@@ -106,17 +131,31 @@ Times are ms. Driver maps are keyed by **driver label** (see Driver identity).
 | `positionChanges` | `{label:{gained,lost,net}}` \| null | **null when gridConfidence is low/unknown** |
 | `overtakes` | `[{lap, driver, passed, positionsGained}]` | on-track passes (see caveats) |
 | `qualVsRace` | `{label:{qualPosition,finishPosition,delta}}` \| null | null when no qualifying preceded the race |
-| `result` | `[{driver,driverKey,guid,carId,car,position,totalTimeMs,bestLapMs,laps,ballast,restrictor}]` | classified finishing order |
+| `result` | `[{driver,driverKey,guid,carId,car,position,classPosition?,totalTimeMs,bestLapMs,laps,ballast,restrictor}]` | classified finishing order |
 | `contacts` | `[{lap,lapConfidence,driver1,driver2,impactSpeed,worldPosition?}]` | collisions (see caveats) |
 | `pace` | `{label:{avgMs,medianMs,bestMs,lapsUsed}}` | excludes lap 1 and laps >120% of median |
+
+**`position` vs `classPosition`.** `position` is always the **overall** on-track
+order — it is what `laps`, `totalTimeMs` and the gap between cars describe, and
+it never changes on a multi-class season. `classPosition` is the rank within the
+driver's own class, added alongside. On a multi-class race two drivers will
+therefore share `classPosition: 1` while having different `position` values.
+
+`classPosition` is derived from on-track order alone. It is **not** a
+championship result: the league's hand-audited archive applies penalties to
+points, and that archive remains the truth source for standings. Use
+`classPosition` for race analysis, not for reconstructing a championship.
 
 ### Qualifying
 
 ```jsonc
 { "grid": ["<label>", ...],            // sorted by best lap
-  "drivers": { "<label>": {driver, guid, carId, car, skin?, team?} },
+  "drivers": { "<label>": {driver, guid, carId, car, skin?, team?, class?} },
   "times":   { "<label>": {bestMs, laps: [ms, ...]} } }
 ```
+
+Qualifying `grid` is a single overall order even on a multi-class season; use
+each driver's `class` to split it.
 
 ### Practice
 

@@ -14,6 +14,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from .classes import SeasonClassSpec, parse_spec
+
 CONFIG_FILENAME = "config.json"
 
 DEFAULT_CONFIG: dict[str, Any] = {
@@ -25,6 +27,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "sharedGuids": [],
     "guestSlotNames": {},
     "reverseGridSeasons": [],
+    "seasonClasses": {},
     "trackDisplayNames": {},
     "eventGapHours": 4,
     "restartWindowMinutes": 30,
@@ -50,6 +53,10 @@ class Config:
     # Season IDs (e.g. "S19") that run a reverse-grid format: R1/R3 from
     # qualifying, R2/R4 the reverse of the preceding race's finish.
     reverse_grid_seasons: tuple[str, ...] = ()
+    # {season_id: class spec} for multi-class seasons. Car-model patterns are
+    # per season on purpose: the packs change, so a rule true for S18 says
+    # nothing about a future season. See classes.py.
+    season_classes: dict[str, SeasonClassSpec] = field(default_factory=dict)
     track_display_names: dict[str, str] = field(default_factory=dict)
     event_gap_hours: float = 4.0
     restart_window_minutes: float = 30.0
@@ -68,6 +75,16 @@ class Config:
                 "sharedGuids": sorted(self.shared_guids),
                 "guestSlotNames": self.guest_slot_names,
                 "reverseGridSeasons": sorted(self.reverse_grid_seasons),
+                "seasonClasses": {
+                    sid: [
+                        spec.championship,
+                        list(spec.order),
+                        sorted((k, list(v)) for k, v in spec.by_car_model.items()),
+                        sorted(spec.by_driver.items()),
+                        spec.fallback,
+                    ]
+                    for sid, spec in sorted(self.season_classes.items())
+                },
                 "trackDisplayNames": self.track_display_names,
                 "eventGapHours": self.event_gap_hours,
                 "restartWindowMinutes": self.restart_window_minutes,
@@ -85,14 +102,27 @@ def write_default_config(path: Path) -> None:
     path.write_text(json.dumps(DEFAULT_CONFIG, indent=2) + "\n", encoding="utf-8")
 
 
+def _strip_line_comments(text: str) -> str:
+    """Permit whole-line ``//`` or ``#`` comments in config.json.
+
+    JSON itself has no comments, so any line whose first non-space character
+    begins one is dropped before parsing. Only *whole-line* comments are
+    removed — a value that contains ``//`` or ``#`` is never touched, because a
+    JSON string can't span a line break, so no value can start a line.
+    """
+    kept = [line for line in text.splitlines()
+            if not line.lstrip().startswith(("//", "#"))]
+    return "\n".join(kept)
+
+
 def load_config(path: Path, *, warn=print) -> Config:
     """Load config from ``path``. Relative paths resolve against its directory.
 
-    Unknown top-level keys emit a warning (typo guard) but are ignored.
-    Missing keys fall back to defaults.
+    Whole-line ``//`` / ``#`` comments are allowed. Unknown top-level keys emit
+    a warning (typo guard) but are ignored. Missing keys fall back to defaults.
     """
     root = path.parent.resolve()
-    raw = json.loads(path.read_text(encoding="utf-8"))
+    raw = json.loads(_strip_line_comments(path.read_text(encoding="utf-8")))
     if not isinstance(raw, dict):
         raise ValueError(f"{path} must contain a JSON object")
 
@@ -119,6 +149,10 @@ def load_config(path: Path, *, warn=print) -> Config:
             for g, m in dict(merged["guestSlotNames"]).items() if str(g).strip()
         },
         reverse_grid_seasons=tuple(str(x).strip() for x in merged["reverseGridSeasons"] if str(x).strip()),
+        season_classes={
+            str(sid).strip(): parse_spec(raw)
+            for sid, raw in dict(merged["seasonClasses"]).items() if str(sid).strip()
+        },
         track_display_names=dict(merged["trackDisplayNames"]),
         event_gap_hours=float(merged["eventGapHours"]),
         restart_window_minutes=float(merged["restartWindowMinutes"]),

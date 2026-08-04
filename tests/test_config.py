@@ -39,6 +39,27 @@ def test_unknown_key_warns(tmp_path):
     assert any("typo" in w for w in warnings)
 
 
+def test_whole_line_comments_are_allowed(tmp_path):
+    (tmp_path / "config.json").write_text(
+        "{\n"
+        "  // add reverse-grid seasons here\n"
+        '  "reverseGridSeasons": ["S24a"],\n'
+        "  # a hash-style comment line too\n"
+        '  "inboxDir": "drop"\n'
+        "}\n", encoding="utf-8")
+    cfg = load_config(tmp_path / "config.json", warn=lambda *_: None)
+    assert cfg.reverse_grid_seasons == ("S24a",)
+    assert cfg.inbox_dir == (tmp_path / "drop").resolve()
+
+
+def test_hash_in_a_value_is_not_stripped(tmp_path):
+    # A '#' inside a value must survive — only whole-line comments are removed.
+    (tmp_path / "config.json").write_text(
+        '{ "trackDisplayNames": {"a#b|full": "Track #1"} }\n', encoding="utf-8")
+    cfg = load_config(tmp_path / "config.json", warn=lambda *_: None)
+    assert cfg.track_display_names == {"a#b|full": "Track #1"}
+
+
 def test_fingerprint_changes_with_aliases(tmp_path):
     base = {"inboxDir": "inbox"}
     (tmp_path / "config.json").write_text(json.dumps(base), encoding="utf-8")

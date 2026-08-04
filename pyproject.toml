@@ -12,6 +12,11 @@ race-processor = "race_processor.cli:main"
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+# Explicit, so auto-discovery doesn't try to package the inbox/ and dataset/
+# data folders at the repo root (they are data, not importable code).
+packages = ["race_processor"]
+
 [tool.setuptools.package-data]
 race_processor = ["SCHEMA.md"]
 
