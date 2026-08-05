@@ -159,6 +159,7 @@ def _driver_strength(hist: dict[str, list[RaceRow]]) -> dict[str, float]:
 class Weekend:
     driver: str
     team: Optional[str] = None
+    cls: Optional[str] = None                 # class label on multi-class seasons, else None
     finishes: list[int] = field(default_factory=list)
     best_finish: Optional[int] = None
     starts: list[int] = field(default_factory=list)
@@ -214,14 +215,20 @@ def _mean_per_race_spread(per_race_laps: list[list[int]]) -> Optional[tuple[floa
 
 
 def _nearest_rival(race: dict, label: str) -> Optional[tuple[str, float, bool]]:
-    """Closest classified finisher to `label` on the same lap count.
+    """Closest classified finisher to `label` IN THE SAME CLASS, on the same lap
+    count.
 
     Returns (rival, gap_ms, rival_ahead) — ``rival_ahead`` is True when the rival
     finished in front (so the driver was *behind* them), False when the driver
     held the rival off. Direction matters: never tell someone they finished
-    "behind" a driver they actually beat.
+    "behind" a driver they actually beat. Restricting to the same class means a
+    "photo finish" is a real class battle, not an other-class car that happened
+    to cross the line nearby.
     """
-    result = [e for e in (race.get("result") or []) if e.get("position")]
+    meta = race.get("drivers") or {}
+    my_cls = meta.get(label, {}).get("class")
+    result = [e for e in (race.get("result") or [])
+              if e.get("position") and meta.get(e.get("driver"), {}).get("class") == my_cls]
     result.sort(key=lambda e: e["position"])
     idx = next((i for i, e in enumerate(result) if e.get("driver") == label), None)
     if idx is None:
@@ -275,6 +282,8 @@ def _aggregate_weekend(event: dict) -> dict[str, Weekend]:
             ww.per_race_best.append((rk, e.get("bestLapMs")))
             if drivers_meta.get(label, {}).get("team"):
                 ww.team = drivers_meta[label]["team"]
+            if drivers_meta.get(label, {}).get("class"):
+                ww.cls = drivers_meta[label]["class"]
 
         for i, label in enumerate(grid):
             w(label).starts.append(i + 1)
@@ -290,8 +299,12 @@ def _aggregate_weekend(event: dict) -> dict[str, Weekend]:
             drv, passed = o.get("driver"), o.get("passed")
             if drv:
                 w(drv).overtakes += 1
-                # a pass "held" if the passer finished ahead of the passed in this race
-                if (passed and finish_pos.get(drv) and finish_pos.get(passed)
+                # a "signature" pass counts only over a SAME-CLASS rival the
+                # driver then finished ahead of — passing a slower/other-class car
+                # isn't a class battle.
+                same_class = (drivers_meta.get(drv, {}).get("class")
+                              == drivers_meta.get(passed, {}).get("class"))
+                if (passed and same_class and finish_pos.get(drv) and finish_pos.get(passed)
                         and finish_pos[drv] < finish_pos[passed]):
                     w(drv).passes_held.append((passed, rk))
             if passed:
@@ -338,10 +351,6 @@ class Anecdote:
     text: str
 
 
-def _career_before(rows: list[RaceRow], target: tuple[int, str], target_vo: int) -> list[RaceRow]:
-    return [r for r in rows if (r.order, r.venue_order) < (target, target_vo)]
-
-
 def _season_before(rows: list[RaceRow], sid: str, target_vo: int) -> list[RaceRow]:
     return [r for r in rows if r.season == sid and r.venue_order < target_vo]
 
@@ -359,42 +368,39 @@ def build_anecdotes(
     W: dict[str, Weekend],
     cohort: set[str],
     sid: str,
-    target_order: tuple[int, str],
     target_vo: int,
     venue: str,
     field_size: int,
 ) -> list[Anecdote]:
     out: list[Anecdote] = []
     best = ww.best_finish
-    career = _career_before(hist, target_order, target_vo)
     season = _season_before(hist, sid, target_vo)
-    prior_effs = [r.eff for r in career if r.eff]
-    prior_best = min(prior_effs) if prior_effs else None
 
-    # --- Milestones (tier 1-2) ---------------------------------------------- #
+    # --- Milestones --------------------------------------------------------- #
+    # NOTE: no career-first / career-best anecdotes. This dataset records ON-TRACK
+    # finishing order, not the league's penalty-adjusted OFFICIAL results, so a
+    # driver's true win/podium record isn't in it — e.g. Chris's best on-track
+    # finish before S24a was P2 in both S22 and S23, yet he holds official wins,
+    # so "career-first win" fired wrongly. (Coverage also only starts at S4 — a
+    # second gap, for pre-S4 veterans.) Career milestones can return once official
+    # standings are wired in. Same-weekend and within-season claims, which the
+    # on-track data DOES support, stay.
     if best is not None:
         # a win/sweep is the story of the weekend — it outranks places-gained,
         # so a reverse-grid winner never headlines "recovered from the back".
         wins = ww.finishes.count(1)
+        cls = ww.cls
         if wins == len(ww.finishes) and wins > 1:
-            out.append(Anecdote("sweep", "milestone", 96,
-                                f"Clean sweep — won all {wins} races at {venue}."))
+            txt = (f"Clean sweep of {cls} — won all {wins} races at {venue}." if cls
+                   else f"Clean sweep — won all {wins} races at {venue}.")
+            out.append(Anecdote("sweep", "milestone", 96, txt))
         elif wins > 1:
-            out.append(Anecdote("wins", "milestone", 91, f"{wins} race wins at {venue}."))
+            txt = f"{wins} {cls} class wins at {venue}." if cls else f"{wins} race wins at {venue}."
+            out.append(Anecdote("wins", "milestone", 91, txt))
         elif wins == 1:
-            out.append(Anecdote("win", "milestone", 91, f"Race win — P1 at {venue}."))
-        # career firsts — pick the strongest threshold newly reached
-        thresholds = [(1, "win", 100), (3, "podium", 92), (5, "top-5", 86), (10, "top-10", 74)]
-        for thr, name, impact in thresholds:
-            if best <= thr and not any(e <= thr for e in prior_effs):
-                out.append(Anecdote("career_first", "milestone", impact,
-                                    f"Career-first {name} — P{best}."))
-                break
-        # career-best finish (strict improvement, and not already covered by a first)
-        if prior_best is not None and best < prior_best:
-            out.append(Anecdote("career_best", "milestone", 88,
-                                f"Career-best finish: P{best} (previous best P{prior_best})."))
-        # season-best-so-far
+            txt = f"{cls} class win at {venue}." if cls else f"Race win — P1 at {venue}."
+            out.append(Anecdote("win", "milestone", 91, txt))
+        # season-best-so-far (this-season on-track vs on-track — internally consistent)
         season_effs = [r.eff for r in season if r.eff]
         if season_effs and best < min(season_effs):
             out.append(Anecdote("season_best", "milestone", 78,
@@ -430,10 +436,16 @@ def build_anecdotes(
     if ww.contacts == 0 and ww.cuts <= 2 and ww.laps >= 5:
         out.append(Anecdote("clean", "competence", 45,
                             "Clean weekend — no contact, no cut corners."))
-    if ww.cv is not None and ww.cv <= 1.5:
+    if ww.cv is not None:
         sd_s = (ww.lap_sd_ms or 0) / 1000.0
-        out.append(Anecdote("consistency", "competence", 48,
-                            f"Metronomic pace — lap-time spread {ww.cv:.1f}% (±{sd_s:.2f}s)."))
+        if ww.cv <= 1.5:
+            out.append(Anecdote("consistency", "competence", 48,
+                                f"Metronomic pace — lap-time spread {ww.cv:.1f}% (±{sd_s:.2f}s)."))
+        else:
+            # shown for EVERY driver as a neutral data point (per request); low
+            # impact so it lands in "More", never as a headline.
+            out.append(Anecdote("consistency_data", "data", 8,
+                                f"Lap consistency: {ww.cv:.1f}% (±{sd_s:.2f}s)."))
 
     # --- Relatedness -------------------------------------------------------- #
     if ww.nearest:
@@ -465,12 +477,12 @@ def build_anecdotes(
                                 f"Biggest climber in the midfield (+{ww.net_gain})."))
 
     # --- Floor (always resolvable) ------------------------------------------ #
-    tenure = len(career) + len(ww.finishes)
-    if tenure and (tenure % 25 == 0 or tenure in (10, 50, 100, 150, 200)):
-        out.append(Anecdote("tenure", "floor", 40, f"Your {_ordinal(tenure)} Cup Racing start."))
-    elif ww.laps:
-        out.append(Anecdote("laps", "floor", 15,
-                            f"{ww.laps} racing laps banked — {_ordinal(tenure)} career start."))
+    # No career-tenure milestone ("your Nth start"): coverage starts at S4, so the
+    # count is undercounted and would fire on the wrong race.
+    if ww.laps:
+        out.append(Anecdote("laps", "floor", 15, f"{ww.laps} racing laps this weekend."))
+    if not out:
+        out.append(Anecdote("raced", "floor", 5, f"On the grid at {venue}."))
     return out
 
 
@@ -508,7 +520,8 @@ def _render_card(driver: str, sid: str, venue: str, date: str,
 
 def _render_everyone(sid: str, venue: str, date: str,
                      cards: list[tuple[str, Anecdote, list[Anecdote]]]) -> str:
-    lines = [f"# {sid} · {venue} · {date} — Weekend cards", ""]
+    lines = [f"# {sid} · {venue} · {date} — Weekend cards", "",
+             "_On-track results; official standings and penalties may differ._", ""]
     for driver, headline, supports in cards:
         lines.append(f"## {driver}")
         lines.append(f"**{headline.text}**")
@@ -542,7 +555,8 @@ def _render_midfield(sid: str, venue: str, date: str,
                      key=lambda x: -x[1])[:5]
 
     lines = [f"# {sid} · {venue} · {date} — Midfield briefing", "",
-             "Stories from outside the front three. Ready hooks for pundits.", ""]
+             "Stories from outside the front three. Ready hooks for pundits.",
+             "_On-track results; official standings and penalties may differ._", ""]
 
     def section(head: str, items: list, fmt) -> None:
         if not items:
@@ -589,7 +603,7 @@ def list_rounds(dataset_dir: Path, season: Optional[str] = None) -> tuple[str, l
     seasons = _load_seasons(dataset_dir)
     if not seasons:
         raise ValueError(f"no season files under {dataset_dir / 'seasons'}")
-    sid, _event = _pick_event(seasons, season, None)
+    sid, _ = _pick_event(seasons, season, None)
     events = seasons[sid].get("events") or []
     return sid, sorted(e.get("venueOrder", 0) for e in events)
 
@@ -604,7 +618,6 @@ def generate(dataset_dir: Path, out_dir: Path, *, season: Optional[str] = None,
     sid, event = _pick_event(seasons, season, round_no)
     venue = event.get("venue", "Round")
     date = event.get("date", "")
-    target_order = _season_sort_key(sid)
     target_vo = event.get("venueOrder", 0)
 
     hist = _build_history(seasons)
@@ -626,12 +639,12 @@ def generate(dataset_dir: Path, out_dir: Path, *, season: Optional[str] = None,
             continue
         ww = W[label]
         anecdotes = build_anecdotes(label, ww, hist.get(label, []), strength, W, cohort,
-                                    sid, target_order, target_vo, venue, field_size)
+                                    sid, target_vo, venue, field_size)
         headline, supports, more = _rank(anecdotes)
         if headline is None:
             continue
         for a in anecdotes:
-            if a.kind in ("career_first", "career_best"):
+            if a.kind == "season_best":
                 firsts.append((label, a))
                 break
         if not midfield_only:

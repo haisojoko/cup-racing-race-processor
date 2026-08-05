@@ -74,3 +74,48 @@ def test_every_participant_gets_a_headline(tmp_path):
     info = recap.generate(ds, tmp_path / "out", season="S23")
     assert info["summary"]
     assert all(headline.strip() for _, headline in info["summary"])
+
+
+def _mc_race(rows, laps_by_driver=None):
+    """A multi-class race from (driver, class, overall_pos, class_pos, total_ms)."""
+    result, drivers, laps_map = [], {}, {}
+    for driver, cls, pos, cpos, total in rows:
+        result.append({"driver": driver, "driverKey": driver, "position": pos,
+                       "classPosition": cpos, "totalTimeMs": total, "laps": 8, "bestLapMs": 60_000})
+        drivers[driver] = {"driver": driver, "car": "c", "class": cls}
+        laps_map[driver] = (laps_by_driver or {}).get(driver, [60_000] * 8)
+    grid = [r[0] for r in sorted(rows, key=lambda r: r[2])]
+    return {"grid": grid, "gridConfidence": "high", "positionChanges": None,
+            "drivers": drivers, "result": result, "overtakes": [], "contacts": [],
+            "cuts": {}, "laps": laps_map}
+
+
+def _mc_season():
+    # Ada sweeps GT3; Bree is the GT3 runner-up in a photo finish; Cid (Street)
+    # finishes overall BETWEEN them, to test that "nearest rival" stays in-class.
+    rows = [("Ada", "GT3", 1, 1, 100_000),
+            ("Cid", "Street", 2, 1, 100_400),
+            ("Bree", "GT3", 3, 2, 100_450)]
+    varied = {"Cid": [60_000, 66_000, 61_000, 70_000, 60_500, 64_000, 60_000, 63_000]}
+    r1 = _mc_race(rows, varied)
+    r2 = _mc_race(rows, varied)
+    return {"schemaVersion": 2, "season": "S14",
+            "classes": {"championship": "split", "order": ["GT3", "Street"]},
+            "events": [{"eventId": "e1", "venue": "Testring", "venueOrder": 1,
+                        "date": "2026-01-01", "races": {"1": r1, "2": r2}}]}
+
+
+def test_multiclass_fidelity(tmp_path):
+    ds = _write_dataset(tmp_path, _mc_season(), sid="S14")
+    out = tmp_path / "out"
+    recap.generate(ds, out, season="S14")
+    folder = out / "S14" / "testring"
+
+    ada = (folder / "ada.md").read_text()
+    assert "GT3" in ada                       # class-aware win text
+    assert "Career-first" not in ada          # no fabricated career milestones from incomplete data
+    # nearest rival is the same-class car (Bree), not the overall-adjacent Street car (Cid)
+    assert "Bree" in ada and "Cid" not in ada
+
+    # consistency is shown for every driver, even a non-metronomic one, as a data line
+    assert "Lap consistency:" in (folder / "cid.md").read_text()
