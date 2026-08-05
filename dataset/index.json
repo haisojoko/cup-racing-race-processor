@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-07-26T20:40:32.082213+00:00",
+  "lastUpdated": "2026-08-05T05:55:59.259145+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1038,6 +1038,47 @@
         "Walnut"
       ],
       "dataQuality": []
+    },
+    "S24a": {
+      "file": "seasons/S24a.json",
+      "events": [
+        {
+          "eventId": "2026-08-04-gt-dragontrail",
+          "venue": "Gt Dragontrail",
+          "venueOrder": 1,
+          "date": "2026-08-04",
+          "track": "csp/2144/../gt_dragontrail",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 15
+        }
+      ],
+      "drivers": [
+        "Abu",
+        "Allan",
+        "Allen Q",
+        "Arren",
+        "Chris",
+        "DK",
+        "Donald",
+        "Green Kyle",
+        "James",
+        "Josie",
+        "Lee",
+        "Mike",
+        "Sol",
+        "Timmy",
+        "Walnut"
+      ],
+      "dataQuality": [],
+      "classes": {
+        "championship": "split",
+        "order": [
+          "Hypercar",
+          "GT3"
+        ]
+      }
     },
     "S4": {
       "file": "seasons/S4.json",
