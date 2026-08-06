@@ -334,7 +334,8 @@ def _run_recap(config_path: Path | None, *, season: str | None, round_no: int | 
         for tgt_season, tgt_round in targets:
             info = recap.generate(cfg.dataset_dir, out_dir, season=tgt_season,
                                   round_no=tgt_round, only_driver=driver,
-                                  midfield_only=midfield_only)
+                                  midfield_only=midfield_only,
+                                  reverse_grid_seasons=cfg.reverse_grid_seasons)
             print(f"[RECAP] {info['season']} · {info['venue']} ({info['date']}) — "
                   f"{info['drivers']} driver card(s)")
             for name, headline in info["summary"]:

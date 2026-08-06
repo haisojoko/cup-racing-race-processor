@@ -2,4 +2,4 @@
 
 **9 on-track passes across the weekend.**
 
-- 1 racing laps banked — 129th career start.
+- 1 racing laps this weekend.

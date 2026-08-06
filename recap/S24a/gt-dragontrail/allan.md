@@ -6,5 +6,6 @@
 - Closest scrap: 1.151s to Arren (race 2).
 
 **More**
-- Passed James in race 3 and finished ahead.
-- 24 racing laps banked — 69th career start.
+- Passed Lee in race 2 and finished ahead.
+- 24 racing laps this weekend.
+- Lap consistency: 1.8% (±1.90s).

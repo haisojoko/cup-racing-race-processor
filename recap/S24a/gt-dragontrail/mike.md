@@ -7,4 +7,5 @@
 
 **More**
 - 7 on-track passes across the weekend.
-- 21 racing laps banked — 156th career start.
+- 21 racing laps this weekend.
+- Lap consistency: 5.6% (±6.21s).

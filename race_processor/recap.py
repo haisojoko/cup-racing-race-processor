@@ -175,6 +175,10 @@ class Weekend:
     lap_sd_ms: Optional[float] = None         # the same consistency in absolute terms (std-dev, ms)
     per_race_best: list[tuple[str, Optional[int]]] = field(default_factory=list)  # (race_key, bestLapMs)
     nearest: Optional[tuple[str, float, str, bool]] = None  # (rival, gap_ms, race_key, rival_ahead)
+    late_charge: Optional[tuple[int, int, str]] = None       # (places, laps_in_segment, race_key)
+    best_sectors: dict[int, int] = field(default_factory=dict)  # sector index -> best time (ms)
+    flag_push: Optional[tuple[str, int]] = None              # (race_key, final-lap best-lap ms)
+    streak: Optional[tuple[int, float, str]] = None          # (laps, spread_s, race_key)
 
 
 def _lap_spread(all_laps: list[int]) -> Optional[tuple[float, float]]:
@@ -243,6 +247,69 @@ def _nearest_rival(race: dict, label: str) -> Optional[tuple[str, float, bool]]:
                 gap = abs(other["totalTimeMs"] - me["totalTimeMs"])
                 if best is None or gap < best[1]:
                     best = (other["driver"], gap, j < idx)  # j<idx → rival ahead
+    return best
+
+
+def _late_charge(positions: list[int]) -> Optional[int]:
+    """Overall places gained over the final third of a race, from the per-lap
+    position trace. Grid-independent — it measures on-track progress at the end
+    of the race, not recovery from a (reverse) grid slot. Returns places gained
+    (a positive int) or None."""
+    laps = [p for p in positions if p]
+    if len(laps) < 4:
+        return None
+    split = max(1, (len(laps) * 2) // 3)   # index where the final third begins
+    gain = laps[split - 1] - laps[-1]      # lower position number = further forward
+    return gain if gain > 0 else None
+
+
+def _best_sectors(sector_laps: list[list]) -> dict[int, int]:
+    """Best (fastest) time per sector index across a set of laps."""
+    best: dict[int, int] = {}
+    for lap in sector_laps:
+        for i, ms in enumerate(lap or []):
+            if ms:
+                best[i] = ms if i not in best else min(best[i], ms)
+    return best
+
+
+def _flag_push(laps: list[int]) -> Optional[int]:
+    """The best-lap-on-the-last-lap check. Returns the final lap time (ms) when,
+    ignoring the out-lap, the driver's quickest lap of the race was the last one
+    they completed — they were still finding time at the flag. None otherwise."""
+    clean = [x for x in laps if x]
+    if len(clean) < 4:
+        return None
+    racing = clean[1:]                     # drop the out-lap
+    return racing[-1] if racing[-1] == min(racing) else None
+
+
+def _consistency_streak(laps: list[int], window_s: float = 0.3) -> Optional[tuple[int, float]]:
+    """Longest run of consecutive laps whose spread (max-min) stays within
+    ``window_s`` seconds, after dropping the out-lap and >120%-median outliers.
+    Returns (streak length, spread in seconds) for the tightest such run of >=4,
+    else None."""
+    clean = [x for x in laps if x]
+    if len(clean) < 4:
+        return None
+    med = statistics.median(clean)
+    racing = [x for i, x in enumerate(clean) if i != 0 and x <= 1.2 * med]
+    if len(racing) < 4:
+        return None
+    win_ms = window_s * 1000
+    best: Optional[tuple[int, float]] = None
+    i = 0
+    n = len(racing)
+    while i < n:
+        j = i
+        while j < n and max(racing[i:j + 1]) - min(racing[i:j + 1]) <= win_ms:
+            j += 1
+        run = j - i
+        if run >= 4:
+            spread = (max(racing[i:j]) - min(racing[i:j])) / 1000.0
+            if best is None or run > best[0]:
+                best = (run, spread)
+        i = max(i + 1, j)
     return best
 
 
@@ -321,6 +388,27 @@ def _aggregate_weekend(event: dict) -> dict[str, Weekend]:
         for label, arr in laps_map.items():
             per_race_laps.setdefault(label, []).append([x for x in arr if x])
 
+        positions_map = race.get("positions") or {}
+        sectors_map = race.get("sectors") or {}
+        for label, arr in laps_map.items():
+            ww = w(label)
+            # late-race charge: keep the biggest single-race charge of the weekend
+            charge = _late_charge(positions_map.get(label) or [])
+            if charge and (ww.late_charge is None or charge > ww.late_charge[0]):
+                ww.late_charge = (charge, len(positions_map.get(label) or []), rk)
+            # best sector times: fastest per sector index across the whole weekend
+            for i, ms in _best_sectors(sectors_map.get(label) or []).items():
+                if ms and (i not in ww.best_sectors or ms < ww.best_sectors[i]):
+                    ww.best_sectors[i] = ms
+            # pushed to the flag: best lap was the last lap of a race
+            push = _flag_push(arr)
+            if push and (ww.flag_push is None or push < ww.flag_push[1]):
+                ww.flag_push = (rk, push)
+            # consistency streak: longest tight run of the weekend
+            streak = _consistency_streak(arr)
+            if streak and (ww.streak is None or streak[0] > ww.streak[0]):
+                ww.streak = (streak[0], streak[1], rk)
+
         # nearest rival: keep the tightest across the weekend
         for label in finish_pos:
             near = _nearest_rival(race, label)
@@ -371,6 +459,7 @@ def build_anecdotes(
     target_vo: int,
     venue: str,
     field_size: int,
+    reverse_grid: bool = False,
 ) -> list[Anecdote]:
     out: list[Anecdote] = []
     best = ww.best_finish
@@ -407,16 +496,34 @@ def build_anecdotes(
                                 f"Best result of {sid} so far — P{best}."))
 
     # --- Progress ----------------------------------------------------------- #
+    # Grid-relative movement (places gained from the start) is meaningless on a
+    # reverse grid: the fast car starts last and "gains" the most while a
+    # midfielder who earned a front slot "loses" places. So on reverse-grid
+    # seasons we drop it entirely and lean on the grid-independent late-race
+    # charge below, which measures on-track progress at the *end* of the race.
     avg_start = statistics.mean(ww.starts) if ww.starts else None
-    if ww.net_gain and ww.net_gain > 0 and (avg_start is None or avg_start > field_size * 0.33):
+    if (not reverse_grid and ww.net_gain and ww.net_gain > 0
+            and (avg_start is None or avg_start > field_size * 0.33)):
         out.append(Anecdote("places_gained", "progress", 55 + ww.net_gain * 2,
                             f"Net +{ww.net_gain} places across the weekend."))
+    if ww.late_charge:
+        gain, seg_laps, rk = ww.late_charge
+        tail = max(1, seg_laps - (seg_laps * 2) // 3)
+        out.append(Anecdote("late_charge", "progress", 50 + gain * 3,
+                            f"Late-race charge — gained {gain} "
+                            f"{'spot' if gain == 1 else 'spots'} in the last {tail} laps "
+                            f"of race {rk}."))
     # found time through the day
     reals = [(rk, ms) for rk, ms in ww.per_race_best if ms]
     if len(reals) >= 2 and reals[0][1] - reals[-1][1] >= 300:
         out.append(Anecdote("built_in", "progress", 47,
                             f"Found time through the day: best lap {_fmt_laptime(reals[0][1])} "
                             f"→ {_fmt_laptime(reals[-1][1])}."))
+    if ww.flag_push:
+        rk, ms = ww.flag_push
+        out.append(Anecdote("flag_push", "progress", 44,
+                            f"Pushing to the flag — set the best lap on the final lap "
+                            f"of race {rk} ({_fmt_laptime(ms)})."))
     # NOTE: no "personal-best lap at this venue" anecdote. The car changes every
     # season, so lap times aren't comparable across a driver's history — a faster
     # car in a later season would read as a false "personal best". Within-weekend
@@ -446,6 +553,10 @@ def build_anecdotes(
             # impact so it lands in "More", never as a headline.
             out.append(Anecdote("consistency_data", "data", 8,
                                 f"Lap consistency: {ww.cv:.1f}% (±{sd_s:.2f}s)."))
+    if ww.streak and ww.streak[0] >= 4:
+        laps_n, spread, rk = ww.streak
+        out.append(Anecdote("streak", "competence", 46,
+                            f"{laps_n} laps inside {spread:.2f}s of each other in race {rk}."))
 
     # --- Relatedness -------------------------------------------------------- #
     if ww.nearest:
@@ -471,10 +582,24 @@ def build_anecdotes(
         if ww.overtakes >= 3 and ww.overtakes == max(pack_ot.values()):
             out.append(Anecdote("pack_overtakes", "distinction", 52,
                                 f"Most on-track passes in the midfield ({ww.overtakes})."))
-        pack_net = {d: (W[d].net_gain or 0) for d in cohort}
-        if (ww.net_gain or 0) > 0 and ww.net_gain == max(pack_net.values()):
-            out.append(Anecdote("pack_mover", "distinction", 53,
-                                f"Biggest climber in the midfield (+{ww.net_gain})."))
+        # grid-relative crown suppressed on reverse grids (see Progress note)
+        if not reverse_grid:
+            pack_net = {d: (W[d].net_gain or 0) for d in cohort}
+            if (ww.net_gain or 0) > 0 and ww.net_gain == max(pack_net.values()):
+                out.append(Anecdote("pack_mover", "distinction", 53,
+                                    f"Biggest climber in the midfield (+{ww.net_gain})."))
+        # fastest lap of anyone in the pack (self/cohort-relative, grid-agnostic)
+        pack_laps = {d: W[d].best_lap for d in cohort if W[d].best_lap}
+        if ww.best_lap and pack_laps and ww.best_lap == min(pack_laps.values()):
+            out.append(Anecdote("pack_fastlap", "distinction", 54,
+                                f"Fastest lap of anyone in the midfield ({_fmt_laptime(ww.best_lap)})."))
+        # fastest through a sector, cohort-scoped
+        for i, ms in sorted(ww.best_sectors.items()):
+            rivals = [W[d].best_sectors.get(i) for d in cohort if W[d].best_sectors.get(i)]
+            if rivals and ms == min(rivals) and len(rivals) >= 2:
+                out.append(Anecdote(f"pack_sector{i}", "distinction", 50,
+                                    f"Fastest through Sector {i + 1} in the midfield ({_fmt_gap(ms)})."))
+                break   # one sector crown is enough — don't wall the card
 
     # --- Floor (always resolvable) ------------------------------------------ #
     # No career-tenure milestone ("your Nth start"): coverage starts at S4, so the
@@ -610,7 +735,8 @@ def list_rounds(dataset_dir: Path, season: Optional[str] = None) -> tuple[str, l
 
 def generate(dataset_dir: Path, out_dir: Path, *, season: Optional[str] = None,
              round_no: Optional[int] = None, only_driver: Optional[str] = None,
-             midfield_only: bool = False) -> dict[str, Any]:
+             midfield_only: bool = False,
+             reverse_grid_seasons: Iterable[str] = ()) -> dict[str, Any]:
     """Build recap cards for one venue weekend. Returns a small summary dict."""
     seasons = _load_seasons(dataset_dir)
     if not seasons:
@@ -619,6 +745,7 @@ def generate(dataset_dir: Path, out_dir: Path, *, season: Optional[str] = None,
     venue = event.get("venue", "Round")
     date = event.get("date", "")
     target_vo = event.get("venueOrder", 0)
+    reverse_grid = sid in set(reverse_grid_seasons)
 
     hist = _build_history(seasons)
     strength = _driver_strength(hist)
@@ -639,7 +766,7 @@ def generate(dataset_dir: Path, out_dir: Path, *, season: Optional[str] = None,
             continue
         ww = W[label]
         anecdotes = build_anecdotes(label, ww, hist.get(label, []), strength, W, cohort,
-                                    sid, target_vo, venue, field_size)
+                                    sid, target_vo, venue, field_size, reverse_grid)
         headline, supports, more = _rank(anecdotes)
         if headline is None:
             continue

@@ -119,3 +119,80 @@ def test_multiclass_fidelity(tmp_path):
 
     # consistency is shown for every driver, even a non-metronomic one, as a data line
     assert "Lap consistency:" in (folder / "cid.md").read_text()
+
+
+def _rich_race(rows):
+    """A race carrying positions/sectors/laps so the new stats can fire.
+
+    rows: (driver, finish_pos, positions[list], laps[list], sectors[list[list]]).
+    """
+    result, grid, laps_map, drivers, positions, sectors = [], [], {}, {}, {}, {}
+    for driver, pos, postrace, laps, secs in rows:
+        result.append({"driver": driver, "driverKey": driver, "position": pos,
+                       "totalTimeMs": sum(laps), "laps": len(laps),
+                       "bestLapMs": min(laps)})
+        grid.append(driver)
+        laps_map[driver] = laps
+        positions[driver] = postrace
+        sectors[driver] = secs
+        drivers[driver] = {"driver": driver, "car": "F1"}
+    return {"grid": grid, "gridConfidence": "high", "positionChanges": None,
+            "drivers": drivers, "result": result, "overtakes": [], "contacts": [],
+            "cuts": {}, "laps": laps_map, "positions": positions, "sectors": sectors}
+
+
+def _rich_season():
+    # Winner up front; Dan is a midfielder (P5) who charges late, sets his best
+    # lap on the final lap, strings a tight streak, and owns the pack's fastest
+    # lap + Sector 1. Eve is a slower pack car for the crowns to beat.
+    fast = [80_000, 80_100, 80_050, 80_000, 79_900, 79_800]   # improving, best last
+    steady = [80_060, 80_050, 80_055, 80_050, 80_040]         # tight streak, best last
+    slow = [90_000, 90_500, 90_200, 90_800, 90_100, 90_600]
+    sec_fast = [[26_000, 27_000, 27_000]] * 6
+    sec_slow = [[30_000, 30_000, 30_000]] * 6
+    dan = ("Dan", 5, [8, 8, 7, 6, 5], steady, [[26_000, 27_000, 27_000]] * 5)
+    r1 = _rich_race([
+        ("Win", 1, [1, 1, 1, 1, 1, 1], fast, sec_fast),
+        dan,
+        ("Eve", 6, [6, 6, 6, 7, 7, 6], slow, sec_slow),
+    ])
+    return {"schemaVersion": 2, "season": "S23", "events": [
+        {"eventId": "e1", "venue": "Testville", "venueOrder": 1,
+         "date": "2026-01-01", "races": {"1": r1}}]}
+
+
+def test_new_stats_fire_for_a_midfielder(tmp_path):
+    ds = _write_dataset(tmp_path, _rich_season())
+    out = tmp_path / "out"
+    recap.generate(ds, out, season="S23")
+    dan = (out / "S23" / "testville" / "dan.md").read_text()
+    assert "Late-race charge" in dan
+    assert "Pushing to the flag" in dan
+    assert "laps inside" in dan
+    assert "Fastest lap of anyone in the midfield" in dan
+    assert "Fastest through Sector 1" in dan
+
+
+def test_places_gained_suppressed_on_reverse_grid(tmp_path):
+    # A race where a back-starter nets +4 places with a trusted grid.
+    laps = [80_000] * 6
+    race = _rich_race([
+        ("Front", 3, [3, 3, 3, 3, 3, 3], laps, [[26_000]] * 6),
+        ("Climber", 1, [5, 5, 4, 3, 2, 1], laps, [[26_000]] * 6),
+    ])
+    race["positionChanges"] = {"Climber": {"gained": 4, "lost": 0, "net": 4},
+                               "Front": {"gained": 0, "lost": 0, "net": 0}}
+    season = {"schemaVersion": 2, "season": "S23", "events": [
+        {"eventId": "e1", "venue": "Testville", "venueOrder": 1,
+         "date": "2026-01-01", "races": {"1": race}}]}
+    ds = _write_dataset(tmp_path, season)
+
+    # normal grid: places-gained is a valid story
+    recap.generate(ds, tmp_path / "normal", season="S23")
+    assert "Net +4 places" in (tmp_path / "normal" / "S23" / "testville" / "climber.md").read_text()
+
+    # reverse grid: it's misleading, so it's dropped (late-race charge stands in)
+    recap.generate(ds, tmp_path / "rev", season="S23", reverse_grid_seasons=["S23"])
+    climber = (tmp_path / "rev" / "S23" / "testville" / "climber.md").read_text()
+    assert "Net +" not in climber
+    assert "Late-race charge" in climber
