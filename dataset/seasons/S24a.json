@@ -2,12 +2,12 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S24a",
-  "lastUpdated": "2026-08-05T05:55:58.875187+00:00",
+  "lastUpdated": "2026-08-07T16:22:59.026689+00:00",
   "unprocessed": [],
   "events": [
     {
       "eventId": "2026-08-04-gt-dragontrail",
-      "signature": "f92d6c282b0f668f",
+      "signature": "8ecdc977fc009c55",
       "venue": "Gt Dragontrail",
       "date": "2026-08-04",
       "track": "csp/2144/../gt_dragontrail",
@@ -23,7 +23,7 @@
             "Chris",
             "Arren",
             "Donald",
-            "Sol",
+            "Ben",
             "Mike",
             "Allen Q",
             "Timmy",
@@ -95,8 +95,8 @@
               "skin": "02_red_70",
               "class": "GT3"
             },
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -272,7 +272,7 @@
                 113060
               ]
             },
-            "Sol": {
+            "Ben": {
               "bestMs": 101266,
               "laps": [
                 362750,
@@ -292,7 +292,7 @@
             "Allan",
             "Donald",
             "Arren",
-            "Sol",
+            "Ben",
             "Mike",
             "Timmy"
           ],
@@ -369,8 +369,8 @@
               "skin": "02_white_7",
               "class": "GT3"
             },
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -497,7 +497,7 @@
                 278213
               ]
             },
-            "Sol": {
+            "Ben": {
               "bestMs": 101339,
               "laps": [
                 248109,
@@ -528,7 +528,7 @@
             "Chris",
             "Arren",
             "Donald",
-            "Sol",
+            "Ben",
             "Mike",
             "Allen Q",
             "Timmy",
@@ -604,8 +604,8 @@
               "skin": "02_red_70",
               "class": "GT3"
             },
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -724,7 +724,7 @@
               102574,
               99780
             ],
-            "Sol": [
+            "Ben": [
               321686,
               258383
             ],
@@ -1015,7 +1015,7 @@
                 31357
               ]
             ],
-            "Sol": [
+            "Ben": [
               [
                 256941,
                 31887,
@@ -1238,7 +1238,7 @@
               0,
               0
             ],
-            "Sol": [
+            "Ben": [
               0,
               0
             ],
@@ -1345,7 +1345,7 @@
               "D",
               "D"
             ],
-            "Sol": [
+            "Ben": [
               "D",
               "D"
             ],
@@ -1454,7 +1454,7 @@
               13,
               13
             ],
-            "Sol": [
+            "Ben": [
               15,
               14,
               14,
@@ -1816,7 +1816,7 @@
                 "status": "dnf_or_lapped"
               }
             ],
-            "Sol": [
+            "Ben": [
               {
                 "lap": 1,
                 "position": 15,
@@ -2124,7 +2124,7 @@
               "lost": 6,
               "net": -5
             },
-            "Sol": {
+            "Ben": {
               "gained": 1,
               "lost": 6,
               "net": -5
@@ -2212,7 +2212,7 @@
             {
               "lap": 1,
               "driver": "Green Kyle",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 9
             },
             {
@@ -2236,7 +2236,7 @@
             {
               "lap": 1,
               "driver": "Walnut",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 4
             },
             {
@@ -2508,8 +2508,8 @@
               "classPosition": 11
             },
             {
-              "driver": "Sol",
-              "driverKey": "Sol",
+              "driver": "Ben",
+              "driverKey": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -2675,7 +2675,7 @@
               "bestMs": 99780,
               "lapsUsed": 3
             },
-            "Sol": {
+            "Ben": {
               "avgMs": 258383,
               "medianMs": 258383,
               "bestMs": 258383,
@@ -2773,7 +2773,7 @@
               "finishPosition": 13,
               "delta": -5
             },
-            "Sol": {
+            "Ben": {
               "qualPosition": 9,
               "finishPosition": 14,
               "delta": -5
@@ -2788,7 +2788,7 @@
         "2": {
           "grid": [
             "Green Kyle",
-            "Sol",
+            "Ben",
             "Donald",
             "Arren",
             "Timmy",
@@ -2814,8 +2814,8 @@
               "car": "",
               "class": "Hypercar"
             },
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -2927,7 +2927,7 @@
             }
           },
           "laps": {
-            "Sol": [
+            "Ben": [
               126952,
               275563
             ],
@@ -3027,7 +3027,7 @@
             ]
           },
           "sectors": {
-            "Sol": [
+            "Ben": [
               [
                 59025,
                 31778,
@@ -3415,7 +3415,7 @@
             ]
           },
           "cuts": {
-            "Sol": [
+            "Ben": [
               0,
               0
             ],
@@ -3515,7 +3515,7 @@
             ]
           },
           "tyres": {
-            "Sol": [
+            "Ben": [
               "D",
               "D"
             ],
@@ -3615,7 +3615,7 @@
             ]
           },
           "positions": {
-            "Sol": [
+            "Ben": [
               11,
               13,
               13,
@@ -3721,7 +3721,7 @@
             ]
           },
           "positionDetails": {
-            "Sol": [
+            "Ben": [
               {
                 "lap": 1,
                 "position": 11,
@@ -4217,7 +4217,7 @@
             ]
           },
           "positionChanges": {
-            "Sol": {
+            "Ben": {
               "gained": 0,
               "lost": 12,
               "net": -12
@@ -4335,7 +4335,7 @@
             {
               "lap": 1,
               "driver": "James",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 11
             },
             {
@@ -4371,7 +4371,7 @@
             {
               "lap": 1,
               "driver": "Chris",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 5
             },
             {
@@ -4419,7 +4419,7 @@
             {
               "lap": 1,
               "driver": "Lee",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 7
             },
             {
@@ -4461,7 +4461,7 @@
             {
               "lap": 1,
               "driver": "DK",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 5
             },
             {
@@ -4491,7 +4491,7 @@
             {
               "lap": 1,
               "driver": "Walnut",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 1
             },
             {
@@ -4527,7 +4527,7 @@
             {
               "lap": 1,
               "driver": "Josie",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 6
             },
             {
@@ -4581,13 +4581,13 @@
             {
               "lap": 2,
               "driver": "Allen Q",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 1
             },
             {
               "lap": 2,
               "driver": "Mike",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 1
             },
             {
@@ -4839,8 +4839,8 @@
               "classPosition": 10
             },
             {
-              "driver": "Sol",
-              "driverKey": "Sol",
+              "driver": "Ben",
+              "driverKey": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -4879,7 +4879,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Allen Q",
               "impactSpeed": 12.0,
               "worldPosition": {
@@ -4912,7 +4912,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Timmy",
               "impactSpeed": 64.8,
               "worldPosition": {
@@ -4956,7 +4956,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Timmy",
               "impactSpeed": 31.4,
               "worldPosition": {
@@ -4989,7 +4989,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Mike",
               "impactSpeed": 88.5,
               "worldPosition": {
@@ -5001,7 +5001,7 @@
               "lap": null,
               "lapConfidence": "unknown",
               "driver1": "Allen Q",
-              "driver2": "Sol",
+              "driver2": "Ben",
               "impactSpeed": 8.5,
               "worldPosition": {
                 "x": 296.5,
@@ -5011,7 +5011,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Allen Q",
               "impactSpeed": 5.1,
               "worldPosition": {
@@ -5032,7 +5032,7 @@
             }
           ],
           "pace": {
-            "Sol": {
+            "Ben": {
               "avgMs": 275563,
               "medianMs": 275563,
               "bestMs": 275563,
@@ -5167,7 +5167,7 @@
               "finishPosition": 12,
               "delta": 0
             },
-            "Sol": {
+            "Ben": {
               "qualPosition": 9,
               "finishPosition": 13,
               "delta": -4
@@ -5185,7 +5185,7 @@
             "Allan",
             "Donald",
             "Arren",
-            "Sol",
+            "Ben",
             "Mike",
             "Timmy"
           ],
@@ -5265,8 +5265,8 @@
               "skin": "02_white_7",
               "class": "GT3"
             },
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -5362,7 +5362,7 @@
               100753,
               103452
             ],
-            "Sol": [
+            "Ben": [
               167039,
               188273,
               102373,
@@ -5668,7 +5668,7 @@
                 33179
               ]
             ],
-            "Sol": [
+            "Ben": [
               [
                 102824,
                 31766,
@@ -5822,7 +5822,7 @@
               0,
               0
             ],
-            "Sol": [
+            "Ben": [
               0,
               0,
               0,
@@ -5916,7 +5916,7 @@
               "D",
               "D"
             ],
-            "Sol": [
+            "Ben": [
               "D",
               "D",
               "D",
@@ -6011,7 +6011,7 @@
               6,
               7
             ],
-            "Sol": [
+            "Ben": [
               12,
               12,
               12,
@@ -6379,7 +6379,7 @@
                 "status": "classified"
               }
             ],
-            "Sol": [
+            "Ben": [
               {
                 "lap": 1,
                 "position": 12,
@@ -6540,7 +6540,7 @@
               "lost": 2,
               "net": 2
             },
-            "Sol": {
+            "Ben": {
               "gained": 0,
               "lost": 2,
               "net": -2
@@ -6608,7 +6608,7 @@
             {
               "lap": 1,
               "driver": "Timmy",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 4
             },
             {
@@ -6978,8 +6978,8 @@
               "classPosition": 9
             },
             {
-              "driver": "Sol",
-              "driverKey": "Sol",
+              "driver": "Ben",
+              "driverKey": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -6996,7 +6996,7 @@
             {
               "lap": null,
               "lapConfidence": "unknown",
-              "driver1": "Sol",
+              "driver1": "Ben",
               "driver2": "Arren",
               "impactSpeed": 40.9,
               "worldPosition": {
@@ -7126,7 +7126,7 @@
               "bestMs": 100753,
               "lapsUsed": 5
             },
-            "Sol": {
+            "Ben": {
               "avgMs": 113042,
               "medianMs": 113042,
               "bestMs": 102373,
@@ -7201,7 +7201,7 @@
               "finishPosition": 11,
               "delta": -7
             },
-            "Sol": {
+            "Ben": {
               "qualPosition": 10,
               "finishPosition": 12,
               "delta": -2
@@ -7210,7 +7210,7 @@
         },
         "4": {
           "grid": [
-            "Sol",
+            "Ben",
             "Chris",
             "Mike",
             "DK",
@@ -7227,8 +7227,8 @@
           "gridConfidence": "medium",
           "gridScore": -0.303,
           "drivers": {
-            "Sol": {
-              "driver": "Sol",
+            "Ben": {
+              "driver": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -7325,7 +7325,7 @@
             }
           },
           "laps": {
-            "Sol": [
+            "Ben": [
               154740,
               121153,
               101993,
@@ -7420,7 +7420,7 @@
             ]
           },
           "sectors": {
-            "Sol": [
+            "Ben": [
               [
                 88617,
                 32256,
@@ -7791,7 +7791,7 @@
             ]
           },
           "cuts": {
-            "Sol": [
+            "Ben": [
               0,
               0,
               0,
@@ -7886,7 +7886,7 @@
             ]
           },
           "tyres": {
-            "Sol": [
+            "Ben": [
               "D",
               "D",
               "D",
@@ -7981,7 +7981,7 @@
             ]
           },
           "positions": {
-            "Sol": [
+            "Ben": [
               12,
               12,
               12,
@@ -8079,7 +8079,7 @@
             ]
           },
           "positionDetails": {
-            "Sol": [
+            "Ben": [
               {
                 "lap": 1,
                 "position": 12,
@@ -8537,7 +8537,7 @@
             ]
           },
           "positionChanges": {
-            "Sol": {
+            "Ben": {
               "gained": 1,
               "lost": 11,
               "net": -10
@@ -8638,7 +8638,7 @@
             {
               "lap": 1,
               "driver": "James",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 7
             },
             {
@@ -8698,7 +8698,7 @@
             {
               "lap": 1,
               "driver": "Josie",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 10
             },
             {
@@ -8716,7 +8716,7 @@
             {
               "lap": 1,
               "driver": "DK",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 1
             },
             {
@@ -8734,7 +8734,7 @@
             {
               "lap": 1,
               "driver": "Arren",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 1
             },
             {
@@ -8770,7 +8770,7 @@
             {
               "lap": 1,
               "driver": "Walnut",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 5
             },
             {
@@ -8800,7 +8800,7 @@
             {
               "lap": 1,
               "driver": "Allan",
-              "passed": "Sol",
+              "passed": "Ben",
               "positionsGained": 3
             },
             {
@@ -8883,7 +8883,7 @@
             },
             {
               "lap": 4,
-              "driver": "Sol",
+              "driver": "Ben",
               "passed": "DK",
               "positionsGained": 1
             },
@@ -9036,8 +9036,8 @@
               "classPosition": 8
             },
             {
-              "driver": "Sol",
-              "driverKey": "Sol",
+              "driver": "Ben",
+              "driverKey": "Ben",
               "guid": "76561198011029696",
               "carId": 8,
               "car": "rss_gtm_macca_72_evo_v8",
@@ -9133,7 +9133,7 @@
             }
           ],
           "pace": {
-            "Sol": {
+            "Ben": {
               "avgMs": 107008,
               "medianMs": 102444,
               "bestMs": 101993,
@@ -9257,7 +9257,7 @@
               "finishPosition": 10,
               "delta": 2
             },
-            "Sol": {
+            "Ben": {
               "qualPosition": 10,
               "finishPosition": 11,
               "delta": -1
@@ -9327,6 +9327,7 @@
       "Allan": "GT3",
       "Allen Q": "GT3",
       "Arren": "GT3",
+      "Ben": "GT3",
       "Chris": "GT3",
       "DK": "GT3",
       "Donald": "GT3",
@@ -9335,7 +9336,6 @@
       "Josie": "Hypercar",
       "Lee": "GT3",
       "Mike": "GT3",
-      "Sol": "GT3",
       "Timmy": "GT3",
       "Walnut": "GT3"
     }
