@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-08-07T16:22:59.072531+00:00",
+  "lastUpdated": "2026-08-12T03:00:39.802625+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1052,10 +1052,22 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 15
+        },
+        {
+          "eventId": "2026-08-11-ks-red-bull-ring",
+          "venue": "Ks Red Bull Ring",
+          "venueOrder": 2,
+          "date": "2026-08-11",
+          "track": "csp/2144/../ks_red_bull_ring",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
         }
       ],
       "drivers": [
         "Abu",
+        "Alfred",
         "Allan",
         "Allen Q",
         "Arren",

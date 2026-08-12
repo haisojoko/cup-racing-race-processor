@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S24a",
-  "lastUpdated": "2026-08-07T16:22:59.026689+00:00",
+  "lastUpdated": "2026-08-12T03:00:39.699873+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -9314,6 +9314,6352 @@
         "notes": []
       },
       "venueOrder": 1
+    },
+    {
+      "eventId": "2026-08-11-ks-red-bull-ring",
+      "signature": "369a0b33d8102882",
+      "venue": "Ks Red Bull Ring",
+      "date": "2026-08-11",
+      "track": "csp/2144/../ks_red_bull_ring",
+      "trackConfig": "layout_gp",
+      "qualifying": {
+        "qual1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Alfred",
+            "Allan",
+            "Arren",
+            "Walnut",
+            "Donald",
+            "Ben"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            }
+          },
+          "times": {
+            "James": {
+              "bestMs": 79505,
+              "laps": [
+                86046,
+                79982,
+                80121,
+                79550,
+                108957,
+                79505,
+                79859
+              ]
+            },
+            "Alfred": {
+              "bestMs": 84096,
+              "laps": [
+                101069,
+                148777,
+                235918,
+                93570,
+                84096
+              ]
+            },
+            "Ben": {
+              "bestMs": 91834,
+              "laps": [
+                113562,
+                92236,
+                92030,
+                91834,
+                92413,
+                143025
+              ]
+            },
+            "Walnut": {
+              "bestMs": 90179,
+              "laps": [
+                116235,
+                90594,
+                90179,
+                91091,
+                90956,
+                90758
+              ]
+            },
+            "Arren": {
+              "bestMs": 90175,
+              "laps": [
+                125820,
+                90585,
+                90175,
+                90780,
+                90558
+              ]
+            },
+            "Allan": {
+              "bestMs": 90065,
+              "laps": [
+                141667,
+                90320,
+                90691,
+                90068,
+                90065
+              ]
+            },
+            "Green Kyle": {
+              "bestMs": 86349,
+              "laps": [
+                169836,
+                164070,
+                138896,
+                86349
+              ]
+            },
+            "Josie": {
+              "bestMs": 79927,
+              "laps": [
+                176053,
+                80412,
+                82295,
+                79927,
+                80798,
+                103619
+              ]
+            },
+            "Donald": {
+              "bestMs": 91574,
+              "laps": [
+                205772,
+                92059,
+                92067,
+                91574,
+                106590
+              ]
+            }
+          }
+        },
+        "qual2": {
+          "grid": [
+            "James",
+            "Josie",
+            "Green Kyle",
+            "Walnut",
+            "Allan",
+            "Arren",
+            "Ben",
+            "Donald"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            }
+          },
+          "times": {
+            "James": {
+              "bestMs": 79611,
+              "laps": [
+                86155,
+                79691,
+                80305,
+                79611,
+                80567,
+                142571,
+                79626
+              ]
+            },
+            "Josie": {
+              "bestMs": 80060,
+              "laps": [
+                88595,
+                80098,
+                80060,
+                80157,
+                81035,
+                80809,
+                80344
+              ]
+            },
+            "Green Kyle": {
+              "bestMs": 83233,
+              "laps": [
+                93707,
+                89485,
+                83233,
+                87908,
+                85336
+              ]
+            },
+            "Walnut": {
+              "bestMs": 90207,
+              "laps": [
+                106144,
+                90568,
+                91122,
+                90207,
+                90553,
+                90221
+              ]
+            },
+            "Allan": {
+              "bestMs": 90224,
+              "laps": [
+                113025,
+                105840,
+                90926,
+                90264,
+                90859,
+                90510,
+                90224
+              ]
+            },
+            "Ben": {
+              "bestMs": 90727,
+              "laps": [
+                118939,
+                92454,
+                91525,
+                91688,
+                90727,
+                158766
+              ]
+            },
+            "Arren": {
+              "bestMs": 90268,
+              "laps": [
+                122571,
+                90927,
+                90701,
+                90268,
+                121830
+              ]
+            },
+            "Donald": {
+              "bestMs": 91149,
+              "laps": [
+                134214,
+                91503,
+                117049,
+                135829,
+                91149
+              ]
+            },
+            "Alfred": {
+              "bestMs": 84845,
+              "laps": [
+                188178,
+                85634,
+                84845,
+                99835
+              ]
+            }
+          }
+        }
+      },
+      "races": {
+        "1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Alfred",
+            "Allan",
+            "Arren",
+            "Walnut",
+            "Donald",
+            "Ben",
+            "Green Kyle"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.857,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "James": [
+              87213,
+              79910,
+              80013,
+              80149,
+              79565,
+              79958
+            ],
+            "Josie": [
+              87656,
+              80877,
+              80603,
+              80067,
+              79901,
+              80152
+            ],
+            "Alfred": [
+              99872,
+              87087,
+              84878,
+              84751,
+              84038,
+              87393
+            ],
+            "Allan": [
+              98706,
+              91422,
+              91034,
+              91109,
+              91618,
+              92075
+            ],
+            "Arren": [
+              101612,
+              91388,
+              90722,
+              90057,
+              91381,
+              91841
+            ],
+            "Walnut": [
+              100110,
+              90791,
+              91181,
+              90551,
+              91839,
+              91903
+            ],
+            "Donald": [
+              102445,
+              92760,
+              91354,
+              91275,
+              93779,
+              107098
+            ],
+            "Ben": [
+              103651,
+              92201,
+              92774,
+              91461,
+              93271,
+              93322
+            ],
+            "Green Kyle": [
+              92348,
+              84584,
+              82713,
+              83655,
+              82930,
+              83188
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                24280,
+                34614,
+                28319
+              ],
+              [
+                17995,
+                33628,
+                28287
+              ],
+              [
+                18097,
+                33836,
+                28080
+              ],
+              [
+                18243,
+                33727,
+                28179
+              ],
+              [
+                17974,
+                33516,
+                28075
+              ],
+              [
+                17922,
+                33831,
+                28205
+              ]
+            ],
+            "Josie": [
+              [
+                24252,
+                35082,
+                28322
+              ],
+              [
+                18065,
+                34164,
+                28648
+              ],
+              [
+                18072,
+                34092,
+                28439
+              ],
+              [
+                17688,
+                34155,
+                28224
+              ],
+              [
+                17793,
+                33623,
+                28485
+              ],
+              [
+                18020,
+                33782,
+                28350
+              ]
+            ],
+            "Alfred": [
+              [
+                26873,
+                36347,
+                36652
+              ],
+              [
+                19461,
+                36071,
+                31555
+              ],
+              [
+                19404,
+                35954,
+                29520
+              ],
+              [
+                18943,
+                35505,
+                30303
+              ],
+              [
+                19382,
+                35177,
+                29479
+              ],
+              [
+                20410,
+                36540,
+                30443
+              ]
+            ],
+            "Allan": [
+              [
+                27799,
+                37840,
+                33067
+              ],
+              [
+                20920,
+                37989,
+                32513
+              ],
+              [
+                20740,
+                38021,
+                32273
+              ],
+              [
+                20748,
+                38060,
+                32301
+              ],
+              [
+                20923,
+                37787,
+                32908
+              ],
+              [
+                20931,
+                38420,
+                32724
+              ]
+            ],
+            "Arren": [
+              [
+                28708,
+                39213,
+                33691
+              ],
+              [
+                21220,
+                37751,
+                32417
+              ],
+              [
+                20793,
+                37809,
+                32120
+              ],
+              [
+                20576,
+                37301,
+                32180
+              ],
+              [
+                20762,
+                38430,
+                32189
+              ],
+              [
+                20796,
+                38547,
+                32498
+              ]
+            ],
+            "Walnut": [
+              [
+                28721,
+                38710,
+                32679
+              ],
+              [
+                21168,
+                37556,
+                32067
+              ],
+              [
+                20734,
+                38209,
+                32238
+              ],
+              [
+                20559,
+                37943,
+                32049
+              ],
+              [
+                20986,
+                38218,
+                32635
+              ],
+              [
+                20735,
+                38728,
+                32440
+              ]
+            ],
+            "Donald": [
+              [
+                29955,
+                39194,
+                33296
+              ],
+              [
+                20922,
+                39280,
+                32558
+              ],
+              [
+                20839,
+                37868,
+                32647
+              ],
+              [
+                20705,
+                38071,
+                32499
+              ],
+              [
+                20744,
+                38350,
+                34685
+              ],
+              [
+                20770,
+                38043,
+                48285
+              ]
+            ],
+            "Ben": [
+              [
+                30585,
+                39361,
+                33705
+              ],
+              [
+                20625,
+                38821,
+                32755
+              ],
+              [
+                21170,
+                38718,
+                32886
+              ],
+              [
+                20720,
+                38188,
+                32553
+              ],
+              [
+                20780,
+                38080,
+                34411
+              ],
+              [
+                21281,
+                37845,
+                34196
+              ]
+            ],
+            "Green Kyle": [
+              [
+                27027,
+                35756,
+                29565
+              ],
+              [
+                18470,
+                36226,
+                29888
+              ],
+              [
+                18344,
+                35281,
+                29088
+              ],
+              [
+                18643,
+                35136,
+                29876
+              ],
+              [
+                18278,
+                34731,
+                29921
+              ],
+              [
+                18411,
+                35180,
+                29597
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Green Kyle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Josie": [
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT"
+            ],
+            "Alfred": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Green Kyle": [
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT"
+            ]
+          },
+          "positions": {
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Alfred": [
+              5,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "Allan": [
+              4,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Arren": [
+              7,
+              7,
+              7,
+              7,
+              7,
+              7
+            ],
+            "Walnut": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "Donald": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              9
+            ],
+            "Ben": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              8
+            ],
+            "Green Kyle": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Green Kyle": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Alfred": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Allan": {
+              "gained": 0,
+              "lost": 1,
+              "net": -1
+            },
+            "Arren": {
+              "gained": 0,
+              "lost": 2,
+              "net": -2
+            },
+            "Walnut": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Donald": {
+              "gained": 0,
+              "lost": 2,
+              "net": -2
+            },
+            "Ben": {
+              "gained": 1,
+              "lost": 1,
+              "net": 0
+            },
+            "Green Kyle": {
+              "gained": 6,
+              "lost": 0,
+              "net": 6
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Allan",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Walnut",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Arren",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Donald",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Green Kyle",
+              "passed": "Ben",
+              "positionsGained": 6
+            },
+            {
+              "lap": 2,
+              "driver": "Alfred",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 6,
+              "driver": "Ben",
+              "passed": "Donald",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 486811,
+              "bestLapMs": 79565,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 489241,
+              "bestLapMs": 79901,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Green Kyle",
+              "driverKey": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 3,
+              "totalTimeMs": 509409,
+              "bestLapMs": 82713,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "position": 4,
+              "totalTimeMs": 528009,
+              "bestLapMs": 84038,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 5,
+              "totalTimeMs": 555961,
+              "bestLapMs": 91034,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 6,
+              "totalTimeMs": 556396,
+              "bestLapMs": 90551,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 7,
+              "totalTimeMs": 557048,
+              "bestLapMs": 90057,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 566689,
+              "bestLapMs": 91461,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 9,
+              "totalTimeMs": 578717,
+              "bestLapMs": 91275,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Alfred",
+              "impactSpeed": 10.7,
+              "worldPosition": {
+                "x": 227.3,
+                "z": 319.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Alfred",
+              "impactSpeed": 12.5,
+              "worldPosition": {
+                "x": 188.2,
+                "z": 335.7
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Alfred",
+              "driver2": "Arren",
+              "impactSpeed": 15.3,
+              "worldPosition": {
+                "x": 73.4,
+                "z": 370.4
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Alfred",
+              "impactSpeed": 4.2,
+              "worldPosition": {
+                "x": 84.8,
+                "z": 366.7
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Green Kyle",
+              "driver2": "Donald",
+              "impactSpeed": 3.0,
+              "worldPosition": {
+                "x": -36.3,
+                "z": 399.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Alfred",
+              "impactSpeed": 6.4,
+              "worldPosition": {
+                "x": -78.5,
+                "z": 391.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "James",
+              "driver2": "Josie",
+              "impactSpeed": 13.9,
+              "worldPosition": {
+                "x": -599.3,
+                "z": -365.2
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Walnut",
+              "driver2": "Arren",
+              "impactSpeed": 6.8,
+              "worldPosition": {
+                "x": 75.0,
+                "z": -325.9
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 79919,
+              "medianMs": 79958,
+              "bestMs": 79565,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 80320,
+              "medianMs": 80152,
+              "bestMs": 79901,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 85629,
+              "medianMs": 84878,
+              "bestMs": 84038,
+              "lapsUsed": 5
+            },
+            "Allan": {
+              "avgMs": 91452,
+              "medianMs": 91422,
+              "bestMs": 91034,
+              "lapsUsed": 5
+            },
+            "Arren": {
+              "avgMs": 91078,
+              "medianMs": 91381,
+              "bestMs": 90057,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 91253,
+              "medianMs": 91181,
+              "bestMs": 90551,
+              "lapsUsed": 5
+            },
+            "Donald": {
+              "avgMs": 95253,
+              "medianMs": 92760,
+              "bestMs": 91275,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 92606,
+              "medianMs": 92774,
+              "bestMs": 91461,
+              "lapsUsed": 5
+            },
+            "Green Kyle": {
+              "avgMs": 83414,
+              "medianMs": 83188,
+              "bestMs": 82713,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Alfred": {
+              "qualPosition": 3,
+              "finishPosition": 4,
+              "delta": -1
+            },
+            "Allan": {
+              "qualPosition": 4,
+              "finishPosition": 5,
+              "delta": -1
+            },
+            "Walnut": {
+              "qualPosition": 6,
+              "finishPosition": 6,
+              "delta": 0
+            },
+            "Arren": {
+              "qualPosition": 5,
+              "finishPosition": 7,
+              "delta": -2
+            },
+            "Ben": {
+              "qualPosition": 8,
+              "finishPosition": 8,
+              "delta": 0
+            },
+            "Donald": {
+              "qualPosition": 7,
+              "finishPosition": 9,
+              "delta": -2
+            }
+          }
+        },
+        "2": {
+          "grid": [
+            "Donald",
+            "Ben",
+            "Arren",
+            "Walnut",
+            "Allan",
+            "Alfred",
+            "Green Kyle",
+            "Josie",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.111,
+          "drivers": {
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "Donald": [
+              99703,
+              92427,
+              92321,
+              91703,
+              91726,
+              91914
+            ],
+            "Ben": [
+              100632,
+              105758,
+              92406,
+              92510,
+              92734,
+              91702
+            ],
+            "Arren": [
+              101781,
+              97191,
+              93361,
+              90987,
+              90350,
+              92603
+            ],
+            "Walnut": [
+              101947,
+              95338,
+              91005,
+              90494,
+              91001,
+              90857
+            ],
+            "Allan": [
+              102709,
+              92048,
+              92253,
+              90693,
+              90855,
+              92537
+            ],
+            "Alfred": [
+              99071,
+              83423,
+              83847,
+              83385,
+              88766,
+              85529
+            ],
+            "Green Kyle": [
+              110694,
+              86238,
+              83839,
+              82675,
+              113126,
+              85520
+            ],
+            "Josie": [
+              89268,
+              80325,
+              79893,
+              80486,
+              83081,
+              80507
+            ],
+            "James": [
+              88283,
+              79797,
+              79964,
+              79954,
+              80268,
+              79658
+            ]
+          },
+          "sectors": {
+            "Donald": [
+              [
+                27626,
+                38570,
+                33507
+              ],
+              [
+                21668,
+                38160,
+                32599
+              ],
+              [
+                20816,
+                38705,
+                32800
+              ],
+              [
+                20901,
+                38366,
+                32436
+              ],
+              [
+                20874,
+                38051,
+                32801
+              ],
+              [
+                20750,
+                38268,
+                32896
+              ]
+            ],
+            "Ben": [
+              [
+                27803,
+                39263,
+                33566
+              ],
+              [
+                20978,
+                39286,
+                45494
+              ],
+              [
+                20896,
+                38385,
+                33125
+              ],
+              [
+                20853,
+                38582,
+                33075
+              ],
+              [
+                20999,
+                38462,
+                33273
+              ],
+              [
+                20548,
+                38016,
+                33138
+              ]
+            ],
+            "Arren": [
+              [
+                27931,
+                40446,
+                33404
+              ],
+              [
+                21672,
+                42938,
+                32581
+              ],
+              [
+                20645,
+                40375,
+                32341
+              ],
+              [
+                20733,
+                37840,
+                32414
+              ],
+              [
+                20717,
+                37657,
+                31976
+              ],
+              [
+                20729,
+                39196,
+                32678
+              ]
+            ],
+            "Walnut": [
+              [
+                28547,
+                40068,
+                33332
+              ],
+              [
+                22838,
+                40037,
+                32463
+              ],
+              [
+                20768,
+                38115,
+                32122
+              ],
+              [
+                20556,
+                37804,
+                32134
+              ],
+              [
+                20774,
+                38016,
+                32211
+              ],
+              [
+                20572,
+                37480,
+                32805
+              ]
+            ],
+            "Allan": [
+              [
+                30219,
+                38862,
+                33628
+              ],
+              [
+                21241,
+                38228,
+                32579
+              ],
+              [
+                20684,
+                39258,
+                32311
+              ],
+              [
+                20762,
+                37724,
+                32207
+              ],
+              [
+                20686,
+                37750,
+                32419
+              ],
+              [
+                20767,
+                37984,
+                33786
+              ]
+            ],
+            "Alfred": [
+              [
+                28358,
+                39232,
+                31481
+              ],
+              [
+                18884,
+                34984,
+                29555
+              ],
+              [
+                18956,
+                35159,
+                29732
+              ],
+              [
+                18963,
+                34825,
+                29597
+              ],
+              [
+                18900,
+                35271,
+                34595
+              ],
+              [
+                20091,
+                35936,
+                29502
+              ]
+            ],
+            "Green Kyle": [
+              [
+                33626,
+                36208,
+                40860
+              ],
+              [
+                19008,
+                37314,
+                29916
+              ],
+              [
+                18638,
+                35384,
+                29817
+              ],
+              [
+                18086,
+                35199,
+                29390
+              ],
+              [
+                18419,
+                65174,
+                29533
+              ],
+              [
+                18331,
+                36374,
+                30815
+              ]
+            ],
+            "Josie": [
+              [
+                26803,
+                33908,
+                28557
+              ],
+              [
+                17702,
+                34120,
+                28503
+              ],
+              [
+                17878,
+                33916,
+                28099
+              ],
+              [
+                17932,
+                34105,
+                28449
+              ],
+              [
+                17705,
+                36977,
+                28399
+              ],
+              [
+                17845,
+                34245,
+                28417
+              ]
+            ],
+            "James": [
+              [
+                26363,
+                33634,
+                28286
+              ],
+              [
+                17890,
+                33817,
+                28090
+              ],
+              [
+                18247,
+                33543,
+                28174
+              ],
+              [
+                17913,
+                33875,
+                28166
+              ],
+              [
+                17988,
+                34082,
+                28198
+              ],
+              [
+                17923,
+                33629,
+                28106
+              ]
+            ]
+          },
+          "cuts": {
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Green Kyle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Green Kyle": [
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT"
+            ],
+            "Josie": [
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT"
+            ],
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ]
+          },
+          "positions": {
+            "Donald": [
+              4,
+              4,
+              5,
+              5,
+              4,
+              4
+            ],
+            "Ben": [
+              5,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "Arren": [
+              6,
+              8,
+              8,
+              8,
+              7,
+              8
+            ],
+            "Walnut": [
+              7,
+              7,
+              7,
+              7,
+              6,
+              5
+            ],
+            "Allan": [
+              8,
+              5,
+              6,
+              6,
+              5,
+              6
+            ],
+            "Alfred": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Green Kyle": [
+              9,
+              6,
+              4,
+              4,
+              8,
+              7
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "positionDetails": {
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Green Kyle": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Donald": {
+              "gained": 1,
+              "lost": 4,
+              "net": -3
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 7,
+              "net": -7
+            },
+            "Arren": {
+              "gained": 1,
+              "lost": 6,
+              "net": -5
+            },
+            "Walnut": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Allan": {
+              "gained": 4,
+              "lost": 5,
+              "net": -1
+            },
+            "Alfred": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
+            },
+            "Green Kyle": {
+              "gained": 6,
+              "lost": 6,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 6,
+              "lost": 0,
+              "net": 6
+            },
+            "James": {
+              "gained": 8,
+              "lost": 0,
+              "net": 8
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Donald",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Arren",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Green Kyle",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Donald",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Arren",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Green Kyle",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Donald",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Walnut",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Allan",
+              "passed": "Walnut",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Allan",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Allan",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Green Kyle",
+              "passed": "Walnut",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Green Kyle",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Green Kyle",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 3,
+              "driver": "Green Kyle",
+              "passed": "Donald",
+              "positionsGained": 2
+            },
+            {
+              "lap": 3,
+              "driver": "Green Kyle",
+              "passed": "Allan",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Donald",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Allan",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Walnut",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Arren",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 6,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 6,
+              "driver": "Green Kyle",
+              "passed": "Arren",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 487920,
+              "bestLapMs": 79658,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 493560,
+              "bestLapMs": 79893,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "position": 3,
+              "totalTimeMs": 524017,
+              "bestLapMs": 83385,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 4,
+              "totalTimeMs": 559804,
+              "bestLapMs": 91703,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 5,
+              "totalTimeMs": 560658,
+              "bestLapMs": 90494,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 6,
+              "totalTimeMs": 561097,
+              "bestLapMs": 90693,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Green Kyle",
+              "driverKey": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 7,
+              "totalTimeMs": 562071,
+              "bestLapMs": 82675,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 8,
+              "totalTimeMs": 566328,
+              "bestLapMs": 90350,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 9,
+              "totalTimeMs": 575749,
+              "bestLapMs": 91702,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Green Kyle",
+              "impactSpeed": 6.5,
+              "worldPosition": {
+                "x": 54.9,
+                "z": 374.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "Green Kyle",
+              "impactSpeed": 8.8,
+              "worldPosition": {
+                "x": 160.8,
+                "z": 339.1
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Arren",
+              "impactSpeed": 7.2,
+              "worldPosition": {
+                "x": -276.5,
+                "z": 107.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Ben",
+              "impactSpeed": 6.9,
+              "worldPosition": {
+                "x": -274.2,
+                "z": 111.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Arren",
+              "impactSpeed": 9.7,
+              "worldPosition": {
+                "x": -354.1,
+                "z": -38.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Walnut",
+              "driver2": "Arren",
+              "impactSpeed": 50.0,
+              "worldPosition": {
+                "x": -584.4,
+                "z": -370.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Green Kyle",
+              "impactSpeed": 20.6,
+              "worldPosition": {
+                "x": 194.3,
+                "z": -299.2
+              }
+            }
+          ],
+          "pace": {
+            "Donald": {
+              "avgMs": 92018,
+              "medianMs": 91914,
+              "bestMs": 91703,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 95022,
+              "medianMs": 92510,
+              "bestMs": 91702,
+              "lapsUsed": 5
+            },
+            "Arren": {
+              "avgMs": 92898,
+              "medianMs": 92603,
+              "bestMs": 90350,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 91739,
+              "medianMs": 91001,
+              "bestMs": 90494,
+              "lapsUsed": 5
+            },
+            "Allan": {
+              "avgMs": 91677,
+              "medianMs": 92048,
+              "bestMs": 90693,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 84990,
+              "medianMs": 83847,
+              "bestMs": 83385,
+              "lapsUsed": 5
+            },
+            "Green Kyle": {
+              "avgMs": 84568,
+              "medianMs": 84680,
+              "bestMs": 82675,
+              "lapsUsed": 4
+            },
+            "Josie": {
+              "avgMs": 80858,
+              "medianMs": 80486,
+              "bestMs": 79893,
+              "lapsUsed": 5
+            },
+            "James": {
+              "avgMs": 79928,
+              "medianMs": 79954,
+              "bestMs": 79658,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Alfred": {
+              "qualPosition": 3,
+              "finishPosition": 3,
+              "delta": 0
+            },
+            "Donald": {
+              "qualPosition": 7,
+              "finishPosition": 4,
+              "delta": 3
+            },
+            "Walnut": {
+              "qualPosition": 6,
+              "finishPosition": 5,
+              "delta": 1
+            },
+            "Allan": {
+              "qualPosition": 4,
+              "finishPosition": 6,
+              "delta": -2
+            },
+            "Arren": {
+              "qualPosition": 5,
+              "finishPosition": 8,
+              "delta": -3
+            },
+            "Ben": {
+              "qualPosition": 8,
+              "finishPosition": 9,
+              "delta": -1
+            }
+          }
+        },
+        "3": {
+          "grid": [
+            "James",
+            "Josie",
+            "Green Kyle",
+            "Walnut",
+            "Allan",
+            "Arren",
+            "Ben",
+            "Donald",
+            "Alfred"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.857,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "James": [
+              87033,
+              79546,
+              80033,
+              79598,
+              79522,
+              79710
+            ],
+            "Josie": [
+              87949,
+              79597,
+              79619,
+              79778,
+              79711,
+              79611
+            ],
+            "Green Kyle": [
+              95094,
+              83340,
+              90701,
+              105685,
+              83364,
+              84478
+            ],
+            "Walnut": [
+              100082,
+              90871,
+              90807,
+              90557,
+              92455,
+              90663
+            ],
+            "Allan": [
+              100786,
+              90685,
+              91068,
+              92114,
+              91807,
+              91590
+            ],
+            "Arren": [
+              108942,
+              90112,
+              90528,
+              90306,
+              90494,
+              90763
+            ],
+            "Ben": [
+              101650,
+              91868,
+              91559,
+              101005,
+              91914
+            ],
+            "Donald": [
+              103391,
+              91942,
+              90744,
+              91642,
+              91319,
+              91492
+            ],
+            "Alfred": [
+              96349,
+              83562,
+              86170,
+              83863,
+              83296,
+              83530
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                25004,
+                33958,
+                28071
+              ],
+              [
+                18026,
+                33580,
+                27940
+              ],
+              [
+                18339,
+                33623,
+                28071
+              ],
+              [
+                17863,
+                33646,
+                28089
+              ],
+              [
+                17917,
+                33606,
+                27999
+              ],
+              [
+                17902,
+                33565,
+                28243
+              ]
+            ],
+            "Josie": [
+              [
+                24945,
+                34339,
+                28665
+              ],
+              [
+                18064,
+                33475,
+                28058
+              ],
+              [
+                17861,
+                33858,
+                27900
+              ],
+              [
+                17624,
+                33921,
+                28233
+              ],
+              [
+                17885,
+                33678,
+                28148
+              ],
+              [
+                17655,
+                33664,
+                28292
+              ]
+            ],
+            "Green Kyle": [
+              [
+                27476,
+                37728,
+                29890
+              ],
+              [
+                18773,
+                34920,
+                29647
+              ],
+              [
+                18297,
+                42592,
+                29812
+              ],
+              [
+                18704,
+                34592,
+                52389
+              ],
+              [
+                18658,
+                35203,
+                29503
+              ],
+              [
+                18481,
+                34758,
+                31239
+              ]
+            ],
+            "Walnut": [
+              [
+                29090,
+                38579,
+                32413
+              ],
+              [
+                20608,
+                37706,
+                32557
+              ],
+              [
+                20697,
+                38042,
+                32068
+              ],
+              [
+                20551,
+                37688,
+                32318
+              ],
+              [
+                21026,
+                38881,
+                32548
+              ],
+              [
+                20809,
+                37490,
+                32364
+              ]
+            ],
+            "Allan": [
+              [
+                29474,
+                38827,
+                32485
+              ],
+              [
+                20571,
+                37926,
+                32188
+              ],
+              [
+                20584,
+                38110,
+                32374
+              ],
+              [
+                21060,
+                37565,
+                33489
+              ],
+              [
+                21504,
+                37903,
+                32400
+              ],
+              [
+                21151,
+                37859,
+                32580
+              ]
+            ],
+            "Arren": [
+              [
+                39160,
+                37525,
+                32257
+              ],
+              [
+                20601,
+                37539,
+                31972
+              ],
+              [
+                20800,
+                37453,
+                32275
+              ],
+              [
+                20682,
+                37574,
+                32050
+              ],
+              [
+                20681,
+                37612,
+                32201
+              ],
+              [
+                20653,
+                37696,
+                32414
+              ]
+            ],
+            "Ben": [
+              [
+                30118,
+                38831,
+                32701
+              ],
+              [
+                20836,
+                38470,
+                32562
+              ],
+              [
+                20774,
+                37751,
+                33034
+              ],
+              [
+                28510,
+                39227,
+                33268
+              ],
+              [
+                20926,
+                37876,
+                33112
+              ]
+            ],
+            "Donald": [
+              [
+                31657,
+                39312,
+                32422
+              ],
+              [
+                20963,
+                38629,
+                32350
+              ],
+              [
+                20660,
+                37917,
+                32167
+              ],
+              [
+                20844,
+                37826,
+                32972
+              ],
+              [
+                20719,
+                38052,
+                32548
+              ],
+              [
+                20833,
+                38038,
+                32621
+              ]
+            ],
+            "Alfred": [
+              [
+                27971,
+                38520,
+                29858
+              ],
+              [
+                19189,
+                34826,
+                29547
+              ],
+              [
+                18764,
+                37324,
+                30082
+              ],
+              [
+                19103,
+                34889,
+                29871
+              ],
+              [
+                18887,
+                34718,
+                29691
+              ],
+              [
+                18829,
+                34718,
+                29983
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Green Kyle": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Green Kyle": [
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT",
+              "SLT"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ]
+          },
+          "positions": {
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Green Kyle": [
+              3,
+              3,
+              4,
+              6,
+              4,
+              4
+            ],
+            "Walnut": [
+              5,
+              5,
+              5,
+              4,
+              5,
+              5
+            ],
+            "Allan": [
+              6,
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "Arren": [
+              9,
+              9,
+              9,
+              8,
+              8,
+              8
+            ],
+            "Ben": [
+              7,
+              7,
+              7,
+              9,
+              9,
+              9
+            ],
+            "Donald": [
+              8,
+              8,
+              8,
+              7,
+              7,
+              7
+            ],
+            "Alfred": [
+              4,
+              4,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Green Kyle": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Green Kyle": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Walnut": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Allan": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Arren": {
+              "gained": 1,
+              "lost": 3,
+              "net": -2
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 2,
+              "net": -2
+            },
+            "Donald": {
+              "gained": 1,
+              "lost": 0,
+              "net": 1
+            },
+            "Alfred": {
+              "gained": 6,
+              "lost": 0,
+              "net": 6
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Walnut",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Allan",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Ben",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Donald",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Arren",
+              "positionsGained": 5
+            },
+            {
+              "lap": 3,
+              "driver": "Alfred",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Walnut",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Allan",
+              "passed": "Green Kyle",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Donald",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Arren",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Green Kyle",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Green Kyle",
+              "passed": "Allan",
+              "positionsGained": 2
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 485432,
+              "bestLapMs": 79522,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 486265,
+              "bestLapMs": 79597,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "position": 3,
+              "totalTimeMs": 516771,
+              "bestLapMs": 83296,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Green Kyle",
+              "driverKey": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 4,
+              "totalTimeMs": 542640,
+              "bestLapMs": 83340,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 5,
+              "totalTimeMs": 555448,
+              "bestLapMs": 90557,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 6,
+              "totalTimeMs": 558054,
+              "bestLapMs": 90685,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 7,
+              "totalTimeMs": 560529,
+              "bestLapMs": 90744,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 8,
+              "totalTimeMs": 561193,
+              "bestLapMs": 90112,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 9,
+              "totalTimeMs": 477996,
+              "bestLapMs": 91559,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Arren",
+              "impactSpeed": 5.3,
+              "worldPosition": {
+                "x": 235.4,
+                "z": 317.4
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "James",
+              "impactSpeed": 11.0,
+              "worldPosition": {
+                "x": -58.8,
+                "z": 398.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Green Kyle",
+              "impactSpeed": 46.4,
+              "worldPosition": {
+                "x": -62.4,
+                "z": 398.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Ben",
+              "impactSpeed": 10.3,
+              "worldPosition": {
+                "x": -90.2,
+                "z": 382.4
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Walnut",
+              "driver2": "Allan",
+              "impactSpeed": 14.3,
+              "worldPosition": {
+                "x": -600.6,
+                "z": -345.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Green Kyle",
+              "driver2": "Alfred",
+              "impactSpeed": 45.2,
+              "worldPosition": {
+                "x": -590.7,
+                "z": -369.2
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "Ben",
+              "impactSpeed": 137.2,
+              "worldPosition": {
+                "x": -123.4,
+                "z": 338.1
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 79682,
+              "medianMs": 79598,
+              "bestMs": 79522,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 79663,
+              "medianMs": 79619,
+              "bestMs": 79597,
+              "lapsUsed": 5
+            },
+            "Green Kyle": {
+              "avgMs": 85471,
+              "medianMs": 83921,
+              "bestMs": 83340,
+              "lapsUsed": 4
+            },
+            "Walnut": {
+              "avgMs": 91071,
+              "medianMs": 90807,
+              "bestMs": 90557,
+              "lapsUsed": 5
+            },
+            "Allan": {
+              "avgMs": 91453,
+              "medianMs": 91590,
+              "bestMs": 90685,
+              "lapsUsed": 5
+            },
+            "Arren": {
+              "avgMs": 90441,
+              "medianMs": 90494,
+              "bestMs": 90112,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 94086,
+              "medianMs": 91891,
+              "bestMs": 91559,
+              "lapsUsed": 4
+            },
+            "Donald": {
+              "avgMs": 91428,
+              "medianMs": 91492,
+              "bestMs": 90744,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 84084,
+              "medianMs": 83562,
+              "bestMs": 83296,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Green Kyle": {
+              "qualPosition": 3,
+              "finishPosition": 4,
+              "delta": -1
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 5,
+              "delta": -1
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 6,
+              "delta": -1
+            },
+            "Donald": {
+              "qualPosition": 8,
+              "finishPosition": 7,
+              "delta": 1
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 8,
+              "delta": -2
+            },
+            "Ben": {
+              "qualPosition": 7,
+              "finishPosition": 9,
+              "delta": -2
+            }
+          }
+        },
+        "4": {
+          "grid": [
+            "Ben",
+            "Arren",
+            "Donald",
+            "Allan",
+            "Walnut",
+            "Green Kyle",
+            "Alfred",
+            "Josie",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.722,
+          "drivers": {
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "02_red_70",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Green Kyle": {
+              "driver": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "04_protech_endurance_65",
+              "class": "Hypercar"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "skin": "00_blue_28",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "Ben": [
+              104170,
+              91540,
+              90582,
+              91444,
+              93578,
+              91380
+            ],
+            "Arren": [
+              102087,
+              91565,
+              90794,
+              93818,
+              91605,
+              90368
+            ],
+            "Donald": [
+              101581,
+              91207,
+              90491,
+              93472,
+              90960,
+              92092
+            ],
+            "Allan": [
+              100814,
+              90916,
+              90595,
+              91000,
+              91014,
+              90463
+            ],
+            "Walnut": [
+              98968,
+              90581,
+              90498,
+              90350,
+              90597,
+              90652
+            ],
+            "Green Kyle": [
+              120164
+            ],
+            "Alfred": [
+              91942,
+              83624,
+              83266,
+              84070,
+              83526,
+              83097
+            ],
+            "Josie": [
+              86342,
+              79445,
+              80490,
+              79784,
+              79869,
+              85981
+            ],
+            "James": [
+              85368,
+              79766,
+              79869,
+              79591,
+              79655,
+              88207
+            ]
+          },
+          "sectors": {
+            "Ben": [
+              [
+                30195,
+                40311,
+                33664
+              ],
+              [
+                20822,
+                37854,
+                32864
+              ],
+              [
+                20494,
+                37724,
+                32364
+              ],
+              [
+                20515,
+                38165,
+                32764
+              ],
+              [
+                21313,
+                38975,
+                33290
+              ],
+              [
+                20801,
+                37962,
+                32617
+              ]
+            ],
+            "Arren": [
+              [
+                29690,
+                40181,
+                32216
+              ],
+              [
+                20925,
+                38259,
+                32381
+              ],
+              [
+                20689,
+                37782,
+                32323
+              ],
+              [
+                20568,
+                40225,
+                33025
+              ],
+              [
+                20775,
+                38609,
+                32221
+              ],
+              [
+                20906,
+                37152,
+                32310
+              ]
+            ],
+            "Donald": [
+              [
+                29437,
+                39587,
+                32557
+              ],
+              [
+                21124,
+                37751,
+                32332
+              ],
+              [
+                20629,
+                37849,
+                32013
+              ],
+              [
+                22759,
+                37913,
+                32800
+              ],
+              [
+                20795,
+                38048,
+                32117
+              ],
+              [
+                21095,
+                38183,
+                32814
+              ]
+            ],
+            "Allan": [
+              [
+                29363,
+                39119,
+                32332
+              ],
+              [
+                20824,
+                37467,
+                32625
+              ],
+              [
+                20652,
+                37827,
+                32116
+              ],
+              [
+                20953,
+                37733,
+                32314
+              ],
+              [
+                21074,
+                37818,
+                32122
+              ],
+              [
+                20740,
+                37719,
+                32004
+              ]
+            ],
+            "Walnut": [
+              [
+                28475,
+                37999,
+                32494
+              ],
+              [
+                20786,
+                37683,
+                32112
+              ],
+              [
+                20676,
+                37655,
+                32167
+              ],
+              [
+                20673,
+                37529,
+                32148
+              ],
+              [
+                20635,
+                37552,
+                32410
+              ],
+              [
+                20628,
+                37606,
+                32418
+              ]
+            ],
+            "Green Kyle": [
+              [
+                25251,
+                63517,
+                31396
+              ]
+            ],
+            "Alfred": [
+              [
+                25743,
+                36643,
+                29556
+              ],
+              [
+                18825,
+                35018,
+                29781
+              ],
+              [
+                18601,
+                35285,
+                29380
+              ],
+              [
+                19275,
+                34991,
+                29804
+              ],
+              [
+                18937,
+                34902,
+                29687
+              ],
+              [
+                18886,
+                34564,
+                29647
+              ]
+            ],
+            "Josie": [
+              [
+                24287,
+                33841,
+                28214
+              ],
+              [
+                17692,
+                33732,
+                28021
+              ],
+              [
+                17962,
+                33894,
+                28634
+              ],
+              [
+                17729,
+                33832,
+                28223
+              ],
+              [
+                17805,
+                33929,
+                28135
+              ],
+              [
+                17734,
+                39145,
+                29102
+              ]
+            ],
+            "James": [
+              [
+                23151,
+                33921,
+                28296
+              ],
+              [
+                17963,
+                33642,
+                28161
+              ],
+              [
+                17877,
+                33822,
+                28170
+              ],
+              [
+                17973,
+                33565,
+                28053
+              ],
+              [
+                17866,
+                33709,
+                28080
+              ],
+              [
+                17827,
+                33485,
+                36895
+              ]
+            ]
+          },
+          "cuts": {
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Green Kyle": [
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Green Kyle": [
+              "SLT"
+            ],
+            "Alfred": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ]
+          },
+          "positions": {
+            "Ben": [
+              8,
+              8,
+              8,
+              7,
+              8,
+              8
+            ],
+            "Arren": [
+              7,
+              7,
+              7,
+              8,
+              7,
+              7
+            ],
+            "Donald": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "Allan": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Walnut": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "Green Kyle": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "Alfred": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2
+            ]
+          },
+          "positionDetails": {
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Green Kyle": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "dnf_or_lapped"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "dnf_or_lapped"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "dnf_or_lapped"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "dnf_or_lapped"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Ben": {
+              "gained": 1,
+              "lost": 8,
+              "net": -7
+            },
+            "Arren": {
+              "gained": 1,
+              "lost": 6,
+              "net": -5
+            },
+            "Donald": {
+              "gained": 0,
+              "lost": 3,
+              "net": -3
+            },
+            "Allan": {
+              "gained": 0,
+              "lost": 1,
+              "net": -1
+            },
+            "Walnut": {
+              "gained": 1,
+              "lost": 0,
+              "net": 1
+            },
+            "Green Kyle": {
+              "gained": 0,
+              "lost": 3,
+              "net": -3
+            },
+            "Alfred": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            },
+            "Josie": {
+              "gained": 7,
+              "lost": 0,
+              "net": 7
+            },
+            "James": {
+              "gained": 8,
+              "lost": 1,
+              "net": 7
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Donald",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Arren",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Green Kyle",
+              "positionsGained": 8
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Donald",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Arren",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Green Kyle",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Walnut",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Donald",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Arren",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Ben",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Green Kyle",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Donald",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Arren",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Ben",
+              "passed": "Arren",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Arren",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 6,
+              "driver": "Josie",
+              "passed": "James",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 491905,
+              "bestLapMs": 79445,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 492446,
+              "bestLapMs": 79591,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 3,
+              "car": "rss_mph_callahan_v8",
+              "position": 3,
+              "totalTimeMs": 509522,
+              "bestLapMs": 83097,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 4,
+              "totalTimeMs": 551645,
+              "bestLapMs": 90350,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 5,
+              "totalTimeMs": 554799,
+              "bestLapMs": 90463,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 11,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 6,
+              "totalTimeMs": 559803,
+              "bestLapMs": 90491,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 7,
+              "totalTimeMs": 560251,
+              "bestLapMs": 90368,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 562691,
+              "bestLapMs": 90582,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            },
+            {
+              "driver": "Green Kyle",
+              "driverKey": "Green Kyle",
+              "guid": "76561198117594890",
+              "carId": 2,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 9,
+              "totalTimeMs": 120158,
+              "bestLapMs": 120164,
+              "laps": 1,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Walnut",
+              "driver2": "Ben",
+              "impactSpeed": 19.5,
+              "worldPosition": {
+                "x": -33.9,
+                "z": 400.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Alfred",
+              "driver2": "Donald",
+              "impactSpeed": 18.3,
+              "worldPosition": {
+                "x": -48.0,
+                "z": 400.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Alfred",
+              "driver2": "Green Kyle",
+              "impactSpeed": 25.3,
+              "worldPosition": {
+                "x": -594.4,
+                "z": -332.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Arren",
+              "impactSpeed": 3.0,
+              "worldPosition": {
+                "x": -403.7,
+                "z": -132.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Ben",
+              "impactSpeed": 1.1,
+              "worldPosition": {
+                "x": -411.5,
+                "z": -143.4
+              }
+            }
+          ],
+          "pace": {
+            "Ben": {
+              "avgMs": 91705,
+              "medianMs": 91444,
+              "bestMs": 90582,
+              "lapsUsed": 5
+            },
+            "Arren": {
+              "avgMs": 91630,
+              "medianMs": 91565,
+              "bestMs": 90368,
+              "lapsUsed": 5
+            },
+            "Donald": {
+              "avgMs": 91644,
+              "medianMs": 91207,
+              "bestMs": 90491,
+              "lapsUsed": 5
+            },
+            "Allan": {
+              "avgMs": 90798,
+              "medianMs": 90916,
+              "bestMs": 90463,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 90536,
+              "medianMs": 90581,
+              "bestMs": 90350,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 83517,
+              "medianMs": 83526,
+              "bestMs": 83097,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 81114,
+              "medianMs": 79869,
+              "bestMs": 79445,
+              "lapsUsed": 5
+            },
+            "James": {
+              "avgMs": 81418,
+              "medianMs": 79766,
+              "bestMs": 79591,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 1,
+              "delta": 1
+            },
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 2,
+              "delta": -1
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 4,
+              "delta": 0
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 5,
+              "delta": 0
+            },
+            "Donald": {
+              "qualPosition": 8,
+              "finishPosition": 6,
+              "delta": 2
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 7,
+              "delta": -1
+            },
+            "Ben": {
+              "qualPosition": 7,
+              "finishPosition": 8,
+              "delta": -1
+            },
+            "Green Kyle": {
+              "qualPosition": 3,
+              "finishPosition": 9,
+              "delta": -6
+            }
+          }
+        }
+      },
+      "practice": [],
+      "provenance": {
+        "sourceFiles": [
+          {
+            "name": "2026_8_11_21_29_QUALIFY.json",
+            "sha256": "1ccf58d7e50e947c78898b0253fd7931d91999f3fcdebaae4d90681cbcd20569",
+            "type": "QUALIFY",
+            "role": "qual1"
+          },
+          {
+            "name": "2026_8_11_22_16_QUALIFY.json",
+            "sha256": "70e0d1859c349bccc194f6330eea62b85a91205f094a9fdae92c827755b72e4f",
+            "type": "QUALIFY",
+            "role": "qual2"
+          },
+          {
+            "name": "2026_8_11_21_42_RACE.json",
+            "sha256": "f49e181992a4902510cf0f2ef8b2d609029ec83433a35ad6c9fcaa8df4462dc0",
+            "type": "RACE",
+            "role": "race1"
+          },
+          {
+            "name": "2026_8_11_21_52_RACE.json",
+            "sha256": "dd2f52fa89f78666de854807e4f991ef80c63892ee077f55fa142fec2a0a08af",
+            "type": "RACE",
+            "role": "race2"
+          },
+          {
+            "name": "2026_8_11_22_27_RACE.json",
+            "sha256": "cda700a58ebc006dab2861b168f0550b667dcefb1e78bcea8936af83d75720bc",
+            "type": "RACE",
+            "role": "race3"
+          },
+          {
+            "name": "2026_8_11_22_42_RACE.json",
+            "sha256": "912284679fff0e6ac1db14ed14040d8bf9fcfd958e0d8a1eecc2f94d31988191",
+            "type": "RACE",
+            "role": "race4"
+          }
+        ],
+        "droppedFiles": [],
+        "notes": []
+      },
+      "venueOrder": 2
     }
   ],
   "classes": {
@@ -9324,6 +15670,7 @@
     ],
     "drivers": {
       "Abu": "GT3",
+      "Alfred": "Hypercar",
       "Allan": "GT3",
       "Allen Q": "GT3",
       "Arren": "GT3",
