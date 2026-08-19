@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S24a",
-  "lastUpdated": "2026-08-12T03:00:39.699873+00:00",
+  "lastUpdated": "2026-08-19T07:43:55.251498+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -15660,6 +15660,5281 @@
         "notes": []
       },
       "venueOrder": 2
+    },
+    {
+      "eventId": "2026-08-18-rt-sebring",
+      "signature": "5dbb02eeb57eb915",
+      "venue": "Rt Sebring",
+      "date": "2026-08-18",
+      "track": "csp/2144/../rt_sebring",
+      "trackConfig": "raceday",
+      "qualifying": {
+        "qual1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Walnut",
+            "Lee",
+            "Allan",
+            "Arren",
+            "Ben",
+            "Mike",
+            "Timmy"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 7,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "04_camo",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            }
+          },
+          "times": {
+            "James": {
+              "bestMs": 106567,
+              "laps": [
+                117402,
+                107361,
+                106928,
+                106567,
+                132283
+              ]
+            },
+            "Josie": {
+              "bestMs": 106815,
+              "laps": [
+                120475,
+                107461,
+                107902,
+                115160,
+                125552,
+                106815
+              ]
+            },
+            "Allan": {
+              "bestMs": 121670,
+              "laps": [
+                143358,
+                122751,
+                122328,
+                121670
+              ]
+            },
+            "Walnut": {
+              "bestMs": 120750,
+              "laps": [
+                141785,
+                120873,
+                130364,
+                120877,
+                120750
+              ]
+            },
+            "Ben": {
+              "bestMs": 124754,
+              "laps": [
+                159101,
+                203749,
+                124754
+              ]
+            },
+            "Mike": {
+              "bestMs": 126632,
+              "laps": [
+                163731,
+                129446,
+                126632,
+                127218,
+                129654
+              ]
+            },
+            "Timmy": {
+              "bestMs": 127102,
+              "laps": [
+                164823,
+                127102,
+                141764
+              ]
+            },
+            "Arren": {
+              "bestMs": 123299,
+              "laps": [
+                170853,
+                123552,
+                123299
+              ]
+            },
+            "Lee": {
+              "bestMs": 121382,
+              "laps": [
+                242712,
+                121382,
+                249518
+              ]
+            }
+          }
+        },
+        "qual2": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Walnut",
+            "Allan",
+            "Arren",
+            "Timmy",
+            "Ben"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            }
+          },
+          "times": {
+            "Josie": {
+              "bestMs": 107207,
+              "laps": [
+                124743,
+                107892,
+                107298,
+                107207,
+                107579
+              ]
+            },
+            "Lee": {
+              "bestMs": 120838,
+              "laps": [
+                131256,
+                121086,
+                122498,
+                146118,
+                120838
+              ]
+            },
+            "Walnut": {
+              "bestMs": 120996,
+              "laps": [
+                147329,
+                121782,
+                121414,
+                121056,
+                120996
+              ]
+            },
+            "Allan": {
+              "bestMs": 122105,
+              "laps": [
+                151512,
+                122557,
+                133835,
+                122105,
+                122335
+              ]
+            },
+            "Timmy": {
+              "bestMs": 125078,
+              "laps": [
+                161080,
+                125078,
+                141393,
+                126864
+              ]
+            },
+            "Arren": {
+              "bestMs": 122696,
+              "laps": [
+                169657,
+                123526,
+                186684,
+                122696
+              ]
+            },
+            "Ben": {
+              "bestMs": 125157,
+              "laps": [
+                177050,
+                125157,
+                126674
+              ]
+            },
+            "James": {
+              "bestMs": 106565,
+              "laps": [
+                239413,
+                107060,
+                113056,
+                106565
+              ]
+            }
+          }
+        }
+      },
+      "races": {
+        "1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Walnut",
+            "Lee",
+            "Allan",
+            "Arren",
+            "Ben",
+            "Mike",
+            "Timmy"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.667,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 7,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "04_camo",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            }
+          },
+          "laps": {
+            "James": [
+              116962,
+              106777,
+              107164,
+              107398,
+              108545
+            ],
+            "Josie": [
+              115020,
+              107680,
+              107488,
+              107799,
+              187191
+            ],
+            "Walnut": [
+              128824,
+              122324,
+              121376,
+              122844,
+              122237
+            ],
+            "Lee": [
+              128287,
+              121942,
+              122041,
+              122450,
+              127010
+            ],
+            "Allan": [
+              130809,
+              122399,
+              124391,
+              123577,
+              123809
+            ],
+            "Arren": [
+              130203,
+              122606,
+              151779,
+              140760,
+              124028
+            ],
+            "Ben": [
+              154560,
+              124892,
+              150491,
+              124824
+            ],
+            "Mike": [
+              138528,
+              302759,
+              128190
+            ],
+            "Timmy": [
+              137533,
+              124854,
+              125167,
+              124777,
+              128881
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                47662,
+                45977,
+                23323
+              ],
+              [
+                41765,
+                41810,
+                23202
+              ],
+              [
+                41410,
+                42142,
+                23612
+              ],
+              [
+                41280,
+                42394,
+                23724
+              ],
+              [
+                42400,
+                42782,
+                23363
+              ]
+            ],
+            "Josie": [
+              [
+                48838,
+                42701,
+                23481
+              ],
+              [
+                42119,
+                42247,
+                23314
+              ],
+              [
+                41649,
+                42398,
+                23441
+              ],
+              [
+                41522,
+                42525,
+                23752
+              ],
+              [
+                119439,
+                42435,
+                25317
+              ]
+            ],
+            "Walnut": [
+              [
+                53719,
+                48037,
+                27068
+              ],
+              [
+                47003,
+                48186,
+                27135
+              ],
+              [
+                46613,
+                48043,
+                26720
+              ],
+              [
+                47432,
+                48308,
+                27104
+              ],
+              [
+                46664,
+                47615,
+                27958
+              ]
+            ],
+            "Lee": [
+              [
+                53097,
+                48176,
+                27014
+              ],
+              [
+                46792,
+                48352,
+                26798
+              ],
+              [
+                46706,
+                48407,
+                26928
+              ],
+              [
+                46959,
+                48379,
+                27112
+              ],
+              [
+                46515,
+                47888,
+                32607
+              ]
+            ],
+            "Allan": [
+              [
+                55505,
+                48430,
+                26874
+              ],
+              [
+                47061,
+                48469,
+                26869
+              ],
+              [
+                48859,
+                48636,
+                26896
+              ],
+              [
+                47594,
+                48974,
+                27009
+              ],
+              [
+                47571,
+                49153,
+                27085
+              ]
+            ],
+            "Arren": [
+              [
+                54508,
+                48460,
+                27235
+              ],
+              [
+                47151,
+                48501,
+                26954
+              ],
+              [
+                64496,
+                48177,
+                39106
+              ],
+              [
+                64228,
+                48298,
+                28234
+              ],
+              [
+                47979,
+                48465,
+                27584
+              ]
+            ],
+            "Ben": [
+              [
+                57216,
+                61568,
+                35776
+              ],
+              [
+                48194,
+                49231,
+                27467
+              ],
+              [
+                47707,
+                75002,
+                27782
+              ],
+              [
+                48049,
+                49630,
+                27145
+              ]
+            ],
+            "Mike": [
+              [
+                57478,
+                49599,
+                31451
+              ],
+              [
+                216130,
+                49532,
+                37097
+              ],
+              [
+                49489,
+                50004,
+                28697
+              ]
+            ],
+            "Timmy": [
+              [
+                59481,
+                49653,
+                28399
+              ],
+              [
+                48011,
+                49320,
+                27523
+              ],
+              [
+                48834,
+                48968,
+                27365
+              ],
+              [
+                47769,
+                48905,
+                28103
+              ],
+              [
+                49550,
+                51008,
+                28323
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Mike": [
+              0,
+              0,
+              0
+            ],
+            "Timmy": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Mike": [
+              "D",
+              "D",
+              "D"
+            ],
+            "Timmy": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "James": [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            "Josie": [
+              1,
+              1,
+              1,
+              1,
+              5
+            ],
+            "Walnut": [
+              4,
+              4,
+              4,
+              4,
+              2
+            ],
+            "Lee": [
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Allan": [
+              6,
+              6,
+              5,
+              5,
+              4
+            ],
+            "Arren": [
+              5,
+              5,
+              7,
+              7,
+              7
+            ],
+            "Ben": [
+              9,
+              8,
+              8,
+              8,
+              8
+            ],
+            "Mike": [
+              8,
+              9,
+              9,
+              9,
+              9
+            ],
+            "Timmy": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Mike": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "dnf_or_lapped"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Timmy": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 1,
+              "lost": 1,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 1,
+              "lost": 4,
+              "net": -3
+            },
+            "Walnut": {
+              "gained": 2,
+              "lost": 1,
+              "net": 1
+            },
+            "Lee": {
+              "gained": 1,
+              "lost": 0,
+              "net": 1
+            },
+            "Allan": {
+              "gained": 2,
+              "lost": 1,
+              "net": 1
+            },
+            "Arren": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Ben": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Mike": {
+              "gained": 0,
+              "lost": 1,
+              "net": -1
+            },
+            "Timmy": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Walnut",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Arren",
+              "passed": "Allan",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Mike",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Ben",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Ben",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 3,
+              "driver": "Allan",
+              "passed": "Arren",
+              "positionsGained": 1
+            },
+            {
+              "lap": 3,
+              "driver": "Timmy",
+              "passed": "Arren",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Walnut",
+              "passed": "Josie",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Allan",
+              "passed": "Josie",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 546835,
+              "bestLapMs": 106777,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 2,
+              "totalTimeMs": 617626,
+              "bestLapMs": 121376,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 3,
+              "totalTimeMs": 621717,
+              "bestLapMs": 121942,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 4,
+              "totalTimeMs": 624987,
+              "bestLapMs": 122399,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 5,
+              "totalTimeMs": 625186,
+              "bestLapMs": 107488,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Timmy",
+              "driverKey": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "position": 6,
+              "totalTimeMs": 641225,
+              "bestLapMs": 124777,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 7,
+              "totalTimeMs": 669430,
+              "bestLapMs": 122606,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 554784,
+              "bestLapMs": 124824,
+              "laps": 4,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 6
+            },
+            {
+              "driver": "Mike",
+              "driverKey": "Mike",
+              "guid": "76561197984244290",
+              "carId": 7,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 9,
+              "totalTimeMs": 569478,
+              "bestLapMs": 128190,
+              "laps": 3,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 7
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "James",
+              "driver2": "Josie",
+              "impactSpeed": 3.4,
+              "worldPosition": {
+                "x": -402.7,
+                "z": 98.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Timmy",
+              "driver2": "Ben",
+              "impactSpeed": 34.8,
+              "worldPosition": {
+                "x": 513.0,
+                "z": 268.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "James",
+              "driver2": "Josie",
+              "impactSpeed": 14.1,
+              "worldPosition": {
+                "x": -10.1,
+                "z": 778.5
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 107471,
+              "medianMs": 107281,
+              "bestMs": 106777,
+              "lapsUsed": 4
+            },
+            "Josie": {
+              "avgMs": 107656,
+              "medianMs": 107680,
+              "bestMs": 107488,
+              "lapsUsed": 3
+            },
+            "Walnut": {
+              "avgMs": 122195,
+              "medianMs": 122280,
+              "bestMs": 121376,
+              "lapsUsed": 4
+            },
+            "Lee": {
+              "avgMs": 123361,
+              "medianMs": 122246,
+              "bestMs": 121942,
+              "lapsUsed": 4
+            },
+            "Allan": {
+              "avgMs": 123544,
+              "medianMs": 123693,
+              "bestMs": 122399,
+              "lapsUsed": 4
+            },
+            "Arren": {
+              "avgMs": 134793,
+              "medianMs": 132394,
+              "bestMs": 122606,
+              "lapsUsed": 4
+            },
+            "Ben": {
+              "avgMs": 124858,
+              "medianMs": 124858,
+              "bestMs": 124824,
+              "lapsUsed": 2
+            },
+            "Mike": {
+              "avgMs": 128190,
+              "medianMs": 128190,
+              "bestMs": 128190,
+              "lapsUsed": 1
+            },
+            "Timmy": {
+              "avgMs": 125920,
+              "medianMs": 125010,
+              "bestMs": 124777,
+              "lapsUsed": 4
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Walnut": {
+              "qualPosition": 3,
+              "finishPosition": 2,
+              "delta": 1
+            },
+            "Lee": {
+              "qualPosition": 4,
+              "finishPosition": 3,
+              "delta": 1
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 4,
+              "delta": 1
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 5,
+              "delta": -3
+            },
+            "Timmy": {
+              "qualPosition": 9,
+              "finishPosition": 6,
+              "delta": 3
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 7,
+              "delta": -1
+            },
+            "Ben": {
+              "qualPosition": 7,
+              "finishPosition": 8,
+              "delta": -1
+            },
+            "Mike": {
+              "qualPosition": 8,
+              "finishPosition": 9,
+              "delta": -1
+            }
+          }
+        },
+        "2": {
+          "grid": [
+            "Mike",
+            "Ben",
+            "Arren",
+            "Timmy",
+            "Josie",
+            "Allan",
+            "Lee",
+            "Walnut",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.056,
+          "drivers": {
+            "Mike": {
+              "driver": "Mike",
+              "guid": "76561197984244290",
+              "carId": 7,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "04_camo",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "Mike": [
+              157117,
+              126681,
+              143027,
+              126713
+            ],
+            "Ben": [
+              131717,
+              127127,
+              128513,
+              136974
+            ],
+            "Arren": [
+              133237,
+              146242,
+              123746,
+              122727,
+              123907
+            ],
+            "Timmy": [
+              132338,
+              157556,
+              127280,
+              124702,
+              125709
+            ],
+            "Josie": [
+              114325,
+              107600,
+              107305,
+              107862,
+              108053
+            ],
+            "Allan": [
+              134000,
+              146154,
+              123930,
+              122696,
+              125417
+            ],
+            "Lee": [
+              136747,
+              131378,
+              122105,
+              143692,
+              122973
+            ],
+            "Walnut": [
+              134363,
+              123311,
+              121223,
+              121291,
+              121343
+            ],
+            "James": [
+              115080,
+              117756,
+              113858,
+              106873,
+              107915
+            ]
+          },
+          "sectors": {
+            "Mike": [
+              [
+                54859,
+                73715,
+                28543
+              ],
+              [
+                47994,
+                50291,
+                28396
+              ],
+              [
+                48159,
+                57941,
+                36927
+              ],
+              [
+                49664,
+                48960,
+                28089
+              ]
+            ],
+            "Ben": [
+              [
+                54470,
+                49870,
+                27377
+              ],
+              [
+                49390,
+                49603,
+                28134
+              ],
+              [
+                47802,
+                48563,
+                32148
+              ],
+              [
+                48945,
+                48636,
+                39393
+              ]
+            ],
+            "Arren": [
+              [
+                56287,
+                49212,
+                27738
+              ],
+              [
+                67582,
+                49842,
+                28818
+              ],
+              [
+                47912,
+                48429,
+                27405
+              ],
+              [
+                47140,
+                48145,
+                27442
+              ],
+              [
+                48006,
+                48564,
+                27337
+              ]
+            ],
+            "Timmy": [
+              [
+                55852,
+                49172,
+                27314
+              ],
+              [
+                63304,
+                66190,
+                28062
+              ],
+              [
+                49237,
+                50332,
+                27711
+              ],
+              [
+                47676,
+                49423,
+                27603
+              ],
+              [
+                47917,
+                49694,
+                28098
+              ]
+            ],
+            "Josie": [
+              [
+                48553,
+                42435,
+                23337
+              ],
+              [
+                41702,
+                42638,
+                23260
+              ],
+              [
+                41565,
+                42362,
+                23378
+              ],
+              [
+                41855,
+                42651,
+                23356
+              ],
+              [
+                42088,
+                42601,
+                23364
+              ]
+            ],
+            "Allan": [
+              [
+                57906,
+                48919,
+                27175
+              ],
+              [
+                69689,
+                49087,
+                27378
+              ],
+              [
+                48204,
+                48532,
+                27194
+              ],
+              [
+                47457,
+                47974,
+                27265
+              ],
+              [
+                48562,
+                49514,
+                27341
+              ]
+            ],
+            "Lee": [
+              [
+                57866,
+                52030,
+                26851
+              ],
+              [
+                47076,
+                48100,
+                36202
+              ],
+              [
+                46956,
+                48041,
+                27108
+              ],
+              [
+                46694,
+                48259,
+                48739
+              ],
+              [
+                47157,
+                47992,
+                27824
+              ]
+            ],
+            "Walnut": [
+              [
+                57801,
+                49486,
+                27076
+              ],
+              [
+                48629,
+                47930,
+                26752
+              ],
+              [
+                46640,
+                47682,
+                26901
+              ],
+              [
+                46613,
+                47642,
+                27036
+              ],
+              [
+                46662,
+                47916,
+                26765
+              ]
+            ],
+            "James": [
+              [
+                49658,
+                41986,
+                23436
+              ],
+              [
+                41278,
+                52915,
+                23563
+              ],
+              [
+                41872,
+                48758,
+                23228
+              ],
+              [
+                41492,
+                42157,
+                23224
+              ],
+              [
+                41995,
+                42575,
+                23345
+              ]
+            ]
+          },
+          "cuts": {
+            "Mike": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Timmy": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Mike": [
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Timmy": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ]
+          },
+          "positions": {
+            "Mike": [
+              9,
+              8,
+              9,
+              9,
+              9
+            ],
+            "Ben": [
+              3,
+              4,
+              4,
+              4,
+              8
+            ],
+            "Arren": [
+              5,
+              6,
+              6,
+              5,
+              4
+            ],
+            "Timmy": [
+              4,
+              9,
+              8,
+              8,
+              7
+            ],
+            "Josie": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Allan": [
+              6,
+              7,
+              7,
+              6,
+              5
+            ],
+            "Lee": [
+              8,
+              5,
+              5,
+              7,
+              6
+            ],
+            "Walnut": [
+              7,
+              3,
+              3,
+              3,
+              3
+            ],
+            "James": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "positionDetails": {
+            "Mike": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Timmy": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Mike": {
+              "gained": 1,
+              "lost": 9,
+              "net": -8
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 6,
+              "net": -6
+            },
+            "Arren": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Timmy": {
+              "gained": 2,
+              "lost": 5,
+              "net": -3
+            },
+            "Josie": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            },
+            "Allan": {
+              "gained": 2,
+              "lost": 1,
+              "net": 1
+            },
+            "Lee": {
+              "gained": 4,
+              "lost": 3,
+              "net": 1
+            },
+            "Walnut": {
+              "gained": 5,
+              "lost": 0,
+              "net": 5
+            },
+            "James": {
+              "gained": 7,
+              "lost": 0,
+              "net": 7
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Timmy",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Arren",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Mike",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Timmy",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Arren",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Lee",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Mike",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Ben",
+              "positionsGained": 4
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Arren",
+              "positionsGained": 4
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 4
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Timmy",
+              "positionsGained": 4
+            },
+            {
+              "lap": 2,
+              "driver": "Lee",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Lee",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Lee",
+              "passed": "Timmy",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Mike",
+              "passed": "Timmy",
+              "positionsGained": 1
+            },
+            {
+              "lap": 3,
+              "driver": "Timmy",
+              "passed": "Mike",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Arren",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Allan",
+              "passed": "Lee",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 545142,
+              "bestLapMs": 107305,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 561479,
+              "bestLapMs": 106873,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 3,
+              "totalTimeMs": 621567,
+              "bestLapMs": 121223,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 4,
+              "totalTimeMs": 649938,
+              "bestLapMs": 122727,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 5,
+              "totalTimeMs": 652195,
+              "bestLapMs": 122696,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 6,
+              "totalTimeMs": 656883,
+              "bestLapMs": 122105,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Timmy",
+              "driverKey": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "position": 7,
+              "totalTimeMs": 667588,
+              "bestLapMs": 124702,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 524341,
+              "bestLapMs": 127127,
+              "laps": 4,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 6
+            },
+            {
+              "driver": "Mike",
+              "driverKey": "Mike",
+              "guid": "76561197984244290",
+              "carId": 7,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 9,
+              "totalTimeMs": 553535,
+              "bestLapMs": 126681,
+              "laps": 4,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 7
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Walnut",
+              "driver2": "Lee",
+              "impactSpeed": 9.7,
+              "worldPosition": {
+                "x": 530.5,
+                "z": 354.7
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Arren",
+              "impactSpeed": 32.0,
+              "worldPosition": {
+                "x": 539.9,
+                "z": 276.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Arren",
+              "impactSpeed": 7.7,
+              "worldPosition": {
+                "x": 550.7,
+                "z": 322.2
+              }
+            }
+          ],
+          "pace": {
+            "Mike": {
+              "avgMs": 132140,
+              "medianMs": 126713,
+              "bestMs": 126681,
+              "lapsUsed": 3
+            },
+            "Ben": {
+              "avgMs": 130871,
+              "medianMs": 128513,
+              "bestMs": 127127,
+              "lapsUsed": 3
+            },
+            "Arren": {
+              "avgMs": 129156,
+              "medianMs": 123826,
+              "bestMs": 122727,
+              "lapsUsed": 4
+            },
+            "Timmy": {
+              "avgMs": 125897,
+              "medianMs": 125709,
+              "bestMs": 124702,
+              "lapsUsed": 3
+            },
+            "Josie": {
+              "avgMs": 107705,
+              "medianMs": 107731,
+              "bestMs": 107305,
+              "lapsUsed": 4
+            },
+            "Allan": {
+              "avgMs": 129549,
+              "medianMs": 124674,
+              "bestMs": 122696,
+              "lapsUsed": 4
+            },
+            "Lee": {
+              "avgMs": 130037,
+              "medianMs": 127176,
+              "bestMs": 122105,
+              "lapsUsed": 4
+            },
+            "Walnut": {
+              "avgMs": 121792,
+              "medianMs": 121317,
+              "bestMs": 121223,
+              "lapsUsed": 4
+            },
+            "James": {
+              "avgMs": 111600,
+              "medianMs": 110886,
+              "bestMs": 106873,
+              "lapsUsed": 4
+            }
+          },
+          "qualVsRace": {
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 1,
+              "delta": 1
+            },
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 2,
+              "delta": -1
+            },
+            "Walnut": {
+              "qualPosition": 3,
+              "finishPosition": 3,
+              "delta": 0
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 4,
+              "delta": 2
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 5,
+              "delta": 0
+            },
+            "Lee": {
+              "qualPosition": 4,
+              "finishPosition": 6,
+              "delta": -2
+            },
+            "Timmy": {
+              "qualPosition": 9,
+              "finishPosition": 7,
+              "delta": 2
+            },
+            "Ben": {
+              "qualPosition": 7,
+              "finishPosition": 8,
+              "delta": -1
+            },
+            "Mike": {
+              "qualPosition": 8,
+              "finishPosition": 9,
+              "delta": -1
+            }
+          }
+        },
+        "3": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Walnut",
+            "Allan",
+            "Arren",
+            "Timmy",
+            "Ben"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.929,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            }
+          },
+          "laps": {
+            "James": [
+              112725,
+              107509,
+              107610,
+              106699,
+              106916
+            ],
+            "Josie": [
+              123175,
+              108464,
+              108461,
+              113389,
+              108087
+            ],
+            "Lee": [
+              129020,
+              121174,
+              123530,
+              121520,
+              135732
+            ],
+            "Walnut": [
+              129614,
+              120805,
+              130834,
+              121573,
+              122738
+            ],
+            "Allan": [
+              131358,
+              122571,
+              123542,
+              123194,
+              126021
+            ],
+            "Arren": [
+              134619,
+              124627,
+              123845,
+              123797,
+              123082
+            ],
+            "Timmy": [
+              133436,
+              126840,
+              124285,
+              126519,
+              126733
+            ],
+            "Ben": [
+              137494,
+              126325,
+              124183,
+              125281,
+              128031
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                47321,
+                42192,
+                23212
+              ],
+              [
+                41624,
+                42633,
+                23252
+              ],
+              [
+                41617,
+                42664,
+                23329
+              ],
+              [
+                41364,
+                42250,
+                23085
+              ],
+              [
+                41306,
+                42130,
+                23480
+              ]
+            ],
+            "Josie": [
+              [
+                55572,
+                44410,
+                23193
+              ],
+              [
+                41950,
+                42826,
+                23688
+              ],
+              [
+                42743,
+                42359,
+                23359
+              ],
+              [
+                47819,
+                42336,
+                23234
+              ],
+              [
+                41428,
+                42822,
+                23837
+              ]
+            ],
+            "Lee": [
+              [
+                53573,
+                48443,
+                27004
+              ],
+              [
+                46406,
+                47737,
+                27031
+              ],
+              [
+                47526,
+                48464,
+                27540
+              ],
+              [
+                46582,
+                47560,
+                27378
+              ],
+              [
+                46541,
+                57312,
+                31879
+              ]
+            ],
+            "Walnut": [
+              [
+                54320,
+                48335,
+                26959
+              ],
+              [
+                46420,
+                47596,
+                26789
+              ],
+              [
+                47607,
+                56493,
+                26734
+              ],
+              [
+                46761,
+                47889,
+                26923
+              ],
+              [
+                46540,
+                49401,
+                26797
+              ]
+            ],
+            "Allan": [
+              [
+                55641,
+                48739,
+                26978
+              ],
+              [
+                47321,
+                48223,
+                27027
+              ],
+              [
+                47290,
+                49325,
+                26927
+              ],
+              [
+                47495,
+                48528,
+                27171
+              ],
+              [
+                47905,
+                50036,
+                28080
+              ]
+            ],
+            "Arren": [
+              [
+                59046,
+                48230,
+                27343
+              ],
+              [
+                47699,
+                49797,
+                27131
+              ],
+              [
+                47714,
+                48816,
+                27315
+              ],
+              [
+                47351,
+                48808,
+                27638
+              ],
+              [
+                47424,
+                48303,
+                27355
+              ]
+            ],
+            "Timmy": [
+              [
+                56932,
+                48937,
+                27567
+              ],
+              [
+                48414,
+                51012,
+                27414
+              ],
+              [
+                47834,
+                48708,
+                27743
+              ],
+              [
+                48714,
+                49490,
+                28315
+              ],
+              [
+                49031,
+                49464,
+                28238
+              ]
+            ],
+            "Ben": [
+              [
+                60971,
+                48942,
+                27581
+              ],
+              [
+                49370,
+                48997,
+                27958
+              ],
+              [
+                47994,
+                48883,
+                27306
+              ],
+              [
+                48687,
+                48689,
+                27905
+              ],
+              [
+                47903,
+                48816,
+                31312
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Timmy": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Timmy": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Lee": [
+              3,
+              3,
+              3,
+              3,
+              6
+            ],
+            "Walnut": [
+              4,
+              4,
+              5,
+              5,
+              3
+            ],
+            "Allan": [
+              5,
+              5,
+              4,
+              4,
+              4
+            ],
+            "Arren": [
+              7,
+              6,
+              6,
+              6,
+              5
+            ],
+            "Timmy": [
+              6,
+              7,
+              7,
+              7,
+              7
+            ],
+            "Ben": [
+              8,
+              8,
+              8,
+              8,
+              8
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Timmy": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Lee": {
+              "gained": 0,
+              "lost": 3,
+              "net": -3
+            },
+            "Walnut": {
+              "gained": 2,
+              "lost": 1,
+              "net": 1
+            },
+            "Allan": {
+              "gained": 1,
+              "lost": 0,
+              "net": 1
+            },
+            "Arren": {
+              "gained": 2,
+              "lost": 1,
+              "net": 1
+            },
+            "Timmy": {
+              "gained": 1,
+              "lost": 1,
+              "net": 0
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Timmy",
+              "passed": "Arren",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Arren",
+              "passed": "Timmy",
+              "positionsGained": 1
+            },
+            {
+              "lap": 3,
+              "driver": "Allan",
+              "passed": "Walnut",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Arren",
+              "passed": "Lee",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 541449,
+              "bestLapMs": 106699,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 561565,
+              "bestLapMs": 108087,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 3,
+              "totalTimeMs": 625568,
+              "bestLapMs": 120805,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 4,
+              "totalTimeMs": 626693,
+              "bestLapMs": 122571,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 5,
+              "totalTimeMs": 629986,
+              "bestLapMs": 123082,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 6,
+              "totalTimeMs": 630966,
+              "bestLapMs": 121174,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Timmy",
+              "driverKey": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "position": 7,
+              "totalTimeMs": 637815,
+              "bestLapMs": 124285,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 641330,
+              "bestLapMs": 124183,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 6
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Allan",
+              "driver2": "Walnut",
+              "impactSpeed": 3.4,
+              "worldPosition": {
+                "x": -211.4,
+                "z": 6.5
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 107184,
+              "medianMs": 107212,
+              "bestMs": 106699,
+              "lapsUsed": 4
+            },
+            "Josie": {
+              "avgMs": 109600,
+              "medianMs": 108462,
+              "bestMs": 108087,
+              "lapsUsed": 4
+            },
+            "Lee": {
+              "avgMs": 125489,
+              "medianMs": 122525,
+              "bestMs": 121174,
+              "lapsUsed": 4
+            },
+            "Walnut": {
+              "avgMs": 123988,
+              "medianMs": 122156,
+              "bestMs": 120805,
+              "lapsUsed": 4
+            },
+            "Allan": {
+              "avgMs": 123832,
+              "medianMs": 123368,
+              "bestMs": 122571,
+              "lapsUsed": 4
+            },
+            "Arren": {
+              "avgMs": 123838,
+              "medianMs": 123821,
+              "bestMs": 123082,
+              "lapsUsed": 4
+            },
+            "Timmy": {
+              "avgMs": 126094,
+              "medianMs": 126626,
+              "bestMs": 124285,
+              "lapsUsed": 4
+            },
+            "Ben": {
+              "avgMs": 125955,
+              "medianMs": 125803,
+              "bestMs": 124183,
+              "lapsUsed": 4
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 3,
+              "delta": 1
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 4,
+              "delta": 1
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 5,
+              "delta": 1
+            },
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 6,
+              "delta": -3
+            },
+            "Timmy": {
+              "qualPosition": 7,
+              "finishPosition": 7,
+              "delta": 0
+            },
+            "Ben": {
+              "qualPosition": 8,
+              "finishPosition": 8,
+              "delta": 0
+            }
+          }
+        },
+        "4": {
+          "grid": [
+            "Ben",
+            "Timmy",
+            "Lee",
+            "Arren",
+            "Allan",
+            "Walnut",
+            "Josie",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.571,
+          "drivers": {
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "skin": "01_white_red_72",
+              "class": "GT3"
+            },
+            "Timmy": {
+              "driver": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "skin": "05_factory",
+              "class": "GT3"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "skin": "07_wec25_54",
+              "class": "GT3"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "02_white_7",
+              "class": "GT3"
+            },
+            "Allan": {
+              "driver": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "skin": "01_penguin_racing_23",
+              "class": "GT3"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "skin": "03_grey_81",
+              "class": "GT3"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "06_protech_carbon_77",
+              "class": "Hypercar"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "skin": "02_protech_white_34",
+              "class": "Hypercar"
+            }
+          },
+          "laps": {
+            "Ben": [
+              152849,
+              138584,
+              124810,
+              128597,
+              125287
+            ],
+            "Timmy": [
+              135922,
+              137921,
+              126637,
+              125052,
+              128146
+            ],
+            "Lee": [
+              133109,
+              122263,
+              121168,
+              128404,
+              122910
+            ],
+            "Arren": [
+              136669,
+              128498,
+              122078,
+              122978,
+              123158
+            ],
+            "Allan": [
+              135254,
+              130349,
+              123730,
+              123180,
+              123052
+            ],
+            "Walnut": [
+              133704,
+              122310,
+              121072,
+              122820,
+              121391
+            ],
+            "Josie": [
+              134692,
+              111214,
+              108267,
+              107855,
+              108880
+            ],
+            "James": [
+              113913,
+              107036,
+              106265,
+              135925,
+              107646
+            ]
+          },
+          "sectors": {
+            "Ben": [
+              [
+                70743,
+                48563,
+                33543
+              ],
+              [
+                59978,
+                50697,
+                27909
+              ],
+              [
+                48827,
+                48695,
+                27288
+              ],
+              [
+                49640,
+                50828,
+                28129
+              ],
+              [
+                48512,
+                48911,
+                27864
+              ]
+            ],
+            "Timmy": [
+              [
+                56479,
+                50773,
+                28670
+              ],
+              [
+                49208,
+                58843,
+                29870
+              ],
+              [
+                48269,
+                49905,
+                28463
+              ],
+              [
+                47845,
+                49401,
+                27806
+              ],
+              [
+                48924,
+                49589,
+                29633
+              ]
+            ],
+            "Lee": [
+              [
+                56632,
+                49136,
+                27341
+              ],
+              [
+                46650,
+                48388,
+                27225
+              ],
+              [
+                46185,
+                47960,
+                27023
+              ],
+              [
+                46756,
+                48119,
+                33529
+              ],
+              [
+                47170,
+                48245,
+                27495
+              ]
+            ],
+            "Arren": [
+              [
+                58040,
+                50311,
+                28318
+              ],
+              [
+                48488,
+                52723,
+                27287
+              ],
+              [
+                47208,
+                47830,
+                27040
+              ],
+              [
+                47563,
+                47952,
+                27463
+              ],
+              [
+                47396,
+                48380,
+                27382
+              ]
+            ],
+            "Allan": [
+              [
+                57585,
+                50012,
+                27657
+              ],
+              [
+                53143,
+                50135,
+                27071
+              ],
+              [
+                48180,
+                48131,
+                27419
+              ],
+              [
+                47719,
+                48213,
+                27248
+              ],
+              [
+                47564,
+                48420,
+                27068
+              ]
+            ],
+            "Walnut": [
+              [
+                57307,
+                49068,
+                27329
+              ],
+              [
+                47533,
+                48046,
+                26731
+              ],
+              [
+                46683,
+                47538,
+                26851
+              ],
+              [
+                46918,
+                47920,
+                27982
+              ],
+              [
+                46862,
+                47728,
+                26801
+              ]
+            ],
+            "Josie": [
+              [
+                66764,
+                43084,
+                24844
+              ],
+              [
+                45140,
+                42679,
+                23395
+              ],
+              [
+                42350,
+                42314,
+                23603
+              ],
+              [
+                42443,
+                42170,
+                23242
+              ],
+              [
+                42122,
+                42480,
+                24278
+              ]
+            ],
+            "James": [
+              [
+                48123,
+                42254,
+                23536
+              ],
+              [
+                41760,
+                41885,
+                23391
+              ],
+              [
+                41357,
+                41814,
+                23094
+              ],
+              [
+                70554,
+                42156,
+                23215
+              ],
+              [
+                41603,
+                42179,
+                23864
+              ]
+            ]
+          },
+          "cuts": {
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Timmy": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Allan": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Timmy": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Allan": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ],
+            "James": [
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT",
+              "SHT"
+            ]
+          },
+          "positions": {
+            "Ben": [
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "Timmy": [
+              6,
+              7,
+              7,
+              7,
+              7
+            ],
+            "Lee": [
+              2,
+              3,
+              3,
+              4,
+              4
+            ],
+            "Arren": [
+              7,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Allan": [
+              5,
+              6,
+              6,
+              6,
+              6
+            ],
+            "Walnut": [
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "Josie": [
+              4,
+              2,
+              2,
+              1,
+              2
+            ],
+            "James": [
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          },
+          "positionDetails": {
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Timmy": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Allan": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Ben": {
+              "gained": 0,
+              "lost": 7,
+              "net": -7
+            },
+            "Timmy": {
+              "gained": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Lee": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Arren": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Allan": {
+              "gained": 0,
+              "lost": 1,
+              "net": -1
+            },
+            "Walnut": {
+              "gained": 4,
+              "lost": 1,
+              "net": 3
+            },
+            "Josie": {
+              "gained": 6,
+              "lost": 1,
+              "net": 5
+            },
+            "James": {
+              "gained": 8,
+              "lost": 1,
+              "net": 7
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Lee",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Allan",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Timmy",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Arren",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 7
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Timmy",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Timmy",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Allan",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Timmy",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Arren",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 2,
+              "driver": "Josie",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Arren",
+              "passed": "Allan",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Arren",
+              "passed": "Timmy",
+              "positionsGained": 2
+            },
+            {
+              "lap": 4,
+              "driver": "Josie",
+              "passed": "James",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 1,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 1,
+              "totalTimeMs": 570774,
+              "bestLapMs": 106265,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_mph_protech_p96_v8",
+              "position": 2,
+              "totalTimeMs": 570904,
+              "bestLapMs": 107855,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 13,
+              "car": "rss_gtm_lux_v8_evo",
+              "position": 3,
+              "totalTimeMs": 621320,
+              "bestLapMs": 121072,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 1
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 4,
+              "car": "rss_gtm_furiano_96_v6",
+              "position": 4,
+              "totalTimeMs": 627838,
+              "bestLapMs": 121168,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 2
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 16,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 5,
+              "totalTimeMs": 633416,
+              "bestLapMs": 122078,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 3
+            },
+            {
+              "driver": "Allan",
+              "driverKey": "Allan",
+              "guid": "76561198038077208",
+              "carId": 14,
+              "car": "rss_gtm_bayer_i6_evo",
+              "position": 6,
+              "totalTimeMs": 635566,
+              "bestLapMs": 123052,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 4
+            },
+            {
+              "driver": "Timmy",
+              "driverKey": "Timmy",
+              "guid": "76561198031826856",
+              "carId": 15,
+              "car": "rss_gtm_hyperion_v8",
+              "position": 7,
+              "totalTimeMs": 653684,
+              "bestLapMs": 125052,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 5
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 8,
+              "car": "rss_gtm_macca_72_evo_v8",
+              "position": 8,
+              "totalTimeMs": 670136,
+              "bestLapMs": 124810,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0,
+              "classPosition": 6
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Josie",
+              "impactSpeed": 18.7,
+              "worldPosition": {
+                "x": -418.4,
+                "z": 122.0
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Walnut",
+              "impactSpeed": 119.0,
+              "worldPosition": {
+                "x": -397.0,
+                "z": 190.1
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Timmy",
+              "impactSpeed": 22.9,
+              "worldPosition": {
+                "x": 64.3,
+                "z": 725.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Walnut",
+              "impactSpeed": 40.9,
+              "worldPosition": {
+                "x": 461.2,
+                "z": -30.5
+              }
+            }
+          ],
+          "pace": {
+            "Ben": {
+              "avgMs": 129320,
+              "medianMs": 126942,
+              "bestMs": 124810,
+              "lapsUsed": 4
+            },
+            "Timmy": {
+              "avgMs": 129439,
+              "medianMs": 127392,
+              "bestMs": 125052,
+              "lapsUsed": 4
+            },
+            "Lee": {
+              "avgMs": 123686,
+              "medianMs": 122586,
+              "bestMs": 121168,
+              "lapsUsed": 4
+            },
+            "Arren": {
+              "avgMs": 124178,
+              "medianMs": 123068,
+              "bestMs": 122078,
+              "lapsUsed": 4
+            },
+            "Allan": {
+              "avgMs": 125078,
+              "medianMs": 123455,
+              "bestMs": 123052,
+              "lapsUsed": 4
+            },
+            "Walnut": {
+              "avgMs": 121898,
+              "medianMs": 121850,
+              "bestMs": 121072,
+              "lapsUsed": 4
+            },
+            "Josie": {
+              "avgMs": 109054,
+              "medianMs": 108574,
+              "bestMs": 107855,
+              "lapsUsed": 4
+            },
+            "James": {
+              "avgMs": 106982,
+              "medianMs": 107036,
+              "bestMs": 106265,
+              "lapsUsed": 3
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 3,
+              "delta": 1
+            },
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 4,
+              "delta": -1
+            },
+            "Arren": {
+              "qualPosition": 6,
+              "finishPosition": 5,
+              "delta": 1
+            },
+            "Allan": {
+              "qualPosition": 5,
+              "finishPosition": 6,
+              "delta": -1
+            },
+            "Timmy": {
+              "qualPosition": 7,
+              "finishPosition": 7,
+              "delta": 0
+            },
+            "Ben": {
+              "qualPosition": 8,
+              "finishPosition": 8,
+              "delta": 0
+            }
+          }
+        }
+      },
+      "practice": [],
+      "provenance": {
+        "sourceFiles": [
+          {
+            "name": "2026_8_18_21_30_QUALIFY.json",
+            "sha256": "eaa7dbd2b1500705053fff1a4d3c2bf5855d8d32dda8976dc932fcf7c6d4bbfd",
+            "type": "QUALIFY",
+            "role": "qual1"
+          },
+          {
+            "name": "2026_8_18_22_14_QUALIFY.json",
+            "sha256": "4ba7fe5a93f5cbbbe3f354b4706b457f57e66738d1bd577cd04d1804f7a61f99",
+            "type": "QUALIFY",
+            "role": "qual2"
+          },
+          {
+            "name": "2026_8_18_21_45_RACE.json",
+            "sha256": "19fbd1de2f2a3ed912a2f2fa07a106b33ab48b490f595bb854ad285cb6f150f6",
+            "type": "RACE",
+            "role": "race1"
+          },
+          {
+            "name": "2026_8_18_21_58_RACE.json",
+            "sha256": "2a3be312b237a5f8870aac9c575e713350e3726230ab580da9a0565eaa197bf8",
+            "type": "RACE",
+            "role": "race2"
+          },
+          {
+            "name": "2026_8_18_22_29_RACE.json",
+            "sha256": "14fda1fffe6ddc210e2227d8bf9bb18fe3df6a7b9511ad351bfa597a1c24678c",
+            "type": "RACE",
+            "role": "race3"
+          },
+          {
+            "name": "2026_8_18_22_41_RACE.json",
+            "sha256": "2b4cde550dd5d08983fd4e00fcf40c759ffa441d06c529c7e9ab010cafa2ea04",
+            "type": "RACE",
+            "role": "race4"
+          }
+        ],
+        "droppedFiles": [],
+        "notes": []
+      },
+      "venueOrder": 3
     }
   ],
   "classes": {

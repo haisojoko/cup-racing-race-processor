@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-08-12T03:00:39.802625+00:00",
+  "lastUpdated": "2026-08-19T07:43:55.300585+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1059,6 +1059,17 @@
           "venueOrder": 2,
           "date": "2026-08-11",
           "track": "csp/2144/../ks_red_bull_ring",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
+        },
+        {
+          "eventId": "2026-08-18-rt-sebring",
+          "venue": "Rt Sebring",
+          "venueOrder": 3,
+          "date": "2026-08-18",
+          "track": "csp/2144/../rt_sebring",
           "races": 4,
           "qualifying": 2,
           "practice": 0,
