@@ -1,0 +1,1679 @@
+{
+	"TrackName": "csp/2144/../rt_sebring",
+	"TrackConfig": "raceday",
+	"Type": "RACE",
+	"DurationSecs": 0,
+	"RaceLaps": 0,
+	"Cars": [
+		{
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"Model": "rss_mph_protech_p96_v8",
+			"Skin": "06_protech_carbon_77",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 1,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "NER",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"Model": "rss_mph_protech_p96_v8",
+			"Skin": "02_protech_white_34",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 2,
+			"Driver": {
+				"Name": "Green The Gamer",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198117594890",
+				"GuidsList": [
+					"76561198117594890"
+				]
+			},
+			"Model": "rss_mph_protech_p96_v8",
+			"Skin": "04_protech_endurance_65",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 3,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198193231731",
+				"GuidsList": [
+					"76561198193231731"
+				]
+			},
+			"Model": "rss_mph_callahan_v8",
+			"Skin": "00_blue_28",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 4,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"Model": "rss_gtm_furiano_96_v6",
+			"Skin": "07_wec25_54",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 5,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198338286564",
+				"GuidsList": [
+					"76561198338286564"
+				]
+			},
+			"Model": "rss_gtm_protech_p92_f6",
+			"Skin": "04_powell_72",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 6,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198116185565",
+				"GuidsList": [
+					"76561198116185565"
+				]
+			},
+			"Model": "rss_gtm_protech_p92_f6",
+			"Skin": "01_rss_racing_18",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 7,
+			"Driver": {
+				"Name": "TILTY",
+				"Team": "",
+				"Nation": "IRL",
+				"Guid": "76561197984244290",
+				"GuidsList": [
+					"76561197984244290"
+				]
+			},
+			"Model": "rss_gtm_furiano_96_v6",
+			"Skin": "04_camo",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 8,
+			"Driver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"Model": "rss_gtm_macca_72_evo_v8",
+			"Skin": "01_white_red_72",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 9,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198806249253",
+				"GuidsList": [
+					"76561198806249253"
+				]
+			},
+			"Model": "rss_gtm_macca_72_evo_v8",
+			"Skin": "00_orange_78",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 10,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198081959601",
+				"GuidsList": [
+					"76561198081959601"
+				]
+			},
+			"Model": "rss_gtm_macca_72_evo_v8",
+			"Skin": "00_orange_78",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 11,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561199196882805",
+				"GuidsList": [
+					"76561199196882805"
+				]
+			},
+			"Model": "rss_gtm_macca_72_evo_v8",
+			"Skin": "02_red_70",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 12,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198123547304",
+				"GuidsList": [
+					"76561198123547304"
+				]
+			},
+			"Model": "rss_gtm_akuro_v6_evo2",
+			"Skin": "03_rockets_70",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 13,
+			"Driver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"Model": "rss_gtm_lux_v8_evo",
+			"Skin": "03_grey_81",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 14,
+			"Driver": {
+				"Name": "Sonny Boy",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198038077208",
+				"GuidsList": [
+					"76561198038077208"
+				]
+			},
+			"Model": "rss_gtm_bayer_i6_evo",
+			"Skin": "01_penguin_racing_23",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 15,
+			"Driver": {
+				"Name": "Prinnystar",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198031826856",
+				"GuidsList": [
+					"76561198031826856"
+				]
+			},
+			"Model": "rss_gtm_hyperion_v8",
+			"Skin": "05_factory",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 16,
+			"Driver": {
+				"Name": "Arren",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561197996231719",
+				"GuidsList": [
+					"76561197996231719"
+				]
+			},
+			"Model": "rss_gtm_bayer_i6_evo",
+			"Skin": "02_white_7",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 17,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": [
+					""
+				]
+			},
+			"Model": "rss_gtm_bayer_i6_evo",
+			"Skin": "00_rss_power_1",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 18,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": [
+					""
+				]
+			},
+			"Model": "rss_gtm_adonis_v8_evo",
+			"Skin": "02_factory_007",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 19,
+			"Driver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198430304383",
+				"GuidsList": [
+					"76561198430304383"
+				]
+			},
+			"Model": "rss_gtm_lux_v8_evo",
+			"Skin": "00_blue_72",
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Result": [
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"BestLap": 106265,
+			"TotalTime": 570774,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"BestLap": 107855,
+			"TotalTime": 570904,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"BestLap": 121072,
+			"TotalTime": 621320,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"BestLap": 121168,
+			"TotalTime": 627838,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"BestLap": 122078,
+			"TotalTime": 633416,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"BestLap": 123052,
+			"TotalTime": 635566,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"BestLap": 125052,
+			"TotalTime": 653684,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"BestLap": 124810,
+			"TotalTime": 670136,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198081959601",
+			"CarId": 10,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198806249253",
+			"CarId": 9,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Green The Gamer",
+			"DriverGuid": "76561198117594890",
+			"CarId": 2,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561199196882805",
+			"CarId": 11,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198123547304",
+			"CarId": 12,
+			"CarModel": "rss_gtm_akuro_v6_evo2",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "TILTY",
+			"DriverGuid": "76561197984244290",
+			"CarId": 7,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198116185565",
+			"CarId": 6,
+			"CarModel": "rss_gtm_protech_p92_f6",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198338286564",
+			"CarId": 5,
+			"CarModel": "rss_gtm_protech_p92_f6",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198193231731",
+			"CarId": 3,
+			"CarModel": "rss_mph_callahan_v8",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "",
+			"CarId": 17,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "",
+			"CarId": 18,
+			"CarModel": "rss_gtm_adonis_v8_evo",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "",
+			"DriverGuid": "76561198430304383",
+			"CarId": 19,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Laps": [
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9318340,
+			"LapTime": 113913,
+			"Sectors": [
+				48123,
+				42254,
+				23536
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"Timestamp": 9337575,
+			"LapTime": 133109,
+			"Sectors": [
+				56632,
+				49136,
+				27341
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"Timestamp": 9338155,
+			"LapTime": 133704,
+			"Sectors": [
+				57307,
+				49068,
+				27329
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9339122,
+			"LapTime": 134692,
+			"Sectors": [
+				66764,
+				43084,
+				24844
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9339686,
+			"LapTime": 135254,
+			"Sectors": [
+				57585,
+				50012,
+				27657
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"Timestamp": 9340357,
+			"LapTime": 135922,
+			"Sectors": [
+				56479,
+				50773,
+				28670
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9341134,
+			"LapTime": 136669,
+			"Sectors": [
+				58040,
+				50311,
+				28318
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"Timestamp": 9357300,
+			"LapTime": 152849,
+			"Sectors": [
+				70743,
+				48563,
+				33543
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9425372,
+			"LapTime": 107036,
+			"Sectors": [
+				41760,
+				41885,
+				23391
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9450334,
+			"LapTime": 111214,
+			"Sectors": [
+				45140,
+				42679,
+				23395
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"Timestamp": 9459836,
+			"LapTime": 122263,
+			"Sectors": [
+				46650,
+				48388,
+				27225
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"Timestamp": 9460462,
+			"LapTime": 122310,
+			"Sectors": [
+				47533,
+				48046,
+				26731
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9469623,
+			"LapTime": 128498,
+			"Sectors": [
+				48488,
+				52723,
+				27287
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9470035,
+			"LapTime": 130349,
+			"Sectors": [
+				53143,
+				50135,
+				27071
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"Timestamp": 9478291,
+			"LapTime": 137921,
+			"Sectors": [
+				49208,
+				58843,
+				29870
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"Timestamp": 9495866,
+			"LapTime": 138584,
+			"Sectors": [
+				59978,
+				50697,
+				27909
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9531634,
+			"LapTime": 106265,
+			"Sectors": [
+				41357,
+				41814,
+				23094
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9558603,
+			"LapTime": 108267,
+			"Sectors": [
+				42350,
+				42314,
+				23603
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"Timestamp": 9580990,
+			"LapTime": 121168,
+			"Sectors": [
+				46185,
+				47960,
+				27023
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"Timestamp": 9581545,
+			"LapTime": 121072,
+			"Sectors": [
+				46683,
+				47538,
+				26851
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9591709,
+			"LapTime": 122078,
+			"Sectors": [
+				47208,
+				47830,
+				27040
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9593768,
+			"LapTime": 123730,
+			"Sectors": [
+				48180,
+				48131,
+				27419
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"Timestamp": 9604919,
+			"LapTime": 126637,
+			"Sectors": [
+				48269,
+				49905,
+				28463
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"Timestamp": 9620682,
+			"LapTime": 124810,
+			"Sectors": [
+				48827,
+				48695,
+				27288
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9666455,
+			"LapTime": 107855,
+			"Sectors": [
+				42443,
+				42170,
+				23242
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9667556,
+			"LapTime": 135925,
+			"Sectors": [
+				70554,
+				42156,
+				23215
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"Timestamp": 9704360,
+			"LapTime": 122820,
+			"Sectors": [
+				46918,
+				47920,
+				27982
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"Timestamp": 9709390,
+			"LapTime": 128404,
+			"Sectors": [
+				46756,
+				48119,
+				33529
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9714687,
+			"LapTime": 122978,
+			"Sectors": [
+				47563,
+				47952,
+				27463
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9716951,
+			"LapTime": 123180,
+			"Sectors": [
+				47719,
+				48213,
+				27248
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"Timestamp": 9729969,
+			"LapTime": 125052,
+			"Sectors": [
+				47845,
+				49401,
+				27806
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"Timestamp": 9749279,
+			"LapTime": 128597,
+			"Sectors": [
+				49640,
+				50828,
+				28129
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Jammy",
+			"DriverGuid": "76561198354688139",
+			"CarId": 1,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9775204,
+			"LapTime": 107646,
+			"Sectors": [
+				41603,
+				42179,
+				23864
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "haisojoko",
+			"DriverGuid": "76561198056789142",
+			"CarId": 0,
+			"CarModel": "rss_mph_protech_p96_v8",
+			"Timestamp": 9775333,
+			"LapTime": 108880,
+			"Sectors": [
+				42122,
+				42480,
+				24278
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "SHT",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "thriftywalnut",
+			"DriverGuid": "76561198141802891",
+			"CarId": 13,
+			"CarModel": "rss_gtm_lux_v8_evo",
+			"Timestamp": 9825757,
+			"LapTime": 121391,
+			"Sectors": [
+				46862,
+				47728,
+				26801
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "NamSayin",
+			"DriverGuid": "76561198968530276",
+			"CarId": 4,
+			"CarModel": "rss_gtm_furiano_96_v6",
+			"Timestamp": 9832304,
+			"LapTime": 122910,
+			"Sectors": [
+				47170,
+				48245,
+				27495
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Arren",
+			"DriverGuid": "76561197996231719",
+			"CarId": 16,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9837854,
+			"LapTime": 123158,
+			"Sectors": [
+				47396,
+				48380,
+				27382
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sonny Boy",
+			"DriverGuid": "76561198038077208",
+			"CarId": 14,
+			"CarModel": "rss_gtm_bayer_i6_evo",
+			"Timestamp": 9840003,
+			"LapTime": 123052,
+			"Sectors": [
+				47564,
+				48420,
+				27068
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Prinnystar",
+			"DriverGuid": "76561198031826856",
+			"CarId": 15,
+			"CarModel": "rss_gtm_hyperion_v8",
+			"Timestamp": 9858119,
+			"LapTime": 128146,
+			"Sectors": [
+				48924,
+				49589,
+				29633
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Sol",
+			"DriverGuid": "76561198011029696",
+			"CarId": 8,
+			"CarModel": "rss_gtm_macca_72_evo_v8",
+			"Timestamp": 9874567,
+			"LapTime": 125287,
+			"Sectors": [
+				48512,
+				48911,
+				27864
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "D",
+			"Restrictor": 0
+		}
+	],
+	"Events": [
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 8,
+			"Driver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"OtherCarId": 0,
+			"OtherDriver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"ImpactSpeed": 15.961642,
+			"WorldPosition": {
+				"X": -418.38846,
+				"Y": -1.0044799,
+				"Z": 122.01717
+			},
+			"RelPosition": {
+				"X": -1.0199492,
+				"Y": -0.31686968,
+				"Z": 2.0417705
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"OtherCarId": 8,
+			"OtherDriver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"ImpactSpeed": 18.678461,
+			"WorldPosition": {
+				"X": -418.43198,
+				"Y": -0.57429385,
+				"Z": 121.51007
+			},
+			"RelPosition": {
+				"X": 0.9958628,
+				"Y": 0.14817736,
+				"Z": -1.7399107
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 8,
+			"Driver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"OtherCarId": 13,
+			"OtherDriver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"ImpactSpeed": 118.952446,
+			"WorldPosition": {
+				"X": -396.96695,
+				"Y": -0.5044842,
+				"Z": 190.07816
+			},
+			"RelPosition": {
+				"X": -1.006433,
+				"Y": 0.23896773,
+				"Z": -1.7361132
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 13,
+			"Driver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"OtherCarId": 8,
+			"OtherDriver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"ImpactSpeed": 110.31613,
+			"WorldPosition": {
+				"X": -396.86862,
+				"Y": -0.823815,
+				"Z": 190.23637
+			},
+			"RelPosition": {
+				"X": -0.88416004,
+				"Y": -0.04325006,
+				"Z": 1.9867575
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 8,
+			"Driver": {
+				"Name": "Sol",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198011029696",
+				"GuidsList": [
+					"76561198011029696"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 36.919094,
+			"WorldPosition": {
+				"X": 336.1693,
+				"Y": -1.6642101,
+				"Z": 15.161293
+			},
+			"RelPosition": {
+				"X": 0.9648646,
+				"Y": -0.3117393,
+				"Z": 2.2114844
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 16,
+			"Driver": {
+				"Name": "Arren",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561197996231719",
+				"GuidsList": [
+					"76561197996231719"
+				]
+			},
+			"OtherCarId": 15,
+			"OtherDriver": {
+				"Name": "Prinnystar",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198031826856",
+				"GuidsList": [
+					"76561198031826856"
+				]
+			},
+			"ImpactSpeed": 22.945295,
+			"WorldPosition": {
+				"X": 64.27936,
+				"Y": -0.03823827,
+				"Z": 725.4672
+			},
+			"RelPosition": {
+				"X": -0.8296555,
+				"Y": -0.2819713,
+				"Z": -2.22277
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 15,
+			"Driver": {
+				"Name": "Prinnystar",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198031826856",
+				"GuidsList": [
+					"76561198031826856"
+				]
+			},
+			"OtherCarId": 16,
+			"OtherDriver": {
+				"Name": "Arren",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561197996231719",
+				"GuidsList": [
+					"76561197996231719"
+				]
+			},
+			"ImpactSpeed": 16.446194,
+			"WorldPosition": {
+				"X": 63.2419,
+				"Y": 0.4091971,
+				"Z": 726.37134
+			},
+			"RelPosition": {
+				"X": 0.90237504,
+				"Y": 0.1940897,
+				"Z": 2.095776
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 1,
+			"Driver": {
+				"Name": "Jammy",
+				"Team": "",
+				"Nation": "NER",
+				"Guid": "76561198354688139",
+				"GuidsList": [
+					"76561198354688139"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 44.733116,
+			"WorldPosition": {
+				"X": -340.35034,
+				"Y": -0.2692574,
+				"Z": 505.7083
+			},
+			"RelPosition": {
+				"X": -1.0051134,
+				"Y": -0.0076758265,
+				"Z": 2.444655
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 4,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"OtherCarId": 13,
+			"OtherDriver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"ImpactSpeed": 32.71456,
+			"WorldPosition": {
+				"X": 461.22714,
+				"Y": -1.6964903,
+				"Z": -30.526667
+			},
+			"RelPosition": {
+				"X": -0.97509474,
+				"Y": -0.034909707,
+				"Z": -2.0446494
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 13,
+			"Driver": {
+				"Name": "thriftywalnut",
+				"Team": "",
+				"Nation": "PLA",
+				"Guid": "76561198141802891",
+				"GuidsList": [
+					"76561198141802891"
+				]
+			},
+			"OtherCarId": 4,
+			"OtherDriver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"ImpactSpeed": 40.939564,
+			"WorldPosition": {
+				"X": 461.62158,
+				"Y": -1.7573339,
+				"Z": -31.293278
+			},
+			"RelPosition": {
+				"X": -0.88584524,
+				"Y": -0.09007673,
+				"Z": 1.9924192
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 0,
+			"Driver": {
+				"Name": "haisojoko",
+				"Team": "",
+				"Nation": "HKG",
+				"Guid": "76561198056789142",
+				"GuidsList": [
+					"76561198056789142"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 1.3213978,
+			"WorldPosition": {
+				"X": -364.92114,
+				"Y": -1.1595376,
+				"Z": 41.38954
+			},
+			"RelPosition": {
+				"X": 1.0051092,
+				"Y": -0.25201926,
+				"Z": 2.5382857
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 4,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 86.43184,
+			"WorldPosition": {
+				"X": 105.24469,
+				"Y": -1.4121639,
+				"Z": -3.0911996
+			},
+			"RelPosition": {
+				"X": -0.9252312,
+				"Y": -0.18689723,
+				"Z": 2.0262837
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 4,
+			"Driver": {
+				"Name": "NamSayin",
+				"Team": "",
+				"Nation": "ITA",
+				"Guid": "76561198968530276",
+				"GuidsList": [
+					"76561198968530276"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 159.55084,
+			"WorldPosition": {
+				"X": -389.51804,
+				"Y": -1.1096491,
+				"Z": -14.082185
+			},
+			"RelPosition": {
+				"X": -0.87967384,
+				"Y": -0.0952864,
+				"Z": 2.1107478
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 15,
+			"Driver": {
+				"Name": "Prinnystar",
+				"Team": "",
+				"Nation": "USA",
+				"Guid": "76561198031826856",
+				"GuidsList": [
+					"76561198031826856"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 84.69652,
+			"WorldPosition": {
+				"X": 511.02426,
+				"Y": -2.0638056,
+				"Z": -97.177864
+			},
+			"RelPosition": {
+				"X": 0.73705643,
+				"Y": -0.3164197,
+				"Z": 2.2811592
+			}
+		}
+	]
+}
