@@ -365,6 +365,19 @@ def process_qualifying(qual_data: dict) -> dict[str, Any]:
     registry = _build_driver_registry(results, laps, _as_list(qual_data.get("Cars")))
     grid = _build_qualifying_grid(results, registry)
 
+    # The server's per-driver BestLap already applies that session's track-limit
+    # ruling: a lap that exceeded limits (Cuts > 0) is excluded, and with limits
+    # off nothing is flagged so it is just the outright fastest. Anchor the
+    # qualifying best to it — the same source the grid uses — so pole order matches
+    # the grid and we never resurrect a cut lap the server threw out. Fall back to
+    # the fastest raw lap only when a driver has no server best (laps, no Result).
+    server_best: dict[str, int] = {}
+    for entry in results:
+        label = registry.existing_label_for_entry(entry)
+        best = entry.get("BestLap", 0)
+        if label and _valid_lap_time(best) and best < server_best.get(label, INVALID_LAP_TIME):
+            server_best[label] = best
+
     times_by_driver: dict[str, dict[str, Any]] = {}
     for lap in laps:
         name = registry.existing_label_for_entry(lap)
@@ -373,12 +386,15 @@ def process_qualifying(qual_data: dict) -> dict[str, Any]:
         lap_time = lap.get("LapTime", 0)
         if not _valid_lap_time(lap_time):
             continue
+        # The raw lap list stays intact for pace/spread display; only the ranked
+        # best lap is taken from the server's ruling below.
+        times_by_driver.setdefault(name, {"bestMs": None, "laps": []})["laps"].append(lap_time)
 
-        if name not in times_by_driver:
-            times_by_driver[name] = {"bestMs": lap_time, "laps": []}
-        times_by_driver[name]["laps"].append(lap_time)
-        if lap_time < times_by_driver[name]["bestMs"]:
-            times_by_driver[name]["bestMs"] = lap_time
+    for name, entry in times_by_driver.items():
+        best = server_best.get(name)
+        if not _valid_lap_time(best):
+            best = min(entry["laps"])  # no server best — this driver's fastest raw lap
+        entry["bestMs"] = best
 
     drivers = _collect_drivers(results, laps, grid, registry)
     return {
