@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-08-19T07:43:55.300585+00:00",
+  "lastUpdated": "2026-08-26T08:56:59.711372+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1074,6 +1074,17 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 9
+        },
+        {
+          "eventId": "2026-08-25-rt-fuji-speedway",
+          "venue": "Rt Fuji Speedway",
+          "venueOrder": 4,
+          "date": "2026-08-25",
+          "track": "csp/2144/../rt_fuji_speedway",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 14
         }
       ],
       "drivers": [
@@ -1088,6 +1099,7 @@
         "Donald",
         "Green Kyle",
         "James",
+        "James H",
         "Josie",
         "Lee",
         "Mike",
