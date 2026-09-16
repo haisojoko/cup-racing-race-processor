@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-08-26T08:56:59.711372+00:00",
+  "lastUpdated": "2026-09-16T05:18:53.330051+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1114,6 +1114,43 @@
           "GT3"
         ]
       }
+    },
+    "S24b": {
+      "file": "seasons/S24b.json",
+      "events": [
+        {
+          "eventId": "2026-09-15-rt-lime-rock-park",
+          "venue": "Rt Lime Rock Park",
+          "venueOrder": 1,
+          "date": "2026-09-15",
+          "track": "csp/2144/../rt_lime_rock_park",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 18
+        }
+      ],
+      "drivers": [
+        "Allan",
+        "Arren",
+        "Ben",
+        "Caleb",
+        "Chris",
+        "Colin",
+        "DK",
+        "Heyzeus",
+        "James",
+        "Josie",
+        "Kevin H",
+        "Lee",
+        "Mike",
+        "Techno",
+        "Tim Homon",
+        "Timmy",
+        "Vincent",
+        "Walnut"
+      ],
+      "dataQuality": []
     },
     "S4": {
       "file": "seasons/S4.json",
