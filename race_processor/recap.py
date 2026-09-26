@@ -15,8 +15,10 @@ Design rules (see the league's recap notes):
   midfield feels worse. Field-wide "crowns" are cohort-scoped (the pack, i.e.
   drivers who finished outside the overall podium) and so never land on the
   runaway leader.
-- **One headline + two supports.** Each card leads with the highest-impact fact,
-  then two facts from *different* categories. Everything else goes under "More".
+- **Ranked, flat bullets.** Facts are selected and ordered by impact — the
+  highest-impact fact first, then two facts from *different* categories, then
+  everything else — but rendered as one plain bullet list, with no headline
+  emphasis or "More" section.
 - **Honest.** Every line traces to a dataset field. Places-gained is skipped when
   the grid could not be trusted (`positionChanges is null`). Consistency is
   measured on sanitised laps. `contacts` counts collisions, not fault, so a high
@@ -635,11 +637,9 @@ def _rank(anecdotes: list[Anecdote]) -> tuple[Optional[Anecdote], list[Anecdote]
 
 def _render_card(driver: str, sid: str, venue: str, date: str,
                  headline: Anecdote, supports: list[Anecdote], more: list[Anecdote]) -> str:
-    lines = [f"# {driver} — {sid} · {venue} · {date}", "", f"**{headline.text}**", ""]
-    for s in supports:
-        lines.append(f"- {s.text}")
-    if more:
-        lines += ["", "**More**", *[f"- {m.text}" for m in more]]
+    lines = [f"# {driver} — {sid} · {venue} · {date}", ""]
+    for a in (headline, *supports, *more):
+        lines.append(f"- {a.text}")
     return "\n".join(lines) + "\n"
 
 
