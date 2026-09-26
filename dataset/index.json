@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-09-16T05:18:53.330051+00:00",
+  "lastUpdated": "2026-09-26T17:27:03.098650+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1128,6 +1128,17 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 18
+        },
+        {
+          "eventId": "2026-09-22-vir",
+          "venue": "Vir",
+          "venueOrder": 2,
+          "date": "2026-09-22",
+          "track": "csp/2144/../vir",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 15
         }
       ],
       "drivers": [
@@ -1138,6 +1149,8 @@
         "Chris",
         "Colin",
         "DK",
+        "Donald",
+        "Green Kyle",
         "Heyzeus",
         "James",
         "Josie",
