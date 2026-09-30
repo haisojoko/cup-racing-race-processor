@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S24a",
-  "lastUpdated": "2026-09-16T05:18:53.248246+00:00",
+  "lastUpdated": "2026-09-30T02:37:37.020169+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -15663,7 +15663,7 @@
     },
     {
       "eventId": "2026-08-18-rt-sebring",
-      "signature": "f8e2cd6a4ce8ab9a",
+      "signature": "8b1335f139a09748",
       "venue": "Rt Sebring",
       "date": "2026-08-18",
       "track": "csp/2144/../rt_sebring",
@@ -20896,37 +20896,37 @@
         "sourceFiles": [
           {
             "name": "2026_8_18_21_30_QUALIFY.json",
-            "sha256": "eaa7dbd2b1500705053fff1a4d3c2bf5855d8d32dda8976dc932fcf7c6d4bbfd",
+            "sha256": "835eba7158c3e293d9548ee7905231b90b01a0c64d90eb404f7d8213722df20a",
             "type": "QUALIFY",
             "role": "qual1"
           },
           {
             "name": "2026_8_18_22_14_QUALIFY.json",
-            "sha256": "4ba7fe5a93f5cbbbe3f354b4706b457f57e66738d1bd577cd04d1804f7a61f99",
+            "sha256": "f3934e1a451584970cccd8460470fc6cb10ed7531402f39786d60cc9356acb8a",
             "type": "QUALIFY",
             "role": "qual2"
           },
           {
             "name": "2026_8_18_21_45_RACE.json",
-            "sha256": "19fbd1de2f2a3ed912a2f2fa07a106b33ab48b490f595bb854ad285cb6f150f6",
+            "sha256": "af02c32642b0b29a73db7a60448f8a70d69e085df70d6f0e66ee9927a48e8edf",
             "type": "RACE",
             "role": "race1"
           },
           {
             "name": "2026_8_18_21_58_RACE.json",
-            "sha256": "2a3be312b237a5f8870aac9c575e713350e3726230ab580da9a0565eaa197bf8",
+            "sha256": "515332c615f0c2059336dacfa72839e73dc89ece46b6874165bdc51c101bfd36",
             "type": "RACE",
             "role": "race2"
           },
           {
             "name": "2026_8_18_22_29_RACE.json",
-            "sha256": "14fda1fffe6ddc210e2227d8bf9bb18fe3df6a7b9511ad351bfa597a1c24678c",
+            "sha256": "859b8c170a312b7a86bcdddb7f981cdb9284b3219edbf701b2bc16788e69ef94",
             "type": "RACE",
             "role": "race3"
           },
           {
             "name": "2026_8_18_22_41_RACE.json",
-            "sha256": "2b4cde550dd5d08983fd4e00fcf40c759ffa441d06c529c7e9ab010cafa2ea04",
+            "sha256": "303d71350fecc82bbec50fb2b1934989f2a05e422a3d13de4711a8684a811ea9",
             "type": "RACE",
             "role": "race4"
           }
@@ -20938,7 +20938,7 @@
     },
     {
       "eventId": "2026-08-25-rt-fuji-speedway",
-      "signature": "edf2b3f220d4e3f7",
+      "signature": "00ba619ddd22ea6b",
       "venue": "Rt Fuji Speedway",
       "date": "2026-08-25",
       "track": "csp/2144/../rt_fuji_speedway",
@@ -31413,37 +31413,37 @@
         "sourceFiles": [
           {
             "name": "2026_8_25_21_44_QUALIFY.json",
-            "sha256": "55a98dcbc68bf233fe5fa8e6de9c7d60a4268f3ad56881bfedf973b717f58fad",
+            "sha256": "597a29d83b37ddd7d8acd1df77318a3fb6da807fd20fef2aefca21422fedffd5",
             "type": "QUALIFY",
             "role": "qual1"
           },
           {
             "name": "2026_8_25_22_31_QUALIFY.json",
-            "sha256": "8c9a57e5da40f3255d3f7d3bec4f0903601083626ba2ec35bdd92c83eb96aa11",
+            "sha256": "8523d019066bde46bdd78a81e730a17840e5817724a8cf75c47d0bfdd4718104",
             "type": "QUALIFY",
             "role": "qual2"
           },
           {
             "name": "2026_8_25_21_59_RACE.json",
-            "sha256": "90ac3aba711d968318468ef1fce8a822fc75c417743634575bdb2e5c6eefc7a2",
+            "sha256": "51228f1d8cda3fe688c1fda6e49dd604ebe52b8cc28d5695bfd9d28f8d9cba7e",
             "type": "RACE",
             "role": "race1"
           },
           {
             "name": "2026_8_25_22_11_RACE.json",
-            "sha256": "213e466b4acaab32e667475b04d7c605ca2130dbb9dc9839bd837c5cb5912e7e",
+            "sha256": "4a840056c1f69ba1761f54fbb1f5d88d5a2d84d8df928efc24c74fc9bb97b1ad",
             "type": "RACE",
             "role": "race2"
           },
           {
             "name": "2026_8_25_22_45_RACE.json",
-            "sha256": "c340d562f705153415af0800dd373862a0faf763484285dcd78c892405f10826",
+            "sha256": "b69df0b496fd5b876808eee96486b48e81e957dce200d34050ea50e04c620934",
             "type": "RACE",
             "role": "race3"
           },
           {
             "name": "2026_8_25_22_58_RACE.json",
-            "sha256": "ebfeb8d2a89d8824eeecba507303a3da973bb2a5488784f0aab06318edba41dc",
+            "sha256": "fc234e075231454a6ab5c48c95c26f00b6e15dfa44cd7ce7420ff5d7076efdfe",
             "type": "RACE",
             "role": "race4"
           }

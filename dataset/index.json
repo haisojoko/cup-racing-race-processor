@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-09-26T17:27:03.098650+00:00",
+  "lastUpdated": "2026-09-30T02:37:37.272372+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1139,6 +1139,17 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 15
+        },
+        {
+          "eventId": "2026-09-29-00-tucuru",
+          "venue": "00 Tucuru",
+          "venueOrder": 3,
+          "date": "2026-09-29",
+          "track": "csp/2144/../00_tucuru",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 14
         }
       ],
       "drivers": [
