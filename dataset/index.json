@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-10-07T03:32:54.553470+00:00",
+  "lastUpdated": "2026-10-28T04:30:11.690155+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1183,6 +1183,33 @@
         "Tim Homon",
         "Timmy",
         "Vincent",
+        "Walnut"
+      ],
+      "dataQuality": []
+    },
+    "S25": {
+      "file": "seasons/S25.json",
+      "events": [
+        {
+          "eventId": "2026-10-27-chang",
+          "venue": "Chang",
+          "venueOrder": 1,
+          "date": "2026-10-27",
+          "track": "csp/2144/../chang",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 8
+        }
+      ],
+      "drivers": [
+        "Alfred",
+        "Arren",
+        "Ben",
+        "DK",
+        "James",
+        "Josie",
+        "Lee",
         "Walnut"
       ],
       "dataQuality": []
