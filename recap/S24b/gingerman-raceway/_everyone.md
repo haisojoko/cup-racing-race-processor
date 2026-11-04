@@ -4,22 +4,22 @@ _On-track results; official standings and penalties may differ._
 
 ## James
 **3 race wins at Gingerman Raceway.**
-- 11 on-track passes across the weekend.
+- 20 on-track passes across the weekend.
 - Closest scrap: 0.895s to Josie (race 2).
 
 ## Chris
 **Race win — P1 at Gingerman Raceway.**
 - Photo finish: 0.187s behind Donald at the line (race 4).
-- Late-race charge — gained 4 spots in the last 2 laps of race 1.
+- 20 on-track passes across the weekend.
 
 ## Josie
-**Passed Lee in race 4 and finished ahead.**
+**22 on-track passes across the weekend.**
 - Late-race charge — gained 2 spots in the last 2 laps of race 4.
 - Closest scrap: 0.895s to James (race 2).
 
 ## DK
 **Best result of S24b so far — P2.**
-- Passed Josie in race 2 and finished ahead.
+- 11 on-track passes across the weekend.
 - Closest scrap: 0.786s to Chris (race 3).
 
 ## Donald
@@ -29,17 +29,17 @@ _On-track results; official standings and penalties may differ._
 
 ## Walnut
 **Held off Lee by 0.203s at the line (race 4).**
-- Net +4 places across the weekend.
-- Passed Lee in race 1 and finished ahead.
+- 17 on-track passes across the weekend.
+- Fastest lap of anyone in the midfield (1:49.772).
 
 ## Kevin H
 **Held off Allan by 0.138s at the line (race 2).**
-- 12 on-track passes across the weekend.
-- Net +4 places across the weekend.
+- 15 on-track passes across the weekend.
+- Late-race charge — gained 3 spots in the last 2 laps of race 3.
 
 ## Lee
 **Photo finish: 0.203s behind Walnut at the line (race 4).**
-- Passed Allan in race 2 and finished ahead.
+- 15 on-track passes across the weekend.
 - Late-race charge — gained 3 spots in the last 2 laps of race 2.
 
 ## Allan
@@ -55,7 +55,7 @@ _On-track results; official standings and penalties may differ._
 ## Mike
 **Best result of S24b so far — P8.**
 - Passed Allan in race 1 and finished ahead.
-- Net +1 places across the weekend.
+- Late-race charge — gained 2 spots in the last 2 laps of race 1.
 
 ## Heyzeus
 **Passed Allan in race 2 and finished ahead.**
@@ -63,7 +63,7 @@ _On-track results; official standings and penalties may differ._
 - Closest scrap: 1.750s to Colin (race 4).
 
 ## Colin
-**Net +6 places across the weekend.**
-- 13 on-track passes across the weekend.
-- Biggest climber in the midfield (+6).
+**13 on-track passes across the weekend.**
+- Late-race charge — gained 2 spots in the last 2 laps of race 1.
+- Closest scrap: 1.633s to Allan (race 4).
 

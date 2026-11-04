@@ -7,7 +7,7 @@ _On-track results; official standings and penalties may differ._
 - Ben vs Heyzeus: 0.005s at the flag (race 3).
 - Allan vs DK: 0.020s at the flag (race 4).
 - Vincent vs Chris: 0.196s at the flag (race 2).
-- Techno vs Arren: 0.308s at the flag (race 3).
+- Arren vs Techno: 0.308s at the flag (race 3).
 - Kevin H vs Arren: 0.372s at the flag (race 1).
 
 ## Biggest climbers

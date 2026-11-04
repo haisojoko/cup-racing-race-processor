@@ -1,7 +1,7 @@
 # Heyzeus — S24b · 00 Tucuru · 2026-09-29
 
 - Best result of S24b so far — P2.
-- 15 on-track passes across the weekend.
+- 19 on-track passes across the weekend.
 - Late-race charge — gained 2 spots in the last 2 laps of race 2.
 - Passed Chris in race 4 and finished ahead.
 - Closest scrap: 1.155s to Ben (race 2).

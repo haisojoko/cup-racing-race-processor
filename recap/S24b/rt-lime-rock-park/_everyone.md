@@ -3,9 +3,9 @@
 _On-track results; official standings and penalties may differ._
 
 ## James
-**Net +32 places across the weekend.**
-- 2 race wins at Rt Lime Rock Park.
+**2 race wins at Rt Lime Rock Park.**
 - 32 on-track passes across the weekend.
+- Late-race charge — gained 3 spots in the last 3 laps of race 2.
 
 ## Chris
 **Race win — P1 at Rt Lime Rock Park.**
@@ -13,23 +13,23 @@ _On-track results; official standings and penalties may differ._
 - 28 on-track passes across the weekend.
 
 ## Josie
-**Net +26 places across the weekend.**
-- Race win — P1 at Rt Lime Rock Park.
+**Race win — P1 at Rt Lime Rock Park.**
 - 31 on-track passes across the weekend.
+- Closest scrap: 0.777s to James (race 4).
 
 ## DK
 **35 on-track passes across the weekend.**
 - Held off Allan by 0.020s at the line (race 4).
-- Net +9 places across the weekend.
+- Late-race charge — gained 6 spots in the last 3 laps of race 4.
 
 ## Walnut
-**Net +19 places across the weekend.**
-- Photo finish: 0.463s behind Vincent at the line (race 1).
+**Photo finish: 0.463s behind Vincent at the line (race 1).**
 - 28 on-track passes across the weekend.
+- Late-race charge — gained 1 spot in the last 3 laps of race 4.
 
 ## Lee
-**Net +8 places across the weekend.**
-- 16 on-track passes across the weekend.
+**16 on-track passes across the weekend.**
+- Late-race charge — gained 3 spots in the last 3 laps of race 4.
 - Closest scrap: 0.974s to Arren (race 2).
 
 ## Timmy
@@ -38,19 +38,19 @@ _On-track results; official standings and penalties may differ._
 - Late-race charge — gained 2 spots in the last 3 laps of race 2.
 
 ## Vincent
-**Net +18 places across the weekend.**
-- Held off Chris by 0.196s at the line (race 2).
+**Held off Chris by 0.196s at the line (race 2).**
 - 23 on-track passes across the weekend.
+- Late-race charge — gained 3 spots in the last 3 laps of race 4.
 
 ## Kevin H
 **Held off Arren by 0.372s at the line (race 1).**
 - 21 on-track passes across the weekend.
-- Net +5 places across the weekend.
+- Late-race charge — gained 1 spot in the last 3 laps of race 1.
 
 ## Techno
 **Held off Arren by 0.308s at the line (race 3).**
 - 27 on-track passes across the weekend.
-- Net +7 places across the weekend.
+- Most on-track passes in the midfield (27).
 
 ## Tim Homon
 **19 on-track passes across the weekend.**
@@ -60,7 +60,7 @@ _On-track results; official standings and penalties may differ._
 ## Arren
 **Photo finish: 0.308s behind Techno at the line (race 3).**
 - 17 on-track passes across the weekend.
-- Net +1 places across the weekend.
+- Late-race charge — gained 1 spot in the last 3 laps of race 2.
 
 ## Heyzeus
 **Held off Ben by 0.005s at the line (race 3).**

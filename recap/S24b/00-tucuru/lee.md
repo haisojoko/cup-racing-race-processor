@@ -2,7 +2,7 @@
 
 - Race win — P1 at 00 Tucuru.
 - Held off Chris by 0.007s at the line (race 3).
-- 14 on-track passes across the weekend.
+- 17 on-track passes across the weekend.
 - Best result of S24b so far — P1.
 - Late-race charge — gained 4 spots in the last 2 laps of race 4.
 - Passed Chris in race 3 and finished ahead.

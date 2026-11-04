@@ -1,9 +1,9 @@
 # Walnut — S24b · Vir · 2026-09-22
 
 - Held off Heyzeus by 0.058s at the line (race 4).
-- Passed Lee in race 2 and finished ahead.
+- 16 on-track passes across the weekend.
 - Fastest lap of anyone in the midfield (1:45.571).
-- 4 on-track passes across the weekend.
+- Passed Lee in race 2 and finished ahead.
 - Late-race charge — gained 1 spot in the last 2 laps of race 2.
 - Fastest through Sector 1 in the midfield (48.187s).
 - Found time through the day: best lap 1:46.774 → 1:45.571.
