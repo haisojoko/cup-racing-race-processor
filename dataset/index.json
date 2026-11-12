@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-11-04T18:04:56.566357+00:00",
+  "lastUpdated": "2026-11-11T03:39:14.024289+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1211,6 +1211,17 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 8
+        },
+        {
+          "eventId": "2026-11-10-singapore-2020",
+          "venue": "Singapore 2020",
+          "venueOrder": 3,
+          "date": "2026-11-10",
+          "track": "csp/2144/../singapore_2020",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 12
         }
       ],
       "drivers": [
@@ -1223,6 +1234,7 @@
         "James",
         "Josie",
         "Lee",
+        "Mike",
         "Toby",
         "Walnut"
       ],
