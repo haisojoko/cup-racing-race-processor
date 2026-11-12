@@ -10,24 +10,28 @@ Reading the tables: **time** is after the green and **turn** is where it happene
 
 16 of the 56 contacts have a driver at fault on the measurements. Everything else is a racing incident with a car's width left, a warning-level marginal call, or contact after the chequered flag.
 
-| Driver | Round | Race | Lap | Turn | Contact | Impact | Recommended |
-|---|---:|---:|---:|---|---|---:|---|
-| **Alfred** | 2 | 4 | 1 | T4 | into Josie | 55.7 kph | 4-6 points |
-| **DK** | 3 | 1 | 1 | T13-T14 straight | into Allen Q | 55.6 kph | 4-6 points |
-| **Lee** | 3 | 2 | 1 | T5 | into Mike | 53.3 kph | 4-6 points |
-| **DK** | 1 | 2 | 1 | T1 | into Lee | 52.8 kph | 4-6 points |
-| **Walnut** | 1 | 2 | 1 | T7-T8 straight | into Alfred | 52.4 kph | 4-6 points |
-| **Mike** | 3 | 2 | 1 | T13 (Esplanade Drive) | into Ben | 45.5 kph | 4-6 points |
-| **Arren** | 2 | 2 | 1 | T2 | into Alfred | 38.7 kph | 1-3 points |
-| **Mike** | 3 | 1 | 1 | T7-T8 straight | into Walnut | 35.8 kph | 1-3 points |
-| **Josie** | 3 | 2 | 1 | T9 | into Allen Q | 30.1 kph | 1-3 points |
-| **Lee** | 2 | 2 | 1 | T2 | into Arren | 20.5 kph | 1-3 points |
-| **Arren** | 3 | 4 | 1 | T17 | into Toby | 19.4 kph | 1-3 points |
-| **Ben** | 3 | 4 | 1 | T8 | into Alfred | 18.5 kph | 1-3 points |
-| **James** | 2 | 1 | 4 | start/finish-T1 straight | into Josie | 15.9 kph | 1-3 points |
-| **Ben** | 3 | 4 | 1 | T1 (Sheares corner) | into Lee | 14.7 kph | 1-3 points |
-| **Ben** | 3 | 4 | 1 | T1 (Sheares corner) | into Arren | 12.8 kph | 1-3 points |
-| **Walnut** | 3 | 4 | 1 | T7 (Stamford Road) | into Lee | 10.9 kph | 1-3 points |
+In race order, the same as the detail below, so a steward can work through one race at a time.
+
+| Round | Race | Lap | Time | Turn | Driver | Contact | Impact | Recommended |
+|---:|---:|---:|---:|---|---|---|---:|---|
+| 1 | 2 | 1 | 0:07.8 | T1 | **DK** | into Lee | 52.8 kph | 4-6 points |
+| 1 | 2 | 1 | 1:01.0 | T7-T8 straight | **Walnut** | into Alfred | 52.4 kph | 4-6 points |
+| 2 | 1 | 4 | 5:13.2 | start/finish-T1 straight | **James** | into Josie | 15.9 kph | 1-3 points |
+| 2 | 2 | 1 | 0:21.3 | T2 | **Lee** | into Arren | 20.5 kph | 1-3 points |
+| 2 | 2 | 1 | 0:21.4 | T2 | **Arren** | into Alfred | 38.7 kph | 1-3 points |
+| 2 | 4 | 1 | 0:33.9 | T4 | **Alfred** | into Josie | 55.7 kph | 4-6 points |
+| 3 | 1 | 1 | 1:01.8 | T7-T8 straight | **Mike** | into Walnut | 35.8 kph | 1-3 points |
+| 3 | 1 | 1 | 1:20.7 | T13-T14 straight | **DK** | into Allen Q | 55.6 kph | 4-6 points |
+| 3 | 2 | 1 | 0:25.4 | T5 | **Lee** | into Mike | 53.3 kph | 4-6 points |
+| 3 | 2 | 1 | 1:06.5 | T9 | **Josie** | into Allen Q | 30.1 kph | 1-3 points |
+| 3 | 2 | 1 | 1:24.8 | T13 (Esplanade Drive) | **Mike** | into Ben | 45.5 kph | 4-6 points |
+| 3 | 4 | 1 | 0:09.1 | T1 (Sheares corner) | **Ben** | into Arren | 12.8 kph | 1-3 points |
+| 3 | 4 | 1 | 0:09.2 | T1 (Sheares corner) | **Ben** | into Lee | 14.7 kph | 1-3 points |
+| 3 | 4 | 1 | 0:45.2 | T7 (Stamford Road) | **Walnut** | into Lee | 10.9 kph | 1-3 points |
+| 3 | 4 | 1 | 0:52.8 | T8 | **Ben** | into Alfred | 18.5 kph | 1-3 points |
+| 3 | 4 | 1 | 1:45.3 | T17 | **Arren** | into Toby | 19.4 kph | 1-3 points |
+
+Heaviest first, if you would rather start with those: **Alfred** R2 Race 4 T4 (56 kph); **DK** R3 Race 1 T13-T14 straight (56 kph); **Lee** R3 Race 2 T5 (53 kph); **DK** R1 Race 2 T1 (53 kph); **Walnut** R1 Race 2 T7-T8 straight (52 kph).
 
 Repeat offenders across the three rounds: **Ben** (3), **DK** (2), **Walnut** (2), **Lee** (2), **Arren** (2), **Mike** (2). The rules escalate for repeated avoidable contact, so the pattern matters as much as any single incident.
 
