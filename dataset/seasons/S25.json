@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
   "season": "S25",
-  "lastUpdated": "2026-11-11T03:39:13.883096+00:00",
+  "lastUpdated": "2026-11-18T03:45:54.339542+00:00",
   "unprocessed": [],
   "events": [
     {
@@ -19397,6 +19397,5924 @@
         "notes": []
       },
       "venueOrder": 3
+    },
+    {
+      "eventId": "2026-11-17-00-heartlake",
+      "signature": "48682160651bc718",
+      "venue": "00 Heartlake",
+      "date": "2026-11-17",
+      "track": "csp/2144/../00_heartlake",
+      "trackConfig": "gp",
+      "qualifying": {
+        "qual1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Arren",
+            "Walnut",
+            "Ben",
+            "Colin",
+            "Alfred",
+            "Donald"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 6,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "05_japan_47"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            }
+          },
+          "times": {
+            "Lee": {
+              "bestMs": 91431,
+              "laps": [
+                96448,
+                91842,
+                92708,
+                124022,
+                117219,
+                91431
+              ]
+            },
+            "Josie": {
+              "bestMs": 89313,
+              "laps": [
+                98257,
+                89947,
+                89313,
+                146947,
+                89924
+              ]
+            },
+            "James": {
+              "bestMs": 89210,
+              "laps": [
+                107132,
+                89980,
+                89582,
+                89210,
+                128648,
+                89688
+              ]
+            },
+            "Arren": {
+              "bestMs": 91535,
+              "laps": [
+                116931,
+                92259,
+                92151,
+                130986,
+                98509,
+                91535
+              ]
+            },
+            "Donald": {
+              "bestMs": 94181,
+              "laps": [
+                124015,
+                94974,
+                99670,
+                94397,
+                176560,
+                94181
+              ]
+            },
+            "Ben": {
+              "bestMs": 93564,
+              "laps": [
+                128286,
+                93564
+              ]
+            },
+            "Alfred": {
+              "bestMs": 94143,
+              "laps": [
+                154508,
+                94143,
+                162269,
+                101585
+              ]
+            },
+            "Colin": {
+              "bestMs": 94002,
+              "laps": [
+                202787,
+                142189,
+                94002
+              ]
+            },
+            "Walnut": {
+              "bestMs": 92000,
+              "laps": [
+                166920,
+                93878,
+                92208,
+                92078,
+                92000
+              ]
+            }
+          }
+        },
+        "qual2": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Walnut",
+            "Alfred",
+            "Ben",
+            "Donald",
+            "Colin"
+          ],
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            }
+          },
+          "times": {
+            "Lee": {
+              "bestMs": 90977,
+              "laps": [
+                94716,
+                91836,
+                91381,
+                90977
+              ]
+            },
+            "James": {
+              "bestMs": 88520,
+              "laps": [
+                101639,
+                89075,
+                94574,
+                89062,
+                88520
+              ]
+            },
+            "Josie": {
+              "bestMs": 89082,
+              "laps": [
+                109861,
+                90051,
+                89082,
+                89297,
+                104771,
+                89629,
+                89276
+              ]
+            },
+            "Ben": {
+              "bestMs": 92979,
+              "laps": [
+                114317,
+                93513,
+                92979,
+                93424
+              ]
+            },
+            "Alfred": {
+              "bestMs": 92812,
+              "laps": [
+                127614,
+                93654,
+                92812,
+                143267,
+                97828
+              ]
+            },
+            "Walnut": {
+              "bestMs": 91000,
+              "laps": [
+                133294,
+                136072,
+                92021,
+                91929,
+                91489,
+                91000
+              ]
+            },
+            "Colin": {
+              "bestMs": 93774,
+              "laps": [
+                134994,
+                94049,
+                93774
+              ]
+            },
+            "Donald": {
+              "bestMs": 92996,
+              "laps": [
+                138244,
+                94384,
+                133412,
+                93549,
+                92996
+              ]
+            }
+          }
+        }
+      },
+      "races": {
+        "1": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Arren",
+            "Walnut",
+            "Ben",
+            "Colin",
+            "Alfred",
+            "Donald"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.389,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 6,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "05_japan_47"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            }
+          },
+          "laps": {
+            "James": [
+              92131,
+              90006,
+              89307,
+              88469,
+              89125,
+              89528
+            ],
+            "Josie": [
+              93289,
+              89884,
+              90123,
+              90202,
+              88521,
+              89811
+            ],
+            "Lee": [
+              105130,
+              94604,
+              92968,
+              90932,
+              124049,
+              92518
+            ],
+            "Arren": [
+              97127,
+              92234,
+              92572,
+              91675,
+              91630,
+              93173
+            ],
+            "Walnut": [
+              95525,
+              91838,
+              91361,
+              91785,
+              91651,
+              92274
+            ],
+            "Ben": [
+              117854,
+              93337,
+              93529,
+              93111,
+              93131,
+              92252
+            ],
+            "Colin": [
+              114485,
+              95119,
+              94443,
+              104885,
+              104560,
+              99271
+            ],
+            "Alfred": [
+              103861,
+              94659,
+              95521,
+              93920,
+              93747,
+              94058
+            ],
+            "Donald": [
+              102516,
+              94594,
+              93065,
+              93161,
+              94062,
+              93347
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                36587,
+                36887,
+                18657
+              ],
+              [
+                34197,
+                36589,
+                19220
+              ],
+              [
+                34141,
+                36563,
+                18603
+              ],
+              [
+                33601,
+                36338,
+                18530
+              ],
+              [
+                33563,
+                36909,
+                18653
+              ],
+              [
+                33944,
+                36896,
+                18688
+              ]
+            ],
+            "Josie": [
+              [
+                37566,
+                37124,
+                18599
+              ],
+              [
+                34246,
+                36999,
+                18639
+              ],
+              [
+                34160,
+                36743,
+                19220
+              ],
+              [
+                34213,
+                37400,
+                18589
+              ],
+              [
+                33796,
+                36360,
+                18365
+              ],
+              [
+                33700,
+                37517,
+                18594
+              ]
+            ],
+            "Lee": [
+              [
+                46004,
+                39443,
+                19683
+              ],
+              [
+                37936,
+                37463,
+                19205
+              ],
+              [
+                34819,
+                38988,
+                19161
+              ],
+              [
+                34444,
+                37318,
+                19170
+              ],
+              [
+                64784,
+                39218,
+                20047
+              ],
+              [
+                34904,
+                37922,
+                19692
+              ]
+            ],
+            "Arren": [
+              [
+                38731,
+                38803,
+                19593
+              ],
+              [
+                34617,
+                38124,
+                19493
+              ],
+              [
+                34756,
+                38426,
+                19390
+              ],
+              [
+                34444,
+                37985,
+                19246
+              ],
+              [
+                34354,
+                37872,
+                19404
+              ],
+              [
+                34818,
+                38169,
+                20186
+              ]
+            ],
+            "Walnut": [
+              [
+                38016,
+                37961,
+                19548
+              ],
+              [
+                34770,
+                37575,
+                19493
+              ],
+              [
+                34238,
+                37683,
+                19440
+              ],
+              [
+                34617,
+                37763,
+                19405
+              ],
+              [
+                34596,
+                37728,
+                19327
+              ],
+              [
+                34584,
+                38088,
+                19602
+              ]
+            ],
+            "Ben": [
+              [
+                41499,
+                40581,
+                35774
+              ],
+              [
+                35031,
+                38699,
+                19607
+              ],
+              [
+                35196,
+                38051,
+                20282
+              ],
+              [
+                35115,
+                38421,
+                19575
+              ],
+              [
+                35500,
+                38264,
+                19367
+              ],
+              [
+                34252,
+                38380,
+                19620
+              ]
+            ],
+            "Colin": [
+              [
+                41729,
+                40528,
+                32228
+              ],
+              [
+                35723,
+                39232,
+                20164
+              ],
+              [
+                35488,
+                38840,
+                20115
+              ],
+              [
+                36886,
+                38165,
+                29834
+              ],
+              [
+                36750,
+                47015,
+                20795
+              ],
+              [
+                35745,
+                39339,
+                24187
+              ]
+            ],
+            "Alfred": [
+              [
+                41262,
+                39986,
+                22613
+              ],
+              [
+                35600,
+                38584,
+                20475
+              ],
+              [
+                35216,
+                40239,
+                20066
+              ],
+              [
+                35294,
+                39177,
+                19449
+              ],
+              [
+                35274,
+                38969,
+                19504
+              ],
+              [
+                35716,
+                38844,
+                19498
+              ]
+            ],
+            "Donald": [
+              [
+                41563,
+                39767,
+                21186
+              ],
+              [
+                36198,
+                38610,
+                19786
+              ],
+              [
+                35029,
+                38560,
+                19476
+              ],
+              [
+                34887,
+                38569,
+                19705
+              ],
+              [
+                35597,
+                38961,
+                19504
+              ],
+              [
+                34960,
+                38817,
+                19570
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Colin": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Colin": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Lee": [
+              7,
+              7,
+              6,
+              6,
+              8,
+              8
+            ],
+            "Arren": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "Walnut": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Ben": [
+              9,
+              9,
+              9,
+              8,
+              7,
+              7
+            ],
+            "Colin": [
+              8,
+              8,
+              8,
+              9,
+              9,
+              9
+            ],
+            "Alfred": [
+              6,
+              6,
+              7,
+              7,
+              6,
+              6
+            ],
+            "Donald": [
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Lee": {
+              "gained": 1,
+              "lost": 6,
+              "net": -5
+            },
+            "Arren": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Walnut": {
+              "gained": 2,
+              "lost": 0,
+              "net": 2
+            },
+            "Ben": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Colin": {
+              "gained": 0,
+              "lost": 2,
+              "net": -2
+            },
+            "Alfred": {
+              "gained": 3,
+              "lost": 1,
+              "net": 2
+            },
+            "Donald": {
+              "gained": 4,
+              "lost": 0,
+              "net": 4
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Arren",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Alfred",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Lee",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Ben",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Ben",
+              "positionsGained": 2
+            },
+            {
+              "lap": 3,
+              "driver": "Lee",
+              "passed": "Alfred",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Ben",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Alfred",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Ben",
+              "passed": "Lee",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 1,
+              "totalTimeMs": 538562,
+              "bestLapMs": 88469,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 2,
+              "totalTimeMs": 541829,
+              "bestLapMs": 88521,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 3,
+              "totalTimeMs": 554438,
+              "bestLapMs": 91361,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 6,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 4,
+              "totalTimeMs": 558388,
+              "bestLapMs": 91630,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 5,
+              "totalTimeMs": 570750,
+              "bestLapMs": 93065,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 6,
+              "totalTimeMs": 575748,
+              "bestLapMs": 93747,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 7,
+              "totalTimeMs": 583225,
+              "bestLapMs": 92252,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 8,
+              "totalTimeMs": 600180,
+              "bestLapMs": 90932,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Colin",
+              "driverKey": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 9,
+              "totalTimeMs": 612773,
+              "bestLapMs": 94443,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Alfred",
+              "impactSpeed": 19.6,
+              "worldPosition": {
+                "x": -322.4,
+                "z": -273.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Alfred",
+              "driver2": "Donald",
+              "impactSpeed": 24.2,
+              "worldPosition": {
+                "x": 567.8,
+                "z": 104.4
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 89287,
+              "medianMs": 89307,
+              "bestMs": 88469,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 89708,
+              "medianMs": 89884,
+              "bestMs": 88521,
+              "lapsUsed": 5
+            },
+            "Lee": {
+              "avgMs": 92756,
+              "medianMs": 92743,
+              "bestMs": 90932,
+              "lapsUsed": 4
+            },
+            "Arren": {
+              "avgMs": 92257,
+              "medianMs": 92234,
+              "bestMs": 91630,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 91782,
+              "medianMs": 91785,
+              "bestMs": 91361,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 93072,
+              "medianMs": 93131,
+              "bestMs": 92252,
+              "lapsUsed": 5
+            },
+            "Colin": {
+              "avgMs": 99656,
+              "medianMs": 99271,
+              "bestMs": 94443,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 94381,
+              "medianMs": 94058,
+              "bestMs": 93747,
+              "lapsUsed": 5
+            },
+            "Donald": {
+              "avgMs": 93646,
+              "medianMs": 93347,
+              "bestMs": 93065,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Walnut": {
+              "qualPosition": 5,
+              "finishPosition": 3,
+              "delta": 2
+            },
+            "Arren": {
+              "qualPosition": 4,
+              "finishPosition": 4,
+              "delta": 0
+            },
+            "Donald": {
+              "qualPosition": 9,
+              "finishPosition": 5,
+              "delta": 4
+            },
+            "Alfred": {
+              "qualPosition": 8,
+              "finishPosition": 6,
+              "delta": 2
+            },
+            "Ben": {
+              "qualPosition": 6,
+              "finishPosition": 7,
+              "delta": -1
+            },
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 8,
+              "delta": -5
+            },
+            "Colin": {
+              "qualPosition": 7,
+              "finishPosition": 9,
+              "delta": -2
+            }
+          }
+        },
+        "2": {
+          "grid": [
+            "Colin",
+            "Lee",
+            "Ben",
+            "Alfred",
+            "Donald",
+            "Arren",
+            "Walnut",
+            "Josie",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": 0.0,
+          "drivers": {
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            },
+            "Arren": {
+              "driver": "Arren",
+              "guid": "76561197996231719",
+              "carId": 6,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "05_japan_47"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            }
+          },
+          "laps": {
+            "Colin": [
+              98683,
+              110643,
+              98063,
+              96298,
+              100387,
+              96413
+            ],
+            "Lee": [
+              94571,
+              91406,
+              91127,
+              92113,
+              91049,
+              90353
+            ],
+            "Ben": [
+              153125,
+              92054,
+              93463,
+              93245,
+              93342,
+              92430
+            ],
+            "Alfred": [
+              182231,
+              98211,
+              94194,
+              93771,
+              93307
+            ],
+            "Donald": [
+              100263,
+              93032,
+              92810,
+              94412,
+              100848,
+              96921
+            ],
+            "Arren": [
+              101430,
+              94472,
+              92981,
+              92437,
+              93025,
+              92534
+            ],
+            "Walnut": [
+              101909,
+              93233,
+              91748,
+              93206,
+              91542,
+              91062
+            ],
+            "Josie": [
+              98013,
+              89757,
+              90297,
+              90089,
+              90830,
+              95281
+            ],
+            "James": [
+              98817,
+              89612,
+              90358,
+              90617,
+              89098,
+              96872
+            ]
+          },
+          "sectors": {
+            "Colin": [
+              [
+                38734,
+                39020,
+                20929
+              ],
+              [
+                47526,
+                43060,
+                20057
+              ],
+              [
+                35810,
+                39114,
+                23139
+              ],
+              [
+                35976,
+                39069,
+                21253
+              ],
+              [
+                35569,
+                38840,
+                25978
+              ],
+              [
+                37509,
+                38911,
+                19993
+              ]
+            ],
+            "Lee": [
+              [
+                37565,
+                37809,
+                19197
+              ],
+              [
+                34833,
+                37408,
+                19165
+              ],
+              [
+                34508,
+                37337,
+                19282
+              ],
+              [
+                34688,
+                37670,
+                19755
+              ],
+              [
+                34746,
+                37062,
+                19241
+              ],
+              [
+                33924,
+                37462,
+                18967
+              ]
+            ],
+            "Ben": [
+              [
+                94122,
+                39334,
+                19669
+              ],
+              [
+                34293,
+                38070,
+                19691
+              ],
+              [
+                34707,
+                38772,
+                19984
+              ],
+              [
+                34831,
+                38344,
+                20070
+              ],
+              [
+                34860,
+                38573,
+                19909
+              ],
+              [
+                34767,
+                38313,
+                19350
+              ]
+            ],
+            "Alfred": [
+              [
+                123718,
+                39069,
+                19444
+              ],
+              [
+                35282,
+                42791,
+                20138
+              ],
+              [
+                35491,
+                39186,
+                19517
+              ],
+              [
+                35513,
+                38637,
+                19621
+              ],
+              [
+                35018,
+                38318,
+                19971
+              ]
+            ],
+            "Donald": [
+              [
+                39602,
+                40438,
+                20223
+              ],
+              [
+                35253,
+                38303,
+                19476
+              ],
+              [
+                34707,
+                38259,
+                19844
+              ],
+              [
+                35517,
+                39015,
+                19880
+              ],
+              [
+                34896,
+                37939,
+                28013
+              ],
+              [
+                37791,
+                38983,
+                20147
+              ]
+            ],
+            "Arren": [
+              [
+                40000,
+                40181,
+                21249
+              ],
+              [
+                34901,
+                39893,
+                19678
+              ],
+              [
+                35076,
+                38258,
+                19647
+              ],
+              [
+                34504,
+                38232,
+                19701
+              ],
+              [
+                34840,
+                38461,
+                19724
+              ],
+              [
+                34854,
+                37988,
+                19692
+              ]
+            ],
+            "Walnut": [
+              [
+                40363,
+                42106,
+                19440
+              ],
+              [
+                34878,
+                38826,
+                19529
+              ],
+              [
+                34733,
+                37647,
+                19368
+              ],
+              [
+                34851,
+                38798,
+                19557
+              ],
+              [
+                34567,
+                37570,
+                19405
+              ],
+              [
+                34388,
+                37567,
+                19107
+              ]
+            ],
+            "Josie": [
+              [
+                39931,
+                37948,
+                20134
+              ],
+              [
+                34213,
+                36958,
+                18586
+              ],
+              [
+                34173,
+                37556,
+                18568
+              ],
+              [
+                34213,
+                37130,
+                18746
+              ],
+              [
+                34328,
+                36774,
+                19728
+              ],
+              [
+                33438,
+                43348,
+                18495
+              ]
+            ],
+            "James": [
+              [
+                40487,
+                39456,
+                18874
+              ],
+              [
+                34101,
+                36711,
+                18800
+              ],
+              [
+                34050,
+                37655,
+                18653
+              ],
+              [
+                34035,
+                37052,
+                19530
+              ],
+              [
+                33717,
+                36431,
+                18950
+              ],
+              [
+                33549,
+                44603,
+                18720
+              ]
+            ]
+          },
+          "cuts": {
+            "Colin": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Arren": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Colin": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Arren": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "James": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "Colin": [
+              3,
+              7,
+              7,
+              7,
+              7,
+              7
+            ],
+            "Lee": [
+              1,
+              1,
+              1,
+              2,
+              3,
+              1
+            ],
+            "Ben": [
+              8,
+              8,
+              8,
+              8,
+              8,
+              8
+            ],
+            "Alfred": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "Donald": [
+              5,
+              4,
+              4,
+              5,
+              6,
+              6
+            ],
+            "Arren": [
+              6,
+              6,
+              6,
+              6,
+              5,
+              5
+            ],
+            "Walnut": [
+              7,
+              5,
+              5,
+              4,
+              4,
+              4
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              1,
+              2,
+              2
+            ],
+            "James": [
+              4,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          "positionDetails": {
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 9,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 9,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 9,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 9,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 9,
+                "lapsCompleted": 5,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Arren": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Colin": {
+              "gained": 0,
+              "lost": 6,
+              "net": -6
+            },
+            "Lee": {
+              "gained": 3,
+              "lost": 2,
+              "net": 1
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Alfred": {
+              "gained": 0,
+              "lost": 5,
+              "net": -5
+            },
+            "Donald": {
+              "gained": 1,
+              "lost": 2,
+              "net": -1
+            },
+            "Arren": {
+              "gained": 1,
+              "lost": 0,
+              "net": 1
+            },
+            "Walnut": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
+            },
+            "Josie": {
+              "gained": 7,
+              "lost": 1,
+              "net": 6
+            },
+            "James": {
+              "gained": 8,
+              "lost": 2,
+              "net": 6
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Donald",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Arren",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 6
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Donald",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Arren",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 5
+            },
+            {
+              "lap": 2,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Donald",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Arren",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 4,
+              "driver": "Josie",
+              "passed": "Lee",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Walnut",
+              "passed": "Donald",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "James",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Arren",
+              "passed": "Donald",
+              "positionsGained": 1
+            },
+            {
+              "lap": 6,
+              "driver": "Lee",
+              "passed": "Josie",
+              "positionsGained": 2
+            },
+            {
+              "lap": 6,
+              "driver": "Lee",
+              "passed": "James",
+              "positionsGained": 2
+            }
+          ],
+          "result": [
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 1,
+              "totalTimeMs": 550592,
+              "bestLapMs": 90353,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 2,
+              "totalTimeMs": 554266,
+              "bestLapMs": 89757,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 3,
+              "totalTimeMs": 555367,
+              "bestLapMs": 89098,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 4,
+              "totalTimeMs": 562694,
+              "bestLapMs": 91062,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Arren",
+              "driverKey": "Arren",
+              "guid": "76561197996231719",
+              "carId": 6,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 5,
+              "totalTimeMs": 566862,
+              "bestLapMs": 92437,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 6,
+              "totalTimeMs": 578296,
+              "bestLapMs": 92810,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Colin",
+              "driverKey": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 7,
+              "totalTimeMs": 600501,
+              "bestLapMs": 96298,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 8,
+              "totalTimeMs": 617667,
+              "bestLapMs": 92054,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 9,
+              "totalTimeMs": 561684,
+              "bestLapMs": 93307,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Josie",
+              "impactSpeed": 14.2,
+              "worldPosition": {
+                "x": -285.6,
+                "z": -254.2
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Walnut",
+              "impactSpeed": 9.9,
+              "worldPosition": {
+                "x": -363.8,
+                "z": -237.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "James",
+              "driver2": "Arren",
+              "impactSpeed": 22.6,
+              "worldPosition": {
+                "x": -578.0,
+                "z": -80.4
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Walnut",
+              "impactSpeed": 31.9,
+              "worldPosition": {
+                "x": -560.9,
+                "z": -49.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Arren",
+              "driver2": "Walnut",
+              "impactSpeed": 11.6,
+              "worldPosition": {
+                "x": -420.6,
+                "z": -367.2
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "James",
+              "impactSpeed": 19.1,
+              "worldPosition": {
+                "x": -565.6,
+                "z": -115.7
+              }
+            }
+          ],
+          "pace": {
+            "Colin": {
+              "avgMs": 100361,
+              "medianMs": 98063,
+              "bestMs": 96298,
+              "lapsUsed": 5
+            },
+            "Lee": {
+              "avgMs": 91210,
+              "medianMs": 91127,
+              "bestMs": 90353,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 92907,
+              "medianMs": 93245,
+              "bestMs": 92054,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 94871,
+              "medianMs": 93982,
+              "bestMs": 93307,
+              "lapsUsed": 4
+            },
+            "Donald": {
+              "avgMs": 95605,
+              "medianMs": 94412,
+              "bestMs": 92810,
+              "lapsUsed": 5
+            },
+            "Arren": {
+              "avgMs": 93090,
+              "medianMs": 92981,
+              "bestMs": 92437,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 92158,
+              "medianMs": 91748,
+              "bestMs": 91062,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 91251,
+              "medianMs": 90297,
+              "bestMs": 89757,
+              "lapsUsed": 5
+            },
+            "James": {
+              "avgMs": 91311,
+              "medianMs": 90358,
+              "bestMs": 89098,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 1,
+              "delta": 2
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 3,
+              "delta": -2
+            },
+            "Walnut": {
+              "qualPosition": 5,
+              "finishPosition": 4,
+              "delta": 1
+            },
+            "Arren": {
+              "qualPosition": 4,
+              "finishPosition": 5,
+              "delta": -1
+            },
+            "Donald": {
+              "qualPosition": 9,
+              "finishPosition": 6,
+              "delta": 3
+            },
+            "Colin": {
+              "qualPosition": 7,
+              "finishPosition": 7,
+              "delta": 0
+            },
+            "Ben": {
+              "qualPosition": 6,
+              "finishPosition": 8,
+              "delta": -2
+            },
+            "Alfred": {
+              "qualPosition": 8,
+              "finishPosition": 9,
+              "delta": -1
+            }
+          }
+        },
+        "3": {
+          "grid": [
+            "James",
+            "Josie",
+            "Lee",
+            "Walnut",
+            "Alfred",
+            "Ben",
+            "Donald",
+            "Colin"
+          ],
+          "gridSource": "qualifying",
+          "gridConfidence": "high",
+          "gridScore": 0.571,
+          "drivers": {
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            }
+          },
+          "laps": {
+            "James": [
+              92452,
+              89520,
+              89090,
+              88423,
+              88809,
+              89153
+            ],
+            "Josie": [
+              94544,
+              89453,
+              89557,
+              88075,
+              89078,
+              88275
+            ],
+            "Lee": [
+              100700,
+              94053,
+              91079,
+              92856,
+              97780,
+              102425
+            ],
+            "Walnut": [
+              99373,
+              92260,
+              92868,
+              93861,
+              99089,
+              93589
+            ],
+            "Alfred": [
+              98085,
+              92889,
+              92902,
+              94199,
+              93648,
+              93969
+            ],
+            "Ben": [
+              102013,
+              94627,
+              93047,
+              129567,
+              90940,
+              91639
+            ],
+            "Donald": [
+              100581,
+              95206,
+              92796,
+              93024,
+              93532
+            ],
+            "Colin": [
+              101394,
+              96223,
+              94487,
+              100150,
+              101040,
+              94391
+            ]
+          },
+          "sectors": {
+            "James": [
+              [
+                37228,
+                36738,
+                18486
+              ],
+              [
+                34035,
+                36971,
+                18514
+              ],
+              [
+                33929,
+                36613,
+                18548
+              ],
+              [
+                33505,
+                36572,
+                18346
+              ],
+              [
+                33517,
+                36540,
+                18752
+              ],
+              [
+                33849,
+                36706,
+                18598
+              ]
+            ],
+            "Josie": [
+              [
+                38078,
+                37702,
+                18764
+              ],
+              [
+                34059,
+                36863,
+                18531
+              ],
+              [
+                34000,
+                37039,
+                18518
+              ],
+              [
+                33683,
+                36127,
+                18265
+              ],
+              [
+                33720,
+                36832,
+                18526
+              ],
+              [
+                34040,
+                36064,
+                18171
+              ]
+            ],
+            "Lee": [
+              [
+                40833,
+                39267,
+                20600
+              ],
+              [
+                35660,
+                38880,
+                19513
+              ],
+              [
+                34353,
+                37462,
+                19264
+              ],
+              [
+                34841,
+                38241,
+                19774
+              ],
+              [
+                41319,
+                37368,
+                19093
+              ],
+              [
+                34322,
+                38480,
+                29623
+              ]
+            ],
+            "Walnut": [
+              [
+                40428,
+                39550,
+                19395
+              ],
+              [
+                34750,
+                38155,
+                19355
+              ],
+              [
+                35276,
+                37949,
+                19643
+              ],
+              [
+                35360,
+                38268,
+                20233
+              ],
+              [
+                42264,
+                37588,
+                19237
+              ],
+              [
+                34707,
+                38236,
+                20646
+              ]
+            ],
+            "Alfred": [
+              [
+                39720,
+                38844,
+                19521
+              ],
+              [
+                34762,
+                38678,
+                19449
+              ],
+              [
+                35064,
+                38393,
+                19445
+              ],
+              [
+                35524,
+                38642,
+                20033
+              ],
+              [
+                34891,
+                38876,
+                19881
+              ],
+              [
+                35073,
+                38915,
+                19981
+              ]
+            ],
+            "Ben": [
+              [
+                43522,
+                38731,
+                19760
+              ],
+              [
+                35407,
+                39568,
+                19652
+              ],
+              [
+                34894,
+                38416,
+                19737
+              ],
+              [
+                70891,
+                39105,
+                19571
+              ],
+              [
+                34298,
+                37441,
+                19201
+              ],
+              [
+                34925,
+                37553,
+                19161
+              ]
+            ],
+            "Donald": [
+              [
+                39970,
+                39969,
+                20642
+              ],
+              [
+                36054,
+                39420,
+                19732
+              ],
+              [
+                34890,
+                38263,
+                19643
+              ],
+              [
+                34983,
+                38753,
+                19288
+              ],
+              [
+                35424,
+                38394,
+                19714
+              ]
+            ],
+            "Colin": [
+              [
+                41625,
+                38996,
+                20773
+              ],
+              [
+                35878,
+                40464,
+                19881
+              ],
+              [
+                35578,
+                39119,
+                19790
+              ],
+              [
+                35143,
+                38974,
+                26033
+              ],
+              [
+                36051,
+                44878,
+                20111
+              ],
+              [
+                36035,
+                38453,
+                19903
+              ]
+            ]
+          },
+          "cuts": {
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Colin": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "James": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Colin": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "James": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Josie": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "Lee": [
+              6,
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Walnut": [
+              4,
+              4,
+              4,
+              4,
+              6,
+              4
+            ],
+            "Alfred": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "Ben": [
+              8,
+              7,
+              7,
+              8,
+              8,
+              7
+            ],
+            "Donald": [
+              5,
+              6,
+              6,
+              6,
+              4,
+              8
+            ],
+            "Colin": [
+              7,
+              8,
+              8,
+              7,
+              7,
+              6
+            ]
+          },
+          "positionDetails": {
+            "James": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "dnf_or_lapped"
+              }
+            ],
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "James": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 0,
+              "lost": 0,
+              "net": 0
+            },
+            "Lee": {
+              "gained": 1,
+              "lost": 3,
+              "net": -2
+            },
+            "Walnut": {
+              "gained": 2,
+              "lost": 2,
+              "net": 0
+            },
+            "Alfred": {
+              "gained": 2,
+              "lost": 0,
+              "net": 2
+            },
+            "Ben": {
+              "gained": 2,
+              "lost": 3,
+              "net": -1
+            },
+            "Donald": {
+              "gained": 4,
+              "lost": 5,
+              "net": -1
+            },
+            "Colin": {
+              "gained": 3,
+              "lost": 1,
+              "net": 2
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Alfred",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Donald",
+              "passed": "Ben",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Colin",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Lee",
+              "passed": "Donald",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Ben",
+              "passed": "Colin",
+              "positionsGained": 1
+            },
+            {
+              "lap": 4,
+              "driver": "Colin",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Donald",
+              "passed": "Lee",
+              "positionsGained": 2
+            },
+            {
+              "lap": 5,
+              "driver": "Donald",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 6,
+              "driver": "Walnut",
+              "passed": "Lee",
+              "positionsGained": 2
+            }
+          ],
+          "result": [
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 1,
+              "totalTimeMs": 537441,
+              "bestLapMs": 88423,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 2,
+              "totalTimeMs": 538965,
+              "bestLapMs": 88075,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 3,
+              "totalTimeMs": 565664,
+              "bestLapMs": 92889,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 4,
+              "totalTimeMs": 571041,
+              "bestLapMs": 92260,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 5,
+              "totalTimeMs": 578869,
+              "bestLapMs": 91079,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Colin",
+              "driverKey": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 6,
+              "totalTimeMs": 587697,
+              "bestLapMs": 94391,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 7,
+              "totalTimeMs": 601848,
+              "bestLapMs": 90940,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 8,
+              "totalTimeMs": 475145,
+              "bestLapMs": 92796,
+              "laps": 5,
+              "ballast": 0,
+              "restrictor": 0
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Alfred",
+              "driver2": "Lee",
+              "impactSpeed": 29.7,
+              "worldPosition": {
+                "x": -316.8,
+                "z": -275.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Walnut",
+              "impactSpeed": 45.2,
+              "worldPosition": {
+                "x": -317.6,
+                "z": -278.0
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Donald",
+              "impactSpeed": 9.8,
+              "worldPosition": {
+                "x": 567.7,
+                "z": 100.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Donald",
+              "driver2": "Lee",
+              "impactSpeed": 18.5,
+              "worldPosition": {
+                "x": 566.6,
+                "z": 94.9
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Donald",
+              "impactSpeed": 3.5,
+              "worldPosition": {
+                "x": -4.9,
+                "z": -89.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Donald",
+              "impactSpeed": 15.4,
+              "worldPosition": {
+                "x": -572.9,
+                "z": -100.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Walnut",
+              "impactSpeed": 14.3,
+              "worldPosition": {
+                "x": -329.4,
+                "z": -274.9
+              }
+            }
+          ],
+          "pace": {
+            "James": {
+              "avgMs": 88999,
+              "medianMs": 89090,
+              "bestMs": 88423,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 88888,
+              "medianMs": 89078,
+              "bestMs": 88075,
+              "lapsUsed": 5
+            },
+            "Lee": {
+              "avgMs": 95639,
+              "medianMs": 94053,
+              "bestMs": 91079,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 94333,
+              "medianMs": 93589,
+              "bestMs": 92260,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 93521,
+              "medianMs": 93648,
+              "bestMs": 92889,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 92563,
+              "medianMs": 92343,
+              "bestMs": 90940,
+              "lapsUsed": 4
+            },
+            "Donald": {
+              "avgMs": 93640,
+              "medianMs": 93278,
+              "bestMs": 92796,
+              "lapsUsed": 4
+            },
+            "Colin": {
+              "avgMs": 97258,
+              "medianMs": 96223,
+              "bestMs": 94391,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 1,
+              "delta": 0
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 2,
+              "delta": 0
+            },
+            "Alfred": {
+              "qualPosition": 5,
+              "finishPosition": 3,
+              "delta": 2
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 4,
+              "delta": 0
+            },
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 5,
+              "delta": -2
+            },
+            "Colin": {
+              "qualPosition": 8,
+              "finishPosition": 6,
+              "delta": 2
+            },
+            "Ben": {
+              "qualPosition": 6,
+              "finishPosition": 7,
+              "delta": -1
+            },
+            "Donald": {
+              "qualPosition": 7,
+              "finishPosition": 8,
+              "delta": -1
+            }
+          }
+        },
+        "4": {
+          "grid": [
+            "Donald",
+            "Ben",
+            "Colin",
+            "Lee",
+            "Walnut",
+            "Alfred",
+            "Josie",
+            "James"
+          ],
+          "gridSource": "reversed-previous",
+          "gridConfidence": "medium",
+          "gridScore": -0.214,
+          "drivers": {
+            "Donald": {
+              "driver": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Iwasa_15"
+            },
+            "Ben": {
+              "driver": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "02_rss_21"
+            },
+            "Colin": {
+              "driver": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "2025_Mugen_Nojiri_16"
+            },
+            "Lee": {
+              "driver": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "11_racesphere_42"
+            },
+            "Walnut": {
+              "driver": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "04_japan_23"
+            },
+            "Alfred": {
+              "driver": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "01_rss_31"
+            },
+            "Josie": {
+              "driver": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "00_rss_25"
+            },
+            "James": {
+              "driver": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "skin": "03_rss_1"
+            }
+          },
+          "laps": {
+            "Donald": [
+              101465,
+              94052,
+              93544,
+              92431,
+              93632,
+              93454
+            ],
+            "Ben": [
+              98018,
+              106333,
+              102637,
+              101517,
+              103157,
+              101567
+            ],
+            "Colin": [
+              109349,
+              103291,
+              105675,
+              95246,
+              94152,
+              93636
+            ],
+            "Lee": [
+              94600,
+              92427,
+              91430,
+              90416,
+              91668,
+              92033
+            ],
+            "Walnut": [
+              96660,
+              91187,
+              100064,
+              91479,
+              90954,
+              90342
+            ],
+            "Alfred": [
+              108923,
+              97734,
+              95557,
+              94825,
+              95023,
+              95189
+            ],
+            "Josie": [
+              95197,
+              93254,
+              90380,
+              90655,
+              98870,
+              89449
+            ],
+            "James": [
+              97005,
+              98594,
+              89629,
+              88070,
+              88877,
+              90466
+            ]
+          },
+          "sectors": {
+            "Donald": [
+              [
+                39645,
+                39212,
+                22608
+              ],
+              [
+                35674,
+                38786,
+                19592
+              ],
+              [
+                35629,
+                38587,
+                19328
+              ],
+              [
+                34826,
+                38233,
+                19372
+              ],
+              [
+                35137,
+                38650,
+                19845
+              ],
+              [
+                35026,
+                38988,
+                19440
+              ]
+            ],
+            "Ben": [
+              [
+                39492,
+                38933,
+                19593
+              ],
+              [
+                34729,
+                49995,
+                21609
+              ],
+              [
+                37913,
+                42885,
+                21839
+              ],
+              [
+                38485,
+                41472,
+                21560
+              ],
+              [
+                37867,
+                41161,
+                24129
+              ],
+              [
+                38108,
+                42188,
+                21271
+              ]
+            ],
+            "Colin": [
+              [
+                40113,
+                39536,
+                29700
+              ],
+              [
+                37960,
+                39411,
+                25920
+              ],
+              [
+                46850,
+                39011,
+                19814
+              ],
+              [
+                35496,
+                38987,
+                20763
+              ],
+              [
+                35220,
+                38636,
+                20296
+              ],
+              [
+                34938,
+                38943,
+                19755
+              ]
+            ],
+            "Lee": [
+              [
+                38107,
+                37580,
+                18913
+              ],
+              [
+                34647,
+                38632,
+                19148
+              ],
+              [
+                34600,
+                37678,
+                19152
+              ],
+              [
+                34374,
+                37161,
+                18881
+              ],
+              [
+                34491,
+                37853,
+                19324
+              ],
+              [
+                34532,
+                37760,
+                19741
+              ]
+            ],
+            "Walnut": [
+              [
+                39109,
+                38056,
+                19495
+              ],
+              [
+                34622,
+                37648,
+                18917
+              ],
+              [
+                34517,
+                46283,
+                19264
+              ],
+              [
+                34432,
+                37885,
+                19162
+              ],
+              [
+                34596,
+                37521,
+                18837
+              ],
+              [
+                34208,
+                37314,
+                18820
+              ]
+            ],
+            "Alfred": [
+              [
+                46720,
+                40513,
+                21690
+              ],
+              [
+                37064,
+                40343,
+                20327
+              ],
+              [
+                35819,
+                39736,
+                20002
+              ],
+              [
+                35249,
+                39609,
+                19967
+              ],
+              [
+                35636,
+                39304,
+                20083
+              ],
+              [
+                35398,
+                39366,
+                20425
+              ]
+            ],
+            "Josie": [
+              [
+                38834,
+                37549,
+                18814
+              ],
+              [
+                34349,
+                40230,
+                18675
+              ],
+              [
+                34135,
+                37156,
+                19089
+              ],
+              [
+                34500,
+                37358,
+                18797
+              ],
+              [
+                43012,
+                37291,
+                18567
+              ],
+              [
+                34108,
+                36819,
+                18522
+              ]
+            ],
+            "James": [
+              [
+                39544,
+                37755,
+                19706
+              ],
+              [
+                42241,
+                36918,
+                19435
+              ],
+              [
+                34194,
+                36990,
+                18445
+              ],
+              [
+                33477,
+                36175,
+                18418
+              ],
+              [
+                33492,
+                36764,
+                18621
+              ],
+              [
+                33897,
+                36931,
+                19638
+              ]
+            ]
+          },
+          "cuts": {
+            "Donald": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Ben": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Colin": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Lee": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Walnut": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Alfred": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Josie": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "James": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "tyres": {
+            "Donald": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Ben": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Colin": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Lee": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Walnut": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Alfred": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "Josie": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ],
+            "James": [
+              "D",
+              "D",
+              "D",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          "positions": {
+            "Donald": [
+              6,
+              4,
+              5,
+              5,
+              5,
+              5
+            ],
+            "Ben": [
+              5,
+              6,
+              7,
+              7,
+              8,
+              8
+            ],
+            "Colin": [
+              8,
+              8,
+              8,
+              8,
+              7,
+              7
+            ],
+            "Lee": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "Walnut": [
+              3,
+              2,
+              4,
+              4,
+              4,
+              4
+            ],
+            "Alfred": [
+              7,
+              7,
+              6,
+              6,
+              6,
+              6
+            ],
+            "Josie": [
+              2,
+              3,
+              2,
+              2,
+              3,
+              3
+            ],
+            "James": [
+              4,
+              5,
+              3,
+              3,
+              2,
+              2
+            ]
+          },
+          "positionDetails": {
+            "Donald": [
+              {
+                "lap": 1,
+                "position": 6,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 4,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 5,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 5,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 5,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 5,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Ben": [
+              {
+                "lap": 1,
+                "position": 5,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 6,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 7,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 7,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 8,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 8,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Colin": [
+              {
+                "lap": 1,
+                "position": 8,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 8,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 8,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 8,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 7,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 7,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Lee": [
+              {
+                "lap": 1,
+                "position": 1,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 1,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 1,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 1,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 1,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 1,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Walnut": [
+              {
+                "lap": 1,
+                "position": 3,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 2,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 4,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 4,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 4,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 4,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Alfred": [
+              {
+                "lap": 1,
+                "position": 7,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 7,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 6,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 6,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 6,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 6,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "Josie": [
+              {
+                "lap": 1,
+                "position": 2,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 3,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 2,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 2,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 3,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 3,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ],
+            "James": [
+              {
+                "lap": 1,
+                "position": 4,
+                "lapsCompleted": 1,
+                "status": "classified"
+              },
+              {
+                "lap": 2,
+                "position": 5,
+                "lapsCompleted": 2,
+                "status": "classified"
+              },
+              {
+                "lap": 3,
+                "position": 3,
+                "lapsCompleted": 3,
+                "status": "classified"
+              },
+              {
+                "lap": 4,
+                "position": 3,
+                "lapsCompleted": 4,
+                "status": "classified"
+              },
+              {
+                "lap": 5,
+                "position": 2,
+                "lapsCompleted": 5,
+                "status": "classified"
+              },
+              {
+                "lap": 6,
+                "position": 2,
+                "lapsCompleted": 6,
+                "status": "classified"
+              }
+            ]
+          },
+          "positionChanges": {
+            "Donald": {
+              "gained": 2,
+              "lost": 6,
+              "net": -4
+            },
+            "Ben": {
+              "gained": 0,
+              "lost": 6,
+              "net": -6
+            },
+            "Colin": {
+              "gained": 1,
+              "lost": 5,
+              "net": -4
+            },
+            "Lee": {
+              "gained": 3,
+              "lost": 0,
+              "net": 3
+            },
+            "Walnut": {
+              "gained": 3,
+              "lost": 2,
+              "net": 1
+            },
+            "Alfred": {
+              "gained": 1,
+              "lost": 1,
+              "net": 0
+            },
+            "Josie": {
+              "gained": 6,
+              "lost": 2,
+              "net": 4
+            },
+            "James": {
+              "gained": 7,
+              "lost": 1,
+              "net": 6
+            }
+          },
+          "overtakes": [
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Ben",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Donald",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Lee",
+              "passed": "Colin",
+              "positionsGained": 3
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Ben",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Donald",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Alfred",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Josie",
+              "passed": "Colin",
+              "positionsGained": 5
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Ben",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Donald",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "Walnut",
+              "passed": "Colin",
+              "positionsGained": 2
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Ben",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Donald",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Alfred",
+              "positionsGained": 4
+            },
+            {
+              "lap": 1,
+              "driver": "James",
+              "passed": "Colin",
+              "positionsGained": 4
+            },
+            {
+              "lap": 2,
+              "driver": "Walnut",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 2,
+              "driver": "Donald",
+              "passed": "James",
+              "positionsGained": 2
+            },
+            {
+              "lap": 2,
+              "driver": "Donald",
+              "passed": "Ben",
+              "positionsGained": 2
+            },
+            {
+              "lap": 3,
+              "driver": "Josie",
+              "passed": "Walnut",
+              "positionsGained": 1
+            },
+            {
+              "lap": 3,
+              "driver": "James",
+              "passed": "Walnut",
+              "positionsGained": 2
+            },
+            {
+              "lap": 3,
+              "driver": "James",
+              "passed": "Donald",
+              "positionsGained": 2
+            },
+            {
+              "lap": 3,
+              "driver": "Alfred",
+              "passed": "Ben",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "James",
+              "passed": "Josie",
+              "positionsGained": 1
+            },
+            {
+              "lap": 5,
+              "driver": "Colin",
+              "passed": "Ben",
+              "positionsGained": 1
+            }
+          ],
+          "result": [
+            {
+              "driver": "Lee",
+              "driverKey": "Lee",
+              "guid": "76561198968530276",
+              "carId": 13,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 1,
+              "totalTimeMs": 552557,
+              "bestLapMs": 90416,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "James",
+              "driverKey": "James",
+              "guid": "76561198354688139",
+              "carId": 3,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 2,
+              "totalTimeMs": 552637,
+              "bestLapMs": 88070,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Josie",
+              "driverKey": "Josie",
+              "guid": "76561198056789142",
+              "carId": 0,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 3,
+              "totalTimeMs": 557797,
+              "bestLapMs": 89449,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Walnut",
+              "driverKey": "Walnut",
+              "guid": "76561198141802891",
+              "carId": 4,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 4,
+              "totalTimeMs": 560686,
+              "bestLapMs": 90342,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Donald",
+              "driverKey": "Donald",
+              "guid": "76561199196882805",
+              "carId": 14,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 5,
+              "totalTimeMs": 568586,
+              "bestLapMs": 92431,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Alfred",
+              "driverKey": "Alfred",
+              "guid": "76561198193231731",
+              "carId": 1,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 6,
+              "totalTimeMs": 587222,
+              "bestLapMs": 94825,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Colin",
+              "driverKey": "Colin",
+              "guid": "76561197967093333",
+              "carId": 15,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 7,
+              "totalTimeMs": 601361,
+              "bestLapMs": 93636,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            },
+            {
+              "driver": "Ben",
+              "driverKey": "Ben",
+              "guid": "76561198011029696",
+              "carId": 2,
+              "car": "rss_formula_rss_supreme_25",
+              "position": 8,
+              "totalTimeMs": 613239,
+              "bestLapMs": 98018,
+              "laps": 6,
+              "ballast": 0,
+              "restrictor": 0
+            }
+          ],
+          "contacts": [
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "James",
+              "driver2": "Alfred",
+              "impactSpeed": 7.2,
+              "worldPosition": {
+                "x": -75.8,
+                "z": -105.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Colin",
+              "driver2": "Donald",
+              "impactSpeed": 20.7,
+              "worldPosition": {
+                "x": -227.4,
+                "z": -193.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Josie",
+              "impactSpeed": 3.0,
+              "worldPosition": {
+                "x": 153.5,
+                "z": 153.8
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "Ben",
+              "impactSpeed": 14.1,
+              "worldPosition": {
+                "x": 150.4,
+                "z": 154.0
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Ben",
+              "driver2": "Josie",
+              "impactSpeed": 0.7,
+              "worldPosition": {
+                "x": 216.5,
+                "z": 181.0
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Colin",
+              "driver2": "Alfred",
+              "impactSpeed": 55.0,
+              "worldPosition": {
+                "x": 402.5,
+                "z": 25.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "Josie",
+              "impactSpeed": 14.8,
+              "worldPosition": {
+                "x": -574.4,
+                "z": -85.6
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Josie",
+              "driver2": "Lee",
+              "impactSpeed": 18.9,
+              "worldPosition": {
+                "x": -529.8,
+                "z": -136.3
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Donald",
+              "driver2": "James",
+              "impactSpeed": 13.8,
+              "worldPosition": {
+                "x": 83.0,
+                "z": -59.5
+              }
+            },
+            {
+              "lap": null,
+              "lapConfidence": "unknown",
+              "driver1": "Lee",
+              "driver2": "James",
+              "impactSpeed": 2.4,
+              "worldPosition": {
+                "x": 313.6,
+                "z": -3.1
+              }
+            }
+          ],
+          "pace": {
+            "Donald": {
+              "avgMs": 93423,
+              "medianMs": 93544,
+              "bestMs": 92431,
+              "lapsUsed": 5
+            },
+            "Ben": {
+              "avgMs": 103042,
+              "medianMs": 102637,
+              "bestMs": 101517,
+              "lapsUsed": 5
+            },
+            "Colin": {
+              "avgMs": 98400,
+              "medianMs": 95246,
+              "bestMs": 93636,
+              "lapsUsed": 5
+            },
+            "Lee": {
+              "avgMs": 91595,
+              "medianMs": 91668,
+              "bestMs": 90416,
+              "lapsUsed": 5
+            },
+            "Walnut": {
+              "avgMs": 92805,
+              "medianMs": 91187,
+              "bestMs": 90342,
+              "lapsUsed": 5
+            },
+            "Alfred": {
+              "avgMs": 95666,
+              "medianMs": 95189,
+              "bestMs": 94825,
+              "lapsUsed": 5
+            },
+            "Josie": {
+              "avgMs": 92522,
+              "medianMs": 90655,
+              "bestMs": 89449,
+              "lapsUsed": 5
+            },
+            "James": {
+              "avgMs": 91127,
+              "medianMs": 89629,
+              "bestMs": 88070,
+              "lapsUsed": 5
+            }
+          },
+          "qualVsRace": {
+            "Lee": {
+              "qualPosition": 3,
+              "finishPosition": 1,
+              "delta": 2
+            },
+            "James": {
+              "qualPosition": 1,
+              "finishPosition": 2,
+              "delta": -1
+            },
+            "Josie": {
+              "qualPosition": 2,
+              "finishPosition": 3,
+              "delta": -1
+            },
+            "Walnut": {
+              "qualPosition": 4,
+              "finishPosition": 4,
+              "delta": 0
+            },
+            "Donald": {
+              "qualPosition": 7,
+              "finishPosition": 5,
+              "delta": 2
+            },
+            "Alfred": {
+              "qualPosition": 5,
+              "finishPosition": 6,
+              "delta": -1
+            },
+            "Colin": {
+              "qualPosition": 8,
+              "finishPosition": 7,
+              "delta": 1
+            },
+            "Ben": {
+              "qualPosition": 6,
+              "finishPosition": 8,
+              "delta": -2
+            }
+          }
+        }
+      },
+      "practice": [],
+      "provenance": {
+        "sourceFiles": [
+          {
+            "name": "2026_11_17_21_37_QUALIFY.json",
+            "sha256": "77a4070b2d7f12711cbdee1111c97dea6eb94cfd9b5039dc17a1b3fe107a84d2",
+            "type": "QUALIFY",
+            "role": "qual1"
+          },
+          {
+            "name": "2026_11_17_22_15_QUALIFY.json",
+            "sha256": "848e83b30088170c5a207b4c1c1d492ff76de836795d3163aab88a2f16066346",
+            "type": "QUALIFY",
+            "role": "qual2"
+          },
+          {
+            "name": "2026_11_17_21_49_RACE.json",
+            "sha256": "56817d7f01aae2ae486f783507af40d43f68e05cadba6ff47c5ffe5ef76b42df",
+            "type": "RACE",
+            "role": "race1"
+          },
+          {
+            "name": "2026_11_17_22_0_RACE.json",
+            "sha256": "ec5cbf7fab904536877e0d67ff6978299b28bec88938f0bee7f2777b721d8b56",
+            "type": "RACE",
+            "role": "race2"
+          },
+          {
+            "name": "2026_11_17_22_28_RACE.json",
+            "sha256": "8b2f33c77f3002a1e12cf94666bafe080ad27efd477aaf6baa5d49bb4cd3bb4e",
+            "type": "RACE",
+            "role": "race3"
+          },
+          {
+            "name": "2026_11_17_22_39_RACE.json",
+            "sha256": "2ae5df9bb7244d3c849135c56a09b8d7ccfb919c34d88c9f11e29d3b5e084ae3",
+            "type": "RACE",
+            "role": "race4"
+          }
+        ],
+        "droppedFiles": [],
+        "notes": []
+      },
+      "venueOrder": 4
     }
   ]
 }

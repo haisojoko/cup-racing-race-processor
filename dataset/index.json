@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generator": "cup-racing-race-processor 0.3.0",
-  "lastUpdated": "2026-11-11T03:39:14.024289+00:00",
+  "lastUpdated": "2026-11-18T03:45:54.486126+00:00",
   "seasons": {
     "S10": {
       "file": "seasons/S10.json",
@@ -1222,6 +1222,17 @@
           "qualifying": 2,
           "practice": 0,
           "drivers": 12
+        },
+        {
+          "eventId": "2026-11-17-00-heartlake",
+          "venue": "00 Heartlake",
+          "venueOrder": 4,
+          "date": "2026-11-17",
+          "track": "csp/2144/../00_heartlake",
+          "races": 4,
+          "qualifying": 2,
+          "practice": 0,
+          "drivers": 9
         }
       ],
       "drivers": [
@@ -1231,6 +1242,7 @@
         "Ben",
         "Colin",
         "DK",
+        "Donald",
         "James",
         "Josie",
         "Lee",
